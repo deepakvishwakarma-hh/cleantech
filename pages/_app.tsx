@@ -1,12 +1,14 @@
 import type { AppProps } from 'next/app'
+import Layout from '~/components/Layout/main';
 
 // Chakra Provider & Customized Theme
 import { theme } from "../theme"
 import { ChakraProvider } from '@chakra-ui/react'
 
 // Nextjs/Fonts
-import { Lora } from 'next/font/google';
+import { Lora, Signika } from 'next/font/google';
 const lora = Lora({ subsets: ['latin'] });
+const signika = Signika({ subsets: ['latin'] });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,13 +16,15 @@ function MyApp({ Component, pageProps }: AppProps) {
       <style jsx global>
         {`
         :root {
-          --font-rubik: ${lora.style.fontFamily};
+          --font-lora: ${lora.style.fontFamily};
+          --font-signika: ${signika.style.fontFamily};
         }
       `}
       </style>
-
       <ChakraProvider resetCSS theme={theme}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ChakraProvider>
 
     </>
