@@ -4,7 +4,7 @@ import React from 'react'
 const Logo = () => {
     return (
         <Box>
-            <Text fontWeight={500} fontSize='xl'> Clean Tech Solution</Text>
+            <Text fontWeight={500} fontSize='xl'> CTS</Text>
         </Box>
     )
 }

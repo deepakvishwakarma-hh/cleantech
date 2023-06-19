@@ -22,9 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       `}
       </style>
       <ChakraProvider resetCSS theme={theme}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <Component {...pageProps} />
       </ChakraProvider>
 
     </>

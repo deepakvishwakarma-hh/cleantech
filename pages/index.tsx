@@ -1,12 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-
+import Hero from '~/components/section/Hero'
+import HowItWorks from '~/components/section/HowItWorks'
+import Layout from '~/components/Layout/main'
 const Home: NextPage = () => {
   return (
-
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit molestias alias quaerat aliquid asperiores deserunt expedita repudiandae hic, quas ab soluta aliquam voluptas placeat doloremque architecto, quos ut harum.z</div>
-
+    <Layout>
+      <Hero />
+      <HowItWorks />
+    </Layout>
   )
 }
 

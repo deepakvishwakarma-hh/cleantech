@@ -23,4 +23,22 @@ const UnderlineOnHover: React.FC<Props> = ({ children, ...otherProps }) => {
     )
 }
 
+
+export const UnderlineOnHoverBAC: React.FC<Props> = ({ children, ...otherProps }) => {
+    const MotionBox = motion(Box)
+    const control = useAnimationControls()
+    return (
+        <Box cursor={'pointer'} tabIndex={0} {...otherProps} >
+            <Box
+                onMouseEnter={() => { control.start({ width: ['0%', '100%'] }, { duration: .5 }) }}
+                width={'max-content'}>
+                <Text>
+                    {children}
+                </Text>
+                <MotionBox initial={{ width: '100%' }} height={.2} animate={control} bg="white"></MotionBox>
+            </Box>
+        </Box>
+    )
+}
+
 export default UnderlineOnHover
