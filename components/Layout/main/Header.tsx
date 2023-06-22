@@ -9,9 +9,10 @@ import {
 import { useScroll, useTransform, useMotionValueEvent, motion, useAnimationControls, cubicBezier } from 'framer-motion'
 import { useState } from 'react'
 
-
+import Link from "next/link";
 
 import { useRef } from 'react'
+import { Linden_Hill } from "next/font/google";
 const Header = () => {
 
     const responsiveHeight = [Aspect.mobile.layout.header.height, Aspect.mobile.layout.header.height, Aspect.desktop.layout.header.height]
@@ -83,7 +84,10 @@ const Header = () => {
                     <Stack direction={'row'} alignItems={'center'} justifyContent={"flex-end"} flex={1}>
                         <IconButton bg="transparent" aria-label='user' icon={<FiUser size={22} />} />
                         <IconButton bg="transparent" aria-label='cart' icon={<FiShoppingBag size={22} />} />
-                        <Button variant="takequizsmall" ml={2}>Take the quiz </Button>
+
+                        <Link passHref href={'/survey?question=welcome-quiz'} >
+                            <Button variant="takequizsmall" ml={2}>Take the quiz </Button>
+                        </Link>
                     </Stack>
 
                 </MotionContainer >

@@ -5,14 +5,8 @@ interface Props {
 import { Button } from "@chakra-ui/react"
 import { useRouter } from "next/router"
 
-
-
-
-
-
 const TakeQuizButton: React.FC<Props> = ({ size }) => {
     const { push } = useRouter()
-
     return (
         <Button
             px={10}
