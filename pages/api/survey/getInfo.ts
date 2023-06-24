@@ -42,6 +42,12 @@ const data: any = {
     },
     'get-age': {
         question: {
+            next: 'get-usage',
+            previous: 'get-email'
+        }
+    },
+    'get-usage': {
+        question: {
             next: null,
             previous: 'get-email'
         }

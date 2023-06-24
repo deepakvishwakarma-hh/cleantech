@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useRouter } from "next/router";
 import { Button, Box } from '@chakra-ui/react';
 import { motion, AnimatePresence } from 'framer-motion'
-import { Firstname, Age, Email, Begin, WelcomeUser } from '~/components/steps';
+import { Firstname, Age, Email, Begin, WelcomeUser, Usage } from '~/components/steps';
 
 const Com = {
     'welcome-quiz': Begin,
@@ -11,6 +11,7 @@ const Com = {
     'welcome-user': WelcomeUser,
     'get-email': Email,
     'get-age': Age,
+    'get-usage': Usage
 
 }
 
@@ -23,7 +24,9 @@ const Survey = () => {
     const URL = `/api/survey/getInfo?question=${question}`
     const { data, error, mutate } = useSWR<any>(URL, fetcher);
 
-    const Component = Com[question as 'welcome-quiz' | 'get-name' | 'get-email' | 'get-age']
+    const Component = Com[question as 'welcome-quiz' | 'get-name' | 'get-email' | 'get-age' | 'get-usage']
+    // const Component = Com['get-usage']
+
 
     console.log(data)
 

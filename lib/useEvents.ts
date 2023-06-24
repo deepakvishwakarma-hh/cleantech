@@ -1,10 +1,8 @@
 import useSWR from 'swr'
-import type { User } from 'pages/api/user'
-import type { Events } from 'pages/api/events'
 
-export default function useEvents(user: User | undefined) {
+export default function useEvents(user: any | undefined) {
   // We do a request to /api/events only if the user is logged in
-  const { data: events } = useSWR<Events>(
+  const { data: events } = useSWR<any>(
     user?.isLoggedIn ? `/api/events` : null
   )
 

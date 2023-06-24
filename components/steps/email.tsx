@@ -5,7 +5,6 @@ import { Text, Flex, Box, Center, } from "@chakra-ui/react"
 
 const Email: StepComp = ({ next }) => {
     const MotionBox = motion(Box)
-
     return (
         <MotionBox bg="#FEF4EC" width={'100%'} height={'100vh'}>
             <Center height={'90%'}>
