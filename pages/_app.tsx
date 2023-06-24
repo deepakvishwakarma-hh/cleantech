@@ -10,9 +10,13 @@ import { Lora, Signika } from 'next/font/google';
 const lora = Lora({ subsets: ['latin'] });
 const signika = Signika({ subsets: ['latin'] });
 
+import { SWRConfig } from 'swr'
+import fetchJson from 'lib/fetchJson'
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+
       <style jsx global>
         {`
         :root {
@@ -24,7 +28,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ChakraProvider resetCSS theme={theme}>
         <Component {...pageProps} />
       </ChakraProvider>
-
     </>
   )
 }
