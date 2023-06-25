@@ -1,11 +1,12 @@
 import { extendTheme } from '@chakra-ui/react'
 
 // configuration components based on themes (varients custom props and default styles)
-import { Button } from './configurations';
+import { Button, Text } from './configurations';
 
 export const theme = extendTheme({
     components: {
         Button,
+        Text
     },
 
     fonts: {
