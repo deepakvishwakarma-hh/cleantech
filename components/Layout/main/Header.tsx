@@ -85,7 +85,7 @@ const Header = () => {
                         <IconButton bg="transparent" aria-label='user' icon={<FiUser size={22} />} />
                         <IconButton bg="transparent" aria-label='cart' icon={<FiShoppingBag size={22} />} />
 
-                        <Link passHref href={'/survey?question=welcome-quiz'} >
+                        <Link passHref href={'/steps/quiz'} >
                             <Button variant="takequizsmall" ml={2}>Take the quiz </Button>
                         </Link>
                     </Stack>
