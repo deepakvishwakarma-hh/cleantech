@@ -1,8 +1,10 @@
 import type { AppProps } from 'next/app'
-import Layout from '~/components/Layout/main';
+
 
 // Chakra Provider & Customized Theme
 import { theme } from "../theme"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { ChakraProvider } from '@chakra-ui/react'
 
 // Nextjs/Fonts

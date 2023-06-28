@@ -1,26 +1,29 @@
 /* eslint-disable @next/next/no-img-element */
-import { Text, Flex, Box, Center, Stack, SimpleGrid } from "@chakra-ui/react"
 import { useRouter } from "next/router";
-
+import Layout from "~/components/Layout/step";
+import { Text, Flex, Box, Center, Stack, SimpleGrid } from "@chakra-ui/react"
 import { localstorage, useLocalStorage } from "~/lib/localstorage";
 
 const __data = [
     {
-        src: "https://images.ctfassets.net/t9x0u6p47op0/2pIZBg7jStZ31KigklURO1/2a3f9153599fad715ac3b2042bd4b25d/informed__1_.svg?",
         alt: "alt",
+        name: 'low',
+        title: "Low Usage",
         discription: "Civilian use and residetial application",
-        title: "Low Usage"
+        src: "https://images.ctfassets.net/t9x0u6p47op0/2pIZBg7jStZ31KigklURO1/2a3f9153599fad715ac3b2042bd4b25d/informed__1_.svg?",
     },
     {
-        src: "https://images.ctfassets.net/t9x0u6p47op0/2pIZBg7jStZ31KigklURO1/2a3f9153599fad715ac3b2042bd4b25d/informed__1_.svg?",
         alt: "alt",
+        name: 'medium',
+        title: "Medium Usage",
         discription: "Commersial use and professional application",
-        title: "Medium Usage"
-    }, {
         src: "https://images.ctfassets.net/t9x0u6p47op0/2pIZBg7jStZ31KigklURO1/2a3f9153599fad715ac3b2042bd4b25d/informed__1_.svg?",
+    }, {
         alt: "alt",
+        name: 'high',
+        title: "Heavy Usage",
         discription: "Industrial and large scale operation",
-        title: "Heavy Usage"
+        src: "https://images.ctfassets.net/t9x0u6p47op0/2pIZBg7jStZ31KigklURO1/2a3f9153599fad715ac3b2042bd4b25d/informed__1_.svg?",
     }
 ]
 
@@ -29,20 +32,22 @@ export default function Usage() {
     const [storage, setStorage] = useLocalStorage(localstorage)
     const handleClick = (usage: string) => {
         setStorage((prev: any) => { return { ...prev, usage } })
-        router.push('usage')
+        router.push('ctgr-selection')
     }
 
     return (
-        <Box bg="#FEF4EC" width={'100%'} height={'100vh'}>
-            <Center height={'90%'}>
-                <Flex flexDir={'column'} alignItems={'center'} gap={2} maxW={'1000px'}>
-                    <Text fontSize={'4xl'} fontFamily={'heading'} textAlign={'center'} mb={5} >Select your usage so that we can design your further process accordingly</Text>
-                    <SimpleGrid width={'full'} p={[5, 5, 0]} gap={10} height={['auto', 'auto', '400px']} columns={[1, 1, 3]}>
-                        {__data.map((data, i) => <Boxes key={i} {...data} selected={data.title === (storage as typeof localstorage['defaultValue']).usage} onclick={() => { handleClick(data.title) }} />)}
-                    </SimpleGrid>
-                </Flex>
-            </Center>
-        </Box>
+        <Layout previous="email">
+            <Box bg="#FEF4EC" width={'100%'} height={'100vh'}>
+                <Center height={'90%'}>
+                    <Flex flexDir={'column'} alignItems={'center'} gap={2} maxW={'1000px'}>
+                        <Text fontSize={'4xl'} fontFamily={'heading'} textAlign={'center'} mb={5} >Select your usage so that we can design your further process accordingly</Text>
+                        <SimpleGrid width={'full'} p={[5, 5, 0]} gap={10} height={['auto', 'auto', '400px']} columns={[1, 1, 3]}>
+                            {__data.map((data, i) => <Boxes key={i} {...data} selected={data.title === (storage as typeof localstorage['defaultValue']).usage} onclick={() => { handleClick(data.name) }} />)}
+                        </SimpleGrid>
+                    </Flex>
+                </Center>
+            </Box>
+        </Layout>
     )
 }
 

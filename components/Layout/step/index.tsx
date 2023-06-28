@@ -1,10 +1,10 @@
 interface Props {
-    previous: () => void,
+    previous: string
     children: any
 }
 
 interface HeaderProps {
-    previous: () => void,
+    previous: string,
 }
 
 import Link from 'next/link'
@@ -30,7 +30,6 @@ const Header: React.FC<HeaderProps> = ({ previous }) => {
     const responsiveHeight = [Aspect.mobile.layout.header.height, Aspect.mobile.layout.header.height, Aspect.desktop.layout.header.height]
     return (
         <>
-
             <Center
                 top={0}
                 left={0}
@@ -56,7 +55,7 @@ const Header: React.FC<HeaderProps> = ({ previous }) => {
                 <Button
                     display={'flex'}
                     pointerEvents={'all'}
-                    onClick={previous}
+                    onClick={() => router.push(previous)}
                     variant={'unstyled'}>
                     <FiChevronLeft size={22} />
                     <Text ml={.5} fontWeight={400}>Back</Text>
