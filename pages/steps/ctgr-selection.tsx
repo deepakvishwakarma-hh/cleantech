@@ -85,7 +85,7 @@ const CategorySelection = () => {
                                 infinite: true,
                                 speed: 500,
                                 slidesToShow: responsiveSlideToShow,
-                                slidesToScroll: 1
+                                slidesToScroll: 4
                             }}>
                                 {category.map((title: string, index: number) => <Boxes key={index} title={title} selected={selected.includes(index)} onClick={() => onClick(index)} />)}
                             </Slider>
@@ -102,7 +102,6 @@ const CategorySelection = () => {
 }
 
 export default CategorySelection
-
 
 
 const Boxes = ({ title, onClick, selected }: any) => {
