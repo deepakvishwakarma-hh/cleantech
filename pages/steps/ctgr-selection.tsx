@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-
 import { useState } from 'react'
 import dynamic from "next/dynamic";
+import { useRouter } from 'next/router';
 import Layout from "~/components/Layout/step";
 import categories from "~/quiz/categories.json"
 import { useBreakpointValue } from '@chakra-ui/react'
@@ -10,6 +10,7 @@ import { Button, Text, Flex, Box, Center, SimpleGrid } from "@chakra-ui/react"
 const Slider = dynamic(() => import('react-slick').then(m => m.default), { ssr: false, loading: () => <p>Slider loading...</p> })
 
 const CategorySelection = () => {
+    const router = useRouter()
     const [storage] = useLocalStorage(localstorage)
     const [selected, setSelected] = useState([0])
     const category = (categories as any)[(storage as any).usage as string]
@@ -92,7 +93,7 @@ const CategorySelection = () => {
 
                         </SimpleGrid>
 
-                        <Button isDisabled={!selected.length} onClick={() => { alert("questions are'nt created!") }} mt={'3.5em'} mx={'auto'} px={20} py={8} fontSize={'xl'} variant="takequizsmall">Next </Button>
+                        <Button isDisabled={!selected.length} onClick={() => { router.push('question') }} mt={'3.5em'} mx={'auto'} px={20} py={8} fontSize={'xl'} variant="takequizsmall">Next </Button>
 
                     </Flex>
                 </Center>

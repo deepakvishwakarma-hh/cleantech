@@ -1,0 +1,110 @@
+    [
+        {
+            "name": "skin contact",
+            "question": [
+                {
+                    "name": "How many people do you want to be able to prepare hand or skin sanitizer for?",
+                    "type": "select",
+                    "options": {
+                        "daily": 7,
+                        "once a week": 4,
+                        "twice a week": 14,
+                        "once a month": 1
+                    }
+                },
+                {
+                    "name": "How often do you apply skin sanitizer??",
+                    "type": "select",
+                    "options": {
+                        "daily": 7,
+                        "once a week": 4,
+                        "twice a week": 14,
+                        "once a month": 1
+                    }
+                },
+                {
+                    "name": "How long would you like a hand sanitizer supply to last?",
+                    "type": "select",
+                    "options": {
+                        "one month": 1,
+                        "two month": 2,
+                        "three month": 3,
+                        "six month": 3,
+                        "one year": 12
+                    }
+                }
+            ]
+        },
+        {
+            "name": "skin care",
+            "question": [
+                {
+                    "name": "How many people do you want to be able to prepare hand or skin sanitizer for?2",
+                    "type": "select",
+                    "options": {
+                        "daily": 7,
+                        "once a week": 4,
+                        "twice a week": 14,
+                        "once a month": 1
+                    }
+                },
+                {
+                    "name": "How often do you apply skin sanitizer??2",
+                    "type": "select",
+                    "options": {
+                        "daily": 7,
+                        "once a week": 4,
+                        "twice a week": 14,
+                        "once a month": 1
+                    }
+                },
+                {
+                    "name": "How long would you like a hand sanitizer supply to last?2",
+                    "type": "select",
+                    "options": {
+                        "one month": 1,
+                        "two month": 2,
+                        "three month": 3,
+                        "six month": 3,
+                        "one year": 12
+                    }
+                }
+            ]
+        },
+        {
+            "name": "hair cart",
+            "question": [
+                {
+                    "name": "How many people do you want to be able to prepare hand or skin sanitizer for?3",
+                    "type": "select",
+                    "options": {
+                        "daily": 7,
+                        "once a week": 4,
+                        "twice a week": 14,
+                        "once a month": 1
+                    }
+                },
+                {
+                    "name": "How often do you apply skin sanitizer??3",
+                    "type": "select",
+                    "options": {
+                        "daily": 7,
+                        "once a week": 4,
+                        "twice a week": 14,
+                        "once a month": 1
+                    }
+                },
+                {
+                    "name": "How long would you like a hand sanitizer supply to last?3",
+                    "type": "select",
+                    "options": {
+                        "one month": 1,
+                        "two month": 2,
+                        "three month": 3,
+                        "six month": 3,
+                        "one year": 12
+                    }
+                }
+            ]
+        }
+    ]
