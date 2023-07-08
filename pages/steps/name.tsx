@@ -19,8 +19,8 @@ export default function Name() {
         <Layout previous={"quiz"}>
             <MotionBox bg="#FEF4EC" width={"100%"} height={"100vh"}>
                 <Center height={"90%"}>
-                    <Flex flexDir={"column"} alignItems={"center"} gap={2}>
-                        <Text fontSize={"4xl"} fontFamily={"heading"} textAlign={"center"}>
+                    <Flex flexDir={"column"} alignItems={"center"} gap={2} >
+                        <Text fontSize={['3xl', '3xl', "4xl"]} fontFamily={"heading"} textAlign={"center"}>
                             What&apos;s your first name?
                         </Text>
                         <Text fontSize={"md"} fontFamily={"body"} textAlign={"center"} mb={3}>

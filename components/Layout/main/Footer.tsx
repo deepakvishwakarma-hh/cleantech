@@ -35,8 +35,7 @@ const Footer = () => {
             gap={10}
             templateColumns={['1fr', '1fr', '1fr', '1fr', '2.5fr 1fr']}
             maxWidth={''}
-            p={[10, 10, 100]}
-            border={'2px solid grey'}>
+            p={[10, 10, 100]}>
             <GridItem as={Stack} justifyContent={'space-between'}>
                 <Stack maxWidth={'sm'} gap={5}>
                     <Text fontSize='xl' fontFamily={'heading'} fontWeight={300}>Subscribe and stay up-to-date on Care/of news, exclusive offers, and more.</Text>

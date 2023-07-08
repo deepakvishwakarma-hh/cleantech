@@ -15,12 +15,8 @@ export default function Age() {
         <Layout previous="welcome">
             <Box bg="#FEF4EC" width={"100%"} height={"100vh"}>
                 <Center height={"90%"}>
-                    <Flex flexDir={"column"} alignItems={"center"} gap={2}>
-                        <Text
-                            fontSize={"4xl"}
-                            fontFamily={"heading"}
-                            textAlign={"center"}
-                            mb={5}>
+                    <Flex flexDir={"column"} alignItems={"center"} gap={2} >
+                        <Text fontSize={['3xl', '3xl', "4xl"]} fontFamily={"heading"} textAlign={"center"}>
                             How old are you?
                         </Text>
                         <UserInfoInput type="number" onclick={handleNextClick} />

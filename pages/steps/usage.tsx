@@ -40,7 +40,7 @@ export default function Usage() {
             <Box bg="#FEF4EC" width={'100%'} height={'100vh'}>
                 <Center height={'90%'}>
                     <Flex flexDir={'column'} alignItems={'center'} gap={2} maxW={'1000px'}>
-                        <Text fontSize={'4xl'} fontFamily={'heading'} textAlign={'center'} mb={5} >Select your usage so that we can design your further process accordingly</Text>
+                        <Text px={[2, 2, 1, 0]} fontSize={['2xl', '2xl', '3xl', "4xl"]} fontFamily={'heading'} textAlign={'center'} mb={5} >Select your usage so that we can design your further process accordingly</Text>
                         <SimpleGrid width={'full'} p={[5, 5, 0]} gap={10} height={['auto', 'auto', '400px']} columns={[1, 1, 3]}>
                             {__data.map((data, i) => <Boxes key={i} {...data} selected={data.title === (storage as typeof localstorage['defaultValue']).usage} onclick={() => { handleClick(data.name) }} />)}
                         </SimpleGrid>

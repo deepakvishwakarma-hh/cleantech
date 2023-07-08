@@ -23,7 +23,7 @@ export default function Welcome() {
             <MotionBox bg="#FEF4EC" width={"100%"} height={"100vh"}>
                 <Center height={"90%"}>
                     <Flex flexDir={"column"} alignItems={"center"} gap={2}>
-                        <Text fontSize={"4xl"} fontFamily={"heading"} textAlign={"center"}>
+                        <Text fontSize={['3xl', '3xl', "4xl"]} fontFamily={"heading"} textAlign={"center"}>
                             Welcome {(storage as typeof localstorage['defaultValue']).name}
                         </Text>
                     </Flex>

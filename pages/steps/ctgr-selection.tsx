@@ -25,8 +25,7 @@ const CategorySelection = () => {
             <Box bg="#FEF4EC" width={'100%'} minH={'100vh'} >
                 <Center pt={'5rem'}>
                     <Flex flexDir={'column'} alignItems={'center'} gap={2} maxW={'1500px'}>
-                        <Text fontSize={'4xl'} fontFamily={'heading'} textAlign={'center'} mb={5} >Select an Application Category</Text>
-
+                        <Text px={[2, 2, 1, 0]} fontSize={['2xl', '2xl', '3xl', "4xl"]} fontFamily={'heading'} textAlign={'center'} mb={5} >Select an Application Category</Text>
 
                         <SimpleGrid columns={[1, 1, 2, 4]}>
                             {category.map((title: string, index: number) => <Boxes key={index} title={title} selected={selected.includes(index)} onClick={() => onClick(index)} />)}
