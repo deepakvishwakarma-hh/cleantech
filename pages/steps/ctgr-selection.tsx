@@ -23,7 +23,7 @@ const CategorySelection = () => {
     return (
         <Layout previous="usage">
             <Box bg="#FEF4EC" width={'100%'} minH={'100vh'} >
-                <Center pt={'5rem'}>
+                <Center pt={'10rem'}>
                     <Flex flexDir={'column'} alignItems={'center'} gap={2} maxW={'1500px'}>
                         <Text px={[2, 2, 1, 0]} fontSize={['2xl', '2xl', '3xl', "4xl"]} fontFamily={'heading'} textAlign={'center'} mb={5} >Select an Application Category</Text>
 
