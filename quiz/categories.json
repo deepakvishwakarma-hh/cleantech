@@ -7,9 +7,7 @@
         "mold, mildew, spores, and algae",
         "personal hygiene (antiseptic or hand sanitizer)",
         "produce, meat, and groceries",
-        "travel and recreation (on-the-go)",
-        "unwanted odors (eliminate the source)",
-        "water treatment and water storage"
+        "travel and recreation (on-the-go)"
     ],
     "medium": [
         "by method of application and contagion",
@@ -19,9 +17,7 @@
         "extermination of invasive insects",
         "farm and ranch (horticulture and agriculture)",
         "food service, hospitality, and public places",
-        "transport and transit",
-        "unwanted odors (eliminate the source)",
-        "water treatment and storage"
+        "transport and transit"
     ],
     "high": [
         "by contagion, method of application, or by material",
@@ -31,8 +27,6 @@
         "healthcare, hospitals, and medical facilities",
         "hvac (heating, ventilation, and air conditioning)",
         "manufacturing, and processing operations",
-        "municipal drinking water treatment and storage",
-        "other industrial processes (miscelanious)",
-        "veterinarian applications and animal care"
+        "municipal drinking water treatment and storage"
     ]
 }
