@@ -38,7 +38,7 @@ export default function Usage() {
     return (
         <Layout previous="email">
             <Box bg="#FEF4EC" width={'100%'} minH={'100vh'}>
-                <Center pt={'10rem'}>
+                <Center minH={'650px'} h={'100vh'}>
                     <Flex flexDir={'column'} alignItems={'center'} gap={2} maxW={'1000px'}>
                         <Text px={[2, 2, 1, 0]} fontSize={['2xl', '2xl', '3xl', "4xl"]} fontFamily={'heading'} textAlign={'center'} mb={5} >Select your usage so that we can design your further process accordingly</Text>
                         <SimpleGrid width={'full'} p={[2, 2, 0]} gap={10} height={['auto', 'auto', '400px']} columns={[1, 1, 3]}>
