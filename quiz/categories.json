@@ -1,32 +1,32 @@
 {
     "low": [
-        "cleaning hard and soft surfaces",
-        "food contact surface disinfection",
-        "extermination of invasive insects",
-        "in the garden (plant health)",
-        "mold, mildew, spores, and algae",
+        "extermination of invasive insects (in the garden)",
+        "no-rinse surface disinfection",
         "personal hygiene (antiseptic or hand sanitizer)",
-        "produce, meat, and groceries",
-        "travel and recreation (on-the-go)"
+        "produce, eggs, meat, fish, and groceries",
+        "travel and recreation (on-the-go)",
+        "unwanted odors (eliminate the source)",
+        "water treatment and water storage",
+        "in the garden (plant health)"
     ],
     "medium": [
-        "by method of application and contagion",
-        "cleaning hard and soft surfaces",
-        "commodity processing, packaging or shipping",
-        "food contact surface disinfection",
+        "commodity production, processing, and packaging",
         "extermination of invasive insects",
         "farm and ranch (horticulture and agriculture)",
         "food service, hospitality, and public places",
-        "transport and transit"
+        "no-residue hard and soft surface disinfection",
+        "transport and transit (delivery and travel)",
+        "unwanted odors (eliminate the source)",
+        "water treatment and water storage"
     ],
     "high": [
-        "by contagion, method of application, or by material",
+        "no-residue hard or soft surface disinfection",
         "extermination of invasive insects",
-        "food production and commodities processing",
         "hazmat (remediation and decontamination)",
         "healthcare, hospitals, and medical facilities",
         "hvac (heating, ventilation, and air conditioning)",
-        "manufacturing, and processing operations",
-        "municipal drinking water treatment and storage"
+        "manufacturing and processing operations",
+        "municipal drinking water treatment and storage",
+        "other industrial processes (miscellaneous)"
     ]
 }

@@ -8,21 +8,21 @@ const __data = [
     {
         alt: "alt",
         name: 'low',
-        title: "Low Usage",
-        discription: "Civilian use and residetial application",
+        title: "Civilian Use and Residential Applications",
+        discription: "Home and Garden",
         src: "https://images.ctfassets.net/t9x0u6p47op0/2pIZBg7jStZ31KigklURO1/2a3f9153599fad715ac3b2042bd4b25d/informed__1_.svg?",
     },
     {
         alt: "alt",
         name: 'medium',
-        title: "Medium Usage",
-        discription: "Commersial use and professional application",
+        title: "Commercial and Retail Applications ",
+        discription: "At Work and for use in Public Spaces",
         src: "https://images.ctfassets.net/t9x0u6p47op0/2pIZBg7jStZ31KigklURO1/2a3f9153599fad715ac3b2042bd4b25d/informed__1_.svg?",
     }, {
         alt: "alt",
         name: 'high',
-        title: "Heavy Usage",
-        discription: "Industrial and large scale operation",
+        title: "Professional and Industrial Application",
+        discription: "Large-Scale Operations or Fields That Require Special Licensing",
         src: "https://images.ctfassets.net/t9x0u6p47op0/2pIZBg7jStZ31KigklURO1/2a3f9153599fad715ac3b2042bd4b25d/informed__1_.svg?",
     }
 ]
@@ -41,7 +41,7 @@ export default function Usage() {
                 <Center minH={'650px'} h={'100vh'}>
                     <Flex flexDir={'column'} alignItems={'center'} gap={2} maxW={'1000px'}>
                         <Text px={[2, 2, 1, 0]} fontSize={['2xl', '2xl', '3xl', "4xl"]} fontFamily={'heading'} textAlign={'center'} mb={5} >Select your usage so that we can design your further process accordingly</Text>
-                        <SimpleGrid width={'full'} p={[2, 2, 0]} gap={10} height={['auto', 'auto', '400px']} columns={[1, 1, 3]}>
+                        <SimpleGrid width={'full'} p={[2, 2, 0]} gap={10} height={['auto', 'auto', '350px']} columns={[1, 1, 3]}>
                             {__data.map((data, i) => <Boxes key={i} {...data} selected={data.title === (storage as typeof localstorage['defaultValue']).usage} onclick={() => { handleClick(data.name) }} />)}
                         </SimpleGrid>
                     </Flex>

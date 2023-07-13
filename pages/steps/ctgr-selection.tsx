@@ -3,20 +3,19 @@ import { useRouter } from 'next/router';
 import Layout from "~/components/Layout/step";
 import categories from "~/quiz/categories.json"
 import { localstorage, useLocalStorage } from "~/lib/localstorage";
-import { Button, Text, Flex, Box, Center, SimpleGrid } from "@chakra-ui/react"
+import { Button, Text, Flex, Box, Center, SimpleGrid, Grid, GridItem } from "@chakra-ui/react"
 
 const CategorySelection = () => {
     const router = useRouter()
     const [storage] = useLocalStorage(localstorage)
-    const [selected, setSelected] = useState([0])
+    const [selected, setSelected] = useState<string[]>([])
     const category = (categories as any)[(storage as any).usage as string]
 
-
-    const onClick = (index: number) => {
-        if (selected.includes(index)) {
-            setSelected(prev => prev.filter(item => item !== index));
+    const onClick = (title: string) => {
+        if (selected.includes(title)) {
+            setSelected(prev => prev.filter(item => item !== title));
         } else {
-            setSelected(prev => [...prev, index]);
+            setSelected(prev => [...prev, title]);
         }
     }
 
@@ -27,8 +26,8 @@ const CategorySelection = () => {
                     <Flex flexDir={'column'} alignItems={'center'} gap={2} maxW={'1500px'}>
                         <Text px={[2, 2, 1, 0]} fontSize={['2xl', '2xl', '3xl', "4xl"]} fontFamily={'heading'} textAlign={'center'} mb={5} >Select an Application Category</Text>
 
-                        <SimpleGrid columns={[1, 1, 2, 4]}>
-                            {category.map((title: string, index: number) => <Boxes key={index} title={title} selected={selected.includes(index)} onClick={() => onClick(index)} />)}
+                        <SimpleGrid columns={[1, 1, 2, 4]} gap={5} px={5}>
+                            {category.map((title: string, index: number) => <Boxes key={index} title={title} selected={selected.includes(title)} onClick={() => onClick(title)} />)}
                         </SimpleGrid>
 
 
@@ -47,19 +46,30 @@ export default CategorySelection
 
 const Boxes = ({ title, onClick, selected }: any) => {
     return (
-        <Center
-            rounded={'md'}
-            border={selected ? '2px black solid' : '2px transparent solid'}
+        <Grid
+            rounded={'full'}
             onClick={onClick}
+
+            templateColumns={'30px auto'}
+            gap={2}
+
+            alignItems={'center'}
+
             bg={'white'}
-            margin={3}
-            p={10}>
+            p={2}>
 
-            <Center alignItems={'center'} height={['100%', '100%', '50%']} flexDirection="column" gap={[0, 0, 2]}>
-                <Text textTransform={'capitalize'} fontSize={'xl'} textAlign={'center'} fontFamily={'body'}>{title}</Text>
-                <Text fontSize={'md'} textAlign={['left', 'left', 'center']} fontFamily={'heading'}>This is basic discription.</Text>
-            </Center>
 
-        </Center>
+            <GridItem as={Center}>
+                <Box width={5} height={5} background={!selected ? 'gray.100' : 'gray.900'} rounded={'full'}></Box>
+            </GridItem>
+
+            <GridItem>
+                <Text textTransform={'capitalize'} fontSize={'lg'} fontFamily={'body'} pr={1}>{title}</Text>
+            </GridItem>
+
+
+            {/* <Text fontSize={'md'} textAlign={['left', 'left', 'center']} fontFamily={'heading'}>This is basic discription.</Text> */}
+
+        </Grid >
     )
 }
