@@ -19,7 +19,7 @@ const useQuiz = () => {
     return {
         storage,
         select: (categories: string[]) => {
-            setStorage((prev: any) => { return { ...prev, selected: categories } })
+            setStorage((prev: any) => { return { ...prev, select: categories } })
         },
         set: (payload: { [name: string]: number[] }) => {
             setStorage((prev: any) => { return { ...prev, ...payload } })

@@ -1,22 +1,30 @@
 import { useState } from 'react'
 import { useRouter } from 'next/router';
+import useQuiz from '~/hooks/useQuiz';
 import Layout from "~/components/Layout/step";
 import categories from "~/quiz/categories.json"
 import { localstorage, useLocalStorage } from "~/lib/localstorage";
 import { Button, Text, Flex, Box, Center, SimpleGrid, Grid, GridItem } from "@chakra-ui/react"
 
 const CategorySelection = () => {
+    const quiz = useQuiz()
     const router = useRouter()
     const [storage] = useLocalStorage(localstorage)
     const [selected, setSelected] = useState<string[]>([])
     const category = (categories as any)[(storage as any).usage as string]
 
+    // this is for options 
     const onClick = (title: string) => {
         if (selected.includes(title)) {
             setSelected(prev => prev.filter(item => item !== title));
         } else {
             setSelected(prev => [...prev, title]);
         }
+    }
+
+    const handleSubmit = () => {
+        quiz.select(selected)
+        router.push('question')
     }
 
     return (
@@ -30,9 +38,7 @@ const CategorySelection = () => {
                             {category.map((title: string, index: number) => <Boxes key={index} title={title} selected={selected.includes(title)} onClick={() => onClick(title)} />)}
                         </SimpleGrid>
 
-
-
-                        <Button isDisabled={!selected.length} onClick={() => { router.push('question') }} my={'3.5em'} mx={'auto'} px={20} py={8} fontSize={'xl'} variant="takequizsmall">Next </Button>
+                        <Button isDisabled={!selected.length} onClick={handleSubmit} my={'3.5em'} mx={'auto'} px={20} py={8} fontSize={'xl'} variant="takequizsmall">Next </Button>
 
                     </Flex>
                 </Center>
