@@ -1,110 +1,485 @@
-    [
-        {
-            "name": "skin contact",
-            "question": [
-                {
-                    "name": "How many people do you want to be able to prepare hand or skin sanitizer for?",
-                    "type": "select",
-                    "options": {
-                        "daily": 7,
-                        "once a week": 4,
-                        "twice a week": 14,
-                        "once a month": 1
-                    }
-                },
-                {
-                    "name": "How often do you apply skin sanitizer??",
-                    "type": "select",
-                    "options": {
-                        "daily": 7,
-                        "once a week": 4,
-                        "twice a week": 14,
-                        "once a month": 1
-                    }
-                },
-                {
-                    "name": "How long would you like a hand sanitizer supply to last?",
-                    "type": "select",
-                    "options": {
-                        "one month": 1,
-                        "two month": 2,
-                        "three month": 3,
-                        "six month": 3,
-                        "one year": 12
-                    }
-                }
-            ]
-        },
-        {
-            "name": "skin care",
-            "question": [
-                {
-                    "name": "How many people do you want to be able to prepare hand or skin sanitizer for?2",
-                    "type": "select",
-                    "options": {
-                        "daily": 7,
-                        "once a week": 4,
-                        "twice a week": 14,
-                        "once a month": 1
-                    }
-                },
-                {
-                    "name": "How often do you apply skin sanitizer??2",
-                    "type": "select",
-                    "options": {
-                        "daily": 7,
-                        "once a week": 4,
-                        "twice a week": 14,
-                        "once a month": 1
-                    }
-                },
-                {
-                    "name": "How long would you like a hand sanitizer supply to last?2",
-                    "type": "select",
-                    "options": {
-                        "one month": 1,
-                        "two month": 2,
-                        "three month": 3,
-                        "six month": 3,
-                        "one year": 12
-                    }
-                }
-            ]
-        },
-        {
-            "name": "hair cart",
-            "question": [
-                {
-                    "name": "How many people do you want to be able to prepare hand or skin sanitizer for?3",
-                    "type": "select",
-                    "options": {
-                        "daily": 7,
-                        "once a week": 4,
-                        "twice a week": 14,
-                        "once a month": 1
-                    }
-                },
-                {
-                    "name": "How often do you apply skin sanitizer??3",
-                    "type": "select",
-                    "options": {
-                        "daily": 7,
-                        "once a week": 4,
-                        "twice a week": 14,
-                        "once a month": 1
-                    }
-                },
-                {
-                    "name": "How long would you like a hand sanitizer supply to last?3",
-                    "type": "select",
-                    "options": {
-                        "one month": 1,
-                        "two month": 2,
-                        "three month": 3,
-                        "six month": 3,
-                        "one year": 12
-                    }
-                }
-            ]
+[
+  {
+    "name": "extermination of invasive insects (in the garden)",
+    "question": [
+      {
+        "name": "Select an insect group to target for extermination",
+        "type": "select",
+        "options": {
+          "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": 1000,
+          "Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips": 250,
+          "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": 500,
+          "Cabbage-Maggots, Caterpillars, and Cutworms": 750,
+          "Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums": 1000,
+          "House flies, Horse flies, Maggots, Moths, and Spiders": 500,
+          "Mosquitos, Drain Flies, and Water-borne Insects": 750,
+          "Slugs, Snails, and Slimy Garden Gastropod Invaders": 250
         }
+      },
+      {
+        "name": "Select the application method for extermination",
+        "type": "select",
+        "options": {
+          "Spray": 1000,
+          "Fogging": 750,
+          "Soak": 500,
+          "Dip": 250,
+          "Wipe": 1000
+        }
+      },
+      {
+        "name": "Select the volume of the extermination solution (ml)",
+        "type": "select",
+        "options": {
+          "100 ml": 100,
+          "250 ml": 250,
+          "500 ml": 500,
+          "750 ml": 750,
+          "1000 ml": 1000
+        }
+      }
     ]
+  },
+  {
+    "name": "in the garden (plant health)",
+    "question": [
+      {
+        "name": "Select the type of plants you want to protect",
+        "type": "select",
+        "options": {
+          "Fruits: Berries, Tree Ground, and Vine Fruits": 750,
+          "Grains, Legumes, Seeds, and Nuts": 500,
+          "Herbs, Spices, Medicinal, or Ornamental Plants": 1000,
+          "Vegetables, Staple Table Crops, and Mushrooms": 250
+        }
+      },
+      {
+        "name": "Select the application method for plant health",
+        "type": "select",
+        "options": {
+          "Spray": 1000,
+          "Drench": 500,
+          "Foliar Application": 750,
+          "Soil Treatment": 250
+        }
+      },
+      {
+        "name": "Select the volume of the plant health solution (ml)",
+        "type": "select",
+        "options": {
+          "250 ml": 250,
+          "500 ml": 500,
+          "750 ml": 750,
+          "1000 ml": 1000,
+          "1500 ml": 1500
+        }
+      }
+    ]
+  },
+  {
+    "name": "no-rinse surface disinfection",
+    "question": [
+      {
+        "name": "Select the type of surface to disinfect",
+        "type": "select",
+        "options": {
+          "Hard Surfaces": 750,
+          "Soft Surfaces": 500,
+          "Food-Contact Surfaces": 1000
+        }
+      },
+      {
+        "name": "Select the method of application for disinfection",
+        "type": "select",
+        "options": {
+          "Spray": 1000,
+          "Wipe": 750,
+          "Fogging": 500
+        }
+      },
+      {
+        "name": "Select the volume of the disinfection solution (ml)",
+        "type": "select",
+        "options": {
+          "500 ml": 500,
+          "750 ml": 750,
+          "1000 ml": 1000,
+          "1500 ml": 1500,
+          "2000 ml": 2000
+        }
+      }
+    ]
+  },
+  {
+    "name": "personal hygiene (antiseptic or hand sanitizer)",
+    "question": [
+      {
+        "name": "Select the type of personal hygiene product",
+        "type": "select",
+        "options": {
+          "Acne, Dermatitis, Eczema, and Psoriasis": 50,
+          "Antiseptic Wound Irrigant and Sterilizer": 100,
+          "Dry Shampoo": 150,
+          "Hair: A Topical, Sanitizer, Degreaser, and Deodorizer": 200,
+          "Hand Sanitizer": 250,
+          "Skin or Body Sanitizer": 100,
+          "Mouthwash for Hygiene, Receding Gums, and Gingivitis": 50,
+          "Ringworm, Skin Fungus, and Nail Fungus": 150,
+          "Scalp Fungus, Dandruff, Balding, and Hair Recession": 200,
+          "Viral or Bacterial Infections, Herpes, Staph, HFMD": 250
+        }
+      },
+      {
+        "name": "Select the volume of the personal hygiene solution (ml)",
+        "type": "select",
+        "options": {
+          "50 ml": 50,
+          "100 ml": 100,
+          "150 ml": 150,
+          "200 ml": 200,
+          "250 ml": 250
+        }
+      }
+    ]
+  },
+  {
+    "name": "produce, eggs, meat, fish, and groceries",
+    "question": [
+      {
+        "name": "Select the type of item to preserve and disinfect",
+        "type": "select",
+        "options": {
+          "Produce": 500,
+          "Packaged Food Items and Grocery Items": 350,
+          "Meat or Fish": 500,
+          "Eggs, Cheese, and Dairy": 650
+        }
+      },
+      {
+        "name": "Select the method of application for disinfection",
+        "type": "select",
+        "options": {
+          "Spray": 500,
+          "Dip": 350,
+          "Soak": 200
+        }
+      },
+      {
+        "name": "Select the volume of the disinfection solution (ml)",
+        "type": "select",
+        "options": {
+          "200 ml": 200,
+          "350 ml": 350,
+          "500 ml": 500,
+          "650 ml": 650,
+          "800 ml": 800
+        }
+      }
+    ]
+  },
+  {
+    "name": "travel and recreation (on-the-go)",
+    "question": [
+      {
+        "name": "Select the type of travel and recreational activity",
+        "type": "select",
+        "options": {
+          "Adventure, Emergency, and Survival Preparation of Drinking Water": 100,
+          "Airbnb, Hotels, or Motels Disinfecting and Decontaminating": 150,
+          "Camp Gear, Tents, Sleeping Bags, and Camping Equipment Mildew Odor": 250,
+          "Camping Kitchen Utensils, Cups, Plates, Cookware, and Food Contact Surfaces": 350,
+          "Dry Shampoo": 500,
+          "Luggage, Hand Bags, Leather, Shoes, and Boots Sanitizing and Deodorizing": 100,
+          "Public Restrooms, Locker Rooms, Spas, Clubs, Showers, and Baths": 150,
+          "Mass Transit Systems, Trains, Planes, Subways, and City Busses": 250,
+          "Skin Sanitizer, Antiseptic, and Deodorant for Travel and Recreation": 350,
+          "Workout Equipment, Wrestling, or Gym Mats, and Athletic Equipment": 500,
+          "RVs, Boats, and Aircrafts Water Storage Preparation and Over-Wintering": 100,
+          "Blackwater Tanks and Gray Water Tanks": 150,
+          "Spray or Fog to Deodorize Areas, and Kill Germs": 250,
+          "General Surface Disinfection, Hard and Soft Surfaces": 350
+        }
+      },
+      {
+        "name": "Select the volume of the on-the-go disinfection solution (ml)",
+        "type": "select",
+        "options": {
+          "100 ml": 100,
+          "150 ml": 150,
+          "250 ml": 250,
+          "350 ml": 350,
+          "500 ml": 500
+        }
+      }
+    ]
+  },
+  {
+    "name": "unwanted odors (eliminate the source)",
+    "question": [
+      {
+        "name": "Select the type of unwanted odor source",
+        "type": "select",
+        "options": {
+          "Animal or Pet Remains, Biological Decontamination": 300,
+          "Bathrooms, Kill Mold, Mildew, Bacteria, Germs, and Odors": 450,
+          "Carpet Cleaning, Disinfection, and Deodorization": 600,
+          "Cars and Trucks: Disinfection and Deodorization": 750,
+          "Cat Litter Box Cleaning, Sanitizing, and Deodorization": 900,
+          "Clean Mold From Your Keurig, Coffee Pod, or Coffee Maker": 300,
+          "HVAC, for Cleaner Air in Your Home, Allergens, and Odors": 450,
+          "Chemical, Fragrances, and Hazards Environmental Toxins": 600,
+          "Hair or Fur Sanitizing, Preservation, or Deodorization": 750,
+          "Kitchen or Refrigerator Disinfectant and Deodorizer": 900,
+          "Laundry, Bedding, Clothing, Fabric, and Upholstery": 300,
+          "Mattresses or Furniture Disinfection and Deodorization": 450,
+          "Pet Odors and Allergens, Bird, Insect, or Reptile Enclosures": 600,
+          "Room Fogging and Vapor Disinfection Applications": 750,
+          "Shoes, Boots, and Handbags, Cleaning and Deodorizing": 900,
+          "Trash Can or Dumpster Disinfectant and Deodorizer": 300
+        }
+      },
+      {
+        "name": "Select the method of application for eliminating odors",
+        "type": "select",
+        "options": {
+          "Spray": 300,
+          "Fogging": 450,
+          "Wipe": 600,
+          "Soak": 750
+        }
+      },
+      {
+        "name": "Select the volume of the odor elimination solution (ml)",
+        "type": "select",
+        "options": {
+          "300 ml": 300,
+          "450 ml": 450,
+          "600 ml": 600,
+          "750 ml": 750,
+          "900 ml": 900
+        }
+      }
+    ]
+  },
+  {
+    "name": "water treatment and water storage",
+    "question": [
+      {
+        "name": "Select the type of water to treat and disinfect",
+        "type": "select",
+        "options": {
+          "Circulating Water Systems and Transfer Lines": 1000,
+          "Dip, Soak, or Rinse for All Surfaces, Food and Non-Food Items": 2000,
+          "Fish, Fish Tanks, and Other Aquatic Life": 3000,
+          "Make Contaminated Water Safe to Drink and Store": 4000,
+          "Pool Water, Spas, Jacuzzis, Hot Tubs, or Water Containment": 5000,
+          "Standing Stagnant Pond Water and Containment Disinfection": 1000,
+          "Wastewater with Urine, Vomit, Blood, Rancid Meat, or Biomatter": 2000,
+          "Wells and Drinking Water Reserves, Storage, and Treatment": 3000
+        }
+      },
+      {
+        "name": "Select the method of application for water treatment",
+        "type": "select",
+        "options": {
+          "Dip": 1000,
+          "Soak": 2000,
+          "Fogging": 3000,
+          "Spray": 4000
+        }
+      },
+      {
+        "name": "Select the volume of the water treatment solution (ml)",
+        "type": "select",
+        "options": {
+          "1000 ml": 1000,
+          "2000 ml": 2000,
+          "3000 ml": 3000,
+          "4000 ml": 4000,
+          "5000 ml": 5000
+        }
+      }
+    ]
+  },
+  {
+    "name": "commodity production, processing, and packaging",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Food Additive and Preservative - (For Freshness and Extended Shelf-Life)": 7,
+          "Food Canning and Beverage Bottling, Brewing, or Distillation": 4,
+          "Fruit and vegetables - (No-rinse Disinfecting Cleaner)": 14,
+          "Meat, and Fish Butchering - (Preparation, Preservation, and Cold-Storage)": 1,
+          "Processing and Packaging Foods - (Commodity Items Before Shipment)": 7,
+          "Tools and Equipment - (Picking, Packing, and Processing)": 4
+        }
+      }
+    ]
+  },
+  {
+    "name": "extermination of invasive insects",
+    "question": [
+      {
+        "name": "Select an insect group to target for extermination",
+        "type": "select",
+        "options": {
+          "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": 7,
+          "Aphids, Mealybugs, Whiteflies, Spidermites, or Thripes": 4,
+          "Bed Bugs, Cockroaches, Fleas, Lice, or Ticks": 14,
+          "Cabbage-Maggots, Caterpillars, or Cutworms": 1,
+          "Fruit Flies, Fungus Gnats, Shore Flies, or Noseeums": 7,
+          "House flies, Horse flies, Maggots, Moths, or Spiders": 4,
+          "Mosquitos, Drain Flies, and Water-born Insects": 14,
+          "Slugs, Snails, and Slimy Garden Invaders": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "farm and ranch (horticulture and agriculture)",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Aquaponics and Aquaculture (Fish and Other Aquatics)": 7,
+          "Beekeeping and Bees (A Treatment for Mold and Mites)": 4,
+          "Chemical Decontamination (Fertilizers and Insecticides)": 14,
+          "Crop Management - Commercial (Mold, Disease, and Insect Control)": 1,
+          "Eggs, Dairy, Meat, and Fish at Harvest (Before Processing or Shipping)": 7,
+          "Plants, Produce, and Mycology (Fruits, Fungi, and Vegetables)": 4,
+          "Livestock and Animal Rearing (Cattle, Chickens Swine, Sheep)": 14,
+          "Tools, Implements and Equipment (Horticulture and Agriculture)": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "food service, hospitality, and public places",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Food Service Equipment, Appliances and Food Contact Surfaces": 7,
+          "Glassware, Flatware, Kitchen Utensils, and Tools": 4,
+          "Restaurants and Cafeteria Operational Maintenance": 14,
+          "Refrigeration Units, Food Storage, Ice, Tanks and Lines": 1,
+          "Airbnb, Rental Homes, and Rental Properties": 7,
+          "Barber Shop, Hair Salons, and Nail Salons": 4,
+          "Bars and Nightclubs, Exotic Settings, Stage Hygiene": 14,
+          "Churches, Mosques, and Pews, Before and After Services": 1,
+          "College Campuses, Universities, Recreational, and Dormitories": 7,
+          "Commercial Laundry Facilities and Dry Cleaning": 4,
+          "Convention Centers, and Conference Halls": 14,
+          "Daycare Facilities, Preschools, and Nurseries": 1,
+          "Facility Cleaning, Maintenance, Disinfection, and Deodorization": 7,
+          "Hospitality, Hotels, Motels. and Resorts": 4,
+          "Movie Theaters, Hotels, Halls, and Showrooms": 14,
+          "Retail Sales and Consignment Shops (Clothing Stores and Thrift Stores)": 1,
+          "Learning Institutions, Schools and Classroom Environments": 7,
+          "Securities, Police, Clandestine and Military Use": 4,
+          "Stadiums, Bleachers, and Arenas, Deodorize, and Sanitize": 14,
+          "Turf, Cleaning Indoor or Outdoor Commercial, or Athletic Turf": 1,
+          "Veterinarian and Animal Shelter Use of Chlorine Dioxide": 7,
+          "Workout Equipment, Wrestling, or Gymnastic Mats": 4,
+          "Fogging and Vapor": 14,
+          "Soak, Rinse or Dip": 1,
+          "Wipe Mop or Spray": 7
+        }
+      }
+    ]
+  },
+  {
+    "name": "no-residue hard and soft surface disinfection",
+    "question": [
+      {
+        "name": "Select a surface area",
+        "type": "select",
+        "options": {
+          "Hard Surfaces - Metals and Alloys": 7,
+          "Hard Surfaces - Cement, Ceramics, Glass, Stone, or Tile": 4,
+          "Hard Surfaces - Synthetics, linoleum, Plastics, Polymers, or Vinyl": 14,
+          "Hard Surfaces - Wood and Porous organic Materials": 1,
+          "Non-Food Items, Toys, Packages, and Mail Items": 7,
+          "Soft Surfaces - Bedding, Laundry, and Delicates": 4,
+          "Soft Surfaces - Carpets and Rugs or Turf": 14,
+          "Soft Surfaces - Designer Shoes and Bags": 1,
+          "Soft Surfaces - Leather, Shoes, or Boots": 7,
+          "Soft Surfaces - organic Fiber and Natural Fabrics": 4,
+          "Soft Surfaces - Synthetic Fiber and Upholstery": 14
+        }
+      },
+      {
+        "name": "Select a method of application",
+        "type": "select",
+        "options": {
+          "Fogging and Vapor": 7,
+          "Soak, Rinse or Dip": 4,
+          "Wipe Mop or Spray": 14
+        }
+      }
+    ]
+  },
+  {
+    "name": "transport and transit (delivery and travel)",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Delivery Jobs": 7,
+          "Police Cars": 4,
+          "Rental Cars": 14,
+          "School Buses": 1,
+          "Taxi or Uber": 7,
+          "OTR Trucking": 4
+        }
+      }
+    ]
+  },
+  {
+    "name": "unwanted odors (eliminate the source)",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Animal Housing Environments - (Boarding, Kennels, and Enclosures)": 7,
+          "Biological Hazards - (Biomatter, Blood, Carcass, Urine, or Vomit  Cleanup)": 4,
+          "Bathrooms, Kill Bacteria, Mold, Mildew, and Eliminate Unwanted Odors": 14,
+          "Carpet Cleaning, Disinfection, and Deodorization": 1,
+          "Cars, Trucks, and Trailers: Disinfection and Deodorization": 7,
+          "Commercial Laundry, Bedding, Clothing, and Fabric": 4,
+          "Environmental and Chemical Toxins, Fragrances, and Allergens": 14,
+          "Garbage Trash Cans, Dumpster Disinfectant, and Deodorizer": 1,
+          "HVAC, for Decontamination, Deodorizing, Allergens, Environmental Toxins": 7,
+          "Kitchen Disinfectant and Deodorizer - (Food Contact Surfaces)": 4,
+          "Livestock Sanitizer - (For Odor, Disease Prevention, and General Hygiene)": 14,
+          "Refrigeration, and Food Storage Sanitizing and Deodorization": 1,
+          "Room Fogging and Vapor Deodorization - (e.g., Pet, Mold, or Smoke Odor)": 7,
+          "Upholstery Cleaning, Disinfection and Deodorization": 4
+        }
+      }
+    ]
+  },
+  {
+    "name": "water treatment and water storage",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Circulating Water Systems, Transfer Lines, and Food Processing Equipment": 7,
+          "Making and Storing Clean Potable Water for Animals and Livestock": 4,
+          "Pool Water: Maintaining Swimming Pools, Spas, Jacuzzis, or Hot Tubs": 14,
+          "Standing, Pond Water, or Stagnant Water Treatment, and Maintenance": 1,
+          "Wastewater That Has Had Biomatter Such as Urine, Vomit, Blood, or Rancid Meat": 7,
+          "Water Storage, Wells, and Containment, Shock Treatment, and Remedial Treatments": 4
+        }
+      }
+    ]
+  }
+]
