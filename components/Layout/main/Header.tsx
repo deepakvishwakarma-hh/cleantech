@@ -1,21 +1,16 @@
-import Aspect from "~/theme/aspects"
-import Logo from "~/components/atoms/Logo"
-import { FiUser, FiShoppingBag, FiMenu, FiX } from 'react-icons/fi';
-import {
-    Container, Flex, Stack, Center, Button, IconButton, useMediaQuery, useDisclosure, Drawer, DrawerBody, DrawerOverlay, DrawerContent, Box
-} from "@chakra-ui/react"
-
-
-import { useScroll, useTransform, useMotionValueEvent, motion, useAnimationControls, cubicBezier } from 'framer-motion'
-import { useState } from 'react'
-
-import Link from "next/link";
-
 import { useRef } from 'react'
-import { Linden_Hill } from "next/font/google";
-const Header = () => {
+import Link from "next/link";
+import ASPECT from "~/theme/aspects"
+import { FiUser, FiShoppingBag, FiMenu, FiX } from 'react-icons/fi';
+import { useScroll, useMotionValueEvent, motion, useAnimationControls } from 'framer-motion'
+import { Container, Flex, Stack, Center, Button, IconButton, useMediaQuery, useDisclosure, Drawer, DrawerBody, DrawerOverlay, DrawerContent, Box } from "@chakra-ui/react"
 
-    const responsiveHeight = [Aspect.mobile.layout.header.height, Aspect.mobile.layout.header.height, Aspect.desktop.layout.header.height]
+const Header = () => {
+    const responsiveHeight = [
+        ASPECT.mobile.layout.header.height,
+        ASPECT.mobile.layout.header.height,
+        ASPECT.desktop.layout.header.height]
+
     const [isDesktop] = useMediaQuery('(min-width: 800px)')
 
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -83,7 +78,7 @@ const Header = () => {
                     </Center>
                     <Stack direction={'row'} alignItems={'center'} justifyContent={"flex-end"} flex={1}>
                         <IconButton bg="transparent" aria-label='user' icon={<FiUser size={22} />} />
-                        <IconButton bg="transparent" aria-label='cart' icon={<FiShoppingBag size={22} />} />
+                        <Link passHref href={'/cart'}> <IconButton bg="transparent" aria-label='cart' icon={<FiShoppingBag size={22} />} /></Link>
 
                         <Link passHref href={'/steps/quiz'} >
                             <Button variant="takequizsmall" ml={2}>Take the quiz </Button>

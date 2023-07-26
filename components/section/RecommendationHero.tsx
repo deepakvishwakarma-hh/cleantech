@@ -8,10 +8,10 @@ function RecommendationHero() {
     return (
         <Box bg={'#F9F1EB'} >
 
-            <Container maxWidth={''} px={'10rem'}>
+            <Container maxWidth={''} px={['10px', '10px', '10px', '2rem', '10rem']}>
 
 
-                <SimpleGrid columns={2} gap={'10rem'} py={'10rem'}>
+                <SimpleGrid columns={[1, 1, 1, 2]} gap={'10rem'} py={'10rem'}>
 
                     <Box>
 

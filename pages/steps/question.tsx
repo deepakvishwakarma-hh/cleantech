@@ -16,11 +16,13 @@ const QuestionPage = () => {
     return (
         <>
             <Layout previous="ctgr-selection">
-                <Box bg="#FEF4EC" width={'100%'} height={'100vh'}>
+                <Box bg="#FEF4EC" width={'100%'} height={'100vh'} overflowY={'scroll'} >
 
-                    <Center height={'90%'} flexDir={'column'}>
+                    <Center
+                        // pt={'10rem'}
+                        flexDir={'column'}>
 
-                        <Box maxW={'300px'} p={2} bg={'white'} rounded={'md'} position={'fixed'} bottom={5} right={5}>
+                        {/* <Box maxW={'300px'} p={2} bg={'white'} rounded={'md'} position={'fixed'} bottom={5} right={5}>
                             <Text fontFamily={'heading'}>Development</Text>
                             <hr />
                             <Text mt={2}><b>Completed</b> : {JSON.stringify(isCompleted)}</Text>
@@ -28,7 +30,7 @@ const QuestionPage = () => {
                             <Text><b>Question Index</b> : {JSON.stringify(index + 1)}/{quesionLen}</Text>
                             <Text><b>Storage</b> : {JSON.stringify(storage)}</Text>
                             <Button color={'red.900'} size={'sm'} bg={'red.200'} textTransform={'capitalize'} onClick={() => { quiz.clean() }}>clear localstorage</Button>
-                        </Box>
+                        </Box> */}
 
                         {isCompleted && <QuizCompletion />}
 
