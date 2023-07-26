@@ -1,7 +1,6 @@
 
-import { Container, Text, Button, Box, SimpleGrid } from "@chakra-ui/react"
-
-
+import { Container, Text, Button, Box, SimpleGrid, IconButton } from "@chakra-ui/react"
+import Link from "next/link"
 import { HiOutlineArrowLongRight } from 'react-icons/hi2'
 
 function RecommendationHero() {
@@ -19,10 +18,9 @@ function RecommendationHero() {
                         <Text py={5} fontSize={'6xl'} fontFamily={'heading'} >Made for Deepak</Text>
                         <Text fontSize={'xl'} fontFamily={'heading'}>Your recommendation is based on your goals to focus on Eyes. We referenced hundreds of clinical studies to ensure you’re getting just what your body needs.</Text>
 
-
-
-
-                        <Button display={'flex'} mt={5} gap={2} fontWeight={400} fontFamily={'body'} variant={'unstyled'}>Lets Go <HiOutlineArrowLongRight size={30} /> </Button>
+                        <Link passHref href={'/cart'}>
+                            <Button display={'flex'} mt={5} gap={2} fontWeight={400} fontFamily={'body'} variant={'unstyled'}>Go to cart<HiOutlineArrowLongRight size={30} /> </Button>
+                        </Link>
 
                     </Box>
 

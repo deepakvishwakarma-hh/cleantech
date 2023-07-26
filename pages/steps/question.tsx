@@ -19,7 +19,7 @@ const QuestionPage = () => {
                 <Box bg="#FEF4EC" width={'100%'} height={'100vh'} overflowY={'scroll'} >
 
                     <Center
-                        // pt={'10rem'}
+
                         flexDir={'column'}>
 
                         {/* <Box maxW={'300px'} p={2} bg={'white'} rounded={'md'} position={'fixed'} bottom={5} right={5}>
@@ -58,15 +58,26 @@ const QuestionPage = () => {
 export default QuestionPage
 
 
-
-
-
-
+import { useRouter } from "next/router"
 // this is just for testing purpose
 const QuizCompletion = () => {
+    const router = useRouter()
+
     return (
-        <Box>
+        <Box pt={'10rem'}>
             <Text fontSize={'4xl'} fontFamily={'heading'} textAlign={'center'} mb={5} >Congratulation!, Quiz Completed.</Text>
+            <Button
+                variant={'unstyled'}
+                border={'2px black solid'}
+                display={'flex'}
+                py={7}
+                px={10}
+                fontWeight={400}
+                borderRadius={'full'}
+                textTransform={'capitalize'}
+                _hover={{ bg: 'black', color: "white" }}
+                mx={'auto'}
+                onClick={() => { router.push('/recommendation') }}>Next →</Button>
         </Box>
     )
 }

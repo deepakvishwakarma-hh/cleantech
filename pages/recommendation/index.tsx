@@ -1,15 +1,42 @@
 import Hero from "~/components/section/RecommendationHero"
-import Layout from "~/components/Layout/secondary"
-import { Box, Grid, GridItem, Text, Flex } from "@chakra-ui/react"
+import { Box, Grid, GridItem, Text, Flex, Container, IconButton, Button } from "@chakra-ui/react"
 
+import Aspect from "~/theme/aspects"
+import { FiShoppingBag } from "react-icons/fi"
+import Link from "next/link"
+import Logo from "~/components/atoms/Logo"
+import Footer from "~/components/Layout/secondary/footer"
 
 export default function Recommendation() {
+    const responsiveHeight = [Aspect.mobile.layout.header.height, Aspect.mobile.layout.header.height, Aspect.desktop.layout.header.height]
     return (
-        <Layout>
+        <>
+            <Center
+                top={0}
+                left={0}
+                width={'100%'}
+                position={'absolute'}
+                height={responsiveHeight}>
+                <Link href="/">
+                    <Logo />
+                </Link>
+            </Center>
 
+            <Container
 
+                top={0}
+                as={Flex}
+                maxWidth={''}
+                left={0}
+                zIndex={999}
+                width={'100%'}
+                position={'absolute'}
+                alignItems={'center'}
+                justifyContent={'flex-end'}
+                pointerEvents={'none'}
+                height={responsiveHeight}>
 
-
+            </Container>
             <Hero />
 
             <Grid background={'#FDF9F7'} templateColumns={'1fr 3fr'} p={5} gap={5} px={10}>
@@ -25,14 +52,11 @@ export default function Recommendation() {
                     <Product />
                     <Product />
 
-
                 </GridItem>
 
-
-
             </Grid>
-
-        </Layout>
+            <Footer />
+        </>
     )
 }
 

@@ -12,7 +12,7 @@ interface Props {
 
 const Question: React.FC<Props> = ({ question, options, category, setIntroduction, index }) => {
     return (
-        <Box maxW={'3xl'}>
+        <Box maxW={'3xl'} pt={'10rem'}>
             <Text letterSpacing={2} mb={5} textTransform={'uppercase'} textAlign={'center'}>{category}</Text>
             <Text fontSize={'4xl'} fontFamily={'heading'} textAlign={'center'} mb={5} >{question}</Text>
             <Flex gap={5} flexWrap={'wrap'} py={2} alignItems={'center'} justifyContent={'center'}>
