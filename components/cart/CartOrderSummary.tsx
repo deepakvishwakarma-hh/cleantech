@@ -8,6 +8,7 @@ import {
     useColorModeValue as mode,
 } from '@chakra-ui/react'
 import { formatPrice } from './PriceTag'
+import { useRouter } from 'next/router'
 
 type OrderSummaryItemProps = {
     label: string
@@ -28,6 +29,7 @@ const OrderSummaryItem = (props: OrderSummaryItemProps) => {
 }
 
 export const CartOrderSummary = () => {
+    const { push } = useRouter()
     return (
         <Stack spacing="8" rounded="lg" padding="8" width="full">
             <Text fontSize={'2xl'} fontWeight={'medium'} fontFamily={'heading'} mb={10} >Order Details</Text>
@@ -53,9 +55,9 @@ export const CartOrderSummary = () => {
                     </Text>
                 </Flex>
             </Stack>
-            <Button background={'black'} textColor={'white'} size="lg">
+            <Button onClick={() => { push('checkout') }} background={'black'} textColor={'white'} size="lg">
                 Checkout
             </Button>
-        </Stack>
+        </Stack >
     )
 }
