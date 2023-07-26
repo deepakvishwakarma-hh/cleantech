@@ -11,7 +11,7 @@ const QuestionPage = () => {
     const quiz = useQuiz()
     const [introduction, setIntroduction] = useState(true)
     const [storage] = useLocalStorage({ key: 'quiz', defaultValue: {} })
-    const { isCompleted, index, category_name, data: { question, options } } = getQuiz(quiz)
+    const { quesionLen, isCompleted, index, category_name, data: { question, options } } = getQuiz(quiz)
 
     return (
         <>
@@ -25,7 +25,7 @@ const QuestionPage = () => {
                             <hr />
                             <Text mt={2}><b>Completed</b> : {JSON.stringify(isCompleted)}</Text>
                             <Text><b>Options & Points</b> : {JSON.stringify(options)}</Text>
-                            <Text><b>Question Index</b> : {JSON.stringify(index + 1)}/3</Text>
+                            <Text><b>Question Index</b> : {JSON.stringify(index + 1)}/{quesionLen}</Text>
                             <Text><b>Storage</b> : {JSON.stringify(storage)}</Text>
                             <Button color={'red.900'} size={'sm'} bg={'red.200'} textTransform={'capitalize'} onClick={() => { quiz.clean() }}>clear localstorage</Button>
                         </Box>

@@ -13,11 +13,11 @@ export const getIndex = (quiz: any, current_category: string) => {
 
 // find & select subcategory
 export const selectCurrentCategory = (quiz: any) => {
-    return quiz.storage.select.filter((name: string) => quiz.storage[name]?.length !== 3)[0]
+    return quiz.storage.select.filter((name: string) => quiz.storage[name]?.length !== getCategoryDataByName(name)?.question?.length ?? 3)[0]
 }
 
 export const isCompleted = (quiz: any) => {
-    return quiz.storage.select.filter((name: string) => quiz.storage[name]?.length !== 3).length == 0
+    return quiz.storage.select.filter((name: string) => quiz.storage[name]?.length !== getCategoryDataByName(name)?.question?.length ?? 3).length == 0
 }
 
 
@@ -25,17 +25,20 @@ const getQuiz = (quiz: any) => {
     // category selection
     const current_category = selectCurrentCategory(quiz)
     // index selection
-    const question_index = getIndex(quiz, current_category)
+    const index = getIndex(quiz, current_category)
     // find category relatad data
-    const currentCategoryData = getCategoryDataByName(current_category)
+    const currentCategoryData: any = getCategoryDataByName(current_category)
+
+    const quesionLen = currentCategoryData?.question?.length ?? 3
 
     return {
+        quesionLen,
         isCompleted: isCompleted(quiz),
-        index: question_index,
+        index,
         category_name: current_category,
         data: {
-            question: currentCategoryData?.question[question_index].name,
-            options: currentCategoryData?.question[question_index].options
+            question: currentCategoryData?.question?.at(index)?.name,
+            options: currentCategoryData?.question?.at(index)?.options
         }
     }
 }
