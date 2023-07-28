@@ -1,37 +1,33 @@
-import '../style/global.css'
-import { theme } from "../theme"
-import "slick-carousel/slick/slick.css";
-import type { AppProps } from 'next/app'
-import "slick-carousel/slick/slick-theme.css";
-import { ChakraProvider } from '@chakra-ui/react'
+import "../style/global.css";
+import { theme } from "../theme";
+import type { AppProps } from "next/app";
+import { ChakraProvider } from "@chakra-ui/react";
+import PageTransitionEffect from "~/components/transition/effect";
 
 // Nextjs/Fonts
-const lora = Lora({ subsets: ['latin'] });
-import { Lora, Signika } from 'next/font/google';
-const signika = Signika({ subsets: ['latin'] });
-
-import Effects from '~/components/transition/effect';
+const lora = Lora({ subsets: ["latin"] });
+import { Lora, Signika } from "next/font/google";
+const signika = Signika({ subsets: ["latin"] });
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const exceptRoutes = ["/", "/recommendation", "/cart"];
   return (
     <>
-
       <style jsx global>
         {`
-        :root {
-          --font-lora: ${lora.style.fontFamily};
-          --font-signika: ${signika.style.fontFamily};
-        }
-      `}
+          :root {
+            --font-lora: ${lora.style.fontFamily};
+            --font-signika: ${signika.style.fontFamily};
+          }
+        `}
       </style>
       <ChakraProvider resetCSS theme={theme}>
-        <Effects>
+        <PageTransitionEffect exceptRoutes={exceptRoutes}>
           <Component {...pageProps} />
-        </Effects>
-
+        </PageTransitionEffect>
       </ChakraProvider>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
