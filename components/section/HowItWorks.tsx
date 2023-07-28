@@ -1,7 +1,7 @@
 import { Container, Center, Text, Box, Button, Stack, Flex, Divider } from '@chakra-ui/react'
 const HowItWorks = () => {
     return (
-        <Box py={['2rem', '2rem', '2rem', '6rem']}>
+        <Box py={['2rem', '2rem', '2rem', '6rem']} bg={'white'}>
 
             <Container maxWidth={'container.xl'} >
 
