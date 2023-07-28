@@ -1,17 +1,16 @@
-import type { AppProps } from 'next/app'
-
-
-// Chakra Provider & Customized Theme
+import '../style/global.css'
 import { theme } from "../theme"
 import "slick-carousel/slick/slick.css";
+import type { AppProps } from 'next/app'
 import "slick-carousel/slick/slick-theme.css";
 import { ChakraProvider } from '@chakra-ui/react'
 
 // Nextjs/Fonts
-import { Lora, Signika } from 'next/font/google';
 const lora = Lora({ subsets: ['latin'] });
+import { Lora, Signika } from 'next/font/google';
 const signika = Signika({ subsets: ['latin'] });
 
+import Effects from '~/components/transition/effect';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -26,7 +25,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       `}
       </style>
       <ChakraProvider resetCSS theme={theme}>
-        <Component {...pageProps} />
+        <Effects>
+          <Component {...pageProps} />
+        </Effects>
+
       </ChakraProvider>
     </>
   )
