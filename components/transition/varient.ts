@@ -1,45 +1,26 @@
 export const variants = {
-    in: {
-      scale: 0.8,
-      y: 100,
-      x: "100%",
-      transition: {
-        duration: 0.4,
-      },
-    },
-  
-    center: {
-      x: 0,
-      scale: 0.8,
-      transformOrigin: "top",
-      transition: {
-        duration: 0.4,
-      },
-    },
-  
-    scaleUp: {
-      scale: 1,
-      y: 0,
-      transition: {
-        duration: 0.4,
-        delay: 0.5,
-      },
-    },
-  
-    scaleDown: {
-      scale: 0.8,
-      y: 100,
-      transition: {
-        duration: 0.4,
-      },
-    },
-  
-    out: {
-      opacity: 0,
-      x: "-100%",
-      transition: {
-        duration: 0.4,
-        delay: 0.5,
-      },
-    },
-  };
+  fadeIn: {
+    x: 100,
+    opacity: 0,
+    transition: {
+      duration: 1,
+      ease: "easeInOut"
+    }
+  },
+  inactive: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1,
+      ease: "easeInOut"
+    }
+  },
+  fadeOut: {
+    opacity: 0,
+    x: -100,
+    transition: {
+      duration: 1,
+      ease: "easeInOut"
+    }
+  }
+};

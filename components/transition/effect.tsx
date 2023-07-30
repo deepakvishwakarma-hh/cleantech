@@ -21,9 +21,9 @@ const TransitionEffect3 = ({ children, exceptRoutes }: Props) => {
         <motion.div
           key={asPath}
           variants={(!shouldReduceMotion ? variants : null) as any}
-          initial="in"
-          animate={["center", "scaleUp"]}
-          exit={["scaleDown", "out"]}
+          initial="fadeIn"
+          animate="inactive"
+          exit="fadeOut"
         >
           {children}
         </motion.div>
