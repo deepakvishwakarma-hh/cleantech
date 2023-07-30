@@ -1,11 +1,12 @@
 [
   {
     "name": "extermination of invasive insects (in the garden)",
+    "description" : "Bid farewell to pesky invasive insects as you protect your home and garden with a practical and environmentally friendly solution that keeps them at bay.",
     "question": [
       {
         "name": "Select an insect group to target for extermination",
         "type": "select",
-        "options": {
+        "options": {  
           "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": 1000,
           "Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips": 250,
           "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": 500,
@@ -78,6 +79,7 @@
   },
   {
     "name": "no-rinse surface disinfection",
+    "description" : "Experience the power of a comprehensive, eco-friendly solution that leaves your hard and soft surfaces clean and free from harmful bacteria, viruses, mold, and odor. Also, maintain impeccable hygiene on food contact surfaces with no rinse required.",
     "question": [
       {
         "name": "Select the type of surface to disinfect",
@@ -112,6 +114,7 @@
   },
   {
     "name": "personal hygiene (antiseptic or hand sanitizer)",
+    "description": "Prioritize your health and hygiene with a reliable, convenient, no-rinse solution that eliminates germs and odors and reduces the risk of infections.",
     "question": [
       {
         "name": "Select the type of personal hygiene product",
@@ -144,6 +147,7 @@
   },
   {
     "name": "produce, eggs, meat, fish, and groceries",
+    "description" : "Preserve freshness and extend the shelf life of your produce, meat, and groceries by employing an FDA-recognized food-safe additive and preservative that minimizes microbial contamination.",
     "question": [
       {
         "name": "Select the type of item to preserve and disinfect",
@@ -179,6 +183,7 @@
   },
   {
     "name": "travel and recreation (on-the-go)",
+    "description" : "Stay prepared during your adventures, travel, and recreational activities with a portable and efficient disinfection solution that ensures cleanliness and peace of mind.",
     "question": [
       {
         "name": "Select the type of travel and recreational activity",
@@ -215,6 +220,7 @@
   },
   {
     "name": "unwanted odors (eliminate the source)",
+    "description" : "Eliminate unpleasant odors at their source, leaving behind a fresh and pleasant environment while improving environmental conditions, well-being, and productivity.",
     "question": [
       {
         "name": "Select the type of unwanted odor source",
@@ -263,6 +269,7 @@
   },
   {
     "name": "water treatment and water storage",
+    "description" : "Ensure the purity and safety of water sources, protecting against waterborne contaminants and promoting responsible water management.",
     "question": [
       {
         "name": "Select the type of water to treat and disinfect",
@@ -302,7 +309,8 @@
     ]
   },
   {
-    "name": "commodity production, processing, and packaging",
+    "name": "food commodity production, processing, and packaging",
+    "description" : "Embrace our essential solution that ensures the safety and quality of food products by eliminating harmful pathogens throughout the production and processing chain, building trust and confidence in the products offered.",
     "question": [
       {
         "name": "Select an option",
@@ -320,6 +328,7 @@
   },
   {
     "name": "extermination of invasive insects",
+    "description" : "Safeguard your crops and agricultural operations by harnessing the strength of a reliable and more eco-friendly solution that exterminates invasive insects.",
     "question": [
       {
         "name": "Select an insect group to target for extermination",
@@ -339,6 +348,7 @@
   },
   {
     "name": "farm and ranch (horticulture and agriculture)",
+    "description" : "Enhance crop or livestock health and yield while reducing the need for harmful chemicals with an effective and sustainable solution.",
     "question": [
       {
         "name": "Select an option",
@@ -358,6 +368,7 @@
   },
   {
     "name": "food service, hospitality, and public places",
+    "description": "Create a clean and inviting atmosphere, ensuring guests' and customers' safety, satisfaction, and prompt return to your business.",
     "question": [
       {
         "name": "Select an option",
@@ -394,6 +405,7 @@
   },
   {
     "name": "no-residue hard and soft surface disinfection",
+    "description" : "Experience the versatility of a comprehensive, potent yet eco-friendly solution that leaves your surfaces clean and free from harmful microorganisms, protecting you from potential contamination and infection.",
     "question": [
       {
         "name": "Select a surface area",
@@ -425,6 +437,7 @@
   },
   {
     "name": "transport and transit (delivery and travel)",
+    "description" : "Maintain a safe and hygienic environment for passengers and cargo, instilling confidence in the reliability and cleanliness of transportation and delivery systems.",
     "question": [
       {
         "name": "Select an option",
@@ -442,6 +455,7 @@
   },
   {
     "name": "unwanted odors (eliminate the source)",
+    "description" : "Eliminate unpleasant odors at their source, leaving behind a fresh and pleasant environment while improving environmental conditions, well-being, and productivity.",
     "question": [
       {
         "name": "Select an option",
@@ -467,6 +481,7 @@
   },
   {
     "name": "water treatment and water storage",
+    "description" : "Ensure the purity and safety of water sources, protecting against waterborne contaminants and promoting responsible water management.",
     "question": [
       {
         "name": "Select an option",
@@ -484,6 +499,7 @@
   },
   {
     "name": "no-residue hard or soft surface disinfection",
+    "description" : "Employ versatile and adaptable solutions to address various contagion modes and effectively treat different surfaces and materials economically and effectively.",
     "question": [
       {
         "name": "Surface Area",
@@ -536,211 +552,6 @@
               "Protozoa, Microsporidia, and Parasites": 4,
               "Viruses: Enveloped, Lipid Viruses, Non-Enveloped, Non-Lipid Viruses": 14,
               "Yeast, Saccharomycetaceae, and Candida": 7
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "extermination of invasive insects",
-    "subcategories": [
-      {
-        "name": "Insects to Target",
-        "questions": [
-          {
-            "name": "Select an insect group to target for extermination",
-            "type": "select",
-            "options": {
-              "Ants, Beetles, Grasshoppers, Spiders, Termites, or Wasps": 1000,
-              "Aphids, Mealybugs, Whiteflies, and Spidermites": 250,
-              "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": 500,
-              "Cabbage-Maggots, Caterpillars, and Cutworms": 750,
-              "Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums": 1000,
-              "House flies, Horse flies, Maggots, and Moths": 500,
-              "Mosquitos, Drain Flies, and Water-born Insects": 750,
-              "Slugs, Snails, and Slimy Garden Gastropod Invaders": 250
-            }
-          }
-        ]
-      },
-      {
-        "name": "Method of Application",
-        "questions": [
-          {
-            "name": "Select the application method for extermination",
-            "type": "select",
-            "options": {
-              "Spray": 1000,
-              "Fogging": 750,
-              "Soak": 500,
-              "Dip": 250,
-              "Wipe": 1000
-            }
-          }
-        ]
-      },
-      {
-        "name": "Volume of the Extermination Solution (ml)",
-        "questions": [
-          {
-            "name": "Select the volume of the extermination solution",
-            "type": "select",
-            "options": {
-              "100 ml": 100,
-              "250 ml": 250,
-              "500 ml": 500,
-              "750 ml": 750,
-              "1000 ml": 1000
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "hazmat (remediation and decontamination)",
-    "subcategories": [
-      {
-        "name": "Contamination Type",
-        "questions": [
-          {
-            "name": "Select a contamination type",
-            "type": "select",
-            "options": {
-              "Bio-Trauma Remediation (Fecal, Blood, Urine, Vomit, Chemical)": 7,
-              "Biological Decontamination (Germs, Mold, Bacteria, and Odor)": 14,
-              "Chemical Decontamination and Environmental Toxins": 7,
-              "Cleaning Bloodborne Pathogens (Crime Scenes and Morgue Use)": 4,
-              "Fogging and Thermal Fogging": 14,
-              "Hoarding Cleanups and Cleanouts": 7
-            }
-          }
-        ]
-      },
-      {
-        "name": "Method of Application",
-        "questions": [
-          {
-            "name": "Select a method of application",
-            "type": "select",
-            "options": {
-              "Extermination of Invasive Insects": 4,
-              "Tools and Equipment": 14
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "healthcare, hospitals, and medical facilities",
-    "subcategories": [
-      {
-        "name": "Facility Type",
-        "questions": [
-          {
-            "name": "Select a facility type",
-            "type": "select",
-            "options": {
-              "Hospitals, Medical Facilities, or Medical offices": 7,
-              "Retirement Centers, and Nursing Homes": 14,
-              "Scientific and Laboratory Use": 7,
-              "Veterinarian Applications and Animal Care": 4
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "hvac (heating, ventilation, and air conditioning)",
-    "subcategories": [
-      {
-        "name": "HVAC Application",
-        "questions": [
-          {
-            "name": "Select an HVAC application",
-            "type": "select",
-            "options": {
-              "Dust and Allergens": 7,
-              "Environmental Toxins": 14,
-              "Fogging and Thermal Fogging": 7,
-              "Odor Elimination": 4,
-              "Extermination of Invasive Insects": 14,
-              "Tools and Equipment": 7
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "manufacturing and processing operations",
-    "subcategories": [
-      {
-        "name": "Application Type",
-        "questions": [
-          {
-            "name": "Select an application type",
-            "type": "select",
-            "options": {
-              "Brewing and Distillation operations": 7,
-              "Canning and Bottling Facilities": 14,
-              "Food and Commodity Processing": 7,
-              "Mining and Fracking Operations": 4,
-              "Oil Well Injection Fields": 14,
-              "Paper and Textile Production": 7,
-              "Sewer and Wastewater Treatment": 14,
-              "Textiles (Fiber and Fabric Manufacturing)": 7,
-              "Water Cooling Systems": 4
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "municipal drinking water treatment and storage",
-    "subcategories": [
-      {
-        "name": "Water Treatment Type",
-        "questions": [
-          {
-            "name": "Select a water treatment type",
-            "type": "select",
-            "options": {
-              "Circulating Water Systems, Transfer Lines, and Cooling Systems": 7,
-              "Municipal Water Surplus, Institutions, Compounds, and Barracks": 14,
-              "Standing, Pond Water, or Stagnant Water Disinfection, and Maintenance": 7,
-              "Wells and Well Water, Water Reserves, and Drinking Water Storage": 4,
-              "Wastewater Containing Biomatter Such as Urine, Vomit, Blood, or Rancid Meat": 14,
-              "Water Storage: Containers, Pools, and Water Retention System Maintenance": 7
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "other industrial processes (miscellaneous)",
-    "subcategories": [
-      {
-        "name": "Process Type",
-        "questions": [
-          {
-            "name": "Select a process type",
-            "type": "select",
-            "options": {
-              "Crop Disease and Infestation Mitigation": 7,
-              "Data Mining and Server Towers": 14,
-              "Fogging and Vapor Applications": 7,
-              "Meat Production Operations - (Agriculture)": 4,
-              "Produce Production Operations - (Horticulture)": 14,
-              "Sewer and Wastewater Treatment": 7,
-              "Scientific and Laboratory Use": 4,
-              "Tattoo": 14,
-              "Other": 7
             }
           }
         ]

@@ -36,6 +36,7 @@ const getQuiz = (quiz: any) => {
         isCompleted: isCompleted(quiz),
         index,
         category_name: current_category,
+        description : currentCategoryData?.description ?? 'description goes here',
         data: {
             question: currentCategoryData?.question?.at(index)?.name,
             options: currentCategoryData?.question?.at(index)?.options
