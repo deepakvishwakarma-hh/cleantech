@@ -28,7 +28,6 @@ const Question: React.FC<Props> = ({
       maxW={"3xl"}
       pt={["5rem", "5rem", "5rem", "10rem"]}
       px={10}
-      border={"2px red dashed"}
     >
       <Text
         letterSpacing={2}

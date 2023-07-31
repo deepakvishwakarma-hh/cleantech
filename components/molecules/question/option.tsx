@@ -1,6 +1,8 @@
 import useQuiz from "~/hooks/useQuiz";
+import { Image } from "@chakra-ui/next-js";
 import { Button, Text } from "@chakra-ui/react";
 import { Dispatch, SetStateAction } from "react";
+
 interface Props {
   index: number;
   option: string;
@@ -26,7 +28,7 @@ const Option: React.FC<Props> = ({
       whiteSpace="normal"
       blockSize="auto"
       w={["full", "full", "full", "auto"]}
-      py={3}
+      py={0.5}
       px={10}
       fontWeight={400}
       borderRadius={"full"}
@@ -57,6 +59,7 @@ const Option: React.FC<Props> = ({
       }}
       key={option}
     >
+      <Image src="/Icons/ck.svg" alt="icon" width={50} height={50} />
       {option}
     </Button>
   );
