@@ -1,4 +1,3 @@
-import { useState } from "react";
 import useQuiz from "~/hooks/useQuiz";
 import getQuiz from "~/lib/quiz-functions";
 import Layout from "~/components/Layout/question";
@@ -7,8 +6,11 @@ import { useLocalStorage } from "@mantine/hooks";
 import Question from "~/components/molecules/question";
 import { Button, Text, Box, Center } from "@chakra-ui/react";
 import Introduction from "~/components/molecules/category-introduction";
-
+import { useRouter } from "next/router";
+import { useRef, useState, useEffect } from "react";
 import { localstorage } from "~/lib/localstorage";
+
+import QuizCompletion from "~/components/atoms/QuizCompletion";
 
 const QuestionPage = () => {
   const quiz = useQuiz();
@@ -73,34 +75,3 @@ const QuestionPage = () => {
   );
 };
 export default QuestionPage;
-
-import { useRouter } from "next/router";
-// this is just for testing purpose
-const QuizCompletion = () => {
-  const router = useRouter();
-
-  return (
-    <Box pt={"10rem"}>
-      <Text fontSize={"4xl"} fontFamily={"heading"} textAlign={"center"} mb={5}>
-        Congratulation!, Quiz Completed.
-      </Text>
-      <Button
-        variant={"unstyled"}
-        border={"2px black solid"}
-        display={"flex"}
-        py={7}
-        px={10}
-        fontWeight={400}
-        borderRadius={"full"}
-        textTransform={"capitalize"}
-        _hover={{ bg: "black", color: "white" }}
-        mx={"auto"}
-        onClick={() => {
-          router.push("/recommendation");
-        }}
-      >
-        Next →
-      </Button>
-    </Box>
-  );
-};
