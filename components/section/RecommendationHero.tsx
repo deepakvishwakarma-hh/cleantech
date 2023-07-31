@@ -1,19 +1,16 @@
-import {
-  Container,
-  Text,
-  Button,
-  Box,
-  SimpleGrid,
-  IconButton,
-} from "@chakra-ui/react";
+import { Container, Text, Button, Box, SimpleGrid } from "@chakra-ui/react";
 import Link from "next/link";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 function RecommendationHero() {
   return (
     <Box bg={"#F9F1EB"}>
-      <Container maxWidth={""} px={["10px", "10px", "10px", "2rem", "10rem"]}>
-        <SimpleGrid columns={[1, 1, 1, 2]} gap={"10rem"} py={"10rem"}>
+      <Container maxWidth={""} px={["1rem", "1rem", "1rem", "2rem", "5rem"]}>
+        <SimpleGrid
+          columns={[1, 1, 1, 2]}
+          gap={["1rem", "1rem", "1rem", "10rem"]}
+          py={"10rem"}
+        >
           <Box>
             <Text
               letterSpacing={5}
