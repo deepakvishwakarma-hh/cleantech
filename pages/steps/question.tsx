@@ -19,7 +19,6 @@ const QuestionPage = () => {
     index,
     category_name,
     description,
-    back,
     data: { question, options },
   } = getQuiz(quiz);
 
