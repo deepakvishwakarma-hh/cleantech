@@ -1,29 +1,37 @@
 import { useState } from "react";
 import useQuiz from "~/hooks/useQuiz";
 import getQuiz from "~/lib/quiz-functions";
-import Layout from "~/components/Layout/step";
+import Layout from "~/components/Layout/question";
+import { AnimatePresence } from "framer-motion";
 import { useLocalStorage } from "@mantine/hooks";
 import Question from "~/components/molecules/question";
 import { Button, Text, Box, Center } from "@chakra-ui/react";
 import Introduction from "~/components/molecules/category-introduction";
-import { AnimatePresence } from "framer-motion";
+
+import { localstorage } from "~/lib/localstorage";
 
 const QuestionPage = () => {
   const quiz = useQuiz();
   const [introduction, setIntroduction] = useState(true);
-  const [storage] = useLocalStorage({ key: "quiz", defaultValue: {} });
   const {
     quesionLen,
     isCompleted,
     index,
     category_name,
     description,
+    back,
     data: { question, options },
   } = getQuiz(quiz);
 
+  const [storage2, setStorage2]: any = useLocalStorage(localstorage);
+
+  const onBack = () => {
+    alert("this is not working");
+  };
+
   return (
     <>
-      <Layout previous="ctgr-selection">
+      <Layout previous={onBack}>
         <Box bg="#FEF4EC" width={"100%"} height={"100vh"} overflowY={"scroll"}>
           <Center flexDir={"column"}>
             {/* <Box maxW={'300px'} p={2} bg={'white'} rounded={'md'} position={'fixed'} bottom={5} right={5}>

@@ -26,7 +26,9 @@ const Question: React.FC<Props> = ({
       exit={{ opacity: 0, y: 100 }}
       transition={{ duration: 0.5 }}
       maxW={"3xl"}
-      pt={"10rem"}
+      pt={["5rem", "5rem", "5rem", "10rem"]}
+      px={10}
+      border={"2px red dashed"}
     >
       <Text
         letterSpacing={2}

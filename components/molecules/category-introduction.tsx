@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Button, Text, Box, Grid, GridItem, Flex } from "@chakra-ui/react";
 
 interface Props {
@@ -14,7 +13,7 @@ const CategoryIntroduction: React.FC<Props> = ({
 }) => {
   return (
     <Box w={"100%"} h={"100vh"}>
-      <Grid templateColumns={"1fr 1fr"} h={"full"}>
+      <Grid templateColumns={["1fr", "1fr", "1fr", "1fr 1fr"]} h={"full"}>
         <GridItem
           bgImage={
             "https://images.unsplash.com/photo-1635846650676-55b9ba247172?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80"
