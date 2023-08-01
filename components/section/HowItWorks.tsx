@@ -22,7 +22,7 @@ const HowItWorks = () => {
 
         <Flex
           gap={[10, 10, 10]}
-          overflowX={["scroll", "scroll", "hidden"]}
+          overflowX={["scroll", "scroll", "scroll", "scroll", "hidden"]}
           justifyContent={"space-between"}
           py={[5, 5, 10, 20]}
         >
@@ -60,7 +60,7 @@ const HowItWorks = () => {
             variant="takequizsmall"
             mt={10}
           >
-            Take the quiz{" "}
+            Take the quiz
           </Button>
         </Center>
       </Container>
