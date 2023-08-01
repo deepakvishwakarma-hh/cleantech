@@ -1,7 +1,7 @@
-import useQuiz from "~/hooks/useQuiz";
-import { Button, Text, Box } from "@chakra-ui/react";
-import { Dispatch, SetStateAction } from "react";
 import Image from "next/image";
+import useQuiz from "~/hooks/useQuiz";
+import { Button, Box } from "@chakra-ui/react";
+import { Dispatch, SetStateAction } from "react";
 
 interface Props {
   index: number;

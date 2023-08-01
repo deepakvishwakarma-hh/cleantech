@@ -1,60 +1,109 @@
-import { Container, Center, Text, Box, Button, Stack, Flex, Divider } from '@chakra-ui/react'
+import {
+  Container,
+  Center,
+  Text,
+  Box,
+  Button,
+  Flex,
+  Divider,
+} from "@chakra-ui/react";
 const HowItWorks = () => {
-    return (
-        <Box py={['2rem', '2rem', '2rem', '6rem']} bg={'white'}>
+  return (
+    <Box py={["2rem", "2rem", "2rem", "6rem"]} bg={"white"}>
+      <Container maxWidth={"container.xl"}>
+        <Text
+          fontWeight={500}
+          fontFamily={"heading"}
+          fontSize={["3xl", "4xl", "4xl", "5xl"]}
+          textAlign={"center"}
+        >
+          Benefits of Products
+        </Text>
 
-            <Container maxWidth={'container.xl'} >
+        <Flex
+          gap={[10, 10, 10]}
+          overflowX={["scroll", "scroll", "hidden"]}
+          justifyContent={"space-between"}
+          py={[5, 5, 10, 20]}
+        >
+          <Element
+            title="Effectiveness"
+            image="/images/happy.png"
+            discription="Swiftly eradicates microorganisms, a highly effective cleaner."
+          />
+          <Element
+            title="Long Lasting Protection"
+            image="/images/long-lasting.png"
+            discription="Eliminates and maintains effectively with lasting results."
+          />
+          <Element
+            title="Cost Efficient"
+            image="/images/cost-effective.png"
+            discription="Efficiently eliminates contaminants, saves time and costs"
+          />
+        </Flex>
+        <Divider maxWidth={["100%", "100%", "500px"]} margin={"auto"} />
 
-                <Text fontWeight={500} fontFamily={'heading'} fontSize={['3xl', '4xl', '4xl', '5xl']} textAlign={'center'} >Benefits of Products</Text>
+        <Center flexDirection={"column"} py={10}>
+          <Text
+            fontWeight={400}
+            fontFamily={"heading"}
+            fontSize={["2xl", "2xl", "3xl"]}
+            textAlign={"center"}
+          >
+            Let&apos;s get started
+          </Text>
+          <Button
+            px={20}
+            py={8}
+            fontSize={"xl"}
+            variant="takequizsmall"
+            mt={10}
+          >
+            Take the quiz{" "}
+          </Button>
+        </Center>
+      </Container>
+    </Box>
+  );
+};
 
-                <Flex gap={[10, 10, 10]} overflowX={['scroll', 'scroll', 'hidden']} justifyContent={'space-between'} py={[5, 5, 10, 20]} >
-                    <Element image="https://images.ctfassets.net/t9x0u6p47op0/787Uv75zGAULU4EokrwKnu/fba2aa544362a197a5f77949ab33b7b9/Find-Your-Routine.png" title="Effectiveness" discription="Take our quiz and tell us about your goals, lifestyle, and values." />
-                    <Element image="https://images.ctfassets.net/t9x0u6p47op0/26e4QeSBK8OMAavxaBdui1/5bf4a7b91cfe9fb64ecd32fa093b7491/img.homepage-How2__2_-min.jpg" title="Long Lasting Protection" discription="We’ll personalize a plan backed by science made just for you." />
-                    <Element image="https://images.ctfassets.net/t9x0u6p47op0/3wUb7Mz3jh5JdSbSyorHFg/256317b976c1daed9dd0b729a43bc509/Homepage_phone__1_new.jpg" title="Cost Efficient" discription="Build habits that improve your health goals by using our app." />
-                </Flex>
-                <Divider maxWidth={['100%', '100%', '500px']} margin={'auto'} />
-
-                <Center flexDirection={'column'} py={10}>
-                    <Text fontWeight={400} fontFamily={'heading'} fontSize={['2xl', '2xl', '3xl']} textAlign={'center'} >Let&apos;s get started</Text>
-                    <Button px={20} py={8} fontSize={'xl'} variant="takequizsmall" mt={10} >Take the quiz </Button>
-
-                </Center>
-
-
-            </Container>
-
-
-
-        </Box>
-    )
-}
-
-export default HowItWorks
-
-
-
-
+export default HowItWorks;
 
 interface Props {
-    image: string,
-    title: string,
-    discription: string,
+  image: string;
+  title: string;
+  discription: string;
 }
-
 
 const Element: React.FC<Props> = ({ image, title, discription }) => {
-    const responsiveWidth = ['90vw', '372px', '372px']
-    return (
-        <Box width={responsiveWidth}>
-            <Box borderRadius={'100%'} width={responsiveWidth} height={responsiveWidth} bgImage={image} bgSize={'cover'}></Box>
-            <Text textAlign={'center'} fontSize={'  lg'} letterSpacing={4} mt={25} mb={3}>{title}</Text>
-            <Text textAlign={'center'} fontSize={['xl', '2xl', '3xl']} fontFamily={'heading'}>{discription}</Text>
-
-        </Box >
-    )
-
-
-}
-
-
-
+  const responsiveWidth = ["90vw", "372px", "372px"];
+  return (
+    <Box width={responsiveWidth}>
+      <Box
+        borderRadius={"100%"}
+        width={responsiveWidth}
+        height={responsiveWidth}
+        bgImage={image}
+        bgSize={"cover"}
+        bgPosition={"center"}
+      ></Box>
+      <Text
+        textAlign={"center"}
+        fontSize={"  lg"}
+        letterSpacing={4}
+        mt={25}
+        mb={3}
+      >
+        {title}
+      </Text>
+      <Text
+        textAlign={"center"}
+        fontSize={["xl", "2xl", "3xl"]}
+        fontFamily={"heading"}
+      >
+        {discription}
+      </Text>
+    </Box>
+  );
+};

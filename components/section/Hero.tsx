@@ -26,7 +26,7 @@ const Hero = () => {
           textAlign={"center"}
           color={"white"}
         >
-          Personalized vitamins. <br /> Results you can feel.
+          VERISAN™ Safe and Proven Disinfectant with Chlorine Dioxide Technology
         </Text>
         <Link passHref href={"/steps/quiz"}>
           <Button px={20} py={8} fontSize={"xl"} variant="takequizsmall" ml={2}>
