@@ -1,7 +1,7 @@
 import useQuiz from "~/hooks/useQuiz";
-import { Image } from "@chakra-ui/next-js";
-import { Button, Text } from "@chakra-ui/react";
+import { Button, Text, Box } from "@chakra-ui/react";
 import { Dispatch, SetStateAction } from "react";
+import Image from "next/image";
 
 interface Props {
   index: number;
@@ -22,18 +22,20 @@ const Option: React.FC<Props> = ({
 
   return (
     <Button
+      px={10}
+      display={"flex"}
+      blockSize="auto"
+      fontWeight={400}
+      py={[1, 1, 1, 0]}
+      whiteSpace="normal"
       variant={"unstyled"}
       border={"2px black solid"}
-      display={"flex"}
-      whiteSpace="normal"
-      blockSize="auto"
-      w={["full", "full", "full", "auto"]}
-      py={0.5}
-      px={10}
-      fontWeight={400}
-      borderRadius={"full"}
       textTransform={"capitalize"}
+      fontSize={["md", "md", "md", "xl"]}
+      w={["full", "full", "full", "auto"]}
       _hover={{ bg: "black", color: "white" }}
+      borderRadius={["md", "md", "md", "full"]}
+      flexDir={["column", "column", "column", "row"]}
       onClick={() => {
         // point for this option
         const points = options[option];
@@ -59,7 +61,9 @@ const Option: React.FC<Props> = ({
       }}
       key={option}
     >
-      <Image src="/Icons/ck.svg" alt="icon" width={50} height={50} />
+      <Box mr={2} minW={"50px"} minHeight={"50px"}>
+        <Image src="/Icons/ck.svg" alt="icon" width={60} height={60} />
+      </Box>
       {option}
     </Button>
   );

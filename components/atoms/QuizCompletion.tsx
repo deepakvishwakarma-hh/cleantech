@@ -19,7 +19,7 @@ const QuizCompletion = () => {
         textAlign={"center"}
         mb={5}
       >
-        <b> Congratulations</b>, <br /> You have completed the quiz
+        <b> Congratulations! </b>, <br /> You have completed the quiz
       </Text>
       <Text mb={5}>
         The suggested products with quantity according to this quiz have been
