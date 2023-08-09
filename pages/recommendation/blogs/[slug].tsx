@@ -26,7 +26,7 @@ export const getStaticPaths = async () => {
 
   const paths = postsData.map((post: any) => ({
     params: {
-      id: post.id.toString(),
+      slug: post.id.toString(),
     },
   }));
 
