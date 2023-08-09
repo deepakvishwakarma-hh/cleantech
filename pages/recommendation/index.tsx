@@ -17,8 +17,9 @@ import Aspect from "~/theme/aspects";
 import Link from "next/link";
 import Logo from "~/components/atoms/Logo";
 import Footer from "~/components/Layout/secondary/footer";
+import { PostsInterFace } from "types/blogs";
 
-export default function Recommendation() {
+export default function Recommendation({ posts }: { posts: PostsInterFace[] }) {
   const responsiveHeight = [
     Aspect.mobile.layout.header.height,
     Aspect.mobile.layout.header.height,
@@ -66,7 +67,7 @@ export default function Recommendation() {
         </Container>
       </Box>
 
-      <Blogs />
+      <Blogs posts={posts} />
       <Footer />
     </>
   );
@@ -87,3 +88,11 @@ export default function Recommendation() {
         height={responsiveHeight}
       ></Container> */
 }
+
+export const getStaticProps = async () => {
+  const posts = await fetch(
+    "https://customcleansolutions.com/wp-json/wp/v2/posts?&_embed=wp:featuredmedia&_fields=title,_links,_embedded,excerpt,id"
+  );
+  const AllPosts = await posts.json();
+  return { props: { posts: AllPosts } };
+};
