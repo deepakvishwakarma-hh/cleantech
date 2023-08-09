@@ -5,7 +5,7 @@ import { HiOutlineArrowLongRight } from "react-icons/hi2";
 function RecommendationHero() {
   return (
     <Box bg={"#F9F1EB"}>
-      <Container maxWidth={""} px={["1rem", "1rem", "1rem", "2rem", "5rem"]}>
+      <Container maxWidth={"8xl"}>
         <SimpleGrid
           columns={[1, 1, 1, 2]}
           gap={["1rem", "1rem", "1rem", "10rem"]}

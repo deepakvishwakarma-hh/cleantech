@@ -1,6 +1,18 @@
 import Hero from "~/components/section/RecommendationHero";
-import { Box, Grid, GridItem, Text, Flex, Container } from "@chakra-ui/react";
+import {
+  Box,
+  Grid,
+  GridItem,
+  Text,
+  Flex,
+  Container,
+  Center,
+  SimpleGrid,
+} from "@chakra-ui/react";
 
+import Blogs from "~/components/section/Blogs";
+
+import Product from "~/components/atoms/Product";
 import Aspect from "~/theme/aspects";
 import Link from "next/link";
 import Logo from "~/components/atoms/Logo";
@@ -26,7 +38,42 @@ export default function Recommendation() {
         </Link>
       </Center>
 
-      <Container
+      <Hero />
+
+      <Box background={"#FDF9F7"}>
+        <Container maxW={"8xl"}>
+          <Text
+            fontSize={"2xl"}
+            fontFamily={"heading"}
+            pt={10}
+            pb={5}
+            fontWeight={500}
+          >
+            Recommended Products
+          </Text>
+          <GridItem
+            as={SimpleGrid}
+            columns={[1, 1, 2, 3, 4]}
+            flexWrap={"wrap"}
+            gap={5}
+          >
+            <Product />
+            <Product />
+
+            <Product />
+            <Product />
+          </GridItem>
+        </Container>
+      </Box>
+
+      <Blogs />
+      <Footer />
+    </>
+  );
+}
+
+{
+  /* <Container
         top={0}
         as={Flex}
         maxWidth={""}
@@ -38,86 +85,5 @@ export default function Recommendation() {
         justifyContent={"flex-end"}
         pointerEvents={"none"}
         height={responsiveHeight}
-      ></Container>
-      <Hero />
-
-      <Grid
-        background={"#FDF9F7"}
-        templateColumns={["1fr", "1fr", "1fr", "1fr 3fr"]}
-        p={5}
-        gap={5}
-        px={10}
-      >
-        <GridItem>
-          <Text as={"h1"} fontFamily={"heading"} fontSize={"2xl"} mb={2}>
-            Our Products
-          </Text>
-          <Text fontFamily={"body"}>
-            Nutrient-rich powders to target your health goals and diet gaps as
-            needed.
-          </Text>
-        </GridItem>
-        <GridItem as={Flex} flexWrap={"wrap"} gap={5}>
-          <Product />
-          <Product />
-          <Product />
-        </GridItem>
-      </Grid>
-      <Footer />
-    </>
-  );
-}
-
-import {
-  Center,
-  useColorModeValue,
-  Heading,
-  Stack,
-  Image,
-} from "@chakra-ui/react";
-
-const IMAGE =
-  "https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80";
-function Product() {
-  return (
-    <Center py={12}>
-      <Box
-        role={"group"}
-        p={6}
-        maxW={"330px"}
-        w={"full"}
-        bg={useColorModeValue("white", "gray.800")}
-        rounded={"lg"}
-        pos={"relative"}
-        zIndex={1}
-      >
-        <Box rounded={"lg"} mt={-12} pos={"relative"} height={"230px"}>
-          <Image
-            rounded={"lg"}
-            height={230}
-            width={282}
-            objectFit={"cover"}
-            src={IMAGE}
-            alt="#"
-          />
-        </Box>
-        <Stack pt={10} align={"center"}>
-          <Text color={"gray.500"} fontSize={"sm"} textTransform={"uppercase"}>
-            Recommended
-          </Text>
-          <Heading fontSize={"xl"} fontFamily={"body"} fontWeight={500}>
-            Nice Chair, pink
-          </Heading>
-          <Stack direction={"row"} align={"center"}>
-            <Text fontWeight={800} fontSize={"xl"}>
-              $57
-            </Text>
-            <Text textDecoration={"line-through"} color={"gray.600"}>
-              $199
-            </Text>
-          </Stack>
-        </Stack>
-      </Box>
-    </Center>
-  );
+      ></Container> */
 }
