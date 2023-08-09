@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
-import { Text, Flex, Box, Center } from "@chakra-ui/react";
+import Layout from "~/components/Layout/step";
+import { Text, Flex, Box, Center, Spacer } from "@chakra-ui/react";
 import { localstorage, useLocalStorage } from "~/lib/localstorage";
 import UserInfoInput from "~/components/atoms/inputs/UserInfoInput";
-
-import Layout from "~/components/Layout/step";
+import WhyWeAsk from "~/components/atoms/ask";
 
 export default function Name() {
   const router = useRouter();
@@ -39,6 +39,7 @@ export default function Name() {
               vitamin packs.
             </Text>
             <UserInfoInput type="string" onclick={handleClickNext} />
+            <WhyWeAsk />
           </Flex>
         </Center>
       </MotionBox>
