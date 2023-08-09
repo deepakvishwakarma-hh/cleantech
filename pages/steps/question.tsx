@@ -1,30 +1,25 @@
+import { useState } from "react";
 import useQuiz from "~/hooks/useQuiz";
 import getQuiz from "~/lib/quiz-functions";
-import Layout from "~/components/Layout/question";
+import { Box, Center } from "@chakra-ui/react";
 import { AnimatePresence } from "framer-motion";
-import { useLocalStorage } from "@mantine/hooks";
+import Layout from "~/components/Layout/question";
 import Question from "~/components/molecules/question";
-import { Button, Text, Box, Center } from "@chakra-ui/react";
-import Introduction from "~/components/molecules/category-introduction";
-import { useRouter } from "next/router";
-import { useRef, useState, useEffect } from "react";
-import { localstorage } from "~/lib/localstorage";
-
 import QuizCompletion from "~/components/atoms/QuizCompletion";
+import Introduction from "~/components/molecules/category-introduction";
 
 const QuestionPage = () => {
   const quiz = useQuiz();
-  const [introduction, setIntroduction] = useState(true);
   const {
+    index,
     quesionLen,
     isCompleted,
-    index,
-    category_name,
     description,
+    category_name,
     data: { question, options },
   } = getQuiz(quiz);
 
-  const [storage2, setStorage2]: any = useLocalStorage(localstorage);
+  const [introduction, setIntroduction] = useState(true);
 
   const onBack = () => {
     alert("this is not working");
@@ -35,16 +30,6 @@ const QuestionPage = () => {
       <Layout previous={onBack}>
         <Box bg="#FEF4EC" width={"100%"} height={"100vh"} overflowY={"scroll"}>
           <Center flexDir={"column"}>
-            {/* <Box maxW={'300px'} p={2} bg={'white'} rounded={'md'} position={'fixed'} bottom={5} right={5}>
-                            <Text fontFamily={'heading'}>Development</Text>
-                            <hr />
-                            <Text mt={2}><b>Completed</b> : {JSON.stringify(isCompleted)}</Text>
-                            <Text><b>Options & Points</b> : {JSON.stringify(options)}</Text>
-                            <Text><b>Question Index</b> : {JSON.stringify(index + 1)}/{quesionLen}</Text>
-                            <Text><b>Storage</b> : {JSON.stringify(storage)}</Text>
-                            <Button color={'red.900'} size={'sm'} bg={'red.200'} textTransform={'capitalize'} onClick={() => { quiz.clean() }}>clear localstorage</Button>
-                        </Box> */}
-
             {isCompleted && <QuizCompletion />}
 
             {!isCompleted && introduction && index == 0 && (
@@ -61,6 +46,7 @@ const QuestionPage = () => {
               {!introduction && !isCompleted && (
                 <Question
                   index={index}
+                  lastIndex={quesionLen}
                   setIntroduction={setIntroduction}
                   category={category_name}
                   question={question}
@@ -75,3 +61,53 @@ const QuestionPage = () => {
   );
 };
 export default QuestionPage;
+
+{
+  /* {JSON.stringify(
+            quiz.storage.select.filter(
+              (category_name: string) =>
+                quiz.storage[category_name]?.length !==
+                QUIZ.filter(
+                  (category_data) => category_data.name == category_name
+                ).at(0)?.question?.length
+            ).length == 0
+          )} */
+}
+
+{
+  /* <Box
+              maxW={"300px"}
+              p={2}
+              bg={"white"}
+              rounded={"md"}
+              position={"fixed"}
+              bottom={5}
+              right={5}
+            >
+              <Text fontFamily={"heading"}>Development</Text>
+              <hr />
+              <Text mt={2}>
+                <b>Completed</b> : {JSON.stringify(isCompleted)}
+                <b>Introduced</b> : {JSON.stringify(introduction)}
+              </Text>
+              <Text>
+                <b>Question</b> : {JSON.stringify(question)}
+                <b>Options & Points</b> : {JSON.stringify(options)}
+              </Text>
+              <Text>
+                <b>Question Index</b> : {JSON.stringify(index)}/{quesionLen}
+              </Text>
+              <Text></Text>
+              <Button
+                color={"red.900"}
+                size={"sm"}
+                bg={"red.200"}
+                textTransform={"capitalize"}
+                onClick={() => {
+                  quiz.clean();
+                }}
+              >
+                clear localstorage
+              </Button>
+            </Box> */
+}

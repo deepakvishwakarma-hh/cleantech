@@ -4,6 +4,7 @@ import { Dispatch, SetStateAction } from "react";
 import { Flex, Text, Box } from "@chakra-ui/react";
 interface Props {
   index: number;
+  lastIndex: number;
   question: string;
   category: string;
   options: { [key: string]: number };
@@ -16,6 +17,7 @@ const Question: React.FC<Props> = ({
   category,
   setIntroduction,
   index,
+  lastIndex,
 }) => {
   const MotionBox = motion(Box);
 
@@ -51,6 +53,7 @@ const Question: React.FC<Props> = ({
           <Option
             key={option}
             index={index}
+            lastIndex={lastIndex}
             option={option}
             options={options}
             category={category}

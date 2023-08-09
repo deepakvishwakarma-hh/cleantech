@@ -7,6 +7,7 @@ interface Props {
   index: number;
   option: string;
   category: string;
+  lastIndex: number;
   options: { [key: string]: number };
   setIntroduction: Dispatch<SetStateAction<boolean>>;
 }
@@ -17,6 +18,7 @@ const Option: React.FC<Props> = ({
   category,
   setIntroduction,
   index,
+  lastIndex,
 }) => {
   const { set, storage, read } = useQuiz();
 
@@ -55,7 +57,7 @@ const Option: React.FC<Props> = ({
           });
         }
 
-        if (index == 2) {
+        if (index == lastIndex - 1) {
           setIntroduction(true);
         }
       }}
