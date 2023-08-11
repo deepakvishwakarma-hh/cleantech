@@ -35,16 +35,16 @@ export default function PostDetails({ post }: any) {
           maxW={"4xl"}
           fontWeight={500}
           fontFamily={"heading"}
-          dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+          dangerouslySetInnerHTML={{ __html: post?.title?.rendered }}
         />
         <Text mb={4} textTransform={"uppercase"} letterSpacing={"1px"}>
-          Published On {convertToHumanReadable(post.date)}
+          Published On {convertToHumanReadable(post?.date)}
         </Text>
       </Box>
 
       <div
         className="blog-content-wrapper"
-        dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+        dangerouslySetInnerHTML={{ __html: post?.content?.rendered }}
       />
     </Layout>
   );
