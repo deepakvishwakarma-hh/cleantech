@@ -1,26 +1,25 @@
-interface Props {
-  title: string;
-  description: string;
-  image: string;
-  slug: string;
-}
-
-import { Button, Container, Divider, SimpleGrid } from "@chakra-ui/react";
-
-import { Box, Grid, GridItem, Text, Image } from "@chakra-ui/react";
+import {
+  Button,
+  Container,
+  SimpleGrid,
+  Box,
+  Grid,
+  GridItem,
+  Text,
+} from "@chakra-ui/react";
+import { Image, Link } from "@chakra-ui/next-js";
 import { PostsInterFace } from "types/blogs";
 
 const Blogs = ({ posts }: { posts: PostsInterFace[] }) => {
-  console.log(posts);
   return (
     <Box background={"#FDF9F7"}>
       <Container maxW={"8xl"}>
         <Text
-          fontSize={"2xl"}
-          fontFamily={"heading"}
           pt={5}
           pb={10}
+          fontSize={"2xl"}
           fontWeight={500}
+          fontFamily={"heading"}
         >
           Recommended Blogs
         </Text>
@@ -37,17 +36,19 @@ const Blogs = ({ posts }: { posts: PostsInterFace[] }) => {
 
 export default Blogs;
 
-const Blog = ({ title, _embedded, excerpt }: PostsInterFace) => {
+const Blog = ({ title, _embedded, excerpt, id }: PostsInterFace) => {
   const paragraph = excerpt.rendered.replace("[&#8230;]", "...");
   return (
     <Grid
-      templateColumns={["auto", "auto", "auto", "1fr 2fr"]}
-      background={"white"}
       rounded={"md"}
+      background={"white"}
+      templateColumns={["auto", "auto", "auto", "1fr 2fr"]}
       overflow={"hidden"}
     >
-      <GridItem>
+      <GridItem minH={"250px"} position={"relative"}>
+        {/* Aspect ratio is not fit on all responsive breakpoints */}
         <Image
+          fill
           src={_embedded?.["wp:featuredmedia"][0].link}
           alt={title.rendered}
         />
@@ -62,11 +63,13 @@ const Blog = ({ title, _embedded, excerpt }: PostsInterFace) => {
         ></Text>
         <Box mt={[5, 5, 5, "auto"]}>
           <Button
-            px={8}
             py={5}
+            px={8}
+            as={Link}
             size={"sm"}
             rounded={"full"}
             variant={"unstyle"}
+            href={`/blogs/${id}`}
             border={"1px black solid"}
             _hover={{
               bg: "black",

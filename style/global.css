@@ -36,3 +36,90 @@
   justify-content: center;
   align-items: center;
 }
+
+/* CSS for Blogs  */
+
+.blog-content-wrapper p,
+img {
+  margin-bottom: 1rem;
+}
+
+
+.blog-content-wrapper img {
+  width: 100%;
+}
+
+
+.blog-content-wrapper ul,
+ol {
+  margin-left: 1rem;
+  margin: 1rem 0 1rem 1rem;
+}
+
+
+.blog-content-wrapper a {
+  color: blue;
+}
+
+.blog-content-wrapper a:hover {
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+.blog-content-wrapper table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.blog-content-wrapper th,
+td {
+  border: 1px solid lightgray;
+  padding: 8px;
+  text-align: left;
+}
+
+.blog-content-wrapper th {
+  background-color: #f2f2f2;
+}
+
+.blog-content-wrapper h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-lora);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.blog-content-wrapper h1 {
+  font-size: 32px;
+  /* You can adjust the value as needed */
+}
+
+.blog-content-wrapper h2 {
+  font-size: 28px;
+  /* You can adjust the value as needed */
+}
+
+.blog-content-wrapper h3 {
+  font-size: 24px;
+  /* You can adjust the value as needed */
+}
+
+.blog-content-wrapper h4 {
+  font-size: 20px;
+  /* You can adjust the value as needed */
+}
+
+.blog-content-wrapper h5 {
+  font-size: 18px;
+  /* You can adjust the value as needed */
+}
+
+.blog-content-wrapper h6 {
+  font-size: 16px;
+  /* You can adjust the value as needed */
+}

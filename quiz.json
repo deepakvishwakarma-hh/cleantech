@@ -7,7 +7,7 @@
         "name": "what application methods do you typically use?",
         "type": "select",
         "options": {  
-          "Fogging and Vapor" : 1,
+          "Fogging and Vapor" : 4,
           "Soak, rinse or dip": 2,
           "Wipe Mop or Spray" : 3
         }

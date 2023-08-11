@@ -66,7 +66,6 @@ export default function Recommendation({ posts }: { posts: PostsInterFace[] }) {
           </GridItem>
         </Container>
       </Box>
-
       <Blogs posts={posts} />
       <Footer />
     </>
