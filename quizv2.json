@@ -1,0 +1,1062 @@
+[
+  {
+    "name": "additional",
+    "description": "these are additional questions",
+    "question": [
+      {
+        "name": "what application methods do you typically use?",
+        "type": "select",
+        "options": {
+          "Fogging and Vapor": { "value": 4, "icon": "./22.svg" },
+          "Soak, rinse or dip": { "value": 2, "icon": "./23.svg" },
+          "Wipe Mop or Spray": { "value": 3, "icon": "./24.svg" }
+        }
+      },
+      {
+        "name": "How often do you use antiseptic, Disinfectant, fungicide, sanitizer, insecticide, or deodorizer?",
+        "type": "select",
+        "options": {
+          "several times daily": { "value": 1000, "icon": "./25.svg" },
+          "everyday": { "value": 750, "icon": "./26.svg" },
+          "several tiems weekly": { "value": 500, "icon": "./27.svg" },
+          "weekly": { "value": 250, "icon": "./28.svg" },
+          "monthly": { "value": 1000, "icon": "./29.svg" }
+        }
+      },
+      {
+        "name": "How long would you like your supply to last?",
+        "type": "select",
+        "options": {
+          "1 month": { "value": 100, "icon": "./30.svg" },
+          "3 month": { "value": 250, "icon": "./31.svg" },
+          "6 month": { "value": 500, "icon": "./32.svg" },
+          "1 year": { "value": 750, "icon": "./33.svg" },
+          "5 month": { "value": 1000, "icon": "./34.svg" }
+        }
+      },
+      {
+        "name": "how would you like to keep variSan at more than one location or get some for a friend?",
+        "type": "select",
+        "options": {
+          "1 location": { "value": 100, "icon": "./35.svg" },
+          "2 location - 10% off": { "value": 250, "icon": "./36.svg" },
+          "3 location - 15% off": { "value": 500, "icon": "./37.svg" },
+          "5 location - 20% off": { "value": 750, "icon": "./38.svg" },
+          "more than 5 location - 25% off": {
+            "value": 1000,
+            "icon": "./39.svg"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "extermination of invasive insects (in the garden)",
+    "description": "Bid farewell to pesky invasive insects as you protect your home and garden with a practical and environmentally friendly solution that keeps them at bay.",
+    "question": [
+      {
+        "name": "Select an insect group to target for extermination",
+        "type": "select",
+        "options": {
+          "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": {
+            "value": 1000,
+            "icon": "./40.svg"
+          },
+          "Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips": {
+            "value": 250,
+            "icon": "./41.svg"
+          },
+          "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": {
+            "value": 500,
+            "icon": "./42.svg"
+          },
+          "Cabbage-Maggots, Caterpillars, and Cutworms": {
+            "value": 750,
+            "icon": "./43.svg"
+          },
+          "Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums": {
+            "value": 1000,
+            "icon": "./44.svg"
+          },
+          "House flies, Horse flies, Maggots, Moths, and Spiders": {
+            "value": 500,
+            "icon": "./45.svg"
+          },
+          "Mosquitos, Drain Flies, and Water-borne Insects": {
+            "value": 750,
+            "icon": "./46.svg"
+          },
+          "Slugs, Snails, and Slimy Garden Gastropod Invaders": {
+            "value": 250,
+            "icon": "./47.svg"
+          }
+        }
+      },
+      {
+        "name": "Select the application method for extermination",
+        "type": "select",
+        "options": {
+          "Spray": { "value": 1000, "icon": "./48.svg" },
+          "Fogging": { "value": 750, "icon": "./49.svg" },
+          "Soak": { "value": 500, "icon": "./50.svg" },
+          "Dip": { "value": 250, "icon": "./51.svg" },
+          "Wipe": { "value": 1000, "icon": "./52.svg" }
+        }
+      },
+      {
+        "name": "Select the volume of the extermination solution (ml)",
+        "type": "select",
+        "options": {
+          "100 ml": { "value": 100, "icon": "./53.svg" },
+          "250 ml": { "value": 250, "icon": "./54.svg" },
+          "500 ml": { "value": 500, "icon": "./55.svg" },
+          "750 ml": { "value": 750, "icon": "./56.svg" },
+          "1000 ml": { "value": 1000, "icon": "./57.svg" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "in the garden (plant health)",
+    "question": [
+      {
+        "name": "Select the type of plants you want to protect",
+        "type": "select",
+        "options": {
+          "Fruits: Berries, Tree Ground, and Vine Fruits": {
+            "value": 750,
+            "icon": "./58.svg"
+          },
+          "Grains, Legumes, Seeds, and Nuts": {
+            "value": 500,
+            "icon": "./59.svg"
+          },
+          "Herbs, Spices, Medicinal, or Ornamental Plants": {
+            "value": 1000,
+            "icon": "./60.svg"
+          },
+          "Vegetables, Staple Table Crops, and Mushrooms": {
+            "value": 250,
+            "icon": "./61.svg"
+          }
+        }
+      },
+      {
+        "name": "Select the application method for plant health",
+        "type": "select",
+        "options": {
+          "Spray": { "value": 1000, "icon": "./62.svg" },
+          "Drench": { "value": 500, "icon": "./63.svg" },
+          "Foliar Application": { "value": 750, "icon": "./64.svg" },
+          "Soil Treatment": { "value": 250, "icon": "./65.svg" }
+        }
+      },
+      {
+        "name": "Select the volume of the plant health solution (ml)",
+        "type": "select",
+        "options": {
+          "250 ml": { "value": 250, "icon": "./66.svg" },
+          "500 ml": { "value": 500, "icon": "./67.svg" },
+          "750 ml": { "value": 750, "icon": "./68.svg" },
+          "1000 ml": { "value": 1000, "icon": "./69.svg" },
+          "1500 ml": { "value": 1500, "icon": "./70.svg" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "no-rinse surface disinfection",
+    "description": "Experience the power of a comprehensive, eco-friendly solution that leaves your hard and soft surfaces clean and free from harmful bacteria, viruses, mold, and odor. Also, maintain impeccable hygiene on food contact surfaces with no rinse required.",
+    "question": [
+      {
+        "name": "Select the type of surface to disinfect",
+        "type": "select",
+        "options": {
+          "Hard Surfaces": { "value": 750, "icon": "./71.svg" },
+          "Soft Surfaces": { "value": 500, "icon": "./72.svg" },
+          "Food-Contact Surfaces": { "value": 1000, "icon": "./73.svg" }
+        }
+      },
+      {
+        "name": "Select the method of application for disinfection",
+        "type": "select",
+        "options": {
+          "Spray": { "value": 1000, "icon": "./74.svg" },
+          "Wipe": { "value": 750, "icon": "./75.svg" },
+          "Fogging": { "value": 500, "icon": "./76.svg" }
+        }
+      },
+      {
+        "name": "Select the volume of the disinfection solution (ml)",
+        "type": "select",
+        "options": {
+          "500 ml": { "value": 500, "icon": "./77.svg" },
+          "750 ml": { "value": 750, "icon": "./78.svg" },
+          "1000 ml": { "value": 1000, "icon": "./79.svg" },
+          "1500 ml": { "value": 1500, "icon": "./80.svg" },
+          "2000 ml": { "value": 2000, "icon": "./81.svg" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "personal hygiene (antiseptic or hand sanitizer)",
+    "description": "Prioritize your health and hygiene with a reliable, convenient, no-rinse solution that eliminates germs and odors and reduces the risk of infections.",
+    "question": [
+      {
+        "name": "Select the type of personal hygiene product",
+        "type": "select",
+        "options": {
+          "Acne, Dermatitis, Eczema, and Psoriasis": {
+            "value": 50,
+            "icon": "./82.svg"
+          },
+          "Antiseptic Wound Irrigant and Sterilizer": {
+            "value": 100,
+            "icon": "./83.svg"
+          },
+          "Dry Shampoo": { "value": 150, "icon": "./84.svg" },
+          "Hair: A Topical, Sanitizer, Degreaser, and Deodorizer": {
+            "value": 200,
+            "icon": "./85.svg"
+          },
+          "Hand Sanitizer": { "value": 250, "icon": "./86.svg" },
+          "Skin or Body Sanitizer": { "value": 100, "icon": "./87.svg" },
+          "Mouthwash for Hygiene, Receding Gums, and Gingivitis": {
+            "value": 50,
+            "icon": "./88.svg"
+          },
+          "Ringworm, Skin Fungus, and Nail Fungus": {
+            "value": 150,
+            "icon": "./89.svg"
+          },
+          "Scalp Fungus, Dandruff, Balding, and Hair Recession": {
+            "value": 200,
+            "icon": "./90.svg"
+          },
+          "Viral or Bacterial Infections, Herpes, Staph, HFMD": {
+            "value": 250,
+            "icon": "./91.svg"
+          }
+        }
+      },
+      {
+        "name": "Select the volume of the personal hygiene solution (ml)",
+        "type": "select",
+        "options": {
+          "50 ml": { "value": 50, "icon": "./92.svg" },
+          "100 ml": { "value": 100, "icon": "./93.svg" },
+          "150 ml": { "value": 150, "icon": "./94.svg" },
+          "200 ml": { "value": 200, "icon": "./95.svg" },
+          "250 ml": { "value": 250, "icon": "./96.svg" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "produce, eggs, meat, fish, and groceries",
+    "description": "Preserve freshness and extend the shelf life of your produce, meat, and groceries by employing an FDA-recognized food-safe additive and preservative that minimizes microbial contamination.",
+    "question": [
+      {
+        "name": "Select the type of item to preserve and disinfect",
+        "type": "select",
+        "options": {
+          "Produce": { "value": 500, "icon": "./97.svg" },
+          "Packaged Food Items and Grocery Items": {
+            "value": 350,
+            "icon": "./98.svg"
+          },
+          "Meat or Fish": { "value": 500, "icon": "./99.svg" },
+          "Eggs, Cheese, and Dairy": { "value": 650, "icon": "./100.svg" }
+        }
+      },
+      {
+        "name": "Select the method of application for disinfection",
+        "type": "select",
+        "options": {
+          "Spray": { "value": 500, "icon": "./101.svg" },
+          "Dip": { "value": 350, "icon": "./102.svg" },
+          "Soak": { "value": 200, "icon": "./103.svg" }
+        }
+      },
+      {
+        "name": "Select the volume of the disinfection solution (ml)",
+        "type": "select",
+        "options": {
+          "200 ml": { "value": 200, "icon": "./104.svg" },
+          "350 ml": { "value": 350, "icon": "./105.svg" },
+          "500 ml": { "value": 500, "icon": "./106.svg" },
+          "650 ml": { "value": 650, "icon": "./107.svg" },
+          "800 ml": { "value": 800, "icon": "./108.svg" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "travel and recreation (on-the-go)",
+    "description": "Stay prepared during your adventures, travel, and recreational activities with a portable and efficient disinfection solution that ensures cleanliness and peace of mind.",
+    "question": [
+      {
+        "name": "Select the type of travel and recreational activity",
+        "type": "select",
+        "options": {
+          "Adventure, Emergency, and Survival Preparation of Drinking Water": {
+            "value": 100,
+            "icon": "./109.svg"
+          },
+          "Airbnb, Hotels, or Motels Disinfecting and Decontaminating": {
+            "value": 150,
+            "icon": "./110.svg"
+          },
+          "Camp Gear, Tents, Sleeping Bags, and Camping Equipment Mildew Odor": {
+            "value": 250,
+            "icon": "./111.svg"
+          },
+          "Camping Kitchen Utensils, Cups, Plates, Cookware, and Food Contact Surfaces": {
+            "value": 350,
+            "icon": "./112.svg"
+          },
+          "Dry Shampoo": { "value": 500, "icon": "./113.svg" },
+          "Luggage, Hand Bags, Leather, Shoes, and Boots Sanitizing and Deodorizing": {
+            "value": 100,
+            "icon": "./114.svg"
+          },
+          "Public Restrooms, Locker Rooms, Spas, Clubs, Showers, and Baths": {
+            "value": 150,
+            "icon": "./115.svg"
+          },
+          "Mass Transit Systems, Trains, Planes, Subways, and City Busses": {
+            "value": 250,
+            "icon": "./116.svg"
+          },
+          "Skin Sanitizer, Antiseptic, and Deodorant for Travel and Recreation": {
+            "value": 350,
+            "icon": "./117.svg"
+          },
+          "Workout Equipment, Wrestling, or Gym Mats, and Athletic Equipment": {
+            "value": 500,
+            "icon": "./118.svg"
+          },
+          "RVs, Boats, and Aircrafts Water Storage Preparation and Over-Wintering": {
+            "value": 100,
+            "icon": "./119.svg"
+          },
+          "Blackwater Tanks and Gray Water Tanks": {
+            "value": 150,
+            "icon": "./120.svg"
+          },
+          "Spray or Fog to Deodorize Areas, and Kill Germs": {
+            "value": 250,
+            "icon": "./121.svg"
+          },
+          "General Surface Disinfection, Hard and Soft Surfaces": {
+            "value": 350,
+            "icon": "./122.svg"
+          }
+        }
+      },
+      {
+        "name": "Select the volume of the on-the-go disinfection solution (ml)",
+        "type": "select",
+        "options": {
+          "100 ml": { "value": 100, "icon": "./123.svg" },
+          "150 ml": { "value": 150, "icon": "./124.svg" },
+          "250 ml": { "value": 250, "icon": "./125.svg" },
+          "350 ml": { "value": 350, "icon": "./126.svg" },
+          "500 ml": { "value": 500, "icon": "./127.svg" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "unwanted odors (eliminate the source)",
+    "description": "Eliminate unpleasant odors at their source, leaving behind a fresh and pleasant environment while improving environmental conditions, well-being, and productivity.",
+    "question": [
+      {
+        "name": "Select the type of unwanted odor source",
+        "type": "select",
+        "options": {
+          "Animal or Pet Remains, Biological Decontamination": {
+            "value": 300,
+            "icon": "./128.svg"
+          },
+          "Bathrooms, Kill Mold, Mildew, Bacteria, Germs, and Odors": {
+            "value": 450,
+            "icon": "./129.svg"
+          },
+          "Carpet Cleaning, Disinfection, and Deodorization": {
+            "value": 600,
+            "icon": "./130.svg"
+          },
+          "Cars and Trucks: Disinfection and Deodorization": {
+            "value": 750,
+            "icon": "./131.svg"
+          },
+          "Cat Litter Box Cleaning, Sanitizing, and Deodorization": {
+            "value": 900,
+            "icon": "./132.svg"
+          },
+          "Clean Mold From Your Keurig, Coffee Pod, or Coffee Maker": {
+            "value": 300,
+            "icon": "./133.svg"
+          },
+          "HVAC, for Cleaner Air in Your Home, Allergens, and Odors": {
+            "value": 450,
+            "icon": "./134.svg"
+          },
+          "Chemical, Fragrances, and Hazards Environmental Toxins": {
+            "value": 600,
+            "icon": "./135.svg"
+          },
+          "Hair or Fur Sanitizing, Preservation, or Deodorization": {
+            "value": 750,
+            "icon": "./136.svg"
+          },
+          "Kitchen or Refrigerator Disinfectant and Deodorizer": {
+            "value": 900,
+            "icon": "./137.svg"
+          },
+          "Laundry, Bedding, Clothing, Fabric, and Upholstery": {
+            "value": 300,
+            "icon": "./138.svg"
+          },
+          "Mattresses or Furniture Disinfection and Deodorization": {
+            "value": 450,
+            "icon": "./139.svg"
+          },
+          "Pet Odors and Allergens, Bird, Insect, or Reptile Enclosures": {
+            "value": 600,
+            "icon": "./140.svg"
+          },
+          "Room Fogging and Vapor Disinfection Applications": {
+            "value": 750,
+            "icon": "./141.svg"
+          },
+          "Shoes, Boots, and Handbags, Cleaning and Deodorizing": {
+            "value": 900,
+            "icon": "./142.svg"
+          },
+          "Trash Can or Dumpster Disinfectant and Deodorizer": {
+            "value": 300,
+            "icon": "./143.svg"
+          }
+        }
+      },
+      {
+        "name": "Select the method of application for eliminating odors",
+        "type": "select",
+        "options": {
+          "Spray": { "value": 300, "icon": "./144.svg" },
+          "Fogging": { "value": 450, "icon": "./145.svg" },
+          "Wipe": { "value": 600, "icon": "./146.svg" },
+          "Soak": { "value": 750, "icon": "./147.svg" }
+        }
+      },
+      {
+        "name": "Select the volume of the odor elimination solution (ml)",
+        "type": "select",
+        "options": {
+          "300 ml": { "value": 300, "icon": "./148.svg" },
+          "450 ml": { "value": 450, "icon": "./149.svg" },
+          "600 ml": { "value": 600, "icon": "./150.svg" },
+          "750 ml": { "value": 750, "icon": "./151.svg" },
+          "900 ml": { "value": 900, "icon": "./152.svg" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "water treatment and water storage",
+    "description": "Ensure the purity and safety of water sources, protecting against waterborne contaminants and promoting responsible water management.",
+    "question": [
+      {
+        "name": "Select the type of water to treat and disinfect",
+        "type": "select",
+        "options": {
+          "Circulating Water Systems and Transfer Lines": {
+            "value": 1000,
+            "icon": "./153.svg"
+          },
+          "Dip, Soak, or Rinse for All Surfaces, Food and Non-Food Items": {
+            "value": 2000,
+            "icon": "./154.svg"
+          },
+          "Fish, Fish Tanks, and Other Aquatic Life": {
+            "value": 3000,
+            "icon": "./155.svg"
+          },
+          "Make Contaminated Water Safe to Drink and Store": {
+            "value": 4000,
+            "icon": "./156.svg"
+          },
+          "Pool Water, Spas, Jacuzzis, Hot Tubs, or Water Containment": {
+            "value": 5000,
+            "icon": "./157.svg"
+          },
+          "Standing Stagnant Pond Water and Containment Disinfection": {
+            "value": 1000,
+            "icon": "./158.svg"
+          },
+          "Wastewater with Urine, Vomit, Blood, Rancid Meat, or Biomatter": {
+            "value": 2000,
+            "icon": "./159.svg"
+          },
+          "Wells and Drinking Water Reserves, Storage, and Treatment": {
+            "value": 3000,
+            "icon": "./160.svg"
+          }
+        }
+      },
+      {
+        "name": "Select the method of application for water treatment",
+        "type": "select",
+        "options": {
+          "Dip": { "value": 1000, "icon": "./161.svg" },
+          "Soak": { "value": 2000, "icon": "./162.svg" },
+          "Fogging": { "value": 3000, "icon": "./163.svg" },
+          "Spray": { "value": 4000, "icon": "./164.svg" }
+        }
+      },
+      {
+        "name": "Select the volume of the water treatment solution (ml)",
+        "type": "select",
+        "options": {
+          "1000 ml": { "value": 1000, "icon": "./165.svg" },
+          "2000 ml": { "value": 2000, "icon": "./166.svg" },
+          "3000 ml": { "value": 3000, "icon": "./167.svg" },
+          "4000 ml": { "value": 4000, "icon": "./168.svg" },
+          "5000 ml": { "value": 5000, "icon": "./169.svg" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "food commodity production, processing, and packaging",
+    "description": "Embrace our essential solution that ensures the safety and quality of food products by eliminating harmful pathogens throughout the production and processing chain, building trust and confidence in the products offered.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Food Additive and Preservative - (For Freshness and Extended Shelf-Life)": {
+            "value": 7,
+            "icon": "./170.svg"
+          },
+          "Food Canning and Beverage Bottling, Brewing, or Distillation": {
+            "value": 4,
+            "icon": "./171.svg"
+          },
+          "Fruit and vegetables - (No-rinse Disinfecting Cleaner)": {
+            "value": 14,
+            "icon": "./172.svg"
+          },
+          "Meat, and Fish Butchering - (Preparation, Preservation, and Cold-Storage)": {
+            "value": 1,
+            "icon": "./173.svg"
+          },
+          "Processing and Packaging Foods - (Commodity Items Before Shipment)": {
+            "value": 7,
+            "icon": "./174.svg"
+          },
+          "Tools and Equipment - (Picking, Packing, and Processing)": {
+            "value": 4,
+            "icon": "./175.svg"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "extermination of invasive insects",
+    "description": "Safeguard your crops and agricultural operations by harnessing the strength of a reliable and more eco-friendly solution that exterminates invasive insects.",
+    "question": [
+      {
+        "name": "Select an insect group to target for extermination",
+        "type": "select",
+        "options": {
+          "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": {
+            "value": 7,
+            "icon": "./176.svg"
+          },
+          "Aphids, Mealybugs, Whiteflies, Spidermites, or Thripes": {
+            "value": 4,
+            "icon": "./177.svg"
+          },
+          "Bed Bugs, Cockroaches, Fleas, Lice, or Ticks": {
+            "value": 14,
+            "icon": "./178.svg"
+          },
+          "Cabbage-Maggots, Caterpillars, or Cutworms": {
+            "value": 1,
+            "icon": "./179.svg"
+          },
+          "Fruit Flies, Fungus Gnats, Shore Flies, or Noseeums": {
+            "value": 7,
+            "icon": "./180.svg"
+          },
+          "House flies, Horse flies, Maggots, Moths, or Spiders": {
+            "value": 4,
+            "icon": "./181.svg"
+          },
+          "Mosquitos, Drain Flies, and Water-born Insects": {
+            "value": 14,
+            "icon": "./182.svg"
+          },
+          "Slugs, Snails, and Slimy Garden Invaders": {
+            "value": 1,
+            "icon": "./183.svg"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "farm and ranch (horticulture and agriculture)",
+    "description": "Enhance crop or livestock health and yield while reducing the need for harmful chemicals with an effective and sustainable solution.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Aquaponics and Aquaculture (Fish and Other Aquatics)": {
+            "value": 7,
+            "icon": "./184.svg"
+          },
+          "Beekeeping and Bees (A Treatment for Mold and Mites)": {
+            "value": 4,
+            "icon": "./185.svg"
+          },
+          "Chemical Decontamination (Fertilizers and Insecticides)": {
+            "value": 14,
+            "icon": "./186.svg"
+          },
+          "Crop Management - Commercial (Mold, Disease, and Insect Control)": {
+            "value": 1,
+            "icon": "./187.svg"
+          },
+          "Eggs, Dairy, Meat, and Fish at Harvest (Before Processing or Shipping)": {
+            "value": 7,
+            "icon": "./188.svg"
+          },
+          "Plants, Produce, and Mycology (Fruits, Fungi, and Vegetables)": {
+            "value": 4,
+            "icon": "./189.svg"
+          },
+          "Livestock and Animal Rearing (Cattle, Chickens Swine, Sheep)": {
+            "value": 14,
+            "icon": "./190.svg"
+          },
+          "Tools, Implements and Equipment (Horticulture and Agriculture)": {
+            "value": 1,
+            "icon": "./191.svg"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "food service, hospitality, and public places",
+    "description": "Create a clean and inviting atmosphere, ensuring guests' and customers' safety, satisfaction, and prompt return to your business.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Food Service Equipment, Appliances and Food Contact Surfaces": {
+            "value": 7,
+            "icon": "./192.svg"
+          },
+          "Glassware, Flatware, Kitchen Utensils, and Tools": {
+            "value": 4,
+            "icon": "./193.svg"
+          },
+          "Restaurants and Cafeteria Operational Maintenance": {
+            "value": 14,
+            "icon": "./194.svg"
+          },
+          "Refrigeration Units, Food Storage, Ice, Tanks and Lines": {
+            "value": 1,
+            "icon": "./195.svg"
+          },
+          "Airbnb, Rental Homes, and Rental Properties": {
+            "value": 7,
+            "icon": "./196.svg"
+          },
+          "Barber Shop, Hair Salons, and Nail Salons": {
+            "value": 4,
+            "icon": "./197.svg"
+          },
+          "Bars and Nightclubs, Exotic Settings, Stage Hygiene": {
+            "value": 14,
+            "icon": "./198.svg"
+          },
+          "Churches, Mosques, and Pews, Before and After Services": {
+            "value": 1,
+            "icon": "./199.svg"
+          },
+          "College Campuses, Universities, Recreational, and Dormitories": {
+            "value": 7,
+            "icon": "./200.svg"
+          },
+          "Commercial Laundry Facilities and Dry Cleaning": {
+            "value": 4,
+            "icon": "./201.svg"
+          },
+          "Convention Centers, and Conference Halls": {
+            "value": 14,
+            "icon": "./202.svg"
+          },
+          "Daycare Facilities, Preschools, and Nurseries": {
+            "value": 1,
+            "icon": "./203.svg"
+          },
+          "Facility Cleaning, Maintenance, Disinfection, and Deodorization": {
+            "value": 7,
+            "icon": "./204.svg"
+          },
+          "Hospitality, Hotels, Motels. and Resorts": {
+            "value": 4,
+            "icon": "./205.svg"
+          },
+          "Movie Theaters, Hotels, Halls, and Showrooms": {
+            "value": 14,
+            "icon": "./206.svg"
+          },
+          "Retail Sales and Consignment Shops (Clothing Stores and Thrift Stores)": {
+            "value": 1,
+            "icon": "./207.svg"
+          },
+          "Learning Institutions, Schools and Classroom Environments": {
+            "value": 7,
+            "icon": "./208.svg"
+          },
+          "Securities, Police, Clandestine and Military Use": {
+            "value": 4,
+            "icon": "./209.svg"
+          },
+          "Stadiums, Bleachers, and Arenas, Deodorize, and Sanitize": {
+            "value": 14,
+            "icon": "./210.svg"
+          },
+          "Turf, Cleaning Indoor or Outdoor Commercial, or Athletic Turf": {
+            "value": 1,
+            "icon": "./211.svg"
+          },
+          "Veterinarian and Animal Shelter Use of Chlorine Dioxide": {
+            "value": 7,
+            "icon": "./212.svg"
+          },
+          "Workout Equipment, Wrestling, or Gymnastic Mats": {
+            "value": 4,
+            "icon": "./213.svg"
+          },
+          "Fogging and Vapor": { "value": 14, "icon": "./214.svg" },
+          "Soak, Rinse or Dip": { "value": 1, "icon": "./215.svg" },
+          "Wipe Mop or Spray": { "value": 7, "icon": "./216.svg" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "no-residue hard and soft surface disinfection",
+    "description": "Experience the versatility of a comprehensive, potent yet eco-friendly solution that leaves your surfaces clean and free from harmful microorganisms, protecting you from potential contamination and infection.",
+    "question": [
+      {
+        "name": "Select a surface area",
+        "type": "select",
+        "options": {
+          "Hard Surfaces - Metals and Alloys": {
+            "value": 7,
+            "icon": "./217.svg"
+          },
+          "Hard Surfaces - Cement, Ceramics, Glass, Stone, or Tile": {
+            "value": 4,
+            "icon": "./218.svg"
+          },
+          "Hard Surfaces - Synthetics, linoleum, Plastics, Polymers, or Vinyl": {
+            "value": 14,
+            "icon": "./219.svg"
+          },
+          "Hard Surfaces - Wood and Porous organic Materials": {
+            "value": 1,
+            "icon": "./220.svg"
+          },
+          "Non-Food Items, Toys, Packages, and Mail Items": {
+            "value": 7,
+            "icon": "./221.svg"
+          },
+          "Soft Surfaces - Bedding, Laundry, and Delicates": {
+            "value": 4,
+            "icon": "./222.svg"
+          },
+          "Soft Surfaces - Carpets and Rugs or Turf": {
+            "value": 14,
+            "icon": "./223.svg"
+          },
+          "Soft Surfaces - Designer Shoes and Bags": {
+            "value": 1,
+            "icon": "./224.svg"
+          },
+          "Soft Surfaces - Leather, Shoes, or Boots": {
+            "value": 7,
+            "icon": "./225.svg"
+          },
+          "Soft Surfaces - organic Fiber and Natural Fabrics": {
+            "value": 4,
+            "icon": "./226.svg"
+          },
+          "Soft Surfaces - Synthetic Fiber and Upholstery": {
+            "value": 14,
+            "icon": "./227.svg"
+          }
+        }
+      },
+      {
+        "name": "Select a method of application",
+        "type": "select",
+        "options": {
+          "Fogging and Vapor": { "value": 7, "icon": "./228.svg" },
+          "Soak, Rinse or Dip": { "value": 4, "icon": "./229.svg" },
+          "Wipe Mop or Spray": { "value": 14, "icon": "./230.svg" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "transport and transit (delivery and travel)",
+    "description": "Maintain a safe and hygienic environment for passengers and cargo, instilling confidence in the reliability and cleanliness of transportation and delivery systems.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Delivery Jobs": { "value": 7, "icon": "./239.svg" },
+          "Police Cars": { "value": 4, "icon": "./240.svg" },
+          "Rental Cars": { "value": 14, "icon": "./241.svg" },
+          "School Buses": { "value": 1, "icon": "./242.svg" },
+          "Taxi or Uber": { "value": 7, "icon": "./243.svg" },
+          "OTR Trucking": { "value": 4, "icon": "./244.svg" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "unwanted odors (eliminate the source)",
+    "description": "Eliminate unpleasant odors at their source, leaving behind a fresh and pleasant environment while improving environmental conditions, well-being, and productivity.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Animal Housing Environments - (Boarding, Kennels, and Enclosures)": {
+            "value": 7,
+            "icon": "./245.svg"
+          },
+          "Biological Hazards - (Biomatter, Blood, Carcass, Urine, or Vomit  Cleanup)": {
+            "value": 4,
+            "icon": "./246.svg"
+          },
+          "Bathrooms, Kill Bacteria, Mold, Mildew, and Eliminate Unwanted Odors": {
+            "value": 14,
+            "icon": "./247.svg"
+          },
+          "Carpet Cleaning, Disinfection, and Deodorization": {
+            "value": 1,
+            "icon": "./248.svg"
+          },
+          "Cars, Trucks, and Trailers: Disinfection and Deodorization": {
+            "value": 7,
+            "icon": "./249.svg"
+          },
+          "Commercial Laundry, Bedding, Clothing, and Fabric": {
+            "value": 4,
+            "icon": "./250.svg"
+          },
+          "Environmental and Chemical Toxins, Fragrances, and Allergens": {
+            "value": 14,
+            "icon": "./251.svg"
+          },
+          "Garbage Trash Cans, Dumpster Disinfectant, and Deodorizer": {
+            "value": 1,
+            "icon": "./252.svg"
+          },
+          "HVAC, for Decontamination, Deodorizing, Allergens, Environmental Toxins": {
+            "value": 7,
+            "icon": "./253.svg"
+          },
+          "Kitchen Disinfectant and Deodorizer - (Food Contact Surfaces)": {
+            "value": 4,
+            "icon": "./254.svg"
+          },
+          "Livestock Sanitizer - (For Odor, Disease Prevention, and General Hygiene)": {
+            "value": 14,
+            "icon": "./255.svg"
+          },
+          "Refrigeration, and Food Storage Sanitizing and Deodorization": {
+            "value": 1,
+            "icon": "./256.svg"
+          },
+          "Room Fogging and Vapor Deodorization - (e.g., Pet, Mold, or Smoke Odor)": {
+            "value": 7,
+            "icon": "./257.svg"
+          },
+          "Upholstery Cleaning, Disinfection and Deodorization": {
+            "value": 4,
+            "icon": "./258.svg"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "water treatment and water storage",
+    "description": "Ensure the purity and safety of water sources, protecting against waterborne contaminants and promoting responsible water management.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Circulating Water Systems, Transfer Lines, and Food Processing Equipment": {
+            "value": 7,
+            "icon": "./259.svg"
+          },
+          "Making and Storing Clean Potable Water for Animals and Livestock": {
+            "value": 4,
+            "icon": "./260.svg"
+          },
+          "Pool Water: Maintaining Swimming Pools, Spas, Jacuzzis, or Hot Tubs": {
+            "value": 14,
+            "icon": "./261.svg"
+          },
+          "Standing, Pond Water, or Stagnant Water Treatment, and Maintenance": {
+            "value": 1,
+            "icon": "./262.svg"
+          },
+          "Wastewater That Has Had Biomatter Such as Urine, Vomit, Blood, or Rancid Meat": {
+            "value": 7,
+            "icon": "./263.svg"
+          },
+          "Water Storage, Wells, and Containment, Shock Treatment, and Remedial Treatments": {
+            "value": 4,
+            "icon": "./264.svg"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "no-residue hard or soft surface disinfection",
+    "description": "Employ versatile and adaptable solutions to address various contagion modes and effectively treat different surfaces and materials economically and effectively.",
+    "question": [
+      {
+        "name": "Surface Area",
+        "question": [
+          {
+            "name": "Select a surface material",
+            "type": "select",
+            "options": {
+              "Hard Surfaces - Metals and Alloys": {
+                "value": 7,
+                "icon": "./265.svg"
+              },
+              "Hard Surfaces - Cement, Ceramics, Glass, Stone, or Tile": {
+                "value": 4,
+                "icon": "./266.svg"
+              },
+              "Hard Surfaces - Synthetics, linoleum, Plastics, Polymers, or Vinyl": {
+                "value": 14,
+                "icon": "./267.svg"
+              },
+              "Hard Surfaces - Wood and Porous organic Materials": {
+                "value": 1,
+                "icon": "./268.svg"
+              },
+              "Non-Food Items, Toys, Packages, and Mail Items": {
+                "value": 7,
+                "icon": "./269.svg"
+              },
+              "Soft Surfaces - Bedding, Laundry, and Delicates": {
+                "value": 4,
+                "icon": "./270.svg"
+              },
+              "Soft Surfaces - Carpets and Rugs or Turf": {
+                "value": 14,
+                "icon": "./271.svg"
+              },
+              "Soft Surfaces - Designer Shoes and Bags": {
+                "value": 1,
+                "icon": "./272.svg"
+              },
+              "Soft Surfaces - Leather, Shoes, or Boots": {
+                "value": 7,
+                "icon": "./273.svg"
+              },
+              "Soft Surfaces - Organic Fiber and Natural Fabrics": {
+                "value": 4,
+                "icon": "./274.svg"
+              },
+              "Soft Surfaces - Synthetic Fiber and Upholstery": {
+                "value": 14,
+                "icon": "./275.svg"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Method of Application",
+        "questions": [
+          {
+            "name": "Select a method of application",
+            "type": "select",
+            "options": {
+              "Fogging and Vapor": { "value": 7, "icon": "./276.svg" },
+              "Soak, Rinse or Dip": { "value": 4, "icon": "./277.svg" },
+              "Wipe Mop or Spray": { "value": 14, "icon": "./278.svg" }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Contagion",
+        "questions": [
+          {
+            "name": "Select a contagion",
+            "type": "select",
+            "options": {
+              "Algae, Sludge, Slime, and Biofilm": {
+                "value": 7,
+                "icon": "./279.svg"
+              },
+              "Bacteria: Gram-positive, Gram-negative, and Bacterial endospores": {
+                "value": 4,
+                "icon": "./280.svg"
+              },
+              "Chemical Contamination": { "value": 14, "icon": "./281.svg" },
+              "Fungi, Mold, Mildew, and Spores": {
+                "value": 1,
+                "icon": "./282.svg"
+              },
+              "Mycobacteria (Mycobacterium)": {
+                "value": 7,
+                "icon": "./283.svg"
+              },
+              "Protozoa, Microsporidia, and Parasites": {
+                "value": 4,
+                "icon": "./284.svg"
+              },
+              "Viruses: Enveloped, Lipid Viruses, Non-Enveloped, Non-Lipid Viruses": {
+                "value": 14,
+                "icon": "./285.svg"
+              },
+              "Yeast, Saccharomycetaceae, and Candida": {
+                "value": 7,
+                "icon": "./286.svg"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
