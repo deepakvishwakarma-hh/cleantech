@@ -1,54 +1,5 @@
 [
   {
-    "name": "additional",
-    "description" : "these are addtional question",
-    "question": [
-      {
-        "name": "what application methods do you typically use?",
-        "type": "select",
-        "options": {  
-          "Fogging and Vapor" : 4,
-          "Soak, rinse or dip": 2,
-          "Wipe Mop or Spray" : 3
-        }
-      },
-      {
-        "name": "How often do you use antiseptic, Disinfectant, fungicide, sanitizer, insecticide, or deodorizer?",
-        "type": "select",
-        "options": {
-          "several times daily": 1000,
-          "everyday": 750,
-          "several tiems weekly": 500,
-          "weekly": 250,
-          "monthly": 1000
-        }
-      },
-      {
-        "name": "How long would you like your supply to last?",
-        "type": "select",
-        "options": {
-          "1 month": 100,
-          "3 month": 250,
-          "6 month": 500,
-          "1 year": 750,
-          "5 month": 1000
-        }
-      },
-      {
-        "name": "how would yoy like to keep variSan at more than one location or get some for a friend?",
-        "type": "select",
-        "options": {
-          "1 location": 100,
-          "2 location - 10% off": 250,
-          "3 location - 15% off": 500,
-          "5 location - 20% off": 750,
-          "more than 5 location - 25% off": 1000
-        }
-      }
-    ]
-  },
-
-  {
     "name": "extermination of invasive insects (in the garden)",
     "description" : "Bid farewell to pesky invasive insects as you protect your home and garden with a practical and environmentally friendly solution that keeps them at bay.",
     "question": [
@@ -57,13 +8,13 @@
         "type": "select",
         "options": {  
           "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": 1000,
-          "Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips": 250,
-          "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": 500,
-          "Cabbage-Maggots, Caterpillars, and Cutworms": 750,
-          "Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums": 1000,
+          "Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips": 900,
+          "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": 800,
+          "Cabbage-Maggots, Caterpillars, and Cutworms": 700,
+          "Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums": 600,
           "House flies, Horse flies, Maggots, Moths, and Spiders": 500,
-          "Mosquitos, Drain Flies, and Water-borne Insects": 750,
-          "Slugs, Snails, and Slimy Garden Gastropod Invaders": 250
+          "Mosquitos, Drain Flies, and Water-borne Insects": 400,
+          "Slugs, Snails, and Slimy Garden Gastropod Invaders": 300
         }
       },
       {

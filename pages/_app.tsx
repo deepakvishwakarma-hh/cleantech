@@ -10,7 +10,13 @@ import { Lora, Signika } from "next/font/google";
 const signika = Signika({ subsets: ["latin"] });
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const exceptRoutes = ["/", "/recommendation", "/cart"];
+  const exceptRoutes = [
+    "/",
+    "/recommendation",
+    "/cart",
+    "/test",
+    "/steps/question",
+  ];
   return (
     <>
       <style jsx global>

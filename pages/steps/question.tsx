@@ -1,6 +1,5 @@
-import { useState } from "react";
-import useQuiz from "~/hooks/useQuiz";
-import getQuiz from "~/lib/quiz-functions";
+import { find } from "~/lib/functions";
+import { useRouter } from "next/router";
 import { Box, Center } from "@chakra-ui/react";
 import { AnimatePresence } from "framer-motion";
 import Layout from "~/components/Layout/question";
@@ -9,51 +8,61 @@ import QuizCompletion from "~/components/atoms/QuizCompletion";
 import Introduction from "~/components/molecules/category-introduction";
 
 const QuestionPage = () => {
-  const quiz = useQuiz();
-  const {
-    index,
-    quesionLen,
-    isCompleted,
-    description,
-    category_name,
-    data: { question, options },
-  } = getQuiz(quiz);
+  const router = useRouter();
+  const { ctgr, itd, idx, cpd } = router.query;
+  // read properties using category name;
+  const { description, question } = find(
+    (ctgr as string) ?? "no-rinse surface disinfection"
+  );
 
-  const [introduction, setIntroduction] = useState(true);
+  // router back
+  const onBackHandler = () => {
+    router.back();
+  };
 
-  const onBack = () => {
-    alert("this is not working");
+  // set introduction visiblity
+  const introductionVisiblityHandler = () => {
+    router.push({
+      pathname: router.pathname,
+      query: {
+        cpd, // default
+        ctgr, // default
+        idx, // default
+        itd: false,
+      },
+    });
   };
 
   return (
     <>
-      <Layout previous={onBack}>
+      <Layout previous={onBackHandler}>
         <Box bg="#FEF4EC" width={"100%"} height={"100vh"} overflowY={"scroll"}>
           <Center flexDir={"column"}>
-            {isCompleted && <QuizCompletion />}
-
-            {!isCompleted && introduction && index == 0 && (
+            {cpd == "true" && <QuizCompletion />}
+            {itd == "true" && cpd == "false" && (
               <Introduction
-                description={description}
-                title={category_name}
-                handleNext={() => {
-                  setIntroduction(false);
-                }}
+                description={description as string}
+                title={ctgr as string}
+                handleNext={introductionVisiblityHandler}
               />
             )}
 
-            <AnimatePresence>
-              {!introduction && !isCompleted && (
-                <Question
-                  index={index}
-                  lastIndex={quesionLen}
-                  setIntroduction={setIntroduction}
-                  category={category_name}
-                  question={question}
-                  options={options as any}
-                />
-              )}
-            </AnimatePresence>
+            {cpd == "false" && itd == "false" && (
+              <Box>
+                <AnimatePresence>
+                  <Question
+                    category={ctgr as string}
+                    question={
+                      question.at(parseInt(idx as string))?.name as string
+                    }
+                    options={
+                      (question.at(parseInt(idx as string)) as any)
+                        ?.options as any
+                    }
+                  />
+                </AnimatePresence>
+              </Box>
+            )}
           </Center>
         </Box>
       </Layout>
@@ -61,53 +70,3 @@ const QuestionPage = () => {
   );
 };
 export default QuestionPage;
-
-{
-  /* {JSON.stringify(
-            quiz.storage.select.filter(
-              (category_name: string) =>
-                quiz.storage[category_name]?.length !==
-                QUIZ.filter(
-                  (category_data) => category_data.name == category_name
-                ).at(0)?.question?.length
-            ).length == 0
-          )} */
-}
-
-{
-  /* <Box
-              maxW={"300px"}
-              p={2}
-              bg={"white"}
-              rounded={"md"}
-              position={"fixed"}
-              bottom={5}
-              right={5}
-            >
-              <Text fontFamily={"heading"}>Development</Text>
-              <hr />
-              <Text mt={2}>
-                <b>Completed</b> : {JSON.stringify(isCompleted)}
-                <b>Introduced</b> : {JSON.stringify(introduction)}
-              </Text>
-              <Text>
-                <b>Question</b> : {JSON.stringify(question)}
-                <b>Options & Points</b> : {JSON.stringify(options)}
-              </Text>
-              <Text>
-                <b>Question Index</b> : {JSON.stringify(index)}/{quesionLen}
-              </Text>
-              <Text></Text>
-              <Button
-                color={"red.900"}
-                size={"sm"}
-                bg={"red.200"}
-                textTransform={"capitalize"}
-                onClick={() => {
-                  quiz.clean();
-                }}
-              >
-                clear localstorage
-              </Button>
-            </Box> */
-}

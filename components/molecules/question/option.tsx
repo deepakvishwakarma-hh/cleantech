@@ -1,32 +1,29 @@
-import Image from "next/image";
-import useQuiz from "~/hooks/useQuiz";
-import { Button, Box } from "@chakra-ui/react";
-import { Dispatch, SetStateAction } from "react";
-
 interface Props {
-  index: number;
   option: string;
-  category: string;
-  lastIndex: number;
-  options: { [key: string]: number };
-  setIntroduction: Dispatch<SetStateAction<boolean>>;
+  selected: boolean;
 }
+import Image from "next/image";
+import QUIZ from "../../../quiz.json";
+import { useRouter } from "next/router";
+import { Button, Box } from "@chakra-ui/react";
+import { useLocalStorage } from "@mantine/hooks";
+import { localstorage } from "~/hooks/useQuiz";
 
-const Option: React.FC<Props> = ({
-  option,
-  options,
-  category,
-  setIntroduction,
-  index,
-  lastIndex,
-}) => {
-  const { set, storage, read } = useQuiz();
+const Option: React.FC<Props> = ({ option, selected }) => {
+  const router = useRouter();
+  const [storage, setStorage]: any = useLocalStorage(localstorage);
+  const { ctgr, itd, idx, cpd } = router.query;
+  const { question } = find(
+    (ctgr as string) ?? "no-rinse surface disinfection"
+  );
 
   return (
     <Button
       px={10}
-      display={"flex"}
+      outline={selected ? "2px solid blue" : undefined}
+      key={option}
       blockSize="auto"
+      display={"flex"}
       fontWeight={400}
       py={[1, 1, 1, 0]}
       whiteSpace="normal"
@@ -39,35 +36,69 @@ const Option: React.FC<Props> = ({
       borderRadius={["md", "md", "md", "full"]}
       flexDir={["column", "column", "column", "row"]}
       onClick={() => {
-        // point for this option
-        const points = options[option];
-        // boolean category avilablity
-        const categoryAvailable = read(category);
-        // updated instace with points
+        // category name (in string)
+        const category = ctgr as string;
 
-        if (!categoryAvailable) {
-          set({
-            [category]: storage?.[category]
-              ? [...storage?.[category], points] // when category key available in storage : direct updating
-              : [points], // otherwise set point with
+        // deepcopy of storage.path for quic manipulation (direct manipuration)
+        const deepcopy = { ...storage.path };
+        deepcopy[category][parseInt(idx as string)] = (
+          question.at(parseInt(idx as string)) as any
+        ).options[option];
+        // save deepcopy to path;
+        setStorage({ ...storage, path: deepcopy });
+
+        // program - next question
+        const previous = parseInt(idx as string);
+        if (previous < question.length - 1) {
+          // push to next question (increase index number)
+          router.push({
+            pathname: router.pathname,
+            query: {
+              idx: previous + 1,
+              ctgr, //default
+              itd, // default
+              cpd,
+            },
           });
         } else {
-          set({
-            [category]: [...storage?.[category], points],
-          });
-        }
-
-        if (index == lastIndex - 1) {
-          setIntroduction(true);
+          const nextCtgrName = storage.select.at(
+            (storage.select as string[]).indexOf(category) + 1
+          );
+          if (nextCtgrName) {
+            router.push({
+              pathname: router.pathname,
+              query: {
+                ctgr: nextCtgrName,
+                idx: 0, // reset on new category;
+                itd: true,
+                cpd,
+              },
+            });
+          } else {
+            router.push({
+              pathname: router.pathname,
+              query: {
+                ctgr,
+                idx, // reset on new category;
+                itd,
+                cpd: true,
+              },
+            });
+          }
+          // push to next category (chnage ctgr )
         }
       }}
-      key={option}
     >
       <Box mr={2} minW={"50px"} minHeight={"50px"}>
         <Image src="/Icons/ck.svg" alt="icon" width={60} height={60} />
       </Box>
-      {option}
+      {option} <br />
     </Button>
   );
 };
 export default Option;
+
+const find = (name: string) => {
+  // console.log(name) last error counter : undefined
+  return QUIZ.filter((item) => item.name === name)[0];
+};

@@ -22,6 +22,11 @@ const useQuiz = () => {
         return { ...prev, select: categories };
       });
     },
+    path: (STG: { [key: string]: any[] }) => {
+      setStorage((prev: any) => {
+        return { ...prev, path: STG };
+      });
+    },
     set: (payload: { [name: string]: number[] }) => {
       setStorage((prev: any) => {
         return { ...prev, ...payload };
@@ -29,9 +34,6 @@ const useQuiz = () => {
     },
     clean: () => {
       setStorage(defaultValue);
-    },
-    isCompleted: (key: string) => {
-      return (storage as any)[key]?.length == 3 ? true : false;
     },
     read: (key: string) => {
       return storage?.[key] ? true : false;

@@ -13,6 +13,7 @@ import { useRouter } from "next/router";
 import useQuiz from "~/hooks/useQuiz";
 import Layout from "~/components/Layout/step";
 import categories from "~/quiz/categories.json";
+import { StoragePathGeneration } from "~/lib/functions";
 import { localstorage, useLocalStorage } from "~/lib/localstorage";
 
 const CategorySelection = () => {
@@ -32,8 +33,23 @@ const CategorySelection = () => {
   };
 
   const handleSubmit = () => {
-    quiz.select([...selected, "additional"]);
-    router.push("question");
+    // path generation
+    const STG = StoragePathGeneration(selected);
+    // store selected categories by user
+    quiz.select([...selected]);
+    // store generated path
+    quiz.path(STG);
+
+    // push to question with query parameters
+    router.push({
+      pathname: "question",
+      query: {
+        idx: 0,
+        itd: true,
+        cpd: false,
+        ctgr: selected.at(0),
+      },
+    });
   };
 
   return (
