@@ -3,7 +3,7 @@ import { theme } from "../theme";
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import PageTransitionEffect from "~/components/transition/effect";
-
+import ErrorBoundary from "~/components/ErrorBoundry";
 // Nextjs/Fonts
 const lora = Lora({ subsets: ["latin"] });
 import { Lora, Signika } from "next/font/google";
@@ -29,7 +29,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       </style>
       <ChakraProvider resetCSS theme={theme}>
         <PageTransitionEffect exceptRoutes={exceptRoutes}>
-          <Component {...pageProps} />
+          <ErrorBoundary>
+            <Component {...pageProps} />
+          </ErrorBoundary>
         </PageTransitionEffect>
       </ChakraProvider>
     </>
