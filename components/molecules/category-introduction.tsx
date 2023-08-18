@@ -1,5 +1,5 @@
 import { Button, Text, Box, Grid, GridItem, Flex } from "@chakra-ui/react";
-
+import { motion } from "framer-motion";
 interface Props {
   title: string;
   description: string;
@@ -11,8 +11,16 @@ const CategoryIntroduction: React.FC<Props> = ({
   description,
   handleNext,
 }) => {
+  const MotionBox = motion(Box);
   return (
-    <Box w={"100%"} h={"100vh"}>
+    <MotionBox
+      initial={{ x: -100, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: -100, opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      w={"100%"}
+      h={"100vh"}
+    >
       <Grid templateColumns={["1fr", "1fr", "1fr", "1fr 1fr"]} h={"full"}>
         <GridItem
           bgImage={
@@ -56,7 +64,7 @@ const CategoryIntroduction: React.FC<Props> = ({
           </Box>
         </GridItem>
       </Grid>
-    </Box>
+    </MotionBox>
   );
 };
 

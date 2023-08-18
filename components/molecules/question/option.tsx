@@ -20,7 +20,6 @@ const Option: React.FC<Props> = ({ option, selected }) => {
   return (
     <Button
       px={10}
-      outline={selected ? "2px solid blue" : undefined}
       key={option}
       blockSize="auto"
       display={"flex"}
@@ -35,6 +34,7 @@ const Option: React.FC<Props> = ({ option, selected }) => {
       _hover={{ bg: "black", color: "white" }}
       borderRadius={["md", "md", "md", "full"]}
       flexDir={["column", "column", "column", "row"]}
+      outline={selected ? "2px solid blue" : undefined}
       onClick={() => {
         // category name (in string)
         const category = ctgr as string;

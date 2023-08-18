@@ -39,13 +39,16 @@ const QuestionPage = () => {
         <Box bg="#FEF4EC" width={"100%"} height={"100vh"} overflowY={"scroll"}>
           <Center flexDir={"column"}>
             {cpd == "true" && <QuizCompletion />}
-            {itd == "true" && cpd == "false" && (
-              <Introduction
-                description={description as string}
-                title={ctgr as string}
-                handleNext={introductionVisiblityHandler}
-              />
-            )}
+
+            <AnimatePresence>
+              {itd == "true" && cpd == "false" && (
+                <Introduction
+                  description={description as string}
+                  title={ctgr as string}
+                  handleNext={introductionVisiblityHandler}
+                />
+              )}
+            </AnimatePresence>
 
             {cpd == "false" && itd == "false" && (
               <Box>
