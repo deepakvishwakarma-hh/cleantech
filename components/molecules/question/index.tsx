@@ -1,37 +1,36 @@
-import Option from "./option";
-import { motion } from "framer-motion";
-import { Flex, Text, Box } from "@chakra-ui/react";
-import { localstorage } from "~/hooks/useQuiz";
-import { useLocalStorage } from "@mantine/hooks";
-import { useRouter } from "next/router";
 interface Props {
   question: string;
   category: string;
   options: { [key: string]: number };
 }
+import Option from "./option";
+import { motion } from "framer-motion";
+import { useRouter } from "next/router";
+import { localstorage } from "~/hooks/useQuiz";
+import { useLocalStorage } from "@mantine/hooks";
+import { Flex, Text, Box } from "@chakra-ui/react";
 
 const Question: React.FC<Props> = ({ question, options, category }) => {
   const router = useRouter();
-  const { ctgr, itd, idx, cpd } = router.query;
-
   const MotionBox = motion(Box);
-  const [{ path, select }]: any = useLocalStorage(localstorage);
+  const { ctgr, idx } = router.query;
+  const [{ path }]: any = useLocalStorage(localstorage);
 
   return (
     <MotionBox
-      initial={{ opacity: 0, y: -100 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 100 }}
-      transition={{ duration: 0.5 }}
-      maxW={"3xl"}
-      pt={["5rem", "5rem", "5rem", "10rem"]}
       px={10}
+      maxW={"3xl"}
+      exit={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0, y: -100 }}
+      pt={["5rem", "5rem", "5rem", "10rem"]}
     >
       <Text
-        letterSpacing={2}
         mb={5}
-        textTransform={"uppercase"}
+        letterSpacing={2}
         textAlign={"center"}
+        textTransform={"uppercase"}
       >
         {category}
       </Text>
@@ -39,9 +38,9 @@ const Question: React.FC<Props> = ({ question, options, category }) => {
         {question}
       </Text>
       <Flex
+        py={2}
         gap={5}
         flexWrap={"wrap"}
-        py={2}
         alignItems={"center"}
         justifyContent={"center"}
       >
@@ -63,9 +62,4 @@ const Question: React.FC<Props> = ({ question, options, category }) => {
     </MotionBox>
   );
 };
-
 export default Question;
-
-// {JSON.stringify(
-//   path?.[ctgr as string].at(parseInt(idx as string))
-// ) == `${options[option]}`}

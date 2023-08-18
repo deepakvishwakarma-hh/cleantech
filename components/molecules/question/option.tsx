@@ -3,7 +3,7 @@ interface Props {
   selected: boolean;
 }
 import Image from "next/image";
-import QUIZ from "../../../quiz.json";
+import { find } from "~/lib/functions";
 import { useRouter } from "next/router";
 import { Button, Box } from "@chakra-ui/react";
 import { useLocalStorage } from "@mantine/hooks";
@@ -97,8 +97,3 @@ const Option: React.FC<Props> = ({ option, selected }) => {
   );
 };
 export default Option;
-
-const find = (name: string) => {
-  // console.log(name) last error counter : undefined
-  return QUIZ.filter((item) => item.name === name)[0];
-};
