@@ -5,16 +5,31 @@ import { Text, Flex, Box, Center } from "@chakra-ui/react";
 import UserInfoInput from "~/components/atoms/inputs/UserInfoInput";
 import { localstorage, useLocalStorage } from "~/lib/localstorage";
 
-export default function Email() {
+interface EmailProps {}
+
+export default function Email(props: EmailProps) {
   const router = useRouter();
   const MotionBox = motion(Box);
   const [_, setStorage] = useLocalStorage(localstorage);
-  const handleNextClick = (email: any) => {
-    setStorage((prev: any) => {
-      return { ...prev, email };
-    });
-    router.push("usage");
+
+  const handleNextClick = (email: string) => {
+    if (validateEmail(email)) {
+      setStorage((prev: any) => {
+        return { ...prev, email };
+      });
+      router.push("usage");
+    } else {
+      // Handle invalid email input
+      alert("Please enter a valid email address.");
+    }
   };
+
+  const validateEmail = (email: string) => {
+    // Basic email validation using regular expression
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+  };
+
   return (
     <Layout previous="age">
       <MotionBox bg="#FEF4EC" width={"100%"} height={"100vh"}>

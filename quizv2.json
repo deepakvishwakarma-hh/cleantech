@@ -4,15 +4,6 @@
     "description": "these are additional questions",
     "question": [
       {
-        "name": "what application methods do you typically use?",
-        "type": "select",
-        "options": {
-          "Fogging and Vapor": { "value": 4, "icon": "./22.svg" },
-          "Soak, rinse or dip": { "value": 2, "icon": "./23.svg" },
-          "Wipe Mop or Spray": { "value": 3, "icon": "./24.svg" }
-        }
-      },
-      {
         "name": "How often do you use antiseptic, Disinfectant, fungicide, sanitizer, insecticide, or deodorizer?",
         "type": "select",
         "options": {
