@@ -47,10 +47,11 @@ const WhyWeAsk = () => {
               Why we ask?
             </Text>
             <Text textAlign={"center"} px={10} lineHeight={1.8}>
-              Depending on your stage of life, you may require different
-              nutrients in your day-to-day diet. We’ll use your response to
-              determine the vitamins and minerals that are right for your unique
-              needs. We do not recommend supplements for those younger than 18.
+              We collect your name and email to personalize our services and
+              communicate effectively. Your name helps us create a personalized
+              experience, and your email ensures you receive important updates
+              and requested content. Your privacy is important to us, and your
+              information is handled with care.
             </Text>
             <Center>
               <Button
