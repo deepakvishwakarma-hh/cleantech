@@ -13,7 +13,7 @@ export default function Welcome() {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      router.push("age");
+      router.push("email");
     }, 2000);
     return () => clearTimeout(timeout);
   }, [router]);
