@@ -145,7 +145,7 @@ const Footer = () => {
             Do Not Sell My Personal Information
           </Button>
           <Text fontSize={"md"} fontWeight={200}>
-            © 2023 Care/of. All rights reserved.
+            © 2023 Customcleantechsolutions. All rights reserved.
           </Text>
         </Stack>
       </GridItem>
@@ -157,7 +157,7 @@ const Footer = () => {
           gap={[10, 10, 0]}
         >
           <GridItem>
-            <Text fontWeight={200}>CARE/OF</Text>
+            <Text fontWeight={200}>CUSTOMCLEANTECHSOLUTIONS</Text>
 
             <SimpleGrid mt={5} columns={2} spacing={3.5}>
               {cart_of.map((link) => (
