@@ -248,7 +248,7 @@ const Footer = () => {
             height={"auto"}
             _hover={{ opacity: 0.8 }}
             as={Link}
-            href="/"
+            href="https://customcleansolutions.com/terms-conditions/"
             variant={"unstyled"}
             fontSize={"md"}
             fontWeight={200}
@@ -259,7 +259,7 @@ const Footer = () => {
             height={"auto"}
             _hover={{ opacity: 0.8 }}
             as={Link}
-            href="/"
+            href="https://customcleansolutions.com/privacy-policy/"
             variant={"unstyled"}
             fontSize={"md"}
             fontWeight={200}
