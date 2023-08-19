@@ -27,6 +27,7 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
+import SubscriptionForm from "~/components/molecules/subscriptionForm";
 
 const cart_of = [
   { name: "Personalize", href: "/personalize" },
@@ -64,25 +65,7 @@ const Footer = () => {
             Subscribe and stay up-to-date on Care/of news, exclusive offers, and
             more.
           </Text>
-
-          <InputGroup size="md" borderBottom={"1px solid white"} py={1}>
-            <Input
-              border={"none"}
-              p={0}
-              _focus={{ outline: "none" }}
-              placeholder="Email Address"
-            />
-            <InputRightAddon p={0} bg="none" border="none">
-              <IconButton
-                size={"md"}
-                rounded={"full"}
-                bg="white"
-                color={"black"}
-                aria-label="facebook"
-                icon={<BsArrowRightShort size={22} />}
-              ></IconButton>
-            </InputRightAddon>
-          </InputGroup>
+          <SubscriptionForm />
 
           <Stack direction={"row"}>
             <IconButton
@@ -101,6 +84,7 @@ const Footer = () => {
               aria-label="facebook"
               icon={<BsInstagram size={25} />}
             ></IconButton>
+            S
           </Stack>
         </Stack>
 

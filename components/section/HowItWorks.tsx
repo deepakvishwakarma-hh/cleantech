@@ -7,6 +7,7 @@ import {
   Flex,
   Divider,
 } from "@chakra-ui/react";
+import Link from "next/link";
 const HowItWorks = () => {
   return (
     <Box py={["2rem", "2rem", "2rem", "6rem"]} bg={"white"}>
@@ -53,15 +54,17 @@ const HowItWorks = () => {
           >
             Let&apos;s get started
           </Text>
-          <Button
-            px={20}
-            py={8}
-            fontSize={"xl"}
-            variant="takequizsmall"
-            mt={10}
-          >
-            Take the quiz
-          </Button>
+          <Link passHref href={"/steps/quiz"}>
+            <Button
+              px={20}
+              py={8}
+              fontSize={"xl"}
+              variant="takequizsmall"
+              mt={10}
+            >
+              Take the quiz
+            </Button>
+          </Link>
         </Center>
       </Container>
     </Box>
