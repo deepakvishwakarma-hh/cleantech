@@ -13,7 +13,7 @@ const UserInfoInput: React.FC<Props> = ({ type, onclick }) => {
       pl={8}
       pr={5}
       bg="white"
-      height={['70px', '70px', "103px"]}
+      height={["70px", "70px", "103px"]}
       width={["auto", "auto", "570px"]}
       margin={[5, 5, 0]}
       alignItems={"center"}
@@ -24,13 +24,15 @@ const UserInfoInput: React.FC<Props> = ({ type, onclick }) => {
         autoFocus
         name={type}
         type={type}
-        fontSize={['xl', 'xl', "3xl"]}
+        fontSize={["xl", "xl", "3xl"]}
         variant={"unstyled"}
         fontFamily={"heading"}
         background={"transparent"}
         onKeyDown={(evt) => {
           if (evt.code === "Enter") {
-            return value !== "" ? onclick(value) : undefined;
+            return value !== ""
+              ? onclick(value)
+              : alert("Please enter a valid Value.");
           }
         }}
         onChange={(evt) => setValue(evt.target.value.trim())}

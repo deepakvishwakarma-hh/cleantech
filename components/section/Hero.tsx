@@ -33,9 +33,11 @@ const Hero = () => {
             Take the quiz{" "}
           </Button>
         </Link>
-        <UnderlineOnHoverBAC color={"white"} fontSize={["md", "lg"]}>
-          Browse all products
-        </UnderlineOnHoverBAC>
+        <Link passHref href={"/products"}>
+          <UnderlineOnHoverBAC color={"white"} fontSize={["md", "lg"]}>
+            Browse all products
+          </UnderlineOnHoverBAC>
+        </Link>
       </Container>
     </Box>
   );
