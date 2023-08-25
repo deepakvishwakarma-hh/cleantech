@@ -35,7 +35,8 @@ function RecommendationHero() {
                 gap={2}
                 fontWeight={400}
                 fontFamily={"body"}
-                variant={"unstyled"}
+                variant="takequizsmall"
+                // variant={"unstyled"}
               >
                 Go to cart
                 <HiOutlineArrowLongRight size={30} />{" "}
