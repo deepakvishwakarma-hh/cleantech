@@ -9,7 +9,6 @@ import QuizCompletion from "~/components/atoms/QuizCompletion";
 import Introduction from "~/components/molecules/category-introduction";
 const QuestionPage = () => {
   const router = useRouter();
-
   const { ctgr, itd, idx, cpd } = router.query;
   // read properties using category name;
   const DATA = find((ctgr as string) ?? "no-rinse surface disinfection");

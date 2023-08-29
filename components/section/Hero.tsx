@@ -30,7 +30,7 @@ const Hero = () => {
         </Text>
         <Link passHref href={"/steps/quiz"}>
           <Button px={20} py={8} fontSize={"xl"} variant="takequizsmall" ml={2}>
-            Take the quiz{" "}
+            Take the quiz
           </Button>
         </Link>
         <Link passHref href={"/products"}>

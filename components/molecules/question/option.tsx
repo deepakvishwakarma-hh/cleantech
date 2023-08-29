@@ -6,12 +6,12 @@ import Image from "next/image";
 import { find } from "~/lib/functions";
 import { useRouter } from "next/router";
 import { Button, Box } from "@chakra-ui/react";
-import { useLocalStorage } from "@mantine/hooks";
 import { localstorage } from "~/hooks/useQuiz";
+import { useSessionStorage } from "@mantine/hooks";
 
 const Option: React.FC<Props> = ({ option, selected }) => {
   const router = useRouter();
-  const [storage, setStorage]: any = useLocalStorage(localstorage);
+  const [storage, setStorage]: any = useSessionStorage(localstorage);
   const { ctgr, itd, idx, cpd } = router.query;
   const { question } = find(
     (ctgr as string) ?? "no-rinse surface disinfection"
