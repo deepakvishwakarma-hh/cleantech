@@ -41,9 +41,7 @@ const Option: React.FC<Props> = ({ option, selected }) => {
 
         // deepcopy of storage.path for quic manipulation (direct manipuration)
         const deepcopy = { ...storage.path };
-        deepcopy[category][parseInt(idx as string)] = (
-          question.at(parseInt(idx as string)) as any
-        ).options[option];
+        deepcopy[category][parseInt(idx as string)] = option;
         // save deepcopy to path;
         setStorage({ ...storage, path: deepcopy });
 
