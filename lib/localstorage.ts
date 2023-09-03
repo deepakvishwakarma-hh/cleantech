@@ -5,7 +5,8 @@ const defaultValue = {
     name: 'deepak',
     age: '19',
     email: 'default@gmail.com',
-    usage: 'medium'
+    usage: 'medium',
+    surrounded : []
 }
 export const localstorage = {
     key: 'storage',
