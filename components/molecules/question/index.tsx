@@ -7,14 +7,14 @@ import Option from "./option";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { localstorage } from "~/hooks/useQuiz";
-import { useLocalStorage } from "@mantine/hooks";
+import { useSessionStorage } from "@mantine/hooks";
 import { Flex, Text, Box } from "@chakra-ui/react";
 
 const Question: React.FC<Props> = ({ question, options, category }) => {
   const router = useRouter();
   const MotionBox = motion(Box);
   const { ctgr, idx } = router.query;
-  const [{ path }]: any = useLocalStorage(localstorage);
+  const [{ path }]: any = useSessionStorage(localstorage);
 
   return (
     <MotionBox
@@ -44,18 +44,20 @@ const Question: React.FC<Props> = ({ question, options, category }) => {
         alignItems={"center"}
         justifyContent={"center"}
       >
-        {Object.keys(options).map((option, index) => {
+        {Object.keys(options).map((option) => {
           return (
-            <Option
-              key={option}
-              option={option}
-              selected={
-                path?.[ctgr as string]
-                  ? path?.[ctgr as string].at(parseInt(idx as string)) ==
-                    options[option].toString()
-                  : false
-              }
-            />
+            <>
+              <Option
+                key={option}
+                option={option}
+                selected={
+                  path?.[ctgr as string]
+                    ? path?.[ctgr as string].at(parseInt(idx as string)) ==
+                      option.toString()
+                    : false
+                }
+              />
+            </>
           );
         })}
       </Flex>

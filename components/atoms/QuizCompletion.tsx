@@ -2,9 +2,11 @@ import { useRef } from "react";
 import Confetti from "react-confetti";
 import { useRouter } from "next/router";
 import useDimention from "~/hooks/useDimention";
-import { Button, Text, Box } from "@chakra-ui/react";
+import { Button, Text, Box, useQuery } from "@chakra-ui/react";
+import useQuiz from "~/hooks/useQuiz";
 
 const QuizCompletion = () => {
+  const { markCompleted } = useQuiz();
   const router = useRouter();
   const confetiRef = useRef<any>(null);
   const { width, height } = useDimention();
@@ -37,6 +39,7 @@ const QuizCompletion = () => {
         _hover={{ bg: "black", color: "white" }}
         mx={"auto"}
         onClick={() => {
+          markCompleted();
           router.push("/recommendation");
         }}
       >

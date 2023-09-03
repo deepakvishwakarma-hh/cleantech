@@ -6,12 +6,12 @@ import Image from "next/image";
 import { find } from "~/lib/functions";
 import { useRouter } from "next/router";
 import { Button, Box } from "@chakra-ui/react";
-import { useLocalStorage } from "@mantine/hooks";
 import { localstorage } from "~/hooks/useQuiz";
+import { useSessionStorage } from "@mantine/hooks";
 
 const Option: React.FC<Props> = ({ option, selected }) => {
   const router = useRouter();
-  const [storage, setStorage]: any = useLocalStorage(localstorage);
+  const [storage, setStorage]: any = useSessionStorage(localstorage);
   const { ctgr, itd, idx, cpd } = router.query;
   const { question } = find(
     (ctgr as string) ?? "no-rinse surface disinfection"
@@ -41,9 +41,7 @@ const Option: React.FC<Props> = ({ option, selected }) => {
 
         // deepcopy of storage.path for quic manipulation (direct manipuration)
         const deepcopy = { ...storage.path };
-        deepcopy[category][parseInt(idx as string)] = (
-          question.at(parseInt(idx as string)) as any
-        ).options[option];
+        deepcopy[category][parseInt(idx as string)] = option;
         // save deepcopy to path;
         setStorage({ ...storage, path: deepcopy });
 

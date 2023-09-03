@@ -1,8 +1,10 @@
 import superjson from "superjson";
-import { useLocalStorage } from "@mantine/hooks";
+import { useSessionStorage } from "@mantine/hooks";
 
 const defaultValue = {
-  select: ["skin contact", "skin care", "hair cart"],
+  path: {},
+  select: ["no-rinse surface disinfection"],
+  isCompleted: false,
 };
 
 export const localstorage = {
@@ -14,7 +16,7 @@ export const localstorage = {
 };
 
 const useQuiz = () => {
-  const [storage, setStorage]: any = useLocalStorage(localstorage);
+  const [storage, setStorage]: any = useSessionStorage(localstorage);
   return {
     storage,
     select: (categories: string[]) => {
@@ -37,6 +39,9 @@ const useQuiz = () => {
     },
     read: (key: string) => {
       return storage?.[key] ? true : false;
+    },
+    markCompleted: () => {
+      setStorage({ ...storage, isCompleted: true });
     },
   };
 };
