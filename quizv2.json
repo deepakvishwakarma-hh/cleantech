@@ -50,35 +50,35 @@
         "type": "select",
         "options": {
           "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": {
-            "value": 1000,
+            "score": 100,
             "icon": "249. Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps.png"
           },
           "Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips": {
-            "value": 250,
+            "score": 25,
             "icon": "250. Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips.png"
           },
           "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": {
-            "value": 500,
+            "score": 50,
             "icon": "251. Bed Bugs, Cockroaches, Fleas, Lice, and Ticks.png"
           },
           "Cabbage-Maggots, Caterpillars, and Cutworms": {
-            "value": 750,
+            "score": 75,
             "icon": "252. Cabbage-Maggots, Caterpillars, and Cutworms.png"
           },
           "Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums": {
-            "value": 1000,
+            "score": 100,
             "icon": "253. Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums.png"
           },
           "House flies, Horse flies, Maggots, Moths, and Spiders": {
-            "value": 500,
+            "score": 50,
             "icon": "254. House flies, Horse flies, Maggots, Moths, and Spiders.png"
           },
           "Mosquitos, Drain Flies, and Water-borne Insects": {
-            "value": 750,
+            "score": 75,
             "icon": "255. Mosquitos, Drain Flies, and Water-borne Insects.png"
           },
           "Slugs, Snails, and Slimy Garden Gastropod Invaders": {
-            "value": 250,
+            "score": 25,
             "icon": "256. Slugs, Snails, and Slimy Garden Gastropod Invaders.png"
           }
         }
@@ -87,22 +87,22 @@
         "name": "Select the application method for extermination",
         "type": "select",
         "options": {
-          "Spray": { "value": 1000, "icon": "./48.svg" },
-          "Fogging": { "value": 750, "icon": "./49.svg" },
-          "Soak": { "value": 500, "icon": "./50.svg" },
-          "Dip": { "value": 250, "icon": "./51.svg" },
-          "Wipe": { "value": 1000, "icon": "./52.svg" }
+          "Spray": { "score": 100, "icon": "./48.svg" },
+          "Fogging": { "score": 75, "icon": "./49.svg" },
+          "Soak": { "score": 50, "icon": "./50.svg" },
+          "Dip": { "score": 25, "icon": "./51.svg" },
+          "Wipe": { "score": 100, "icon": "./52.svg" }
         }
       },
       {
         "name": "Select the volume of the extermination solution (ml)",
         "type": "select",
         "options": {
-          "100 ml": { "value": 100, "icon": "./53.svg" },
-          "250 ml": { "value": 250, "icon": "./54.svg" },
-          "500 ml": { "value": 500, "icon": "./55.svg" },
-          "750 ml": { "value": 750, "icon": "./56.svg" },
-          "1000 ml": { "value": 1000, "icon": "./57.svg" }
+          "100 ml": { "score": 10, "icon": "./53.svg" },
+          "250 ml": { "score": 25, "icon": "./54.svg" },
+          "500 ml": { "score": 50, "icon": "./55.svg" },
+          "750 ml": { "score": 75, "icon": "./56.svg" },
+          "1000 ml": { "score": 100, "icon": "./57.svg" }
         }
       }
     ]
@@ -115,19 +115,19 @@
         "type": "select",
         "options": {
           "Fruits: Berries, Tree Ground, and Vine Fruits": {
-            "value": 750,
+            "score": 100,
             "icon": "58. Fruits, Berries, Tree Ground, and Vine Fruits.png"
           },
           "Grains, Legumes, Seeds, and Nuts": {
-            "value": 500,
+            "score": 50,
             "icon": "59. Grains, Legumes, Seeds, and Nuts.png"
           },
           "Herbs, Spices, Medicinal, or Ornamental Plants": {
-            "value": 1000,
+            "score": 75,
             "icon": "60. Herbs, Spices, Medicinal, or Ornamental Plants.png"
           },
           "Vegetables, Staple Table Crops, and Mushrooms": {
-            "value": 250,
+            "score": 25,
             "icon": "61. Vegetables, Staple Table Crops, and Mushrooms.png"
           }
         }
@@ -136,21 +136,21 @@
         "name": "Select the application method for plant health",
         "type": "select",
         "options": {
-          "Spray": { "value": 1000, "icon": "./62.svg" },
-          "Drench": { "value": 500, "icon": "./63.svg" },
-          "Foliar Application": { "value": 750, "icon": "./64.svg" },
-          "Soil Treatment": { "value": 250, "icon": "./65.svg" }
+          "Spray": { "score": 100, "icon": "./62.svg" },
+          "Drench": { "score": 50, "icon": "./63.svg" },
+          "Foliar Application": { "score": 75, "icon": "./64.svg" },
+          "Soil Treatment": { "score": 25, "icon": "./65.svg" }
         }
       },
       {
         "name": "Select the volume of the plant health solution (ml)",
         "type": "select",
         "options": {
-          "250 ml": { "value": 250, "icon": "./66.svg" },
-          "500 ml": { "value": 500, "icon": "./67.svg" },
-          "750 ml": { "value": 750, "icon": "./68.svg" },
-          "1000 ml": { "value": 1000, "icon": "./69.svg" },
-          "1500 ml": { "value": 1500, "icon": "./70.svg" }
+          "250 ml": { "score": 25, "icon": "./66.svg" },
+          "500 ml": { "score": 50, "icon": "./67.svg" },
+          "750 ml": { "score": 75, "icon": "./68.svg" },
+          "1000 ml": { "score": 100, "icon": "./69.svg" },
+          "1500 ml": { "score": 125, "icon": "./70.svg" }
         }
       }
     ]
@@ -163,10 +163,10 @@
         "name": "Select the type of surface to disinfect",
         "type": "select",
         "options": {
-          "Hard Surfaces": { "value": 750, "icon": "71. Hard Surfaces.png" },
-          "Soft Surfaces": { "value": 500, "icon": "72. Soft Surfaces.png" },
+          "Hard Surfaces": { "score": 100, "icon": "71. Hard Surfaces.png" },
+          "Soft Surfaces": { "score": 50, "icon": "72. Soft Surfaces.png" },
           "Food-Contact Surfaces": {
-            "value": 1000,
+            "score": 75,
             "icon": "73. Food-Contact Surfaces.png"
           }
         }
@@ -175,20 +175,20 @@
         "name": "Select the method of application for disinfection",
         "type": "select",
         "options": {
-          "Spray": { "value": 1000, "icon": "74. Spray.png" },
-          "Wipe": { "value": 750, "icon": "75. Wipe.png" },
-          "Fogging": { "value": 500, "icon": "76. Fogging.png" }
+          "Spray": { "score": 100, "icon": "74. Spray.png" },
+          "Wipe": { "score": 75, "icon": "75. Wipe.png" },
+          "Fogging": { "score": 50, "icon": "76. Fogging.png" }
         }
       },
       {
         "name": "Select the volume of the disinfection solution (ml)",
         "type": "select",
         "options": {
-          "500 ml": { "value": 500, "icon": "./77.svg" },
-          "750 ml": { "value": 750, "icon": "./78.svg" },
-          "1000 ml": { "value": 1000, "icon": "./79.svg" },
-          "1500 ml": { "value": 1500, "icon": "./80.svg" },
-          "2000 ml": { "value": 2000, "icon": "./81.svg" }
+          "500 ml": { "score": 50, "icon": "./77.svg" },
+          "750 ml": { "score": 75, "icon": "./78.svg" },
+          "1000 ml": { "score": 100, "icon": "./79.svg" },
+          "1500 ml": { "score": 125, "icon": "./80.svg" },
+          "2000 ml": { "score": 150, "icon": "./81.svg" }
         }
       }
     ]
@@ -202,43 +202,37 @@
         "type": "select",
         "options": {
           "Acne, Dermatitis, Eczema, and Psoriasis": {
-            "value": 50,
+            "score": 10,
             "icon": "82. Acne, Dermatitis, Eczema, and Psoriasis.png"
           },
           "Antiseptic Wound Irrigant and Sterilizer": {
-            "value": 100,
+            "score": 20,
             "icon": "83. Antiseptic Wound Irrigant and Sterilizer.png"
           },
-          "Dry Shampoo": {
-            "value": 150,
-            "icon": "84. Dry Shampoo.png"
-          },
+          "Dry Shampoo": { "score": 30, "icon": "84. Dry Shampoo.png" },
           "Hair: A Topical, Sanitizer, Degreaser, and Deodorizer": {
-            "value": 200,
+            "score": 40,
             "icon": "85. Hair - A Topical, Sanitizer, Degreaser, and Deodorizer.png"
           },
-          "Hand Sanitizer": {
-            "value": 250,
-            "icon": "86. Hand Sanitizer.png"
-          },
+          "Hand Sanitizer": { "score": 50, "icon": "86. Hand Sanitizer.png" },
           "Skin or Body Sanitizer": {
-            "value": 100,
+            "score": 20,
             "icon": "87. Skin or Body Sanitizer.png"
           },
           "Mouthwash for Hygiene, Receding Gums, and Gingivitis": {
-            "value": 50,
+            "score": 10,
             "icon": "88. Mouthwash for Hygiene, Receding Gums, and Gingivitis.png"
           },
           "Ringworm, Skin Fungus, and Nail Fungus": {
-            "value": 150,
+            "score": 30,
             "icon": "89. Ringworm, Skin Fungus, and Nail Fungus.png"
           },
           "Scalp Fungus, Dandruff, Balding, and Hair Recession": {
-            "value": 200,
+            "score": 40,
             "icon": "90. Scalp Fungus, Dandruff, Balding, and Hair Recession.png"
           },
           "Viral or Bacterial Infections, Herpes, Staph, HFMD": {
-            "value": 250,
+            "score": 50,
             "icon": "91. Viral or Bacterial Infections, Herpes, Staph, HFMD.png"
           }
         }
@@ -247,11 +241,11 @@
         "name": "Select the volume of the personal hygiene solution (ml)",
         "type": "select",
         "options": {
-          "50 ml": { "value": 50, "icon": "./92.svg" },
-          "100 ml": { "value": 100, "icon": "./93.svg" },
-          "150 ml": { "value": 150, "icon": "./94.svg" },
-          "200 ml": { "value": 200, "icon": "./95.svg" },
-          "250 ml": { "value": 250, "icon": "./96.svg" }
+          "50 ml": { "score": 5, "icon": "./92.svg" },
+          "100 ml": { "score": 10, "icon": "./93.svg" },
+          "150 ml": { "score": 15, "icon": "./94.svg" },
+          "200 ml": { "score": 20, "icon": "./95.svg" },
+          "250 ml": { "score": 25, "icon": "./96.svg" }
         }
       }
     ]
