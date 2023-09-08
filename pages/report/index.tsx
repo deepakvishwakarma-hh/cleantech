@@ -26,7 +26,7 @@ const ReportPage = () => {
           Report Analysis <br /> based on your activities
         </Text>
         <Text color={"blue.900"} fontSize={"2xl"} fontWeight={400}>
-          (Incoprating an income and expendiure account)
+          (lorem ipsum dolor sit amet, consectet)
         </Text>
         <Text
           mt={10}
