@@ -1,4 +1,4 @@
-import QUIZ from "../quiz.json";
+import QUIZV2 from "../quizv2.json";
 import { localstorage } from "./useQuiz";
 import { useSessionStorage } from "@mantine/hooks";
 
@@ -28,16 +28,16 @@ const addToCart = (
   selectedOptionName: string
 ) => {
   // Find the category in the QUIZ data
-  const category = QUIZ.find((item) => item.name === categoryName);
+  const category = QUIZV2.find((item) => item.name === categoryName);
 
   if (category) {
     const question = category.question[questionIndex];
-    if (question && question.options[selectedOptionName]) {
+    if (question && question?.options[selectedOptionName]) {
       const itemToAdd: ShoppingCartItem = {
         category: categoryName,
         question: question.name,
         selectedOption: selectedOptionName,
-        score: question.options[selectedOptionName].value,
+        score: question?.options[selectedOptionName].value,
       };
 
       // Add the item to the cart

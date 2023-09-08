@@ -1,7 +1,12 @@
 interface Props {
   question: string;
   category: string;
-  options: { [key: string]: number };
+  options: {
+    [key: string]: {
+      icon: string;
+      score: number;
+    };
+  };
 }
 import Option from "./option";
 import { motion } from "framer-motion";
@@ -48,6 +53,7 @@ const Question: React.FC<Props> = ({ question, options, category }) => {
           return (
             <>
               <Option
+                icon={options[option].icon}
                 key={option}
                 option={option}
                 selected={

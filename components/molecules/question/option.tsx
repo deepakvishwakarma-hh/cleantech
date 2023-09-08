@@ -1,6 +1,7 @@
 interface Props {
   option: string;
   selected: boolean;
+  icon: string;
 }
 import Image from "next/image";
 import { find } from "~/lib/functions";
@@ -9,7 +10,7 @@ import { Button, Box } from "@chakra-ui/react";
 import { localstorage } from "~/hooks/useQuiz";
 import { useSessionStorage } from "@mantine/hooks";
 
-const Option: React.FC<Props> = ({ option, selected }) => {
+const Option: React.FC<Props> = ({ option, selected, icon }) => {
   const router = useRouter();
   const [storage, setStorage]: any = useSessionStorage(localstorage);
   const { ctgr, itd, idx, cpd } = router.query;
@@ -88,7 +89,8 @@ const Option: React.FC<Props> = ({ option, selected }) => {
       }}
     >
       <Box mr={2} minW={"50px"} minHeight={"50px"}>
-        <Image src="/Icons/ck.svg" alt="icon" width={60} height={60} />
+        {/* <Image src={`/Icons/${icon}`} alt="icon" width={60} height={60} /> */}
+        {`/Icons/${icon}`}
       </Box>
       {option} <br />
     </Button>

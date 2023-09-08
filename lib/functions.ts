@@ -1,3 +1,5 @@
+import QUIZV2 from "../quizv2.json"
+
 type TypeStoragePathGeneration = (categories: string[]) => {
     [key: string]: any[];
   };
@@ -15,8 +17,7 @@ type TypeStoragePathGeneration = (categories: string[]) => {
 
   export const find = (name: string) => {
     // console.log(name) last error counter : undefined
-    return QUIZ.filter((item) => item.name === name)[0];
+    return QUIZV2.filter((item) => item.name === name)[0];
   };
   
 
-import QUIZ from "../quiz.json";

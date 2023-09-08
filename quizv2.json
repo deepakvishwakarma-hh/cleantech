@@ -7,35 +7,35 @@
         "name": "How often do you use antiseptic, Disinfectant, fungicide, sanitizer, insecticide, or deodorizer?",
         "type": "select",
         "options": {
-          "several times daily": { "value": 1000, "icon": "./25.svg" },
-          "everyday": { "value": 750, "icon": "./26.svg" },
-          "several tiems weekly": { "value": 500, "icon": "./27.svg" },
-          "weekly": { "value": 250, "icon": "./28.svg" },
-          "monthly": { "value": 1000, "icon": "./29.svg" }
+          "several times daily": { "value": 1000, "icon": "25.svg" },
+          "everyday": { "value": 750, "icon": "26.svg" },
+          "several tiems weekly": { "value": 500, "icon": "27.svg" },
+          "weekly": { "value": 250, "icon": "28.svg" },
+          "monthly": { "value": 1000, "icon": "29.svg" }
         }
       },
       {
         "name": "How long would you like your supply to last?",
         "type": "select",
         "options": {
-          "1 month": { "value": 100, "icon": "./30.svg" },
-          "3 month": { "value": 250, "icon": "./31.svg" },
-          "6 month": { "value": 500, "icon": "./32.svg" },
-          "1 year": { "value": 750, "icon": "./33.svg" },
-          "5 month": { "value": 1000, "icon": "./34.svg" }
+          "1 month": { "value": 100, "icon": "30.svg" },
+          "3 month": { "value": 250, "icon": "31.svg" },
+          "6 month": { "value": 500, "icon": "32.svg" },
+          "1 year": { "value": 750, "icon": "33.svg" },
+          "5 month": { "value": 1000, "icon": "34.svg" }
         }
       },
       {
         "name": "how would you like to keep variSan at more than one location or get some for a friend?",
         "type": "select",
         "options": {
-          "1 location": { "value": 100, "icon": "./35.svg" },
-          "2 location - 10% off": { "value": 250, "icon": "./36.svg" },
-          "3 location - 15% off": { "value": 500, "icon": "./37.svg" },
-          "5 location - 20% off": { "value": 750, "icon": "./38.svg" },
+          "1 location": { "value": 100, "icon": "35.svg" },
+          "2 location - 10% off": { "value": 250, "icon": "36.svg" },
+          "3 location - 15% off": { "value": 500, "icon": "37.svg" },
+          "5 location - 20% off": { "value": 750, "icon": "38.svg" },
           "more than 5 location - 25% off": {
             "value": 1000,
-            "icon": "./39.svg"
+            "icon": "39.svg"
           }
         }
       }
@@ -87,22 +87,22 @@
         "name": "Select the application method for extermination",
         "type": "select",
         "options": {
-          "Spray": { "score": 100, "icon": "./48.svg" },
-          "Fogging": { "score": 75, "icon": "./49.svg" },
-          "Soak": { "score": 50, "icon": "./50.svg" },
-          "Dip": { "score": 25, "icon": "./51.svg" },
-          "Wipe": { "score": 100, "icon": "./52.svg" }
+          "Spray": { "score": 100, "icon": "48.svg" },
+          "Fogging": { "score": 75, "icon": "49.svg" },
+          "Soak": { "score": 50, "icon": "50.svg" },
+          "Dip": { "score": 25, "icon": "51.svg" },
+          "Wipe": { "score": 100, "icon": "52.svg" }
         }
       },
       {
         "name": "Select the volume of the extermination solution (ml)",
         "type": "select",
         "options": {
-          "100 ml": { "score": 10, "icon": "./53.svg" },
-          "250 ml": { "score": 25, "icon": "./54.svg" },
-          "500 ml": { "score": 50, "icon": "./55.svg" },
-          "750 ml": { "score": 75, "icon": "./56.svg" },
-          "1000 ml": { "score": 100, "icon": "./57.svg" }
+          "100 ml": { "score": 10, "icon": "53.svg" },
+          "250 ml": { "score": 25, "icon": "54.svg" },
+          "500 ml": { "score": 50, "icon": "55.svg" },
+          "750 ml": { "score": 75, "icon": "56.svg" },
+          "1000 ml": { "score": 100, "icon": "57.svg" }
         }
       }
     ]
@@ -136,21 +136,21 @@
         "name": "Select the application method for plant health",
         "type": "select",
         "options": {
-          "Spray": { "score": 100, "icon": "./62.svg" },
-          "Drench": { "score": 50, "icon": "./63.svg" },
-          "Foliar Application": { "score": 75, "icon": "./64.svg" },
-          "Soil Treatment": { "score": 25, "icon": "./65.svg" }
+          "Spray": { "score": 100, "icon": "62.svg" },
+          "Drench": { "score": 50, "icon": "63.svg" },
+          "Foliar Application": { "score": 75, "icon": "64.svg" },
+          "Soil Treatment": { "score": 25, "icon": "65.svg" }
         }
       },
       {
         "name": "Select the volume of the plant health solution (ml)",
         "type": "select",
         "options": {
-          "250 ml": { "score": 25, "icon": "./66.svg" },
-          "500 ml": { "score": 50, "icon": "./67.svg" },
-          "750 ml": { "score": 75, "icon": "./68.svg" },
-          "1000 ml": { "score": 100, "icon": "./69.svg" },
-          "1500 ml": { "score": 125, "icon": "./70.svg" }
+          "250 ml": { "score": 25, "icon": "66.svg" },
+          "500 ml": { "score": 50, "icon": "67.svg" },
+          "750 ml": { "score": 75, "icon": "68.svg" },
+          "1000 ml": { "score": 100, "icon": "69.svg" },
+          "1500 ml": { "score": 125, "icon": "70.svg" }
         }
       }
     ]
@@ -184,11 +184,11 @@
         "name": "Select the volume of the disinfection solution (ml)",
         "type": "select",
         "options": {
-          "500 ml": { "score": 50, "icon": "./77.svg" },
-          "750 ml": { "score": 75, "icon": "./78.svg" },
-          "1000 ml": { "score": 100, "icon": "./79.svg" },
-          "1500 ml": { "score": 125, "icon": "./80.svg" },
-          "2000 ml": { "score": 150, "icon": "./81.svg" }
+          "500 ml": { "score": 50, "icon": "77.svg" },
+          "750 ml": { "score": 75, "icon": "78.svg" },
+          "1000 ml": { "score": 100, "icon": "79.svg" },
+          "1500 ml": { "score": 125, "icon": "80.svg" },
+          "2000 ml": { "score": 150, "icon": "81.svg" }
         }
       }
     ]
@@ -241,11 +241,11 @@
         "name": "Select the volume of the personal hygiene solution (ml)",
         "type": "select",
         "options": {
-          "50 ml": { "score": 5, "icon": "./92.svg" },
-          "100 ml": { "score": 10, "icon": "./93.svg" },
-          "150 ml": { "score": 15, "icon": "./94.svg" },
-          "200 ml": { "score": 20, "icon": "./95.svg" },
-          "250 ml": { "score": 25, "icon": "./96.svg" }
+          "50 ml": { "score": 5, "icon": "92.svg" },
+          "100 ml": { "score": 10, "icon": "93.svg" },
+          "150 ml": { "score": 15, "icon": "94.svg" },
+          "200 ml": { "score": 20, "icon": "95.svg" },
+          "250 ml": { "score": 25, "icon": "96.svg" }
         }
       }
     ]
@@ -298,11 +298,11 @@
         "name": "Select the volume of the disinfection solution (ml)",
         "type": "select",
         "options": {
-          "200 ml": { "score": 20, "icon": "./104.svg" },
-          "350 ml": { "score": 35, "icon": "./105.svg" },
-          "500 ml": { "score": 50, "icon": "./106.svg" },
-          "650 ml": { "score": 65, "icon": "./107.svg" },
-          "800 ml": { "score": 80, "icon": "./108.svg" }
+          "200 ml": { "score": 20, "icon": "104.svg" },
+          "350 ml": { "score": 35, "icon": "105.svg" },
+          "500 ml": { "score": 50, "icon": "106.svg" },
+          "650 ml": { "score": 65, "icon": "107.svg" },
+          "800 ml": { "score": 80, "icon": "108.svg" }
         }
       }
     ]
@@ -377,11 +377,11 @@
         "name": "Select the volume of the on-the-go disinfection solution (ml)",
         "type": "select",
         "options": {
-          "100 ml": { "score": 10, "icon": "./123.svg" },
-          "150 ml": { "score": 15, "icon": "./124.svg" },
-          "250 ml": { "score": 25, "icon": "./125.svg" },
-          "350 ml": { "score": 35, "icon": "./126.svg" },
-          "500 ml": { "score": 50, "icon": "./127.svg" }
+          "100 ml": { "score": 10, "icon": "123.svg" },
+          "150 ml": { "score": 15, "icon": "124.svg" },
+          "250 ml": { "score": 25, "icon": "125.svg" },
+          "350 ml": { "score": 35, "icon": "126.svg" },
+          "500 ml": { "score": 50, "icon": "127.svg" }
         }
       }
     ]
@@ -474,11 +474,11 @@
         "name": "Select the volume of the odor elimination solution (ml)",
         "type": "select",
         "options": {
-          "300 ml": { "score": 30, "icon": "./148.svg" },
-          "450 ml": { "score": 45, "icon": "./149.svg" },
-          "600 ml": { "score": 60, "icon": "./150.svg" },
-          "750 ml": { "score": 75, "icon": "./151.svg" },
-          "900 ml": { "score": 90, "icon": "./152.svg" }
+          "300 ml": { "score": 30, "icon": "148.svg" },
+          "450 ml": { "score": 45, "icon": "149.svg" },
+          "600 ml": { "score": 60, "icon": "150.svg" },
+          "750 ml": { "score": 75, "icon": "151.svg" },
+          "900 ml": { "score": 90, "icon": "152.svg" }
         }
       }
     ]
@@ -539,11 +539,11 @@
         "name": "Select the volume of the water treatment solution (ml)",
         "type": "select",
         "options": {
-          "1000 ml": { "score": 1000, "icon": "./165.svg" },
-          "2000 ml": { "score": 2000, "icon": "./166.svg" },
-          "3000 ml": { "score": 3000, "icon": "./167.svg" },
-          "4000 ml": { "score": 4000, "icon": "./168.svg" },
-          "5000 ml": { "score": 5000, "icon": "./169.svg" }
+          "1000 ml": { "score": 1000, "icon": "165.svg" },
+          "2000 ml": { "score": 2000, "icon": "166.svg" },
+          "3000 ml": { "score": 3000, "icon": "167.svg" },
+          "4000 ml": { "score": 4000, "icon": "168.svg" },
+          "5000 ml": { "score": 5000, "icon": "169.svg" }
         }
       }
     ]
@@ -698,19 +698,19 @@
         "options": {
           "100 ml": {
             "value": 10,
-            "icon": "./165.svg"
+            "icon": "165.svg"
           },
           "250 ml": {
             "value": 25,
-            "icon": "./166.svg"
+            "icon": "166.svg"
           },
           "500 ml": {
             "value": 50,
-            "icon": "./167.svg"
+            "icon": "167.svg"
           },
           "750 ml": {
             "value": 75,
-            "icon": "./168.svg"
+            "icon": "168.svg"
           }
         }
       }
