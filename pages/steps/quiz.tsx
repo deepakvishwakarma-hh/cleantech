@@ -16,7 +16,7 @@ export default function Quiz() {
         height={"100vh"}
         columns={[1, 1, 1, 1, 2]}
       >
-        <Box backgroundImage={"/imgs/main.jpg"}></Box>
+        <Box backgroundImage={"/imgs/main.jpg"} bgSize={"cover"}></Box>
         <Center bg="#FEF4EC">
           <Flex maxW={"400px"} flexDir={"column"} alignItems={"center"} gap={5}>
             <Text

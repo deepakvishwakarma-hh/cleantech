@@ -17,7 +17,7 @@ export default function Email(props: EmailProps) {
       setStorage((prev: any) => {
         return { ...prev, email };
       });
-      router.push("usage");
+      router.push("surrounded");
     } else {
       // Handle invalid email input
       alert("Please enter a valid email address.");

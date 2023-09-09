@@ -19,7 +19,7 @@ export default function SurroundedProducts() {
     if (index !== 0) {
       setIndex(index - 1);
     } else {
-      alert("router.back()");
+      router.push("email");
     }
   };
   const handleNext = () => {
@@ -29,7 +29,7 @@ export default function SurroundedProducts() {
       setStorage((prev: any) => {
         return { ...prev, surrounded: selectedItems };
       });
-      alert("router.next()");
+      router.push("usage");
     }
   };
   return (
@@ -57,17 +57,17 @@ export default function SurroundedProducts() {
             <Flex flexWrap={"wrap"} gap={2} justifyContent={"center"} px={5}>
               {cleaningProducts.at(index)?.map((name) => (
                 <Button
-                  px={10}
-                  py={2}
+                  px={5}
+                  py={1}
                   key={name}
                   blockSize="auto"
                   display={"flex"}
                   fontWeight={400}
                   whiteSpace="normal"
                   variant={"unstyled"}
-                  border={"2px black solid"}
+                  border={"1.5px lightgray solid"}
                   textTransform={"capitalize"}
-                  fontSize={["md", "md", "md", "xl"]}
+                  fontSize={"18px"}
                   w={["full", "full", "full", "auto"]}
                   sx={
                     selectedItems.includes(name)
