@@ -36,6 +36,7 @@ const Header: React.FC<HeaderProps> = ({ previous }) => {
     <>
       <Center
         top={0}
+        zIndex={999}
         left={0}
         width={"100%"}
         position={"absolute"}
@@ -48,6 +49,7 @@ const Header: React.FC<HeaderProps> = ({ previous }) => {
 
       <Container
         top={0}
+        zIndex={999}
         as={Flex}
         maxWidth={""}
         left={0}

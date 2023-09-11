@@ -29,17 +29,17 @@ const HowItWorks = () => {
         >
           <Element
             title="Effectiveness"
-            image="/images/happy.png"
+            image="/imgs/a2-Extermination-of-Invasive-Insects.png"
             discription="Swiftly eradicates microorganisms, a highly effective cleaner."
           />
           <Element
             title="Long Lasting Protection"
-            image="/images/long-lasting.png"
+            image="/imgs/23-Healthcare-Hospitals-and-Medical-Facilities.jpg"
             discription="Eliminates and maintains effectively with lasting results."
           />
           <Element
             title="Cost Efficient"
-            image="/images/cost-effective.png"
+            image="/imgs/z20-No-Residue-Surface-Disinfection.jpg"
             discription="Efficiently eliminates contaminants, saves time and costs"
           />
         </Flex>

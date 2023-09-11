@@ -1,7 +1,9 @@
 import { Button, Text, Box, Grid, GridItem, Flex } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 interface Props {
   title: string;
+  image: string;
   description: string;
   handleNext: () => void;
 }
@@ -10,6 +12,7 @@ const CategoryIntroduction: React.FC<Props> = ({
   title,
   description,
   handleNext,
+  image,
 }) => {
   const MotionBox = motion(Box);
   return (
@@ -23,10 +26,17 @@ const CategoryIntroduction: React.FC<Props> = ({
     >
       <Grid templateColumns={["1fr", "1fr", "1fr", "1fr 1fr"]} h={"full"}>
         <GridItem
-          bgImage={
-            "https://images.unsplash.com/photo-1635846650676-55b9ba247172?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80"
-          }
-        ></GridItem>
+          backgroundSize={"cover"}
+          backgroundPosition={"center center"}
+          position={"relative"}
+        >
+          <Image
+            style={{ objectFit: "cover" }}
+            src={`/imgs/${image}`}
+            alt={title}
+            fill
+          />
+        </GridItem>
         <GridItem
           as={Flex}
           flexDir={"column"}

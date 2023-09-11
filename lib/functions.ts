@@ -9,6 +9,9 @@ type TypeStoragePathGeneration = (categories: string[]) => {
     const T: any = {};
     for (let category of categories) {
       const data = find(category);
+      if(!data){
+        console.log(category)
+      }
       T[category] = [...data.question.map((q: any) => null)];
     }
     return T;

@@ -7,6 +7,9 @@ import Layout from "~/components/Layout/question";
 import Question from "~/components/molecules/question";
 import QuizCompletion from "~/components/atoms/QuizCompletion";
 import Introduction from "~/components/molecules/category-introduction";
+
+import images from "../../quiz/categories-images.json";
+
 const QuestionPage = () => {
   const router = useRouter();
   const { ctgr, itd, idx, cpd } = router.query;
@@ -46,6 +49,7 @@ const QuestionPage = () => {
             <AnimatePresence>
               {itd == "true" && cpd == "false" && (
                 <Introduction
+                  image={(images as any)[ctgr as string]}
                   description={DATA.description as string}
                   title={ctgr as string}
                   handleNext={introductionVisiblityHandler}

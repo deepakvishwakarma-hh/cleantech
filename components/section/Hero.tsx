@@ -8,9 +8,7 @@ const Hero = () => {
       bgPosition={"center"}
       bgSize={"cover"}
       bgRepeat={"no-repeat"}
-      backgroundImage={
-        "https://images.unsplash.com/photo-1603248322878-f0e0ac378588?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-      }
+      backgroundImage={"/imgs/surface-clean.png"}
     >
       <Container
         pt={"20vh"}
@@ -25,8 +23,12 @@ const Hero = () => {
           fontSize={["3xl", "4xl", "4xl", "5xl"]}
           textAlign={"center"}
           color={"white"}
+          dropShadow={"2xl"}
         >
-          VERISAN™ Safe and Proven Disinfectant with Chlorine Dioxide Technology
+          <Text display={"inline"} color={"#9f7200"}>
+            VERISAN™
+          </Text>{" "}
+          Safe and Proven Disinfectant with Chlorine Dioxide Technology
         </Text>
         <Link passHref href={"/steps/quiz"}>
           <Button px={20} py={8} fontSize={"xl"} variant="takequizsmall" ml={2}>

@@ -31,7 +31,7 @@ const addToCart = (
   const category = QUIZV2.find((item) => item.name === categoryName);
 
   if (category) {
-    const question = category.question[questionIndex];
+    const question = category.question[questionIndex] as any;
     if (question && question?.options[selectedOptionName]) {
       const itemToAdd: ShoppingCartItem = {
         category: categoryName,

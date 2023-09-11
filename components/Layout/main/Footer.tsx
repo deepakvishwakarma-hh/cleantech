@@ -106,7 +106,7 @@ const Footer = () => {
       color={"white"}
       as={Grid}
       gap={10}
-      templateColumns={["1fr", "1fr", "1fr", "1fr", "2.5fr 1fr"]}
+      templateColumns={["1fr", "1fr", "1fr", "1fr", "1fr 1fr", "2fr 1fr"]}
       maxWidth={""}
       p={[10, 10, 100]}
     >
@@ -192,7 +192,7 @@ const Footer = () => {
           gap={[10, 10, 0]}
         >
           <GridItem>
-            <Text fontWeight={200}>CUSTOMCLEANTECHSOLUTIONS</Text>
+            <Text fontWeight={200}>CUSTOM CLEANTECH SOLUTIONS</Text>
 
             <SimpleGrid mt={5} columns={2} spacing={3.5}>
               {cart_of.map((link) => (
