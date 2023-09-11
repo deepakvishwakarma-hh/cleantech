@@ -20,7 +20,7 @@
     "water treatment and water storage"
   ],
   "high": [
-    "no-residue hard or soft surface disinfection",
+    "no-residue hard and soft surface disinfection",
     "extermination of invasive insects",
     "hazmat (remediation and decontamination)",
     "healthcare, hospitals, and medical facilities",
@@ -30,3 +30,5 @@
     "other industrial processes (miscellaneous)"
   ]
 }
+
+
