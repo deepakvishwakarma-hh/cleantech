@@ -566,36 +566,36 @@
         "type": "select",
         "options": {
           "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": {
-            "score": 7,
-            "icon": "175. Tools and Equipment.png"
+            "score": 100,
+            "icon": "56. Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps (2).png"
           },
           "Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips": {
-            "score": 4,
-            "icon": "176. Meat Production Operations - (Agriculture).png"
+            "score": 25,
+            "icon": "57. Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips.png"
           },
           "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": {
-            "score": 14,
-            "icon": "177. Produce Production Operations - (Horticulture) (2).png"
+            "score": 50,
+            "icon": "58. Bed Bugs, Cockroaches, Fleas, Lice, and Ticks.png"
           },
           "Cabbage-Maggots, Caterpillars, and Cutworms": {
-            "score": 1,
-            "icon": "178. Sewer and Wastewater Treatment.png"
+            "score": 75,
+            "icon": "59. Cabbage-Maggots, Caterpillars, and Cutworms.png"
           },
           "Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums": {
-            "score": 7,
-            "icon": "179. Scientific and Laboratory Use.png"
+            "score": 100,
+            "icon": "60. Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums.png"
           },
           "House flies, Horse flies, Maggots, Moths, and Spiders": {
-            "score": 4,
-            "icon": "180. Tattoo.png"
+            "score": 50,
+            "icon": "61. House flies, Horse flies, Maggots, Moths, and Spiders.png"
           },
-          "Mosquitos, Drain Flies, and Water-born Insects": {
-            "score": 14,
-            "icon": "181. Other.png"
+          "Mosquitos, Drain Flies, and Water-borne Insects": {
+            "score": 75,
+            "icon": "62. Mosquitos, Drain Flies, and Water-borne Insects.png"
           },
-          "Slugs, Snails, and Slimy Garden Invaders": {
-            "score": 1,
-            "icon": "182. Civilian Use and Residential Applications (Home and Garden).png"
+          "Slugs, Snails, and Slimy Garden Gastropod Invaders": {
+            "score": 25,
+            "icon": "63. Slugs, Snails, and Slimy Garden Gastropod Invaders.png"
           }
         }
       }
@@ -648,21 +648,12 @@
         "type": "select",
         "options": {
           "Dip": {
-            "value": 100,
-            "icon": "161. Dip.png"
+            "score": 100,
+            "icon": "142. Dip, Soak, or Rinse for All Surfaces, Food, and Non-Food Items.png"
           },
-          "Soak": {
-            "value": 250,
-            "icon": "162. Soak.png"
-          },
-          "Fogging": {
-            "value": 500,
-            "icon": "163. Fogging.png"
-          },
-          "Spray": {
-            "value": 750,
-            "icon": "164. Spray.png"
-          }
+          "Soak": { "score": 75, "icon": "86. Soak, Rinse or Dip.png" },
+          "Fogging": { "score": 45, "icon": "85. Fogging and Vapor.png" },
+          "Spray": { "score": 30, "icon": "87. Wipe Mop or Spray.png" }
         }
       },
       {
@@ -670,20 +661,16 @@
         "type": "select",
         "options": {
           "100 ml": {
-            "value": 10,
-            "icon": "165.svg"
+            "value": 10
           },
           "250 ml": {
-            "value": 25,
-            "icon": "166.svg"
+            "value": 25
           },
           "500 ml": {
-            "value": 50,
-            "icon": "167.svg"
+            "value": 50
           },
           "750 ml": {
-            "value": 75,
-            "icon": "168.svg"
+            "value": 75
           }
         }
       }
@@ -699,35 +686,35 @@
         "options": {
           "Aquaponics and Aquaculture (Fish and Other Aquatics)": {
             "value": 7,
-            "icon": "184. Aquaponics and Aquaculture (Fish and Other Aquatics).png"
+            "icon": "191. Aquaponics and Aquaculture (Fish and Other Aquatics).png"
           },
           "Beekeeping and Bees (A Treatment for Mold and Mites)": {
             "value": 4,
-            "icon": "185. Beekeeping and Bees (A Treatment for Mold and Mites).png"
+            "icon": "192. Beekeeping and Bees (A Treatment for Mold and Mites).png"
           },
           "Chemical Decontamination (Fertilizers and Insecticides)": {
             "value": 14,
-            "icon": "186. Chemical Decontamination (Fertilizers and Insecticides).png"
+            "icon": "179. Chemical Decontamination(Fertilizers and Insecticides).png"
           },
           "Crop Management - Commercial (Mold, Disease, and Insect Control)": {
             "value": 1,
-            "icon": "187. Crop Management - Commercial (Mold, Disease, and Insect Control).png"
+            "icon": "180. Crop Management - Commercial(Mold, Disease, and Insect Control).png"
           },
           "Eggs, Dairy, Meat, and Fish at Harvest (Before Processing or Shipping)": {
             "value": 7,
-            "icon": "188. Eggs, Dairy, Meat, and Fish at Harvest (Before Processing or Shipping).png"
+            "icon": "181. Eggs, Dairy, Meat, and Fish at Harvest (Before Processing or Shipping).png"
           },
           "Plants, Produce, and Mycology (Fruits, Fungi, and Vegetables)": {
             "value": 4,
-            "icon": "189. Plants, Produce, and Mycology (Fruits, Fungi, and Vegetables).png"
+            "icon": "185. Plants, Produce, and Mycology (Fruits, Fungi, and Vegetables).png"
           },
           "Livestock and Animal Rearing (Cattle, Chickens Swine, Sheep)": {
             "value": 14,
-            "icon": "190. Livestock and Animal Rearing (Cattle, Chickens Swine, Sheep).png"
+            "icon": "186. Livestock and Animal Rearing(Cattle, Chickens Swine, Sheep).png"
           },
           "Tools, Implements and Equipment (Horticulture and Agriculture)": {
             "value": 1,
-            "icon": "191. Tools, Implements and Equipment (Horticulture and Agriculture).png"
+            "icon": "190. Tools, Implements and Equipment (Horticulture and Agriculture).png"
           }
         }
       }
@@ -743,103 +730,103 @@
         "options": {
           "Food Service Equipment, Appliances and Food Contact Surfaces": {
             "value": 7,
-            "icon": "192. Food Service Equipment, Appliances and Food Contact Surfaces.png"
+            "icon": "149. Food Service.png"
           },
           "Glassware, Flatware, Kitchen Utensils, and Tools": {
             "value": 4,
-            "icon": "193. Glassware, Flatware, Kitchen Utensils, and Tools.png"
+            "icon": "151. Glassware, Flatware, Kitchen Utensils, and Tools.png"
           },
           "Restaurants and Cafeteria Operational Maintenance": {
             "value": 14,
-            "icon": "194. Restaurants and Cafeteria Operational Maintenance.png"
+            "icon": "152. Restaurants and Cafeteria Operational Maintenance.png"
           },
           "Refrigeration Units, Food Storage, Ice, Tanks and Lines": {
             "value": 1,
-            "icon": "195. Refrigeration Units, Food Storage, Ice, Tanks and Lines.png"
+            "icon": "153. efrigeration Units, Food Storage, Ice, Tanks, and Lines.png"
           },
           "Airbnb, Rental Homes, and Rental Properties": {
             "value": 7,
-            "icon": "196. Airbnb, Rental Homes, and Rental Properties.png"
+            "icon": "155. Airbnb, Rental Homes, and Rental Properties.png"
           },
           "Barber Shop, Hair Salons, and Nail Salons": {
             "value": 4,
-            "icon": "197. Barber Shop, Hair Salons, and Nail Salons.png"
+            "icon": "156. Barber Shop, Hair Salons, and Nail Salons.png"
           },
           "Bars and Nightclubs, Exotic Settings, Stage Hygiene": {
             "value": 14,
-            "icon": "198. Bars and Nightclubs, Exotic Settings, Stage Hygiene.png"
+            "icon": "157. Bars and Nightclubs, Exotic Settings, Stage Hygiene.png"
           },
           "Churches, Mosques, and Pews, Before and After Services": {
             "value": 1,
-            "icon": "199. Churches, Mosques, and Pews, Before and After Services.png"
+            "icon": "158. Churches, Mosques, and Pews, Before and After Services.png"
           },
           "College Campuses, Universities, Recreational, and Dormitories": {
             "value": 7,
-            "icon": "200. College Campuses, Universities, Recreational, and Dormitories.png"
+            "icon": "159. College Campuses, Universities, Recreational, and Dormitories.png"
           },
           "Commercial Laundry Facilities and Dry Cleaning": {
             "value": 4,
-            "icon": "201. Commercial Laundry Facilities and Dry Cleaning.png"
+            "icon": "160. Commercial Laundry Facilities and Dry Cleaning.png"
           },
           "Convention Centers, and Conference Halls": {
             "value": 14,
-            "icon": "202. Convention Centers, and Conference Halls.png"
+            "icon": "161. Convention Centers, and Conference Halls.png"
           },
           "Daycare Facilities, Preschools, and Nurseries": {
             "value": 1,
-            "icon": "203. Daycare Facilities, Preschools, and Nurseries.png"
+            "icon": "162. Daycare Facilities, Preschools, and Nurseries.png"
           },
           "Facility Cleaning, Maintenance, Disinfection, and Deodorization": {
             "value": 7,
-            "icon": "204. Facility Cleaning, Maintenance, Disinfection, and Deodorization.png"
+            "icon": "163. Facility Cleaning, Maintenance, Disinfection, and Deodorization.png"
           },
           "Hospitality, Hotels, Motels. and Resorts": {
             "value": 4,
-            "icon": "205. Hospitality, Hotels, Motels. and Resorts.png"
+            "icon": "164. Hospitality, Hotels, Motels. and Resorts.png"
           },
           "Movie Theaters, Hotels, Halls, and Showrooms": {
             "value": 14,
-            "icon": "206. Movie Theaters, Hotels, Halls, and Showrooms.png"
+            "icon": "165. Movie Theaters, Hotels, Halls, and Showrooms.png"
           },
           "Retail Sales and Consignment Shops (Clothing Stores and Thrift Stores)": {
             "value": 1,
-            "icon": "207. Retail Sales and Consignment Shops (Clothing Stores and Thrift Stores).png"
+            "icon": "166. Retail Sales and Consignment Shops (Clothing Stores and Thrift Stores.png"
           },
           "Learning Institutions, Schools and Classroom Environments": {
             "value": 7,
-            "icon": "208. Learning Institutions, Schools and Classroom Environments.png"
+            "icon": "167. Learning Institutions, Schools and Classroom Environment.png"
           },
           "Securities, Police, Clandestine and Military Use": {
             "value": 4,
-            "icon": "209. Securities, Police, Clandestine and Military Use.png"
+            "icon": "168. Securities, Police, Clandestine and Military Use.png"
           },
           "Stadiums, Bleachers, and Arenas, Deodorize, and Sanitize": {
             "value": 14,
-            "icon": "210. Stadiums, Bleachers, and Arenas, Deodorize, and Sanitize.png"
+            "icon": "169. Stadiums, Bleachers, and Arenas, Deodorize, and Sanitize.png"
           },
           "Turf, Cleaning Indoor or Outdoor Commercial, or Athletic Turf": {
             "value": 1,
-            "icon": "211. Turf, Cleaning Indoor or Outdoor Commercial, or Athletic Turf.png"
+            "icon": "170. Turf, Cleaning Indoor or Outdoor Commercial, or Athletic Turf.png"
           },
           "Veterinarian and Animal Shelter Use of Chlorine Dioxide": {
             "value": 7,
-            "icon": "212. Veterinarian and Animal Shelter Use of Chlorine Dioxide.png"
+            "icon": "171. Veterinarian and Animal Shelter Use of Chlorine Dioxide.png"
           },
           "Workout Equipment, Wrestling, or Gymnastic Mats": {
             "value": 4,
-            "icon": "213. Workout Equipment, Wrestling, or Gymnastic Mats.png"
+            "icon": "172. Workout Equipment, Wrestling, or Gymnastic Mats.png"
           },
           "Fogging and Vapor": {
             "value": 14,
-            "icon": "214. Fogging and Vapor.png"
+            "icon": "223. Fogging and Thermal Fogging.png"
           },
           "Soak, Rinse or Dip": {
             "value": 1,
-            "icon": "215. Soak, Rinse or Dip.png"
+            "icon": "142. Dip, Soak, or Rinse for All Surfaces, Food, and Non-Food Items.png"
           },
           "Wipe Mop or Spray": {
             "value": 7,
-            "icon": "216. Wipe Mop or Spray.png"
+            "icon": "87. Wipe Mop or Spray.png"
           }
         }
       }
