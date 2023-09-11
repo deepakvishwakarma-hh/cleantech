@@ -89,8 +89,11 @@ const Option: React.FC<Props> = ({ option, selected, icon }) => {
       }}
     >
       <Box mr={2} minW={"50px"} minHeight={"50px"}>
-        {/* <Image src={`/Icons/${icon}`} alt="icon" width={60} height={60} /> */}
-        {`/Icons/${icon}`}
+        {icon && (
+          <Image src={`/icons/${icon}`} alt="icon" width={60} height={60} />
+        )}
+
+        {/* {`/icons/${icon}`} */}
       </Box>
       {option} <br />
     </Button>
