@@ -95,7 +95,12 @@ function Product({ title, imageUrl, price }: any) {
           {/* <Text color={"gray.500"} fontSize={"sm"} textTransform={"uppercase"}>
             Recommended
           </Text> */}
-          <Heading fontSize={"xl"} fontFamily={"body"} fontWeight={500}>
+          <Heading
+            fontSize={"xl"}
+            textAlign={"center"}
+            fontFamily={"body"}
+            fontWeight={500}
+          >
             {title}
           </Heading>
           <Stack direction={"row"} align={"center"}>
