@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import Layout from "~/components/Layout/main";
 export default function Products({ products }: any) {
+  console.log(products);
   return (
     <Layout>
       <Container pt={"20vh"} maxW={""} px={"5rem"} gap={10}>
@@ -33,9 +34,23 @@ export default function Products({ products }: any) {
         <Flex flexWrap={"wrap"} gap={5}></Flex>
 
         <Flex flexWrap={"wrap"}>
-          {products.map((product: any, index: number) => (
-            <Product key={index} title={product.title.rendered} />
-          ))}
+          {products.map((product: any, index: number) => {
+            // Accessing the image URL and width from the media_details object
+            const imageUrl =
+              product._embedded["wp:featuredmedia"][0].source_url;
+            const imageWidth =
+              product._embedded["wp:featuredmedia"][0].media_details.width;
+
+            // Rendering the Product component with the image URL and width
+            return (
+              <Product
+                key={index}
+                title={product.title.rendered}
+                imageUrl={imageUrl}
+                imageWidth={imageWidth}
+              />
+            );
+          })}
         </Flex>
       </Container>
     </Layout>
@@ -53,7 +68,7 @@ export const getStaticProps = async () => {
 const IMAGE =
   "https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80";
 
-function Product({ title, image, price }: any) {
+function Product({ title, imageUrl, price }: any) {
   return (
     <Center py={12}>
       <Box
@@ -72,7 +87,7 @@ function Product({ title, image, price }: any) {
             height={230}
             width={282}
             objectFit={"cover"}
-            src={IMAGE}
+            src={imageUrl}
             alt="#"
           />
         </Box>
