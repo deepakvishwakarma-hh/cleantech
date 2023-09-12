@@ -17,7 +17,7 @@ const Option: React.FC<Props> = ({ option, selected, icon }) => {
   const { question } = find(
     (ctgr as string) ?? "no-rinse surface disinfection"
   );
-
+  const sanitizedIcon = icon ? icon.replace(/ /g, "-") : "";
   return (
     <Button
       px={10}
@@ -89,8 +89,13 @@ const Option: React.FC<Props> = ({ option, selected, icon }) => {
       }}
     >
       <Box mr={2} minW={"50px"} minHeight={"50px"}>
-        {icon && (
-          <Image src={`/icons/${icon}`} alt="icon" width={60} height={60} />
+        {sanitizedIcon && (
+          <Image
+            src={`/icons/${sanitizedIcon}`}
+            alt="icon"
+            width={60}
+            height={60}
+          />
         )}
 
         {/* {`/icons/${icon}`} */}
