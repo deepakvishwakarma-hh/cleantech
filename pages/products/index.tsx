@@ -12,6 +12,7 @@ import {
   NumberIncrementStepperProps,
 } from "@chakra-ui/react";
 import Layout from "~/components/Layout/main";
+import { ProductCard } from "~/components/atoms/Card/Product";
 export default function Products({ products }: any) {
   console.log(products);
   return (
@@ -43,12 +44,22 @@ export default function Products({ products }: any) {
 
             // Rendering the Product component with the image URL and width
             return (
-              <Product
+              <ProductCard
+                // rating={5}
+                // slug={"/jklsdjkl-sdf"}
                 key={index}
-                title={product.title.rendered}
-                imageUrl={imageUrl}
-                imageWidth={imageWidth}
+                // name={product.title.rendered}
+                // description={product.title.rendered}
+                // price={99}
+                // mainImage={imageUrl}
+                product={product}
               />
+              // <Product
+              //   key={index}
+              //   title={product.title.rendered}
+              //   imageUrl={imageUrl}
+              //   imageWidth={imageWidth}
+              // />
             );
           })}
         </Flex>
