@@ -17,14 +17,7 @@ const Option: React.FC<Props> = ({ option, selected, icon }) => {
   const { question } = find(
     (ctgr as string) ?? "no-rinse surface disinfection"
   );
-  const sanitizedIcon = icon
-    ? icon
-        .replace(/\s+/g, "-") // Replace spaces with hyphens
-        .replace(/\.(?=.*\.png)/g, "") // Remove all dots except the last one before ".png"
-        .replace(/\(/g, "-") // Replace parentheses with hyphens
-        .replace(/\)/g, "-") // Replace parentheses with hyphens
-        .replace(/,/g, "-") // Replace commas with hyphens
-    : "";
+
   return (
     <Button
       px={10}
@@ -98,7 +91,7 @@ const Option: React.FC<Props> = ({ option, selected, icon }) => {
       <Box mr={2} minW={"50px"} minHeight={"50px"}>
         {
           <Image
-            src={`/icons/civilian_use_and_residential_applications__home_and_garden.png`}
+            src={`/Icons/civilian_use_and_residential_applications__home_and_garden.png`}
             alt="icon"
             width={60}
             height={60}
