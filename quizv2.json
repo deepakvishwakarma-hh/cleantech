@@ -9,35 +9,35 @@
         "options": {
           "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": {
             "score": 100,
-            "icon": "1-civilian-use-and-residential-applications--home-and-garden-.png"
+            "icon": "2-Extermination-of-Invasive-Insects.png"
           },
           "Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips": {
             "score": 25,
-            "icon": "57. Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips.png"
+            "icon": "2-Extermination-of-Invasive-Insects.png"
           },
           "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": {
             "score": 50,
-            "icon": "58. Bed Bugs, Cockroaches, Fleas, Lice, and Ticks.png"
+            "icon": "2-Extermination-of-Invasive-Insects.png"
           },
           "Cabbage-Maggots, Caterpillars, and Cutworms": {
             "score": 75,
-            "icon": "59. Cabbage-Maggots, Caterpillars, and Cutworms.png"
+            "icon": "2-Extermination-of-Invasive-Insects.png"
           },
           "Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums": {
             "score": 100,
-            "icon": "60. Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums.png"
+            "icon": "2-Extermination-of-Invasive-Insects.png"
           },
           "House flies, Horse flies, Maggots, Moths, and Spiders": {
             "score": 50,
-            "icon": "61. House flies, Horse flies, Maggots, Moths, and Spiders.png"
+            "icon": "2-Extermination-of-Invasive-Insects.png"
           },
           "Mosquitos, Drain Flies, and Water-borne Insects": {
             "score": 75,
-            "icon": "62. Mosquitos, Drain Flies, and Water-borne Insects.png"
+            "icon": "2-Extermination-of-Invasive-Insects.png"
           },
           "Slugs, Snails, and Slimy Garden Gastropod Invaders": {
             "score": 25,
-            "icon": "63. Slugs, Snails, and Slimy Garden Gastropod Invaders.png"
+            "icon": "2-Extermination-of-Invasive-Insects.png"
           }
         }
       },
