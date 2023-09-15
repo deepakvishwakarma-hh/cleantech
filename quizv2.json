@@ -9,35 +9,35 @@
         "options": {
           "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": {
             "score": 100,
-            "icon": "2-Extermination-of-Invasive-Insects.png"
+            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
           },
           "Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips": {
             "score": 25,
-            "icon": "2-Extermination-of-Invasive-Insects.png"
+            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
           },
           "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": {
             "score": 50,
-            "icon": "2-Extermination-of-Invasive-Insects.png"
+            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
           },
           "Cabbage-Maggots, Caterpillars, and Cutworms": {
             "score": 75,
-            "icon": "2-Extermination-of-Invasive-Insects.png"
+            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
           },
           "Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums": {
             "score": 100,
-            "icon": "2-Extermination-of-Invasive-Insects.png"
+            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
           },
           "House flies, Horse flies, Maggots, Moths, and Spiders": {
             "score": 50,
-            "icon": "2-Extermination-of-Invasive-Insects.png"
+            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
           },
           "Mosquitos, Drain Flies, and Water-borne Insects": {
             "score": 75,
-            "icon": "2-Extermination-of-Invasive-Insects.png"
+            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
           },
           "Slugs, Snails, and Slimy Garden Gastropod Invaders": {
             "score": 25,
-            "icon": "2-Extermination-of-Invasive-Insects.png"
+            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
           }
         }
       },
