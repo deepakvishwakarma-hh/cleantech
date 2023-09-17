@@ -9,35 +9,35 @@
         "options": {
           "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": {
             "score": 100,
-            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
+            "icon": "66-Cement--Ceramics--Glass--Stone--or-Tile.png"
           },
           "Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips": {
             "score": 25,
-            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
+            "icon": "56-Ants--Beetles--Grasshoppers--Crickets--Termites--or-Wasps--2-.png"
           },
           "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": {
             "score": 50,
-            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
+            "icon": "58-Bed-Bugs--Cockroaches--Fleas--Lice--and-Ticks.png"
           },
           "Cabbage-Maggots, Caterpillars, and Cutworms": {
             "score": 75,
-            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
+            "icon": "59-Cabbage-Maggots--Caterpillars--and-Cutworms.png"
           },
           "Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums": {
             "score": 100,
-            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
+            "icon": "60-Fruit-Flies--Fungus-Gnats--Shore-Flies--and-Noseeums.png"
           },
           "House flies, Horse flies, Maggots, Moths, and Spiders": {
             "score": 50,
-            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
+            "icon": "61-House-flies--Horse-flies--Maggots--Moths--and-Spiders.png"
           },
           "Mosquitos, Drain Flies, and Water-borne Insects": {
             "score": 75,
-            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
+            "icon": "62-Mosquitos--Drain-Flies--and-Water-borne-Insects.png"
           },
           "Slugs, Snails, and Slimy Garden Gastropod Invaders": {
             "score": 25,
-            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
+            "icon": "63-Slugs--Snails--and-Slimy-Garden-Gastropod-Invaders.png"
           }
         }
       },
@@ -45,11 +45,11 @@
         "name": "Select the application method for extermination",
         "type": "select",
         "options": {
-          "Spray": { "score": 100, "icon": "87. Wipe Mop or Spray.png" },
-          "Fogging": { "score": 75, "icon": "87. Wipe Mop or Spray.png" },
-          "Soak": { "score": 50, "icon": "87. Wipe Mop or Spray.png" },
-          "Dip": { "score": 25, "icon": "87. Wipe Mop or Spray.png" },
-          "Wipe": { "score": 100, "icon": "87. Wipe Mop or Spray.png" }
+          "Spray": { "score": 100, "icon": "87-Wipe-Mop-or-Spray.png" },
+          "Fogging": { "score": 75, "icon": "85-Fogging-and-Vapor.png" },
+          "Soak": { "score": 50, "icon": "86-Soak--Rinse-or-Dip.png" },
+          "Dip": { "score": 25, "icon": "86-Soak--Rinse-or-Dip.png" },
+          "Wipe": { "score": 100, "icon": "87-Wipe-Mop-or-Spray.png" }
         }
       },
       {
@@ -74,19 +74,19 @@
         "options": {
           "Fruits: Berries, Tree Ground, and Vine Fruits": {
             "score": 100,
-            "icon": "28. Fruits Berries, Tree Ground, and Vine Fruits.png"
+            "icon": "28-Fruits-Berries--Tree-Ground--and-Vine-Fruits.png"
           },
           "Grains, Legumes, Seeds, and Nuts": {
             "score": 50,
-            "icon": "35. Grains, Legumes, Seeds, and Nuts..png"
+            "icon": "35-Grains--Legumes--Seeds--and-Nuts.png"
           },
           "Herbs, Spices, Medicinal, or Ornamental Plants": {
             "score": 75,
-            "icon": "42. Herbs, Spices, Medicinal, or Ornamental Plants.png"
+            "icon": "42-Herbs--Spices--Medicinal--or-Ornamental-Plants.png"
           },
           "Vegetables, Staple Table Crops, and Mushrooms": {
             "score": 25,
-            "icon": "49. Vegetables, Staple Table Crops, and Mushrooms.png"
+            "icon": "49-Vegetables--Staple-Table-Crops--and-Mushrooms.png"
           }
         }
       },
@@ -104,55 +104,11 @@
         "name": "Select the volume of the plant health solution (ml)",
         "type": "select",
         "options": {
+          "100 ml": { "score": 10 },
           "250 ml": { "score": 25 },
           "500 ml": { "score": 50 },
           "750 ml": { "score": 75 },
-          "1000 ml": { "score": 100 },
-          "1500 ml": { "score": 125 }
-        }
-      }
-    ]
-  },
-  {
-    "name": "no-rinse surface disinfection",
-    "description": "Experience the power of a comprehensive, eco-friendly solution that leaves your hard and soft surfaces clean and free from harmful bacteria, viruses, mold, and odor. Also, maintain impeccable hygiene on food contact surfaces with no rinse required.",
-    "question": [
-      {
-        "name": "Select the type of surface to disinfect",
-        "type": "select",
-        "options": {
-          "Hard Surfaces": {
-            "score": 100,
-            "icon": "4. No-Rinse Hard or Soft Surface Disinfection.png"
-          },
-          "Soft Surfaces": {
-            "score": 50,
-            "icon": "4. No-Rinse Hard or Soft Surface Disinfection.png"
-          },
-          "Food-Contact Surfaces": {
-            "score": 75,
-            "icon": "78. Food-Contact Surface Disinfection.png"
-          }
-        }
-      },
-      {
-        "name": "Select the method of application for disinfection",
-        "type": "select",
-        "options": {
-          "Spray": { "score": 100, "icon": "87. Wipe Mop or Spray.png" },
-          "Wipe": { "score": 75, "icon": "87. Wipe Mop or Spray.png" },
-          "Fogging": { "score": 50, "icon": "85. Fogging and Vapor.png" }
-        }
-      },
-      {
-        "name": "Select the volume of the disinfection solution (ml)",
-        "type": "select",
-        "options": {
-          "500 ml": { "score": 50 },
-          "750 ml": { "score": 75 },
-          "1000 ml": { "score": 100 },
-          "1500 ml": { "score": 125 },
-          "2000 ml": { "score": 150 }
+          "1000 ml": { "score": 100 }
         }
       }
     ]
@@ -167,55 +123,36 @@
         "options": {
           "Acne, Dermatitis, Eczema, and Psoriasis": {
             "score": 10,
-            "icon": "96. Acne, Dermatitis, Eczema, and Psoriasis.png"
+            "icon": "1.civilian_use_and_residential_applications__home_and_garden.png"
           },
           "Antiseptic Wound Irrigant and Sterilizer": {
             "score": 20,
-            "icon": "97. Antiseptic Wound Irrigant and Sterilizer.png"
+            "icon": "97-Antiseptic-Wound-Irrigant-and-Sterilizer.png"
           },
           "Dry Shampoo": {
             "score": 30,
-            "icon": "98. Dry Shampoo, Replace Your Aluminum-Based Products..png"
+            "icon": "98-Dry-Shampoo--Replace-Your-Aluminum-Based-Products.png"
           },
           "Hair: A Topical, Sanitizer, Degreaser, and Deodorizer": {
             "score": 40,
-            "icon": "99. Hair A Topical, Sanitizer, Degreaser, and Deodorizer.png"
+            "icon": "99-Hair-A-Topical--Sanitizer--Degreaser--and-Deodorizer.png"
           },
           "Hand Sanitizer": {
             "score": 50,
-            "icon": "100. Hand Sanitizer, Make A Stronger, Safer Version.png"
+            "icon": "100-Hand-Sanitizer--Make-A-Stronger--Safer-Version.png"
           },
-          "Skin or Body Sanitizer": {
-            "score": 20,
-            "icon": "101. Skin or body Sanitizer A No-Residue Whole Body Deodorizer.png"
+          "Skin or body Sanitizer: A No-Residue Whole-Body Deodorizer": {
+            "score": 60,
+            "icon": "101-Skin-or-body-Sanitizer-A-No-Residue-Whole-Body-Deodorizer.png"
           },
-          "Mouthwash for Hygiene, Receding Gums, and Gingivitis": {
-            "score": 10,
-            "icon": "102. Mouthwash for Hygiene, Receding Gums, and Gingivitis.png"
+          "Mouthwash for Hygiene, Receding gums, and Gingivitis": {
+            "score": 70,
+            "icon": "102-Mouthwash-for-Hygiene--Receding-gums--and-Gingivitis.png"
           },
           "Ringworm, Skin Fungus, and Nail Fungus": {
-            "score": 30,
-            "icon": "103. Ringworm, Skin Fungus, and Nail Fungus (2).png"
-          },
-          "Scalp Fungus, Dandruff, Balding, and Hair Recession": {
-            "score": 40,
-            "icon": "104. Scalp Fungus, Dandruff, Balding, and Hair Recession.png"
-          },
-          "Viral or Bacterial Infections, Herpes, Staph, HFMD": {
-            "score": 50,
-            "icon": "105. Viral or Bacterial Infections, Herpes, Staph, HFMD.png"
+            "score": 80,
+            "icon": "103-Ringworm--Skin-Fungus--and-Nail-Fungus--2-.png"
           }
-        }
-      },
-      {
-        "name": "Select the volume of the personal hygiene solution (ml)",
-        "type": "select",
-        "options": {
-          "50 ml": { "score": 5 },
-          "100 ml": { "score": 10 },
-          "150 ml": { "score": 15 },
-          "200 ml": { "score": 20 },
-          "250 ml": { "score": 25 }
         }
       }
     ]
@@ -230,19 +167,19 @@
         "options": {
           "Produce": {
             "score": 50,
-            "icon": "6. Produce, Groceries, Eggs, Meat, and Fish.png"
+            "icon": "6-Produce-Groceries-Eggs-Meat-and-Fish.png"
           },
           "Packaged Food Items and Grocery Items": {
             "score": 35,
-            "icon": "107. Packaged food Items and Grocery Items.png"
+            "icon": "107-Packaged-food-Items-and-Grocery-Items.png"
           },
           "Meat or Fish": {
             "score": 50,
-            "icon": "181. Eggs, Dairy, Meat, and Fish at Harvest (Before Processing or Shipping).png"
+            "icon": "184-Meat-and-Fish.png"
           },
           "Eggs, Cheese, and Dairy": {
             "score": 65,
-            "icon": "109. Eggs, Cheese, and Dairy.png"
+            "icon": "183-Dairy.png"
           }
         }
       },
@@ -252,15 +189,15 @@
         "options": {
           "Spray": {
             "score": 50,
-            "icon": "87. Wipe Mop or Spray.png"
+            "icon": "87-Wipe-Mop-or-Spray.png"
           },
           "Dip": {
             "score": 35,
-            "icon": "86. Soak, Rinse or Dip.png"
+            "icon": "86-Soak-Rinse-or-Dip.png"
           },
           "Soak": {
             "score": 20,
-            "icon": "142. Dip, Soak, or Rinse for All Surfaces, Food, and Non-Food Items.png"
+            "icon": "142-Dip-Soak-or-Rinse-for-All-Surfaces-Food-and-Non-Food-Items.png"
           }
         }
       },
@@ -287,59 +224,59 @@
         "options": {
           "Adventure, Emergency, and Survival Preparation of Drinking Water": {
             "score": 10,
-            "icon": "110. Adventure, Emergency, and Survival Preparation of Drinking Water.png"
+            "icon": "110-Adventure-Emergency-and-Survival-Preparation-of-Drinking-Water.png"
           },
           "Airbnb, Hotels, or Motels Disinfecting and Decontaminating": {
             "score": 15,
-            "icon": "111. Airbnb, Hotels, or, Motels, Disinfecting, Decontaminating, and Deodorizing.png"
+            "icon": "111-Airbnb-Hotels-or-Motels-Disinfecting-Decontaminating-and-Deodorizing.png"
           },
           "Camp Gear, Tents, Sleeping Bags, and Camping Equipment Mildew Odor": {
             "score": 25,
-            "icon": "112. Camp Gear, Tents, Sleeping Bags, and Camping Equipment Mildew Odor.png"
+            "icon": "112-Camp-Gear-Tents-Sleeping-Bags-and-Camping-Equipment-Mildew-Odor.png"
           },
           "Camping Kitchen Utensils, Cups, Plates, Cookware, and Food Contact Surfaces": {
             "score": 35,
-            "icon": "113. Camping Kitchen Utensils, Cups, Plates, Cookware, and Food Contact Surfaces.png"
+            "icon": "113-Camping-Kitchen-Utensils-Cups-Plates-Cookware-and-Food-Contact-Surfaces.png"
           },
           "Dry Shampoo": {
             "score": 50,
-            "icon": "114. Dry Shampoo Replace Your Aluminum-Based Products With Chlorine Dioxide.png"
+            "icon": "114-Dry-Shampoo-Replace-Your-Aluminum-Based-Products-With-Chlorine-Dioxide.png"
           },
           "Luggage, Hand Bags, Leather, Shoes, and Boots Sanitizing and Deodorizing": {
             "score": 10,
-            "icon": "115. Luggage, Hand Bags, Leather, Shoes, and Boots, Sanitizing and Deodorizing.png"
+            "icon": "115-Luggage-Hand-Bags-Leather-Shoes-and-Boots-Sanitizing-and-Deodorizing.png"
           },
           "Public Restrooms, Locker Rooms, Spas, Clubs, Showers, and Baths": {
             "score": 15,
-            "icon": "116.Public Restrooms, Locker Rooms, Spas, Clubs, Showers, and  Baths.png"
+            "icon": "116-Public-Restrooms-Locker-Rooms-Spas-Clubs-Showers-and-Baths.png"
           },
           "Mass Transit Systems, Trains, Planes, Subways, and City Busses": {
             "score": 25,
-            "icon": "117. Mass Transit Systems, Trains, Planes, Subways, and City Busses.png"
+            "icon": "117-Mass-Transit-Systems-Trains-Planes-Subways-and-City-Busses.png"
           },
           "Skin Sanitizer, Antiseptic, and Deodorant for Travel and Recreation": {
             "score": 35,
-            "icon": "118. Skin Sanitizer, Antiseptic, and Deodorant for Travel and Recreation.png"
+            "icon": "118-Skin-Sanitizer-Antiseptic-and-Deodorant-for-Travel-and-Recreation.png"
           },
           "Workout Equipment, Wrestling, or Gym Mats, and Athletic Equipment": {
             "score": 50,
-            "icon": "119. Workout Equipment, Wrestling, or Gym Mats, and Athletic Equipment.png"
+            "icon": "119-Workout-Equipment-Wrestling-or-Gym-Mats-and-Athletic-Equipment.png"
           },
           "RVs, Boats, and Aircrafts Water Storage Preparation and Over-Wintering": {
             "score": 10,
-            "icon": "120. RVs Boats, and Aircrafts.png"
+            "icon": "120-RVs-Boats-and-Aircrafts.png"
           },
           "Blackwater Tanks and Gray Water Tanks": {
             "score": 15,
-            "icon": "122. Blackwater Tanks and Gray Water Tanks.png"
+            "icon": "122-Blackwater-Tanks-and-Gray-Water-Tanks.png"
           },
           "Spray or Fog to Deodorize Areas, and Kill Germs": {
             "score": 25,
-            "icon": "123. Spray or Fog to Deodorize Areas, and Kill Germs.png"
+            "icon": "123-Spray-or-Fog-to-Deodorize-Areas-and-Kill-Germs.png"
           },
           "General Surface Disinfection, Hard and Soft Surfaces": {
             "score": 35,
-            "icon": "124. General Surface Disinfection, Hard and Soft Surfaces.png"
+            "icon": "124-General-Surface-Disinfection-Hard-and-Soft-Surfaces.png"
           }
         }
       },
@@ -366,67 +303,67 @@
         "options": {
           "Animal or Pet Remains, Biological Decontamination": {
             "score": 30,
-            "icon": "125. Animal or Pet Remains, Biological Decontamination.png"
+            "icon": "125-Animal-or-Pet-Remains-Biological-Decontamination.png"
           },
           "Bathrooms, Kill Mold, Mildew, Bacteria, Germs, and Odors": {
             "score": 45,
-            "icon": "126. Bathrooms, Kill Mold, Mildew, Bacteria, Germs and Odors.png"
+            "icon": "126-Bathrooms-Kill-Mold-Mildew-Bacteria-Germs-and-Odors.png"
           },
           "Carpet Cleaning, Disinfection, and Deodorization": {
             "score": 60,
-            "icon": "127. Carpet Cleaning, Disinfection and Deodorization.png"
+            "icon": "127-Carpet-Cleaning-Disinfection-and-Deodorization.png"
           },
           "Cars and Trucks: Disinfection and Deodorization": {
             "score": 75,
-            "icon": "128. Cars, and Trucks Disinfection and Deodorization.png"
+            "icon": "128-Cars-and-Trucks-Disinfection-and-Deodorization.png"
           },
           "Cat Litter Box Cleaning, Sanitizing, and Deodorization": {
             "score": 90,
-            "icon": "129. Cat Litter Box Cleaning, Sanitizing, and Deodorization.png"
+            "icon": "129-Cat-Litter-Box-Cleaning-Sanitizing-and-Deodorization.png"
           },
           "Clean Mold From Your Keurig, Coffee Pod, or Coffee Maker": {
             "score": 30,
-            "icon": "130. Clean Mold From Your Keurig, Coffee Pod, or Coffee Maker.png"
+            "icon": "130-Clean-Mold-From-Your-Keurig-Coffee-Pod-or-Coffee-Maker.png"
           },
           "HVAC, for Cleaner Air in Your Home, Allergens, and Odors": {
             "score": 45,
-            "icon": "131. HVAC, for Cleaner Air in your Home, Allergens and Odor.png"
+            "icon": "131-HVAC-for-Cleaner-Air-in-Your-Home-Allergens-and-Odor.png"
           },
           "Chemical, Fragrances, and Hazards Environmental Toxins": {
             "score": 60,
-            "icon": "132. Chemical, Fragrances, and Hazards Environmental Toxins.png"
+            "icon": "132-Chemical-Fragrances-and-Hazards-Environmental-Toxins.png"
           },
           "Hair or Fur Sanitizing, Preservation, or Deodorization": {
             "score": 75,
-            "icon": "133. Hair or Fur Sanitizing, Preservation, or Deodorization.png"
+            "icon": "133-Hair-or-Fur-Sanitizing-Preservation-or-Deodorization.png"
           },
           "Kitchen or Refrigerator Disinfectant and Deodorizer": {
             "score": 90,
-            "icon": "134. Kitchen or Refrigerator Disinfectant and Deodorizer.png"
+            "icon": "134-Kitchen-or-Refrigerator-Disinfectant-and-Deodorizer.png"
           },
           "Laundry, Bedding, Clothing, Fabric, and Upholstery": {
             "score": 30,
-            "icon": "135. Laundry, Bedding, Clothing, Fabric, and Upholstery.png"
+            "icon": "135-Laundry-Bedding-Clothing-Fabric-and-Upholstery.png"
           },
           "Mattresses or Furniture Disinfection and Deodorization": {
             "score": 45,
-            "icon": "136. Mattresses or Furniture Disinfection and Deodorization.png"
+            "icon": "136-Mattresses-or-Furniture-Disinfection-and-Deodorization.png"
           },
           "Pet Odors and Allergens, Bird, Insect, or Reptile Enclosures": {
             "score": 60,
-            "icon": "137. Pet Odors and Allergens, Bird, Insect, or Reptile Enclosures.png"
+            "icon": "137-Pet-Odors-and-Allergens-Bird-Insect-or-Reptile-Enclosures.png"
           },
           "Room Fogging and Vapor Disinfection Applications": {
             "score": 75,
-            "icon": "138. Room Fogging and Vapor Disinfection Applications.png"
+            "icon": "138-Room-Fogging-and-Vapor-Disinfection-Applications.png"
           },
           "Shoes, Boots, and Handbags, Cleaning and Deodorizing": {
             "score": 90,
-            "icon": "139. Shoes, Boots, and Hand Bags, Cleaning and Deodorizing.png"
+            "icon": "139-Shoes-Boots-and-Handbags-Cleaning-and-Deodorizing.png"
           },
           "Trash Can or Dumpster Disinfectant and Deodorizer": {
             "score": 30,
-            "icon": "140. Trash Can, or Dumpster Disinfectant and Deodorizer.png"
+            "icon": "140-Trash-Can-or-Dumpster-Disinfectant-and-Deodorizer.png"
           }
         }
       },
@@ -434,10 +371,10 @@
         "name": "Select the method of application for eliminating odors",
         "type": "select",
         "options": {
-          "Spray": { "score": 30, "icon": "87. Wipe Mop or Spray.png" },
-          "Fogging": { "score": 45, "icon": "85. Fogging and Vapor.png" },
-          "Wipe": { "score": 60, "icon": "87. Wipe Mop or Spray.png" },
-          "Soak": { "score": 75, "icon": "86. Soak, Rinse or Dip.png" }
+          "Spray": { "score": 30, "icon": "87-Wipe-Mop-or-Spray.png" },
+          "Fogging": { "score": 45, "icon": "85-Fogging-and-Vapor.png" },
+          "Wipe": { "score": 60, "icon": "87-Wipe-Mop-or-Spray.png" },
+          "Soak": { "score": 75, "icon": "86-Soak-Rinse-or-Dip.png" }
         }
       },
       {
@@ -463,35 +400,35 @@
         "options": {
           "Circulating Water Systems and Transfer Lines": {
             "score": 100,
-            "icon": "141. Circulating Water Systems and Transfer Lines.png"
+            "icon": "141-Circulating-Water-Systems-and-Transfer-Lines.png"
           },
           "Dip, Soak, or Rinse for All Surfaces, Food and Non-Food Items": {
             "score": 200,
-            "icon": "142. Dip, Soak, or Rinse for All Surfaces, Food, and Non-Food Items.png"
+            "icon": "142-Dip-Soak-or-Rinse-for-All-Surfaces-Food-and-Non-Food-Items.png"
           },
           "Fish, Fish Tanks, and Other Aquatic Life": {
             "score": 300,
-            "icon": "143. Fish, Fish Tanks, and Other Aquatic Life.png"
+            "icon": "143-Fish-Fish-Tanks-and-Other-Aquatic-Life.png"
           },
           "Make Contaminated Water Safe to Drink and Store": {
             "score": 400,
-            "icon": "144. Make Contaminated Water Safe to Drink, and Store.png"
+            "icon": "144-Make-Contaminated-Water-Safe-to-Drink-and-Store.png"
           },
           "Pool Water, Spas, Jacuzzis, Hot Tubs, or Water Containment": {
             "score": 500,
-            "icon": "145. Pool Water, Spas, Jacuzzis, Hot Tubs, or Water Containment.png"
+            "icon": "145-Pool-Water-Spas-Jacuzzis-Hot-Tubs-or-Water-Containment.png"
           },
           "Standing Stagnant Pond Water and Containment Disinfection": {
             "score": 100,
-            "icon": "146. Standing Stagnant Pond Water and Containment Disinfection - Copy.png"
+            "icon": "146-Standing-Stagnant-Pond-Water-and-Containment-Disinfection.png"
           },
           "Wastewater with Urine, Vomit, Blood, Rancid Meat, or Biomatter": {
             "score": 200,
-            "icon": "147. Wastewater with Urine, Vomit, Blood, Rancid Meat, or Biomatter (2).png"
+            "icon": "147-Wastewater-with-Urine-Vomit-Blood-Rancid-Meat-or-Biomatter.png"
           },
           "Wells and Drinking Water Reserves, Storage, and Treatment": {
             "score": 300,
-            "icon": "148. Wells and Drinking Water Reserves, Storage and Treatment - Copy.png"
+            "icon": "148-Wells-and-Drinking-Water-Reserves-Storage-and-Treatment.png"
           }
         }
       },
@@ -501,11 +438,11 @@
         "options": {
           "Dip": {
             "score": 100,
-            "icon": "142. Dip, Soak, or Rinse for All Surfaces, Food, and Non-Food Items.png"
+            "icon": "142-Dip-Soak-or-Rinse-for-All-Surfaces-Food-and-Non-Food-Items.png"
           },
-          "Soak": { "score": 75, "icon": "86. Soak, Rinse or Dip.png" },
-          "Fogging": { "score": 45, "icon": "85. Fogging and Vapor.png" },
-          "Spray": { "score": 30, "icon": "87. Wipe Mop or Spray.png" }
+          "Soak": { "score": 75, "icon": "86-Soak-Rinse-or-Dip.png" },
+          "Fogging": { "score": 45, "icon": "85-Fogging-and-Vapor.png" },
+          "Spray": { "score": 30, "icon": "87-Wipe-Mop-or-Spray.png" }
         }
       },
       {
@@ -721,112 +658,36 @@
     ]
   },
   {
-    "name": "food service, hospitality, and public places",
-    "description": "Create a clean and inviting atmosphere, ensuring guests' and customers' safety, satisfaction, and prompt return to your business.",
+    "name": "food commodity production, processing, and packaging",
+    "description": "Embrace our essential solution that ensures the safety and quality of food products by eliminating harmful pathogens throughout the production and processing chain, building trust and confidence in the products offered.",
     "question": [
       {
         "name": "Select an option",
         "type": "select",
         "options": {
-          "Food Service Equipment, Appliances and Food Contact Surfaces": {
-            "value": 7,
-            "icon": "149. Food Service.png"
+          "Food Additive and Preservative - (For Freshness and Extended Shelf-Life)": {
+            "score": 7,
+            "icon": "170-Food-Additive-and-Preservative.png"
           },
-          "Glassware, Flatware, Kitchen Utensils, and Tools": {
-            "value": 4,
-            "icon": "151. Glassware, Flatware, Kitchen Utensils, and Tools.png"
+          "Food Canning and Beverage Bottling, Brewing, or Distillation": {
+            "score": 4,
+            "icon": "171-Food-Canning-and-Beverage-Bottling-Brewing-or-Distillation.png"
           },
-          "Restaurants and Cafeteria Operational Maintenance": {
-            "value": 14,
-            "icon": "152. Restaurants and Cafeteria Operational Maintenance.png"
+          "Fruit and vegetables - (No-rinse Disinfecting Cleaner)": {
+            "score": 14,
+            "icon": "172-Fruit-and-Vegetables-No-rinse-Disinfecting-Cleaner.png"
           },
-          "Refrigeration Units, Food Storage, Ice, Tanks and Lines": {
-            "value": 1,
-            "icon": "153. efrigeration Units, Food Storage, Ice, Tanks, and Lines.png"
+          "Meat, and Fish Butchering - (Preparation, Preservation, and Cold-Storage)": {
+            "score": 1,
+            "icon": "173-Meat-and-Fish-Butchering-Preparation-Preservation-and-Cold-Storage.png"
           },
-          "Airbnb, Rental Homes, and Rental Properties": {
-            "value": 7,
-            "icon": "155. Airbnb, Rental Homes, and Rental Properties.png"
+          "Processing and Packaging Foods - (Commodity Items Before Shipment)": {
+            "score": 7,
+            "icon": "174-Processing-and-Packaging-Foods-Commodity-Items-Before-Shipment.png"
           },
-          "Barber Shop, Hair Salons, and Nail Salons": {
-            "value": 4,
-            "icon": "156. Barber Shop, Hair Salons, and Nail Salons.png"
-          },
-          "Bars and Nightclubs, Exotic Settings, Stage Hygiene": {
-            "value": 14,
-            "icon": "157. Bars and Nightclubs, Exotic Settings, Stage Hygiene.png"
-          },
-          "Churches, Mosques, and Pews, Before and After Services": {
-            "value": 1,
-            "icon": "158. Churches, Mosques, and Pews, Before and After Services.png"
-          },
-          "College Campuses, Universities, Recreational, and Dormitories": {
-            "value": 7,
-            "icon": "159. College Campuses, Universities, Recreational, and Dormitories.png"
-          },
-          "Commercial Laundry Facilities and Dry Cleaning": {
-            "value": 4,
-            "icon": "160. Commercial Laundry Facilities and Dry Cleaning.png"
-          },
-          "Convention Centers, and Conference Halls": {
-            "value": 14,
-            "icon": "161. Convention Centers, and Conference Halls.png"
-          },
-          "Daycare Facilities, Preschools, and Nurseries": {
-            "value": 1,
-            "icon": "162. Daycare Facilities, Preschools, and Nurseries.png"
-          },
-          "Facility Cleaning, Maintenance, Disinfection, and Deodorization": {
-            "value": 7,
-            "icon": "163. Facility Cleaning, Maintenance, Disinfection, and Deodorization.png"
-          },
-          "Hospitality, Hotels, Motels. and Resorts": {
-            "value": 4,
-            "icon": "164. Hospitality, Hotels, Motels. and Resorts.png"
-          },
-          "Movie Theaters, Hotels, Halls, and Showrooms": {
-            "value": 14,
-            "icon": "165. Movie Theaters, Hotels, Halls, and Showrooms.png"
-          },
-          "Retail Sales and Consignment Shops (Clothing Stores and Thrift Stores)": {
-            "value": 1,
-            "icon": "166. Retail Sales and Consignment Shops (Clothing Stores and Thrift Stores.png"
-          },
-          "Learning Institutions, Schools and Classroom Environments": {
-            "value": 7,
-            "icon": "167. Learning Institutions, Schools and Classroom Environment.png"
-          },
-          "Securities, Police, Clandestine and Military Use": {
-            "value": 4,
-            "icon": "168. Securities, Police, Clandestine and Military Use.png"
-          },
-          "Stadiums, Bleachers, and Arenas, Deodorize, and Sanitize": {
-            "value": 14,
-            "icon": "169. Stadiums, Bleachers, and Arenas, Deodorize, and Sanitize.png"
-          },
-          "Turf, Cleaning Indoor or Outdoor Commercial, or Athletic Turf": {
-            "value": 1,
-            "icon": "170. Turf, Cleaning Indoor or Outdoor Commercial, or Athletic Turf.png"
-          },
-          "Veterinarian and Animal Shelter Use of Chlorine Dioxide": {
-            "value": 7,
-            "icon": "171. Veterinarian and Animal Shelter Use of Chlorine Dioxide.png"
-          },
-          "Workout Equipment, Wrestling, or Gymnastic Mats": {
-            "value": 4,
-            "icon": "172. Workout Equipment, Wrestling, or Gymnastic Mats.png"
-          },
-          "Fogging and Vapor": {
-            "value": 14,
-            "icon": "223. Fogging and Thermal Fogging.png"
-          },
-          "Soak, Rinse or Dip": {
-            "value": 1,
-            "icon": "142. Dip, Soak, or Rinse for All Surfaces, Food, and Non-Food Items.png"
-          },
-          "Wipe Mop or Spray": {
-            "value": 7,
-            "icon": "87. Wipe Mop or Spray.png"
+          "Tools and Equipment - (Picking, Packing, and Processing)": {
+            "score": 4,
+            "icon": "175-Tools-and-Equipment-Picking-Packing-and-Processing.png"
           }
         }
       }
@@ -842,47 +703,47 @@
         "options": {
           "Hard Surfaces - Metals and Alloys": {
             "value": 7,
-            "icon": "217. Hard Surfaces - Metals and Alloys.png"
+            "icon": "217-Hard-Surfaces-Metals-and-Alloys.png"
           },
           "Hard Surfaces - Cement, Ceramics, Glass, Stone, or Tile": {
             "value": 4,
-            "icon": "218. Hard Surfaces - Cement, Ceramics, Glass, Stone, or Tile.png"
+            "icon": "218-Hard-Surfaces-Cement-Ceramics-Glass-Stone-or-Tile.png"
           },
-          "Hard Surfaces - Synthetics, linoleum, Plastics, Polymers, or Vinyl": {
+          "Hard Surfaces - Synthetics, Linoleum, Plastics, Polymers, or Vinyl": {
             "value": 14,
-            "icon": "219. Hard Surfaces - Synthetics, linoleum, Plastics, Polymers, or Vinyl.png"
+            "icon": "219-Hard-Surfaces-Synthetics-Linoleum-Plastics-Polymers-or-Vinyl.png"
           },
-          "Hard Surfaces - Wood and Porous organic Materials": {
+          "Hard Surfaces - Wood and Porous Organic Materials": {
             "value": 1,
-            "icon": "220. Hard Surfaces - Wood and Porous organic Materials.png"
+            "icon": "220-Hard-Surfaces-Wood-and-Porous-Organic-Materials.png"
           },
           "Non-Food Items, Toys, Packages, and Mail Items": {
             "value": 7,
-            "icon": "221. Non-Food Items, Toys, Packages, and Mail Items.png"
+            "icon": "221-Non-Food-Items-Toys-Packages-and-Mail-Items.png"
           },
           "Soft Surfaces - Bedding, Laundry, and Delicates": {
             "value": 4,
-            "icon": "222. Soft Surfaces - Bedding, Laundry, and Delicates.png"
+            "icon": "222-Soft-Surfaces-Bedding-Laundry-and-Delicates.png"
           },
           "Soft Surfaces - Carpets and Rugs or Turf": {
             "value": 14,
-            "icon": "223. Soft Surfaces - Carpets and Rugs or Turf.png"
+            "icon": "223-Soft-Surfaces-Carpets-and-Rugs-or-Turf.png"
           },
           "Soft Surfaces - Designer Shoes and Bags": {
             "value": 1,
-            "icon": "224. Soft Surfaces - Designer Shoes and Bags.png"
+            "icon": "224-Soft-Surfaces-Designer-Shoes-and-Bags.png"
           },
           "Soft Surfaces - Leather, Shoes, or Boots": {
             "value": 7,
-            "icon": "225. Soft Surfaces - Leather, Shoes, or Boots.png"
+            "icon": "225-Soft-Surfaces-Leather-Shoes-or-Boots.png"
           },
-          "Soft Surfaces - organic Fiber and Natural Fabrics": {
+          "Soft Surfaces - Organic Fiber and Natural Fabrics": {
             "value": 4,
-            "icon": "226. Soft Surfaces - organic Fiber and Natural Fabrics.png"
+            "icon": "226-Soft-Surfaces-Organic-Fiber-and-Natural-Fabrics.png"
           },
           "Soft Surfaces - Synthetic Fiber and Upholstery": {
             "value": 14,
-            "icon": "227. Soft Surfaces - Synthetic Fiber and Upholstery.png"
+            "icon": "227-Soft-Surfaces-Synthetic-Fiber-and-Upholstery.png"
           }
         }
       },
@@ -892,15 +753,15 @@
         "options": {
           "Fogging and Vapor": {
             "value": 7,
-            "icon": "228. Fogging and Vapor.png"
+            "icon": "228-Fogging-and-Vapor.png"
           },
           "Soak, Rinse or Dip": {
             "value": 4,
-            "icon": "229. Soak, Rinse or Dip.png"
+            "icon": "229-Soak-Rinse-or-Dip.png"
           },
           "Wipe Mop or Spray": {
             "value": 14,
-            "icon": "230. Wipe Mop or Spray.png"
+            "icon": "230-Wipe-Mop-or-Spray.png"
           }
         }
       }
@@ -914,12 +775,12 @@
         "name": "Select an option",
         "type": "select",
         "options": {
-          "Delivery Jobs": { "score": 70, "icon": "239. Delivery Jobs.png" },
-          "Police Cars": { "score": 40, "icon": "240. Police Cars.png" },
-          "Rental Cars": { "score": 140, "icon": "241. Rental Cars.png" },
-          "School Buses": { "score": 10, "icon": "242. School Buses.png" },
-          "Taxi or Uber": { "score": 70, "icon": "243. Taxi or Uber.png" },
-          "OTR Trucking": { "score": 40, "icon": "244. OTR Trucking.png" }
+          "Delivery Jobs": { "score": 70, "icon": "239-Delivery-Jobs.png" },
+          "Police Cars": { "score": 40, "icon": "240-Police-Cars.png" },
+          "Rental Cars": { "score": 140, "icon": "241-Rental-Cars.png" },
+          "School Buses": { "score": 10, "icon": "242-School-Buses.png" },
+          "Taxi or Uber": { "score": 70, "icon": "243-Taxi-or-Uber.png" },
+          "OTR Trucking": { "score": 40, "icon": "244-OTR-Trucking.png" }
         }
       }
     ]
@@ -934,59 +795,59 @@
         "options": {
           "Animal Housing Environments - (Boarding, Kennels, and Enclosures)": {
             "score": 70,
-            "icon": "245. Animal Housing Environments - (Boarding, Kennels, and Enclosures).png"
+            "icon": "245-Animal-Housing-Environments.png"
           },
-          "Biological Hazards - (Biomatter, Blood, Carcass, Urine, or Vomit  Cleanup)": {
+          "Biological Hazards - (Biomatter, Blood, Carcass, Urine, or Vomit Cleanup)": {
             "score": 40,
-            "icon": "246. Biological Hazards - (Biomatter, Blood, Carcass, Urine, or Vomit  Cleanup).png"
+            "icon": "246-Biological-Hazards.png"
           },
           "Bathrooms, Kill Bacteria, Mold, Mildew, and Eliminate Unwanted Odors": {
             "score": 140,
-            "icon": "247. Bathrooms, Kill Bacteria, Mold, Mildew, and Eliminate Unwanted Odors.png"
+            "icon": "247-Bathrooms-Kill-Bacteria-Mold-Mildew.png"
           },
           "Carpet Cleaning, Disinfection, and Deodorization": {
             "score": 10,
-            "icon": "248. Carpet Cleaning, Disinfection, and Deodorization.png"
+            "icon": "248-Carpet-Cleaning-Disinfection-Deodorization.png"
           },
           "Cars, Trucks, and Trailers: Disinfection and Deodorization": {
             "score": 70,
-            "icon": "249. Cars, Trucks, and Trailers: Disinfection and Deodorization.png"
+            "icon": "249-Cars-Trucks-Trailers-Disinfection-Deodorization.png"
           },
           "Commercial Laundry, Bedding, Clothing, and Fabric": {
             "score": 40,
-            "icon": "250. Commercial Laundry, Bedding, Clothing, and Fabric.png"
+            "icon": "250-Commercial-Laundry-Bedding-Clothing-Fabric.png"
           },
           "Environmental and Chemical Toxins, Fragrances, and Allergens": {
             "score": 140,
-            "icon": "251. Environmental and Chemical Toxins, Fragrances, and Allergens.png"
+            "icon": "251-Environmental-Chemical-Toxins-Fragrances-Allergens.png"
           },
           "Garbage Trash Cans, Dumpster Disinfectant, and Deodorizer": {
             "score": 10,
-            "icon": "252. Garbage Trash Cans, Dumpster Disinfectant, and Deodorizer.png"
+            "icon": "252-Garbage-Trash-Cans-Dumpster-Disinfectant-Deodorizer.png"
           },
           "HVAC, for Decontamination, Deodorizing, Allergens, Environmental Toxins": {
             "score": 70,
-            "icon": "253. HVAC, for Decontamination, Deodorizing, Allergens, Environmental Toxins.png"
+            "icon": "253-HVAC-Decontamination-Deodorizing-Allergens.png"
           },
           "Kitchen Disinfectant and Deodorizer - (Food Contact Surfaces)": {
             "score": 40,
-            "icon": "254. Kitchen Disinfectant and Deodorizer - (Food Contact Surfaces).png"
+            "icon": "254-Kitchen-Disinfectant-Deodorizer-Food-Contact-Surfaces.png"
           },
           "Livestock Sanitizer - (For Odor, Disease Prevention, and General Hygiene)": {
             "score": 140,
-            "icon": "255. Livestock Sanitizer - (For Odor, Disease Prevention, and General Hygiene).png"
+            "icon": "255-Livestock-Sanitizer-Odor-Disease-Prevention.png"
           },
           "Refrigeration, and Food Storage Sanitizing and Deodorization": {
             "score": 10,
-            "icon": "256. Refrigeration, and Food Storage Sanitizing and Deodorization.png"
+            "icon": "256-Refrigeration-Food-Storage-Sanitizing-Deodorization.png"
           },
           "Room Fogging and Vapor Deodorization - (e.g., Pet, Mold, or Smoke Odor)": {
             "score": 70,
-            "icon": "257. Room Fogging and Vapor Deodorization - (e.g., Pet, Mold, or Smoke Odor).png"
+            "icon": "257-Room-Fogging-Vapor-Deodorization.png"
           },
           "Upholstery Cleaning, Disinfection and Deodorization": {
             "score": 40,
-            "icon": "258. Upholstery Cleaning, Disinfection and Deodorization.png"
+            "icon": "258-Upholstery-Cleaning-Disinfection-Deodorization.png"
           }
         }
       }
@@ -1024,6 +885,50 @@
             "score": 40,
             "icon": "264. Water Storage, Wells, and Containment, Shock Treatment, and Remedial Treatments.png"
           }
+        }
+      }
+    ]
+  },
+  {
+    "name": "no-rinse surface disinfection",
+    "description": "Experience the power of a comprehensive, eco-friendly solution that leaves your hard and soft surfaces clean and free from harmful bacteria, viruses, mold, and odor. Also, maintain impeccable hygiene on food contact surfaces with no rinse required.",
+    "question": [
+      {
+        "name": "Select the type of surface to disinfect",
+        "type": "select",
+        "options": {
+          "Hard Surfaces": {
+            "score": 100,
+            "icon": "4-No-Rinse-Hard-or-Soft-Surface-Disinfection.png"
+          },
+          "Soft Surfaces": {
+            "score": 50,
+            "icon": "4-No-Rinse-Hard-or-Soft-Surface-Disinfection.png"
+          },
+          "Food-Contact Surfaces": {
+            "score": 75,
+            "icon": "78-Food-Contact-Surface-Disinfection.png"
+          }
+        }
+      },
+      {
+        "name": "Select the method of application for disinfection",
+        "type": "select",
+        "options": {
+          "Spray": { "score": 100, "icon": "87-Wipe-Mop-or-Spray.png" },
+          "Wipe": { "score": 75, "icon": "87-Wipe-Mop-or-Spray.png" },
+          "Fogging": { "score": 50, "icon": "85-Fogging-and-Vapor.png" }
+        }
+      },
+      {
+        "name": "Select the volume of the disinfection solution (ml)",
+        "type": "select",
+        "options": {
+          "500 ml": { "score": 50 },
+          "750 ml": { "score": 75 },
+          "1000 ml": { "score": 100 },
+          "1500 ml": { "score": 125 },
+          "2000 ml": { "score": 150 }
         }
       }
     ]
