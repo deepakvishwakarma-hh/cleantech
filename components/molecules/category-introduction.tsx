@@ -35,6 +35,7 @@ const CategoryIntroduction: React.FC<Props> = ({
             src={`/imgs/${image}`}
             alt={title}
             fill
+            quality={50}
           />
         </GridItem>
         <GridItem
