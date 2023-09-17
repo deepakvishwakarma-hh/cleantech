@@ -1,6 +1,4 @@
 import QUIZV2 from "../quizv2.json";
-import { localstorage } from "./useQuiz";
-import { useSessionStorage } from "@mantine/hooks";
 
 // Define the structure of your shopping cart.
 interface ShoppingCartItem {
