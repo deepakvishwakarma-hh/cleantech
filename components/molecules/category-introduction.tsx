@@ -50,7 +50,6 @@ const CategoryIntroduction: React.FC<Props> = ({
                 filter: isLoading
                   ? "blur(16px) grayscale(100%)"
                   : "blur(0) grayscale(0)",
-                objectFit: "cover",
               }}
               onLoad={() => setLoading(false)}
               fill
