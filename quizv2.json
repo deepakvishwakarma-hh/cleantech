@@ -167,7 +167,7 @@
         "options": {
           "Produce": {
             "score": 50,
-            "icon": "6-Produce-Groceries-Eggs-Meat-and-Fish.png"
+            "icon": "6-Produce--Groceries--Eggs--Meat--and-Fish.png"
           },
           "Packaged Food Items and Grocery Items": {
             "score": 35,
@@ -175,7 +175,7 @@
           },
           "Meat or Fish": {
             "score": 50,
-            "icon": "184-Meat-and-Fish.png"
+            "icon": "184-Meat--and-Fish.png"
           },
           "Eggs, Cheese, and Dairy": {
             "score": 65,
@@ -193,11 +193,11 @@
           },
           "Dip": {
             "score": 35,
-            "icon": "86-Soak-Rinse-or-Dip.png"
+            "icon": "86-Soak--Rinse-or-Dip.png"
           },
           "Soak": {
             "score": 20,
-            "icon": "142-Dip-Soak-or-Rinse-for-All-Surfaces-Food-and-Non-Food-Items.png"
+            "icon": "142-Dip--Soak--or-Rinse-for-All-Surfaces--Food--and-Non-Food-Items.png"
           }
         }
       },
@@ -224,19 +224,19 @@
         "options": {
           "Adventure, Emergency, and Survival Preparation of Drinking Water": {
             "score": 10,
-            "icon": "110-Adventure-Emergency-and-Survival-Preparation-of-Drinking-Water.png"
+            "icon": "110-Adventure--Emergency--and-Survival-Preparation-of-Drinking-Water.png"
           },
           "Airbnb, Hotels, or Motels Disinfecting and Decontaminating": {
             "score": 15,
-            "icon": "111-Airbnb-Hotels-or-Motels-Disinfecting-Decontaminating-and-Deodorizing.png"
+            "icon": "111-Airbnb--Hotels--or--Motels--Disinfecting--Decontaminating--and-Deodorizing.png"
           },
           "Camp Gear, Tents, Sleeping Bags, and Camping Equipment Mildew Odor": {
             "score": 25,
-            "icon": "112-Camp-Gear-Tents-Sleeping-Bags-and-Camping-Equipment-Mildew-Odor.png"
+            "icon": "112-Camp-Gear--Tents--Sleeping-Bags--and-Camping-Equipment-Mildew-Odor.png"
           },
           "Camping Kitchen Utensils, Cups, Plates, Cookware, and Food Contact Surfaces": {
             "score": 35,
-            "icon": "113-Camping-Kitchen-Utensils-Cups-Plates-Cookware-and-Food-Contact-Surfaces.png"
+            "icon": "113-Camping-Kitchen-Utensils--Cups--Plates--Cookware--and-Food-Contact-Surfaces.png"
           },
           "Dry Shampoo": {
             "score": 50,
@@ -244,27 +244,27 @@
           },
           "Luggage, Hand Bags, Leather, Shoes, and Boots Sanitizing and Deodorizing": {
             "score": 10,
-            "icon": "115-Luggage-Hand-Bags-Leather-Shoes-and-Boots-Sanitizing-and-Deodorizing.png"
+            "icon": "115-Luggage--Hand-Bags--Leather--Shoes--and-Boots--Sanitizing-and-Deodorizing.png"
           },
           "Public Restrooms, Locker Rooms, Spas, Clubs, Showers, and Baths": {
             "score": 15,
-            "icon": "116-Public-Restrooms-Locker-Rooms-Spas-Clubs-Showers-and-Baths.png"
+            "icon": "116-Public-Restrooms--Locker-Rooms--Spas--Clubs--Showers--and--Baths.png"
           },
           "Mass Transit Systems, Trains, Planes, Subways, and City Busses": {
             "score": 25,
-            "icon": "117-Mass-Transit-Systems-Trains-Planes-Subways-and-City-Busses.png"
+            "icon": "117-Mass-Transit-Systems--Trains--Planes--Subways--and-City-Busses.png"
           },
           "Skin Sanitizer, Antiseptic, and Deodorant for Travel and Recreation": {
             "score": 35,
-            "icon": "118-Skin-Sanitizer-Antiseptic-and-Deodorant-for-Travel-and-Recreation.png"
+            "icon": "118-Skin-Sanitizer--Antiseptic--and-Deodorant-for-Travel-and-Recreation.png"
           },
           "Workout Equipment, Wrestling, or Gym Mats, and Athletic Equipment": {
             "score": 50,
-            "icon": "119-Workout-Equipment-Wrestling-or-Gym-Mats-and-Athletic-Equipment.png"
+            "icon": "119-Workout-Equipment--Wrestling--or-Gym-Mats--and-Athletic-Equipment.png"
           },
           "RVs, Boats, and Aircrafts Water Storage Preparation and Over-Wintering": {
             "score": 10,
-            "icon": "120-RVs-Boats-and-Aircrafts.png"
+            "icon": "120-RVs-Boats--and-Aircrafts.png"
           },
           "Blackwater Tanks and Gray Water Tanks": {
             "score": 15,
@@ -272,11 +272,11 @@
           },
           "Spray or Fog to Deodorize Areas, and Kill Germs": {
             "score": 25,
-            "icon": "123-Spray-or-Fog-to-Deodorize-Areas-and-Kill-Germs.png"
+            "icon": "123-Spray-or-Fog-to-Deodorize-Areas--and-Kill-Germs.png"
           },
           "General Surface Disinfection, Hard and Soft Surfaces": {
             "score": 35,
-            "icon": "124-General-Surface-Disinfection-Hard-and-Soft-Surfaces.png"
+            "icon": "124-General-Surface-Disinfection--Hard-and-Soft-Surfaces.png"
           }
         }
       },
@@ -303,39 +303,39 @@
         "options": {
           "Animal or Pet Remains, Biological Decontamination": {
             "score": 30,
-            "icon": "125-Animal-or-Pet-Remains-Biological-Decontamination.png"
+            "icon": "125-Animal-or-Pet-Remains--Biological-Decontamination.png"
           },
           "Bathrooms, Kill Mold, Mildew, Bacteria, Germs, and Odors": {
             "score": 45,
-            "icon": "126-Bathrooms-Kill-Mold-Mildew-Bacteria-Germs-and-Odors.png"
+            "icon": "126-Bathrooms--Kill-Mold--Mildew--Bacteria--Germs-and-Odors.png"
           },
           "Carpet Cleaning, Disinfection, and Deodorization": {
             "score": 60,
-            "icon": "127-Carpet-Cleaning-Disinfection-and-Deodorization.png"
+            "icon": "127-Carpet-Cleaning--Disinfection-and-Deodorization.png"
           },
           "Cars and Trucks: Disinfection and Deodorization": {
             "score": 75,
-            "icon": "128-Cars-and-Trucks-Disinfection-and-Deodorization.png"
+            "icon": "128-Cars--and-Trucks-Disinfection-and-Deodorization.png"
           },
           "Cat Litter Box Cleaning, Sanitizing, and Deodorization": {
             "score": 90,
-            "icon": "129-Cat-Litter-Box-Cleaning-Sanitizing-and-Deodorization.png"
+            "icon": "129-Cat-Litter-Box-Cleaning--Sanitizing--and-Deodorization.png"
           },
           "Clean Mold From Your Keurig, Coffee Pod, or Coffee Maker": {
             "score": 30,
-            "icon": "130-Clean-Mold-From-Your-Keurig-Coffee-Pod-or-Coffee-Maker.png"
+            "icon": "130-Clean-Mold-From-Your-Keurig--Coffee-Pod--or-Coffee-Maker.png"
           },
           "HVAC, for Cleaner Air in Your Home, Allergens, and Odors": {
             "score": 45,
-            "icon": "131-HVAC-for-Cleaner-Air-in-Your-Home-Allergens-and-Odor.png"
+            "icon": "131-HVAC--for-Cleaner-Air-in-Your-Home--Allergens--and-Odor.png"
           },
           "Chemical, Fragrances, and Hazards Environmental Toxins": {
             "score": 60,
-            "icon": "132-Chemical-Fragrances-and-Hazards-Environmental-Toxins.png"
+            "icon": "132-Chemical--Fragrances--and-Hazards-Environmental-Toxins.png"
           },
           "Hair or Fur Sanitizing, Preservation, or Deodorization": {
             "score": 75,
-            "icon": "133-Hair-or-Fur-Sanitizing-Preservation-or-Deodorization.png"
+            "icon": "133-Hair-or-Fur-Sanitizing--Preservation--or-Deodorization.png"
           },
           "Kitchen or Refrigerator Disinfectant and Deodorizer": {
             "score": 90,
@@ -343,7 +343,7 @@
           },
           "Laundry, Bedding, Clothing, Fabric, and Upholstery": {
             "score": 30,
-            "icon": "135-Laundry-Bedding-Clothing-Fabric-and-Upholstery.png"
+            "icon": "135-Laundry--Bedding--Clothing--Fabric--and-Upholstery.png"
           },
           "Mattresses or Furniture Disinfection and Deodorization": {
             "score": 45,
@@ -351,7 +351,7 @@
           },
           "Pet Odors and Allergens, Bird, Insect, or Reptile Enclosures": {
             "score": 60,
-            "icon": "137-Pet-Odors-and-Allergens-Bird-Insect-or-Reptile-Enclosures.png"
+            "icon": "137-Pet-Odors-and-Allergens--Bird--Insect--or-Reptile-Enclosures.png"
           },
           "Room Fogging and Vapor Disinfection Applications": {
             "score": 75,
@@ -359,11 +359,11 @@
           },
           "Shoes, Boots, and Handbags, Cleaning and Deodorizing": {
             "score": 90,
-            "icon": "139-Shoes-Boots-and-Handbags-Cleaning-and-Deodorizing.png"
+            "icon": "139-Shoes--Boots--and-Hand-Bags--Cleaning-and-Deodorizing.png"
           },
           "Trash Can or Dumpster Disinfectant and Deodorizer": {
             "score": 30,
-            "icon": "140-Trash-Can-or-Dumpster-Disinfectant-and-Deodorizer.png"
+            "icon": "140-Trash-Can--or-Dumpster-Disinfectant-and-Deodorizer.png"
           }
         }
       },
@@ -371,10 +371,10 @@
         "name": "Select the method of application for eliminating odors",
         "type": "select",
         "options": {
-          "Spray": { "score": 30, "icon": "87-Wipe-Mop-or-Spray.png" },
-          "Fogging": { "score": 45, "icon": "85-Fogging-and-Vapor.png" },
-          "Wipe": { "score": 60, "icon": "87-Wipe-Mop-or-Spray.png" },
-          "Soak": { "score": 75, "icon": "86-Soak-Rinse-or-Dip.png" }
+          "Spray": { "score": 30, "icon": "87-Spray.png" },
+          "Fogging": { "score": 45, "icon": "85-Fogging.png" },
+          "Wipe": { "score": 60, "icon": "86-Wipe.png" },
+          "Soak": { "score": 75, "icon": "88-Soak.png" }
         }
       },
       {
@@ -399,36 +399,36 @@
         "type": "select",
         "options": {
           "Circulating Water Systems and Transfer Lines": {
-            "score": 100,
-            "icon": "141-Circulating-Water-Systems-and-Transfer-Lines.png"
+            "value": 100,
+            "icon": "241-Oil-Well-Injection-Fields.png"
           },
           "Dip, Soak, or Rinse for All Surfaces, Food and Non-Food Items": {
-            "score": 200,
-            "icon": "142-Dip-Soak-or-Rinse-for-All-Surfaces-Food-and-Non-Food-Items.png"
+            "value": 250,
+            "icon": "142-Dip--Soak--or-Rinse-for-All-Surfaces--Food--and-Non-Food-Items.png"
           },
           "Fish, Fish Tanks, and Other Aquatic Life": {
-            "score": 300,
-            "icon": "143-Fish-Fish-Tanks-and-Other-Aquatic-Life.png"
+            "value": 500,
+            "icon": "143-Fish--Fish-Tanks--and-Other-Aquatic-Life.png"
           },
           "Make Contaminated Water Safe to Drink and Store": {
-            "score": 400,
-            "icon": "144-Make-Contaminated-Water-Safe-to-Drink-and-Store.png"
+            "value": 750,
+            "icon": "144-Make-Contaminated-Water-Safe-to-Drink--and-Store.png"
           },
           "Pool Water, Spas, Jacuzzis, Hot Tubs, or Water Containment": {
-            "score": 500,
-            "icon": "145-Pool-Water-Spas-Jacuzzis-Hot-Tubs-or-Water-Containment.png"
+            "value": 1000,
+            "icon": "145-Pool-Water--Spas--Jacuzzis--Hot-Tubs--or-Water-Containment.png"
           },
           "Standing Stagnant Pond Water and Containment Disinfection": {
-            "score": 100,
-            "icon": "146-Standing-Stagnant-Pond-Water-and-Containment-Disinfection.png"
+            "value": 100,
+            "icon": "146-Standing-Stagnant-Pond-Water-and-Containment-Disinfection---Copy.png"
           },
           "Wastewater with Urine, Vomit, Blood, Rancid Meat, or Biomatter": {
-            "score": 200,
-            "icon": "147-Wastewater-with-Urine-Vomit-Blood-Rancid-Meat-or-Biomatter.png"
+            "value": 250,
+            "icon": "250-Wastewater-Containing-Biomatter-Such-as-Urine--Vomit--Blood--or-Rancid-Meat.png"
           },
           "Wells and Drinking Water Reserves, Storage, and Treatment": {
-            "score": 300,
-            "icon": "148-Wells-and-Drinking-Water-Reserves-Storage-and-Treatment.png"
+            "value": 500,
+            "icon": "249-Wells-and-Well-Water--Water-Reserves--and-Drinking-Water-Storage.png"
           }
         }
       },
@@ -438,22 +438,38 @@
         "options": {
           "Dip": {
             "score": 100,
-            "icon": "142-Dip-Soak-or-Rinse-for-All-Surfaces-Food-and-Non-Food-Items.png"
+            "icon": "142-Dip--Soak--or-Rinse-for-All-Surfaces--Food--and-Non-Food-Items.png"
           },
-          "Soak": { "score": 75, "icon": "86-Soak-Rinse-or-Dip.png" },
-          "Fogging": { "score": 45, "icon": "85-Fogging-and-Vapor.png" },
-          "Spray": { "score": 30, "icon": "87-Wipe-Mop-or-Spray.png" }
+          "Soak": {
+            "score": 75,
+            "icon": "86-Soak--Rinse-or-Dip.png"
+          },
+          "Fogging": {
+            "score": 45,
+            "icon": "85-Fogging-and-Vapor.png"
+          },
+          "Spray": {
+            "score": 30,
+            "icon": "87-Wipe-Mop-or-Spray.png"
+          }
         }
       },
       {
         "name": "Select the volume of the water treatment solution (ml)",
         "type": "select",
         "options": {
-          "1000 ml": { "score": 1000 },
-          "2000 ml": { "score": 2000 },
-          "3000 ml": { "score": 3000 },
-          "4000 ml": { "score": 4000 },
-          "5000 ml": { "score": 5000 }
+          "100 ml": {
+            "value": 10
+          },
+          "250 ml": {
+            "value": 25
+          },
+          "500 ml": {
+            "value": 50
+          },
+          "750 ml": {
+            "value": 75
+          }
         }
       }
     ]
@@ -538,81 +554,7 @@
       }
     ]
   },
-  {
-    "name": "water treatment and water storage",
-    "description": "Ensure the purity and safety of water sources, protecting against waterborne contaminants and promoting responsible water management.",
-    "question": [
-      {
-        "name": "Select the type of water to treat and disinfect",
-        "type": "select",
-        "options": {
-          "Circulating Water Systems and Transfer Lines": {
-            "value": 100,
-            "icon": "153. Circulating Water Systems and Transfer Lines.png"
-          },
-          "Dip, Soak, or Rinse for All Surfaces, Food and Non-Food Items": {
-            "value": 250,
-            "icon": "154. Dip, Soak, or Rinse for All Surfaces, Food and Non-Food Items.png"
-          },
-          "Fish, Fish Tanks, and Other Aquatic Life": {
-            "value": 500,
-            "icon": "155. Fish, Fish Tanks, and Other Aquatic Life.png"
-          },
-          "Make Contaminated Water Safe to Drink and Store": {
-            "value": 750,
-            "icon": "156. Make Contaminated Water Safe to Drink and Store.png"
-          },
-          "Pool Water, Spas, Jacuzzis, Hot Tubs, or Water Containment": {
-            "value": 1000,
-            "icon": "157. Pool Water, Spas, Jacuzzis, Hot Tubs, or Water Containment.png"
-          },
-          "Standing Stagnant Pond Water and Containment Disinfection": {
-            "value": 100,
-            "icon": "158. Standing Stagnant Pond Water and Containment Disinfection.png"
-          },
-          "Wastewater with Urine, Vomit, Blood, Rancid Meat, or Biomatter": {
-            "value": 250,
-            "icon": "159. Wastewater with Urine, Vomit, Blood, Rancid Meat, or Biomatter.png"
-          },
-          "Wells and Drinking Water Reserves, Storage, and Treatment": {
-            "value": 500,
-            "icon": "160. Wells and Drinking Water Reserves, Storage, and Treatment.png"
-          }
-        }
-      },
-      {
-        "name": "Select the method of application for water treatment",
-        "type": "select",
-        "options": {
-          "Dip": {
-            "score": 100,
-            "icon": "142. Dip, Soak, or Rinse for All Surfaces, Food, and Non-Food Items.png"
-          },
-          "Soak": { "score": 75, "icon": "86. Soak, Rinse or Dip.png" },
-          "Fogging": { "score": 45, "icon": "85. Fogging and Vapor.png" },
-          "Spray": { "score": 30, "icon": "87. Wipe Mop or Spray.png" }
-        }
-      },
-      {
-        "name": "Select the volume of the water treatment solution (ml)",
-        "type": "select",
-        "options": {
-          "100 ml": {
-            "value": 10
-          },
-          "250 ml": {
-            "value": 25
-          },
-          "500 ml": {
-            "value": 50
-          },
-          "750 ml": {
-            "value": 75
-          }
-        }
-      }
-    ]
-  },
+
   {
     "name": "farm and ranch (horticulture and agriculture)",
     "description": "Enhance crop or livestock health and yield while reducing the need for harmful chemicals with an effective and sustainable solution.",
