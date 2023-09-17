@@ -1,6 +1,7 @@
 import { Button, Text, Box, Grid, GridItem, Flex } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
 interface Props {
   title: string;
   image: string;
@@ -14,6 +15,7 @@ const CategoryIntroduction: React.FC<Props> = ({
   handleNext,
   image,
 }) => {
+  const [isLoading, setLoading] = useState(true);
   const MotionBox = motion(Box);
   return (
     <MotionBox
@@ -30,13 +32,37 @@ const CategoryIntroduction: React.FC<Props> = ({
           backgroundPosition={"center center"}
           position={"relative"}
         >
-          <Image
+          <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
+            <Image
+              alt=""
+              src={`/imgs/${image}`}
+              fill
+              style={{ objectFit: "cover" }}
+              className={`
+              duration-700 ease-in-out group-hover:opacity-75
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+              onLoadingComplete={() => setLoading(false)}
+            />
+          </div>
+          {/* <Image
             style={{ objectFit: "cover" }}
             src={`/imgs/${image}`}
             alt={title}
             fill
             quality={50}
-          />
+            className={`
+              duration-700 ease-in-out group-hover:opacity-75 w-full h-full
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+            onLoadingComplete={() => setLoading(false)}
+          /> */}
         </GridItem>
         <GridItem
           as={Flex}
