@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Layout from "~/components/Layout/step";
 import { SimpleGrid, Text, Button, Flex, Box, Center } from "@chakra-ui/react";
+import Image from "next/image";
 
 export default function Quiz() {
   const router = useRouter();
@@ -16,7 +17,9 @@ export default function Quiz() {
         height={"100vh"}
         columns={[1, 1, 1, 1, 2]}
       >
-        <Box backgroundImage={"/imgs/main.jpg"} bgSize={"cover"}></Box>
+        <Box>
+          <Image width={500} height={500} src={"/imgs/main.jpg"} alt="Hello" />
+        </Box>
         <Center bg="#FEF4EC">
           <Flex maxW={"400px"} flexDir={"column"} alignItems={"center"} gap={5}>
             <Text
