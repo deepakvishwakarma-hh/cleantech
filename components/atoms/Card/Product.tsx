@@ -13,22 +13,16 @@ import { AddToCartButton } from "../buttons/AddToCartButton";
 import { Rating } from "./Rating";
 import { AddToWishlistButton } from "../buttons/AddToWishlistButton";
 import { getSubstring } from "utils";
-
-export const ProductCard = ({ product }: any) => {
-  const imageUrl = product._embedded["wp:featuredmedia"][0].source_url;
-  const imageWidth =
-    product._embedded["wp:featuredmedia"][0].media_details.width;
-  const productName = product.title.rendered;
-  const productDescription = product.excerpt.rendered;
-  const productPrice = 99;
-
+import { products } from "~/components/cart/_data";
+type Type = (typeof products)[0];
+export const ProductCard = ({ product }: { product: Type }) => {
   return (
     <Card w="xs" pos="relative" m="0.5rem">
       <AddToWishlistButton product={product} />
       <CardBody>
-        <Link href={`/products/${product.slug}`}>
+        <Link href={`/products/`}>
           <Box
-            bg={`center / contain no-repeat url(${imageUrl})`}
+            bg={`center / contain no-repeat url(${product.imageUrl})`}
             borderRadius="lg"
             boxSize="200px"
             mx="auto"
@@ -36,19 +30,19 @@ export const ProductCard = ({ product }: any) => {
         </Link>
         <Stack mt="6" spacing="3">
           <Flex justify="space-between" align="center">
-            <Link href={`/products/${product.slug}`}>
-              <Heading size="sm">{getSubstring(productName, 20)}</Heading>
+            <Link href={`/products`}>
+              <Heading size="sm">{getSubstring(product.label, 20)}</Heading>
             </Link>
             <Flex color="brand.primaryDark" fontWeight="bold">
               <Text fontSize="sm">$ </Text>
-              <Text fontSize="lg">{productPrice}</Text>
+              <Text fontSize="lg">{product.price}</Text>
             </Flex>
           </Flex>
           <Text
             fontSize="sm"
             dangerouslySetInnerHTML={{
               __html:
-                getSubstring(productDescription, 30) ||
+                getSubstring(product.description, 30) ||
                 "Provides impact-resistant c...",
             }}
           ></Text>

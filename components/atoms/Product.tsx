@@ -10,9 +10,14 @@ import {
 import { products } from "../cart/_data";
 type Type = (typeof products)[0];
 
-const IMAGE =
-  "https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80";
-function Product({ imageUrl, currency, label, price, size }: Type) {
+function Product({
+  imageUrl,
+  currency,
+  label,
+  price,
+  size,
+  description,
+}: Type) {
   return (
     <Center py={12}>
       <Box

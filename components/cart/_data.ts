@@ -36,75 +36,102 @@ export const cartData = [
 
 export const products = [
   {
+    id: "1",
     size: "1 gal",
     price: 249.95,
     currency: "USD",
     label: "1 GAL - $249.95",
     imageUrl:
       "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-1-GAL.png",
+    description:
+      "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
   },
   {
+    id: "2",
     size: "15 ml",
     price: 19.95,
     currency: "USD",
     label: "15 ML - $19.95",
     imageUrl:
       "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-5-600x450-1.png",
+    description:
+      "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
   },
   {
+    id: "3",
     size: "250 ml",
     price: 69.95,
     currency: "USD",
     label: "15 ML - $69.95",
     imageUrl:
       "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-250ml-600x417-1.png",
+    description:
+      "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
   },
   {
+    id: "4",
     size: "3 ml",
     price: 6.95,
     currency: "USD",
     label: "15 ML - $6.95",
     imageUrl:
       "https://customcleansolutions.com/wp-content/uploads/2023/04/AB-3ml-min-1-1024x770.png",
+    description:
+      "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
   },
   {
+    id: "5",
     size: "30 ml",
     price: 19.95,
     currency: "USD",
     label: "15 ML - $19.95",
     imageUrl:
       "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-30ml-600x387-1.png",
+    description:
+      "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
   },
   {
+    id: "6",
     size: "32 OZ",
     price: 139.95,
     currency: "USD",
     label: "15 ML - $139.95",
     imageUrl:
       "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-32oz-600x400-1.png",
+    description:
+      "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
   },
   {
-    size: "16 OZ ",
+    id: "7",
+    size: "16 OZ",
     price: 4.0,
     currency: "USD",
     label: "16OZ REUSABLE TRIGGER SPRAYER",
     imageUrl:
       "https://customcleansolutions.com/wp-content/uploads/2023/04/16oz.png",
+    description:
+      "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
   },
   {
+    id: "8",
     size: "80 ML",
     price: 3.0,
     currency: "USD",
     label: "80ML SPRAYER",
     imageUrl:
       "https://customcleansolutions.com/wp-content/uploads/2023/06/Final-2-scaled.jpg",
+    description:
+      "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
   },
   {
+    id: "9",
     size: "80 ML",
     price: 3.0,
     currency: "USD",
     label: "80 ML MULTIPURPOSE SPRAYER",
     imageUrl:
       "https://customcleansolutions.com/wp-content/uploads/2023/06/Final-2-scaled.jpg",
+    description:
+      "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
   },
 ];

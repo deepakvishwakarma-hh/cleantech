@@ -13,7 +13,8 @@ import {
 } from "@chakra-ui/react";
 import Layout from "~/components/Layout/main";
 import { ProductCard } from "~/components/atoms/Card/Product";
-export default function Products({ products }: any) {
+import { products } from "~/components/cart/_data";
+export default function Products() {
   console.log(products);
   return (
     <Layout>
@@ -35,32 +36,9 @@ export default function Products({ products }: any) {
         <Flex flexWrap={"wrap"} gap={5}></Flex>
 
         <Flex flexWrap={"wrap"}>
-          {products.map((product: any, index: number) => {
-            // Accessing the image URL and width from the media_details object
-            const imageUrl =
-              product._embedded["wp:featuredmedia"][0].source_url;
-            const imageWidth =
-              product._embedded["wp:featuredmedia"][0].media_details.width;
-
+          {products.map((product, index) => {
             // Rendering the Product component with the image URL and width
-            return (
-              <ProductCard
-                // rating={5}
-                // slug={"/jklsdjkl-sdf"}
-                key={index}
-                // name={product.title.rendered}
-                // description={product.title.rendered}
-                // price={99}
-                // mainImage={imageUrl}
-                product={product}
-              />
-              // <Product
-              //   key={index}
-              //   title={product.title.rendered}
-              //   imageUrl={imageUrl}
-              //   imageWidth={imageWidth}
-              // />
-            );
+            return <ProductCard key={index} product={product} />;
           })}
         </Flex>
       </Container>
@@ -68,13 +46,13 @@ export default function Products({ products }: any) {
   );
 }
 
-export const getStaticProps = async () => {
-  const res = await fetch(
-    "https://customcleansolutions.com/wp-json/wp/v2/product?&_embed=wp:featuredmedia"
-  );
-  const AllProducts = await res.json();
-  return { props: { products: AllProducts } };
-};
+// export const getStaticProps = async () => {
+//   const res = await fetch(
+//     "https://customcleansolutions.com/wp-json/wp/v2/product?&_embed=wp:featuredmedia"
+//   );
+//   const AllProducts = await res.json();
+//   return { props: { products: AllProducts } };
+// };
 
 const IMAGE =
   "https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80";

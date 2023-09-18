@@ -1,123 +1,80 @@
-import { products } from "~/components/cart/_data";
-import QUIZV2 from "../quizv2.json";
+import { useSessionStorage } from "@mantine/hooks";
+import { useEffect } from "react";
 
-// Define the structure of your shopping cart.
-// interface ShoppingCartItem {
-//   category: string;
-//   question: string;
-//   selectedOption: string;
-//   score: number;
-// }
-
-// interface ShoppingCart {
-//   items: ShoppingCartItem[];
-//   totalScore: number;
-// }
-
-// // Initialize the shopping cart
-// const shoppingCart: ShoppingCart = {
-//   items: [],
-//   totalScore: 0,
-// };
-
-// // Function to add items to the shopping cart
-// const addToCart = (
-//   categoryName: string,
-//   questionIndex: number,
-//   selectedOptionName: string
-// ) => {
-//   // Find the category in the QUIZ data
-//   const category = QUIZV2.find((item) => item.name === categoryName);
-
-//   if (category) {
-//     const question = category.question[questionIndex] as any;
-//     if (question && question?.options[selectedOptionName]) {
-//       const itemToAdd: ShoppingCartItem = {
-//         category: categoryName,
-//         question: question.name,
-//         selectedOption: selectedOptionName,
-//         score: question?.options[selectedOptionName].value,
-//       };
-
-//       // Add the item to the cart
-//       shoppingCart.items.push(itemToAdd);
-
-//       // Update the total score
-//       shoppingCart.totalScore += itemToAdd.score;
-
-//       // You can also add additional logic here, such as checking for duplicate items, updating quantities, etc.
-//     }
-//   }
-// };
-
-// // Function to retrieve the current shopping cart
-// const getShoppingCart = (): ShoppingCart => {
-//   return shoppingCart;
-// };
-
-// // Example usage:
-// // Call addToCart when the user selects an option
-// // const categoryName = "transport and transit (delivery and travel)";
-// // const questionIndex = 0;
-// // const selectedOptionName = "Delivery Jobs";
-// // addToCart(categoryName, questionIndex, selectedOptionName);
-
-// // Call getShoppingCart to retrieve the current cart contents
-// // const cart = getShoppingCart();
-// // console.log(cart);
-
-// export { addToCart, getShoppingCart };
-import { useEffect, useState } from "react";
-
-// Define a type for the product data
 type Product = {
+  id: string;
   size: string;
   price: number;
   currency: string;
   label: string;
   imageUrl: string;
+  description: string;
 };
 
-// Define a type for the report data
-type ReportData = {
-  name: string;
-  questions: {
-    name: string;
-    answer: string;
-    option: number;
-  }[];
+type CartItem = {
+  product: Product; // Use the Product type for product
+  count: number;
 };
 
-// Define a type for suggested products
-type SuggestedProduct = {
-  product: Product;
-  score: number;
+type Cart = {
+  items: CartItem[];
 };
 
-// Define a function to calculate the score for a report
-function calculateReportScore(reportData: ReportData): number {
-  // Implement your scoring logic here based on the report data
-  let totalScore = 0;
-  for (const question of reportData.questions) {
-    totalScore += question.option; // Use the option value as a score for now
-  }
-  return totalScore;
-}
+type UseCartReturnType = {
+  cart: Cart;
+  addItem: (product: Product, count: number) => void;
+  removeItem: (productId: string) => void;
+  clearCart: () => void;
+};
 
-export function useSuggestedProducts(
-  reportData: ReportData[]
-): SuggestedProduct[] {
-  const calculatedProducts: SuggestedProduct[] = reportData.map((report) => {
-    // Create a custom mapping logic here based on report data
-    const matchingProduct = determineMatchingProduct(report);
-
-    return {
-      product: matchingProduct || products[0],
-      score: calculateReportScore(report),
-    };
+export const useCart = (): UseCartReturnType => {
+  // Initialize the cart with data from session storage or an empty cart if not found
+  const [cart, setCart] = useSessionStorage<Cart>({
+    key: "cart",
+    defaultValue: { items: [] },
   });
 
-  calculatedProducts.sort((a, b) => b.score - a.score);
+  // Add an item to the cart
+  const addItem = (product: Product, count: number) => {
+    // Find the index of the product in the cart
+    const index = cart.items.findIndex(
+      (item) => item.product.id === product.id
+    );
 
-  return calculatedProducts;
-}
+    // If the product is already in the cart, update the count
+    if (index !== -1) {
+      const updatedCart = [...cart.items];
+      updatedCart[index].count += count;
+      setCart({ items: updatedCart });
+    } else {
+      // If the product is not in the cart, add it
+      const updatedCart = [...cart.items, { product, count }];
+      setCart({ items: updatedCart });
+    }
+  };
+
+  // Remove an item from the cart by productId
+  const removeItem = (productId: string) => {
+    const updatedCart = cart.items.filter(
+      (item) => item.product.id !== productId
+    );
+    setCart({ items: updatedCart });
+  };
+
+  // Clear the entire cart
+  const clearCart = () => {
+    setCart({ items: [] });
+  };
+
+  useEffect(() => {
+    // Update session storage whenever the cart changes
+    setCart(cart);
+  }, [cart, setCart]);
+
+  return {
+    cart,
+    addItem,
+    removeItem,
+    clearCart,
+  };
+};
