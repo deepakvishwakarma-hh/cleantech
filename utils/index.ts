@@ -15,6 +15,7 @@ interface Product {
   currency: string;
   label: string;
   imageUrl: string;
+  description: string;
 }
 
 export function shuffleAndSelectProducts(

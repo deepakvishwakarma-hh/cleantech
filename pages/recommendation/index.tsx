@@ -18,6 +18,7 @@ import Footer from "~/components/Layout/secondary/footer";
 import { PostsInterFace } from "types/blogs";
 import { products } from "~/components/cart/_data";
 import { shuffleAndSelectProducts } from "utils";
+import { ProductCard } from "~/components/atoms/Card/Product";
 
 export default function Recommendation({ posts }: { posts: PostsInterFace[] }) {
   const responsiveHeight = [
@@ -59,13 +60,8 @@ export default function Recommendation({ posts }: { posts: PostsInterFace[] }) {
             gap={5}
           >
             {shuffleAndSelectProducts(products, 4).map((pro, i) => (
-              <Product description={""} {...pro} key={i} />
+              <ProductCard product={pro} key={i} />
             ))}
-            {/*            
-            <Product />
-
-            <Product />
-            <Product /> */}
           </GridItem>
         </Container>
       </Box>
