@@ -1,6 +1,8 @@
+// Import the necessary dependencies
+import superjson from "superjson";
 import { useSessionStorage } from "@mantine/hooks";
-import { useEffect } from "react";
 
+// Define the types
 type Product = {
   id: string;
   size: string;
@@ -12,7 +14,7 @@ type Product = {
 };
 
 type CartItem = {
-  product: Product; // Use the Product type for product
+  product: Product;
   count: number;
 };
 
@@ -25,35 +27,37 @@ type UseCartReturnType = {
   addItem: (product: Product, count: number) => void;
   removeItem: (productId: string) => void;
   clearCart: () => void;
+  isAdded: (productId: string) => boolean;
+  changeItemQuantity: (productId: string, newQuantity: number) => void;
+  getTotalAmount: () => number; // Add the getTotalAmount function
 };
 
+const defaultValue = { items: [] };
+
 export const useCart = (): UseCartReturnType => {
-  // Initialize the cart with data from session storage or an empty cart if not found
   const [cart, setCart] = useSessionStorage<Cart>({
-    key: "cart",
-    defaultValue: { items: [] },
+    key: "cart1",
+    defaultValue,
+    serialize: superjson.stringify,
+    deserialize: (str: string) =>
+      str === undefined ? defaultValue : superjson.parse(str),
   });
 
-  // Add an item to the cart
   const addItem = (product: Product, count: number) => {
-    // Find the index of the product in the cart
     const index = cart.items.findIndex(
       (item) => item.product.id === product.id
     );
 
-    // If the product is already in the cart, update the count
     if (index !== -1) {
       const updatedCart = [...cart.items];
       updatedCart[index].count += count;
       setCart({ items: updatedCart });
     } else {
-      // If the product is not in the cart, add it
       const updatedCart = [...cart.items, { product, count }];
       setCart({ items: updatedCart });
     }
   };
 
-  // Remove an item from the cart by productId
   const removeItem = (productId: string) => {
     const updatedCart = cart.items.filter(
       (item) => item.product.id !== productId
@@ -61,20 +65,38 @@ export const useCart = (): UseCartReturnType => {
     setCart({ items: updatedCart });
   };
 
-  // Clear the entire cart
   const clearCart = () => {
     setCart({ items: [] });
   };
 
-  useEffect(() => {
-    // Update session storage whenever the cart changes
-    setCart(cart);
-  }, [cart, setCart]);
+  const isAdded = (productId: string) => {
+    return cart.items.some((item) => item.product.id === productId);
+  };
+
+  const changeItemQuantity = (productId: string, newQuantity: number) => {
+    const updatedCart = cart.items.map((item) => {
+      if (item.product.id === productId) {
+        return { ...item, count: newQuantity };
+      }
+      return item;
+    });
+    setCart({ items: updatedCart });
+  };
+
+  // Add the getTotalAmount function to calculate the total amount in the cart
+  const getTotalAmount = () => {
+    return cart.items.reduce((total, item) => {
+      return total + item.product.price * item.count;
+    }, 0);
+  };
 
   return {
     cart,
     addItem,
     removeItem,
     clearCart,
+    isAdded,
+    changeItemQuantity,
+    getTotalAmount, // Add the getTotalAmount function
   };
 };
