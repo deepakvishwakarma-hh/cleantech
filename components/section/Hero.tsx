@@ -30,7 +30,7 @@ const Hero = () => {
           </Text>{" "}
           Safe and Proven Disinfectant with Chlorine Dioxide Technology
         </Text>
-        <Link passHref href={"/steps/quiz"}>
+        <Link passHref href={"/steps/quiz"} prefetch={true}>
           <Button px={20} py={8} fontSize={"xl"} variant="takequizsmall" ml={2}>
             Take the quiz
           </Button>

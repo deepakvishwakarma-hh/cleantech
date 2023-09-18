@@ -1,4 +1,11 @@
-import { Container, Text, Button, Box, SimpleGrid } from "@chakra-ui/react";
+import {
+  Container,
+  Text,
+  Button,
+  Box,
+  SimpleGrid,
+  Stack,
+} from "@chakra-ui/react";
 import Link from "next/link";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
@@ -27,28 +34,40 @@ function RecommendationHero() {
               referenced hundreds of clinical studies to ensure you’re getting
               just what your body needs.
             </Text>
-
-            <Link passHref href={"/cart"}>
-              <Button
-                display={"flex"}
-                mt={5}
-                gap={2}
-                fontWeight={400}
-                fontFamily={"body"}
-                variant="takequizsmall"
-                // variant={"unstyled"}
-              >
-                Go to cart
-                <HiOutlineArrowLongRight size={30} />{" "}
-              </Button>
-            </Link>
+            <Stack direction="row" spacing={4}>
+              <Link passHref href={"/cart"}>
+                <Button
+                  display={"flex"}
+                  mt={5}
+                  gap={2}
+                  fontWeight={400}
+                  fontFamily={"body"}
+                  variant="takequizsmall"
+                  // variant={"unstyled"}
+                >
+                  Go to cart
+                  <HiOutlineArrowLongRight size={30} />{" "}
+                </Button>
+              </Link>
+              <Link passHref href={"/report"}>
+                <Button
+                  display={"flex"}
+                  mt={5}
+                  gap={2}
+                  fontWeight={400}
+                  fontFamily={"body"}
+                  variant="takequizsmall"
+                  // variant={"unstyled"}
+                >
+                  Go to report
+                  <HiOutlineArrowLongRight size={30} />{" "}
+                </Button>
+              </Link>
+            </Stack>
           </Box>
 
           <Box>
-            <img
-              src="https://images.unsplash.com/photo-1603248322878-f0e0ac378588?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-              alt=""
-            />
+            <img src="/imgs/e32a7cb2-7d92-410e-8717-2e2fca434db4.png" alt="" />
           </Box>
         </SimpleGrid>
       </Container>
