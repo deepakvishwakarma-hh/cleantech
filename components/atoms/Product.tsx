@@ -17,6 +17,7 @@ function Product({
   price,
   size,
   description,
+  id,
 }: Type) {
   return (
     <Center py={12}>

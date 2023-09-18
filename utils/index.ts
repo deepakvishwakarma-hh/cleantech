@@ -9,6 +9,7 @@ export const getSubstring = (text: string, substringEnd: number): string => {
 };
 
 interface Product {
+  id: string;
   size: string;
   price: number;
   currency: string;

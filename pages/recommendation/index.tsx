@@ -1,10 +1,8 @@
 import Hero from "~/components/section/RecommendationHero";
 import {
   Box,
-  Grid,
   GridItem,
   Text,
-  Flex,
   Container,
   Center,
   SimpleGrid,
@@ -61,7 +59,7 @@ export default function Recommendation({ posts }: { posts: PostsInterFace[] }) {
             gap={5}
           >
             {shuffleAndSelectProducts(products, 4).map((pro, i) => (
-              <Product {...pro} key={i} />
+              <Product description={""} {...pro} key={i} />
             ))}
             {/*            
             <Product />
