@@ -7,10 +7,12 @@ import {
   Box,
   Text,
 } from "@chakra-ui/react";
+import { products } from "../cart/_data";
+type Type = (typeof products)[0];
 
 const IMAGE =
   "https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80";
-function Product() {
+function Product({ imageUrl, currency, label, price, size }: Type) {
   return (
     <Center py={12}>
       <Box
@@ -29,7 +31,7 @@ function Product() {
             height={230}
             width={282}
             objectFit={"cover"}
-            src={IMAGE}
+            src={imageUrl}
             alt="#"
           />
         </Box>
@@ -38,11 +40,11 @@ function Product() {
             Recommended
           </Text>
           <Heading fontSize={"xl"} fontFamily={"body"} fontWeight={500}>
-            Nice Chair, pink
+            {label}
           </Heading>
           <Stack direction={"row"} align={"center"}>
             <Text fontWeight={800} fontSize={"xl"}>
-              $57
+              ${price}
             </Text>
             <Text textDecoration={"line-through"} color={"gray.600"}>
               $199

@@ -18,6 +18,8 @@ import Link from "next/link";
 import Logo from "~/components/atoms/Logo";
 import Footer from "~/components/Layout/secondary/footer";
 import { PostsInterFace } from "types/blogs";
+import { products } from "~/components/cart/_data";
+import { shuffleAndSelectProducts } from "utils";
 
 export default function Recommendation({ posts }: { posts: PostsInterFace[] }) {
   const responsiveHeight = [
@@ -58,11 +60,14 @@ export default function Recommendation({ posts }: { posts: PostsInterFace[] }) {
             flexWrap={"wrap"}
             gap={5}
           >
-            <Product />
+            {shuffleAndSelectProducts(products, 4).map((pro, i) => (
+              <Product {...pro} key={i} />
+            ))}
+            {/*            
             <Product />
 
             <Product />
-            <Product />
+            <Product /> */}
           </GridItem>
         </Container>
       </Box>

@@ -35,78 +35,76 @@ export const cartData = [
 ];
 
 export const products = [
-  [
-    {
-      size: "1 gal",
-      price: 249.95,
-      currency: "USD",
-      label: "1 GAL - $249.95",
-      imageUrl:
-        "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-1-GAL.png",
-    },
-    {
-      size: "15 ml",
-      price: 19.95,
-      currency: "USD",
-      label: "15 ML - $19.95",
-      imageUrl:
-        "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-5-600x450-1.png",
-    },
-    {
-      size: "250 ml",
-      price: 69.95,
-      currency: "USD",
-      label: "15 ML - $69.95",
-      imageUrl:
-        "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-250ml-600x417-1.png",
-    },
-    {
-      size: "3 ml",
-      price: 6.95,
-      currency: "USD",
-      label: "15 ML - $6.95",
-      imageUrl:
-        "https://customcleansolutions.com/wp-content/uploads/2023/04/AB-3ml-min-1-1024x770.png",
-    },
-    {
-      size: "30 ml",
-      price: 19.95,
-      currency: "USD",
-      label: "15 ML - $19.95",
-      imageUrl:
-        "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-30ml-600x387-1.png",
-    },
-    {
-      size: "32 OZ",
-      price: 139.95,
-      currency: "USD",
-      label: "15 ML - $139.95",
-      imageUrl:
-        "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-32oz-600x400-1.png",
-    },
-    {
-      size: "16 OZ ",
-      price: 4.0,
-      currency: "USD",
-      label: "16OZ REUSABLE TRIGGER SPRAYER",
-      imageUrl:
-        "https://customcleansolutions.com/wp-content/uploads/2023/04/16oz.png",
-    },
-    {
-      size: "80 ML",
-      price: 3.0,
-      currency: "USD",
-      label: "80ML SPRAYER",
-      imageUrl:
-        "https://customcleansolutions.com/wp-content/uploads/2023/06/Final-2-scaled.jpg",
-    },
-    {
-      size: "80 ML",
-      price: 3.0,
-      currency: "USD",
-      label: "80 ML MULTIPURPOSE SPRAYER",
-      imageUrl:
-        "https://customcleansolutions.com/wp-content/uploads/2023/06/Final-2-scaled.jpg",
-    },
-  ],
+  {
+    size: "1 gal",
+    price: 249.95,
+    currency: "USD",
+    label: "1 GAL - $249.95",
+    imageUrl:
+      "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-1-GAL.png",
+  },
+  {
+    size: "15 ml",
+    price: 19.95,
+    currency: "USD",
+    label: "15 ML - $19.95",
+    imageUrl:
+      "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-5-600x450-1.png",
+  },
+  {
+    size: "250 ml",
+    price: 69.95,
+    currency: "USD",
+    label: "15 ML - $69.95",
+    imageUrl:
+      "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-250ml-600x417-1.png",
+  },
+  {
+    size: "3 ml",
+    price: 6.95,
+    currency: "USD",
+    label: "15 ML - $6.95",
+    imageUrl:
+      "https://customcleansolutions.com/wp-content/uploads/2023/04/AB-3ml-min-1-1024x770.png",
+  },
+  {
+    size: "30 ml",
+    price: 19.95,
+    currency: "USD",
+    label: "15 ML - $19.95",
+    imageUrl:
+      "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-30ml-600x387-1.png",
+  },
+  {
+    size: "32 OZ",
+    price: 139.95,
+    currency: "USD",
+    label: "15 ML - $139.95",
+    imageUrl:
+      "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-32oz-600x400-1.png",
+  },
+  {
+    size: "16 OZ ",
+    price: 4.0,
+    currency: "USD",
+    label: "16OZ REUSABLE TRIGGER SPRAYER",
+    imageUrl:
+      "https://customcleansolutions.com/wp-content/uploads/2023/04/16oz.png",
+  },
+  {
+    size: "80 ML",
+    price: 3.0,
+    currency: "USD",
+    label: "80ML SPRAYER",
+    imageUrl:
+      "https://customcleansolutions.com/wp-content/uploads/2023/06/Final-2-scaled.jpg",
+  },
+  {
+    size: "80 ML",
+    price: 3.0,
+    currency: "USD",
+    label: "80 ML MULTIPURPOSE SPRAYER",
+    imageUrl:
+      "https://customcleansolutions.com/wp-content/uploads/2023/06/Final-2-scaled.jpg",
+  },
 ];

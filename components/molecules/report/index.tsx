@@ -4,6 +4,7 @@ import { Tr, Td, Box, Text, Table, Thead, Tbody } from "@chakra-ui/react";
 
 const Report = () => {
   const report = useReport();
+  console.log(report);
   return (
     <Box>
       {report.map(({ name, questions }) => (
