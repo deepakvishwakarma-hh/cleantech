@@ -17,8 +17,13 @@ export default function Quiz() {
         height={"100vh"}
         columns={[1, 1, 1, 1, 2]}
       >
-        <Box>
-          <Image width={500} height={500} src={"/imgs/main.jpg"} alt="Hello" />
+        <Box position={"relative"}>
+          <Image
+            fill
+            style={{ objectFit: "cover" }}
+            alt="Hello"
+            src={"/imgs/main.jpg"}
+          />
         </Box>
         <Center bg="#FEF4EC">
           <Flex maxW={"400px"} flexDir={"column"} alignItems={"center"} gap={5}>
