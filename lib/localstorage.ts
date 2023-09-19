@@ -6,7 +6,8 @@ const defaultValue = {
     age: '19',
     email: 'default@gmail.com',
     usage: 'medium',
-    surrounded : []
+    surrounded : [],
+    annualSpent : "$20 - 50$"
 }
 export const localstorage = {
     key: 'storage',
