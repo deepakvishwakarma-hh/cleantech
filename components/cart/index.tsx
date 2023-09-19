@@ -3,7 +3,6 @@ import {
   Flex,
   Heading,
   HStack,
-  Link,
   Stack,
   Container,
   Text,
@@ -13,8 +12,10 @@ import {
 } from "@chakra-ui/react";
 import { CartItem } from "./CartItem";
 import { CartOrderSummary } from "./CartOrderSummary";
-import { cartData } from "./_data";
+import Link from "next/link";
 import { useCart } from "~/hooks/useCart";
+
+import { Button } from "@chakra-ui/react";
 
 export const Cart = () => {
   const { cart } = useCart();
@@ -25,7 +26,7 @@ export const Cart = () => {
       w={"full"}
       minH={"100vh"}
     >
-      <GridItem pt={"5rem"} px={10}>
+      <GridItem pt={"5rem"} pb={["5rem", "5rem", "5rem", 0]} px={10}>
         <Text fontSize={"3xl"} fontFamily={"heading"} mb={10}>
           Shopping Cart
         </Text>
@@ -33,6 +34,28 @@ export const Cart = () => {
           {cart.items.map((item) => (
             <CartItem key={item.product.id} {...item} />
           ))}
+
+          {cart.items.length == 0 && (
+            <Box
+              p={5}
+              maxW={"500px"}
+              rounded={"md"}
+              border="1px lightgray solid"
+            >
+              <Text fontFamily={"heading"} fontSize={"xl"}>
+                You have no items in your cart Browse all products
+              </Text>
+              <Button
+                mt={3}
+                as={Link}
+                href="/products"
+                fontSize={"1rem"}
+                variant={"takequizsmall"}
+              >
+                Browse all products
+              </Button>
+            </Box>
+          )}
         </Flex>
       </GridItem>
       <GridItem
