@@ -8,6 +8,10 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
+import { Image } from "@chakra-ui/next-js";
+
+import { TbReportAnalytics } from "react-icons/tb";
+import { BiCartAlt } from "react-icons/bi";
 
 function RecommendationHero() {
   return (
@@ -15,8 +19,10 @@ function RecommendationHero() {
       <Container maxWidth={"8xl"}>
         <SimpleGrid
           columns={[1, 1, 1, 2]}
+          px={["1rem", "1rem", "1rem"]}
           gap={["1rem", "1rem", "1rem", "10rem"]}
-          py={"10rem"}
+          pt={["8rem", "10rem"]}
+          pb={["2rem", "2rem"]}
         >
           <Box>
             <Text
@@ -26,7 +32,11 @@ function RecommendationHero() {
             >
               RECOMMENDATION
             </Text>
-            <Text py={5} fontSize={"6xl"} fontFamily={"heading"}>
+            <Text
+              py={5}
+              fontSize={["3xl", "3xl", "6xl"]}
+              fontFamily={"heading"}
+            >
               Made for Jason
             </Text>
             <Text fontSize={"xl"} fontFamily={"heading"}>
@@ -34,40 +44,82 @@ function RecommendationHero() {
               referenced hundreds of clinical studies to ensure you’re getting
               just what your body needs.
             </Text>
-            <Stack direction="row" spacing={4}>
+            <Stack
+              mt={5}
+              direction={["column", "row", "row", "row"]}
+              spacing={[0, 4]}
+            >
               <Link passHref href={"/cart"}>
                 <Button
+                  width={["100%", "auto"]}
                   display={"flex"}
                   mt={5}
                   gap={2}
-                  fontWeight={400}
+                  py={6}
                   fontFamily={"body"}
-                  variant="takequizsmall"
-                  // variant={"unstyled"}
+                  sx={{
+                    background: "black",
+                    alignItems: "center",
+                    borderRadius: "full",
+                    height: "44px",
+                    color: "white",
+                    px: 10,
+                    border: "2px solid black",
+                    fontWeight: 400,
+                    transition: ".5s",
+                    willChange: "color",
+                    "&:hover": {
+                      background: "white",
+                      color: "black",
+                    },
+                  }}
                 >
+                  <BiCartAlt size={25} />
                   Go to cart
-                  <HiOutlineArrowLongRight size={30} />{" "}
                 </Button>
               </Link>
               <Link passHref href={"/report"}>
                 <Button
+                  width={["100%", "auto"]}
                   display={"flex"}
                   mt={5}
+                  py={6}
                   gap={2}
                   fontWeight={400}
                   fontFamily={"body"}
-                  variant="takequizsmall"
-                  // variant={"unstyled"}
+                  sx={{
+                    background: "white",
+                    alignItems: "center",
+                    borderRadius: "full",
+                    height: "44px",
+                    px: 10,
+                    border: "2px solid black",
+                    fontWeight: 400,
+                    transition: ".5s",
+                    willChange: "color",
+                    "&:hover": {
+                      background: "black",
+                      color: "white",
+                    },
+                  }}
                 >
+                  <TbReportAnalytics size={25} />
                   Go to report
-                  <HiOutlineArrowLongRight size={30} />{" "}
                 </Button>
               </Link>
             </Stack>
           </Box>
 
-          <Box>
-            <img src="/imgs/e32a7cb2-7d92-410e-8717-2e2fca434db4.png" alt="" />
+          <Box display={["none", "none", "none", "block"]}>
+            <Image
+              src="/imgs/z2.-Extermination-of-Invasive-Insects-(7).jpg"
+              width={500}
+              height={500}
+              sx={{
+                borderRadius: "100%",
+              }}
+              alt="image"
+            />
           </Box>
         </SimpleGrid>
       </Container>

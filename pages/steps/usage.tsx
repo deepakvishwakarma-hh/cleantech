@@ -40,7 +40,7 @@ export default function Usage() {
   };
 
   return (
-    <Layout previous="surrounded">
+    <Layout previous="annual-spent">
       <Box bg="#FEF4EC" width={"100%"} minH={"100vh"}>
         <Center minH={"650px"} h={"100vh"}>
           <Flex
