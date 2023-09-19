@@ -45,6 +45,7 @@ export const products = [
       "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-1-GAL.png",
     description:
       "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
+    ml: 3785.41, // 1 gallon = 3785.41 ml
   },
   {
     id: "2",
@@ -56,6 +57,7 @@ export const products = [
       "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-5-600x450-1.png",
     description:
       "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
+    ml: 15, // 15 ml
   },
   {
     id: "3",
@@ -67,6 +69,7 @@ export const products = [
       "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-250ml-600x417-1.png",
     description:
       "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
+    ml: 250, // 250 ml
   },
   {
     id: "4",
@@ -78,6 +81,7 @@ export const products = [
       "https://customcleansolutions.com/wp-content/uploads/2023/04/AB-3ml-min-1-1024x770.png",
     description:
       "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
+    ml: 3, // 3 ml
   },
   {
     id: "5",
@@ -89,6 +93,7 @@ export const products = [
       "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-30ml-600x387-1.png",
     description:
       "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
+    ml: 30, // 30 ml
   },
   {
     id: "6",
@@ -100,6 +105,7 @@ export const products = [
       "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-32oz-600x400-1.png",
     description:
       "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
+    ml: 946.35, // 32 oz = 946.35 ml
   },
   {
     id: "7",
@@ -111,6 +117,7 @@ export const products = [
       "https://customcleansolutions.com/wp-content/uploads/2023/04/16oz.png",
     description:
       "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
+    ml: 473.18, // 16 oz = 473.18 ml
   },
   {
     id: "8",
@@ -122,6 +129,7 @@ export const products = [
       "https://customcleansolutions.com/wp-content/uploads/2023/06/Final-2-scaled.jpg",
     description:
       "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
+    ml: 80, // 80 ml
   },
   {
     id: "9",
@@ -133,5 +141,6 @@ export const products = [
       "https://customcleansolutions.com/wp-content/uploads/2023/06/Final-2-scaled.jpg",
     description:
       "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
+    ml: 80, // 80 ml
   },
 ];

@@ -3,8 +3,11 @@ import Report from "~/components/molecules/report";
 import { useSessionStorage } from "@mantine/hooks";
 import CurrentDate from "~/components/molecules/report/CurrentDate";
 import { Box, Text, Container, Alert, AlertIcon } from "@chakra-ui/react";
+import { useSuggestedProducts } from "~/hooks/useSuggestedProducts";
 const ReportPage = () => {
   const [{ isCompleted }]: any = useSessionStorage(localstorage);
+  const { Ml, requiredMl } = useSuggestedProducts();
+  console.log({ Ml, requiredMl });
   if (!isCompleted) {
     return (
       <Alert status="error">
@@ -13,6 +16,7 @@ const ReportPage = () => {
       </Alert>
     );
   }
+
   return (
     <Box bg={"#E6EBEF"} py={5}>
       <Container maxW={"container.xl"}>
