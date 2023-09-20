@@ -6,8 +6,7 @@ import { Box, Text, Container, Alert, AlertIcon } from "@chakra-ui/react";
 import { useSuggestedProducts } from "~/hooks/useSuggestedProducts";
 const ReportPage = () => {
   const [{ isCompleted }]: any = useSessionStorage(localstorage);
-  const { Ml, requiredMl } = useSuggestedProducts();
-  console.log({ Ml, requiredMl });
+
   if (!isCompleted) {
     return (
       <Alert status="error">

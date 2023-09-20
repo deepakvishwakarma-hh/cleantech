@@ -51,17 +51,6 @@
           "Dip": { "score": 25, "icon": "86-Soak--Rinse-or-Dip.png" },
           "Wipe": { "score": 100, "icon": "87-Wipe-Mop-or-Spray.png" }
         }
-      },
-      {
-        "name": "Select the volume of the extermination solution (ml)",
-        "type": "select",
-        "options": {
-          "100 ml": { "score": 10 },
-          "250 ml": { "score": 25 },
-          "500 ml": { "score": 50 },
-          "750 ml": { "score": 75 },
-          "1000 ml": { "score": 100 }
-        }
       }
     ]
   },
@@ -98,17 +87,6 @@
           "Drench": { "score": 50 },
           "Foliar Application": { "score": 75 },
           "Soil Treatment": { "score": 25 }
-        }
-      },
-      {
-        "name": "Select the volume of the plant health solution (ml)",
-        "type": "select",
-        "options": {
-          "100 ml": { "score": 10 },
-          "250 ml": { "score": 25 },
-          "500 ml": { "score": 50 },
-          "750 ml": { "score": 75 },
-          "1000 ml": { "score": 100 }
         }
       }
     ]
@@ -200,17 +178,6 @@
             "icon": "142-Dip--Soak--or-Rinse-for-All-Surfaces--Food--and-Non-Food-Items.png"
           }
         }
-      },
-      {
-        "name": "Select the volume of the disinfection solution (ml)",
-        "type": "select",
-        "options": {
-          "200 ml": { "score": 20 },
-          "350 ml": { "score": 35 },
-          "500 ml": { "score": 50 },
-          "650 ml": { "score": 65 },
-          "800 ml": { "score": 80 }
-        }
       }
     ]
   },
@@ -278,17 +245,6 @@
             "score": 35,
             "icon": "124-General-Surface-Disinfection--Hard-and-Soft-Surfaces.png"
           }
-        }
-      },
-      {
-        "name": "Select the volume of the on-the-go disinfection solution (ml)",
-        "type": "select",
-        "options": {
-          "100 ml": { "score": 10 },
-          "150 ml": { "score": 15 },
-          "250 ml": { "score": 25 },
-          "350 ml": { "score": 35 },
-          "500 ml": { "score": 50 }
         }
       }
     ]
@@ -376,17 +332,6 @@
           "Wipe": { "score": 60, "icon": "86-Wipe.png" },
           "Soak": { "score": 75, "icon": "88-Soak.png" }
         }
-      },
-      {
-        "name": "Select the volume of the odor elimination solution (ml)",
-        "type": "select",
-        "options": {
-          "300 ml": { "score": 30 },
-          "450 ml": { "score": 45 },
-          "600 ml": { "score": 60 },
-          "750 ml": { "score": 75 },
-          "900 ml": { "score": 90 }
-        }
       }
     ]
   },
@@ -451,24 +396,6 @@
           "Spray": {
             "score": 30,
             "icon": "87-Wipe-Mop-or-Spray.png"
-          }
-        }
-      },
-      {
-        "name": "Select the volume of the water treatment solution (ml)",
-        "type": "select",
-        "options": {
-          "100 ml": {
-            "value": 10
-          },
-          "250 ml": {
-            "value": 25
-          },
-          "500 ml": {
-            "value": 50
-          },
-          "750 ml": {
-            "value": 75
           }
         }
       }
@@ -860,17 +787,6 @@
           "Spray": { "score": 100, "icon": "87-Wipe-Mop-or-Spray.png" },
           "Wipe": { "score": 75, "icon": "87-Wipe-Mop-or-Spray.png" },
           "Fogging": { "score": 50, "icon": "85-Fogging-and-Vapor.png" }
-        }
-      },
-      {
-        "name": "Select the volume of the disinfection solution (ml)",
-        "type": "select",
-        "options": {
-          "500 ml": { "score": 50 },
-          "750 ml": { "score": 75 },
-          "1000 ml": { "score": 100 },
-          "1500 ml": { "score": 125 },
-          "2000 ml": { "score": 150 }
         }
       }
     ]

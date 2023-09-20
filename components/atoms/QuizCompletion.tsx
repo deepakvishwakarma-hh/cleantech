@@ -4,9 +4,11 @@ import { useRouter } from "next/router";
 import useDimention from "~/hooks/useDimention";
 import { Button, Text, Box, useQuery } from "@chakra-ui/react";
 import useQuiz from "~/hooks/useQuiz";
+import { useSuggestedProducts } from "~/hooks/useSuggestedProducts";
 
 const QuizCompletion = () => {
   const { markCompleted } = useQuiz();
+  const data = useSuggestedProducts();
   const router = useRouter();
   const confetiRef = useRef<any>(null);
   const { width, height } = useDimention();

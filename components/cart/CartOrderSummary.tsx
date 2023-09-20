@@ -48,7 +48,10 @@ export const CartOrderSummary = () => {
       </Text>
 
       <Stack spacing="6">
-        <OrderSummaryItem label="Subtotal" value={formatPrice(597)} />
+        <OrderSummaryItem
+          label="Subtotal"
+          value={formatPrice(getTotalAmount())}
+        />
         <OrderSummaryItem label="Shipping + Tax">
           <Link href="#" textDecor="underline">
             Calculate shipping
