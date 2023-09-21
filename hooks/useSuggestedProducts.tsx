@@ -54,19 +54,10 @@ import { products } from "~/components/cart/_data";
 //   const requiredMl = calculateMlRequired(4500);
 
 //   return { calculateMlFromObjects, Ml: data, requiredMl };
-// };
-
-const storageKeyMapping = {
-  "3ml": "$20 - $50",
-  "15ml": "$50 - $100",
-  "30ml": "$100 - $200",
-  "250ml": "$200 - $500",
-  "32oz": "$500 - $1000",
-};
+// }; "$50 - $100";
 
 export const useSuggestedProducts = () => {
-  const [storage, setStorage]: any = useLocalStorage(localstorage);
-  const spend = storage.annualSpent;
+  // const spend = "$50 - $100";
   const { addItem } = useCart();
 
   // Define price ranges for budgets
@@ -79,25 +70,24 @@ export const useSuggestedProducts = () => {
   };
 
   // Run this hook only once on component mount
+  const [storage, setStorage]: any = useLocalStorage(localstorage);
+  const spend = storage.annualSpent;
   useEffect(() => {
     // Check if spend is a valid key in priceRanges
     if (!priceRanges.hasOwnProperty(spend)) {
+      alert("Not a valid key in priceRanges" + spend);
       return;
     }
-
     // Find products that match the selected budget (spend)
     const [minPrice, maxPrice] = priceRanges[spend];
-
     const matchingProducts = products.filter((product) => {
       const productPrice = product.price;
       return productPrice >= minPrice && productPrice <= maxPrice;
     });
-
     // Add the matching products to the cart
     matchingProducts.forEach((product) => {
-      addItem(product, 1); // Add each product to the cart with a quantity of 1
+      addItem(product, 1);
+      // Add each product to the cart with a quantity of 1
     });
   }, []); // Empty dependency array ensures this effect runs only once
-
-  return { spend };
 };
