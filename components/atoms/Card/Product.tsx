@@ -14,8 +14,7 @@ import { Rating } from "./Rating";
 import { AddToWishlistButton } from "../buttons/AddToWishlistButton";
 import { getSubstring } from "utils";
 import { products } from "~/components/cart/_data";
-type Type = (typeof products)[0];
-export const ProductCard = ({ product }: { product: Type }) => {
+export const ProductCard = ({ product }: { product: any }) => {
   return (
     <Card w="xs" pos="relative" m="0.5rem">
       <AddToWishlistButton product={product} />
