@@ -23,7 +23,7 @@ export default function SurroundedProducts() {
     }
   };
   const handleNext = () => {
-    if (index !== 2) {
+    if (index !== 3) {
       setIndex(index + 1);
     } else {
       setStorage((prev: any) => {
@@ -101,7 +101,7 @@ export default function SurroundedProducts() {
                 <FiChevronLeft size={20} />
               </Button>
               <Flex gap={3} alignItems={"center"} px={2}>
-                {[1, 2, 3].map((i) => (
+                {[1, 2, 3, 4].map((i) => (
                   <Button
                     size={"sm"}
                     bg={index + 1 == i ? "#00000033" : "none"}
@@ -165,6 +165,15 @@ const cleaningProducts = [
     "Preventative Plant spray",
     "Insecticide",
     "Insect repellent",
+    "Virucide",
+  ],
+  [
+    "Biocide",
+    "Fungicide ",
+    "Herbicide",
+    "Insecticide",
+    "Preventative Plant Spray ",
+    "Insect Repellant",
     "Virucide",
   ],
 ];
