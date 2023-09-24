@@ -4,7 +4,7 @@ import Layout from "~/components/Layout/step";
 import { Text, Flex, Box, Center, SimpleGrid } from "@chakra-ui/react";
 import { localstorage, useLocalStorage } from "~/lib/localstorage";
 
-const __data = [
+export const usage__data = [
   {
     alt: "alt",
     name: "low",
@@ -66,7 +66,7 @@ export default function Usage() {
               height={["auto", "auto", "350px"]}
               columns={[1, 1, 3]}
             >
-              {__data.map((data, i) => (
+              {usage__data.map((data, i) => (
                 <Boxes
                   key={i}
                   {...data}

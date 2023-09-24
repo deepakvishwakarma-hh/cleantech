@@ -1,11 +1,15 @@
 import { localstorage } from "~/hooks/useQuiz";
+import { localstorage as lc } from "~/lib/localstorage";
 import Report from "~/components/molecules/report";
-import { useSessionStorage } from "@mantine/hooks";
+import { useLocalStorage, useSessionStorage } from "@mantine/hooks";
 import CurrentDate from "~/components/molecules/report/CurrentDate";
 import { Box, Text, Container, Alert, AlertIcon } from "@chakra-ui/react";
 import { useSuggestedProducts } from "~/hooks/useSuggestedProducts";
+import { usage__data } from "pages/steps/usage";
 const ReportPage = () => {
   const [{ isCompleted }]: any = useSessionStorage(localstorage);
+  const [data, _] = useLocalStorage<any>(lc);
+  const title = usage__data.find((dt) => dt.name === data?.usage)?.title;
 
   if (!isCompleted) {
     return (
@@ -29,7 +33,7 @@ const ReportPage = () => {
           Report Analysis <br /> based on your activities
         </Text>
         <Text color={"blue.900"} fontSize={"2xl"} fontWeight={400}>
-          (lorem ipsum dolor sit amet, consectet)
+          {title}
         </Text>
         <Text
           mt={10}
