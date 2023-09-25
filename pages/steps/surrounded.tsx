@@ -169,10 +169,10 @@ const cleaningProducts = [
   ],
   [
     "Biocide",
-    "Fungicide ",
+    "Fungicide",
     "Herbicide",
     "Insecticide",
-    "Preventative Plant Spray ",
+    "Preventative Plant Spray",
     "Insect Repellant",
     "Virucide",
   ],
