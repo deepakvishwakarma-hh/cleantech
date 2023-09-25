@@ -43,10 +43,11 @@ const CategoryIntroduction: React.FC<Props> = ({
           flexDir={"column"}
           alignItems={"center"}
           justifyContent={"center"}
+          px={[5, 5, 0]}
         >
           <Box maxW={"500px"}>
             <Text
-              fontSize={"4xl"}
+              fontSize={["2xl", "2xl", "4xl"]}
               textTransform={"capitalize"}
               fontFamily={"heading"}
               textAlign={"center"}

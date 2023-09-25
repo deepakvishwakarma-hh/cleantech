@@ -24,7 +24,7 @@ const ReportPage = () => {
     <Box bg={"#E6EBEF"} py={5}>
       <Container maxW={"container.xl"}>
         <Text
-          fontSize={"4xl"}
+          fontSize={["2xl", "2xl", "3xl", "4xl"]}
           fontWeight={500}
           color={"blue.900"}
           fontFamily={"heading"}
@@ -32,7 +32,7 @@ const ReportPage = () => {
         >
           Report Analysis <br /> based on your activities
         </Text>
-        <Text color={"blue.900"} fontSize={"2xl"} fontWeight={400}>
+        <Text mt={2} color={"blue.900"} fontSize={"2xl"} fontWeight={400}>
           {title}
         </Text>
         <Text

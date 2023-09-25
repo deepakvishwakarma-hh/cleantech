@@ -14,18 +14,18 @@ const QuizCompletion = () => {
   const { width, height } = useDimention();
 
   return (
-    <Box pt={"10rem"} ref={confetiRef}>
+    <Box pt={"10rem"} px={5} ref={confetiRef}>
       <Confetti numberOfPieces={150} width={width} height={height} />
       <Text
-        fontSize={"5xl"}
+        fontSize={["2xl", "2xl", "3xl", "4xl", "5xl"]}
         fontFamily={"heading"}
         fontWeight={500}
         textAlign={"center"}
         mb={5}
       >
-        <b> Congratulations! </b>, <br /> You have completed the quiz
+        <b> Congratulations! </b>, <br /> You have completed the quiz.
       </Text>
-      <Text mb={5}>
+      <Text mb={5} textAlign={"center"}>
         The suggested products with quantity according to this quiz have been
         added to your cart
       </Text>

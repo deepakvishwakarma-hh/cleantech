@@ -36,10 +36,17 @@ const Question: React.FC<Props> = ({ question, options, category }) => {
         letterSpacing={2}
         textAlign={"center"}
         textTransform={"uppercase"}
+        fontSize={["sm", "sm", "md"]}
       >
         {category}
       </Text>
-      <Text fontSize={"4xl"} fontFamily={"heading"} textAlign={"center"} mb={5}>
+      <Text
+        fontSize={["2xl", "2xl", "4xl"]}
+        fontFamily={"heading"}
+        textAlign={"center"}
+        mb={5}
+        fontWeight={500}
+      >
         {question}
       </Text>
       <Flex

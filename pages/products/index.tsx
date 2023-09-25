@@ -18,17 +18,30 @@ export default function Products() {
   console.log(products);
   return (
     <Layout>
-      <Container pt={"20vh"} maxW={""} px={"5rem"} gap={10}>
+      <Container
+        pt={["2rem", "2rem", "20vh"]}
+        maxW={""}
+        px={["2rem", "2rem", "5rem"]}
+        gap={10}
+      >
         <Flex
           mb={2}
-          alignItems={"center"}
+          flexDirection={["column", "column", "column", "row"]}
+          alignItems={["start", "start", "start", "center"]}
           borderBottom={"2px gray solid"}
           justifyContent={"space-between"}
         >
-          <Text fontSize={"80px"} fontFamily={"heading"}>
+          <Text
+            fontSize={["30px", "30px", "40px", "80px"]}
+            fontFamily={"heading"}
+          >
             Shop all
           </Text>
-          <Text maxW={"sm"} fontSize={"24px"} fontFamily={"heading"}>
+          <Text
+            maxW={"sm"}
+            fontSize={["18px", "18px", "18px", "24px"]}
+            fontFamily={"heading"}
+          >
             Full assortment of vitamins and supplements to support all your
             health needs.
           </Text>
