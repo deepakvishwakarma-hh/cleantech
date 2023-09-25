@@ -123,7 +123,7 @@ const Boxes = ({
         <Text
           textTransform={"capitalize"}
           fontSize={["lg", "lg", "xl"]}
-          textAlign={"center"}
+          textAlign={["left", "left", "center"]}
           fontFamily={"body"}
         >
           {title}
