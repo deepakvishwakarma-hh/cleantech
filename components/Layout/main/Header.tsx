@@ -1,13 +1,3 @@
-import { useRef } from "react";
-import Link from "next/link";
-import ASPECT from "~/theme/aspects";
-import { FiUser, FiShoppingBag, FiMenu, FiX } from "react-icons/fi";
-import {
-  useScroll,
-  useMotionValueEvent,
-  motion,
-  useAnimationControls,
-} from "framer-motion";
 import {
   Container,
   Flex,
@@ -23,61 +13,39 @@ import {
   DrawerContent,
   Box,
 } from "@chakra-ui/react";
-
-import { Alert, AlertIcon } from "@chakra-ui/react";
+import Link from "next/link";
+import { useRef } from "react";
+import ASPECT from "~/theme/aspects";
+import Logo from "~/components/atoms/Logo";
 import { useSessionStorage } from "@mantine/hooks";
+import { Alert, AlertIcon } from "@chakra-ui/react";
 import useQuiz, { localstorage } from "~/hooks/useQuiz";
+import { FiMenu, FiX, FiShoppingBag } from "react-icons/fi";
+
+// responsive heights
+const NavResponsiveHeight = [
+  ASPECT.mobile.layout.header.height,
+  ASPECT.mobile.layout.header.height,
+  ASPECT.desktop.layout.header.height,
+];
+
 const Header = () => {
-  const [{ isCompleted }]: any = useSessionStorage(localstorage);
   const { clean } = useQuiz();
-  const responsiveHeight = [
-    ASPECT.mobile.layout.header.height,
-    ASPECT.mobile.layout.header.height,
-    ASPECT.desktop.layout.header.height,
-  ];
-
-  const [isDesktop] = useMediaQuery("(min-width: 800px)");
-
-  const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef<HTMLButtonElement>(null);
-
-  // This Animation is not optimized for production
-
-  const MotionBox = motion(Box);
-  const { scrollY } = useScroll();
-  const MotionContainer = motion(Container);
-  const control = useAnimationControls();
-  const control2 = useAnimationControls();
-
-  const handleResetQuiz = () => {
-    clean();
-  };
-
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest > 0) {
-      control.start({ opacity: 1 });
-      control2.start({ color: "black" });
-    } else {
-      control.start({ opacity: 0 });
-      control2.start({ color: "white" });
-    }
-  });
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [isDesktop] = useMediaQuery("(min-width: 800px)");
+  const [{ isCompleted }]: any = useSessionStorage(localstorage);
 
   if (isDesktop) {
     return (
-      <Box
-        position={"fixed"}
-        top={0}
-        w={"100%"}
-        // border={"2px solid red"}
-      >
+      <Box position={"fixed"} top={0} w={"100%"}>
         {isCompleted && (
           <Alert status="success" as={Center}>
             <AlertIcon />
             Congratulation you have completed quiz. You can reset by clicking
             reset button
             <Button
-              onClick={handleResetQuiz}
+              onClick={clean}
               variant={"outline"}
               ml={2}
               size={"sm"}
@@ -91,36 +59,17 @@ const Header = () => {
             </Button>
           </Alert>
         )}
-        <MotionBox
-          width={"100%"}
-          animate={control}
-          position={"absolute"}
-          background={"white"}
-          height={responsiveHeight}
-          initial={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-        ></MotionBox>
 
-        <MotionContainer
-          onHoverStart={() => {
-            control.start({ opacity: 1 });
-            control2.start({ color: "black" });
-          }}
-          onHoverEnd={() => {
-            control.start({ opacity: 0 });
-            control2.start({ color: "white" });
-          }}
-          initial={{ color: "white" }}
-          animate={control2}
-          transition={{ duration: 0.5 }}
+        <Container
           as={Flex}
           maxWidth={""}
-          height={responsiveHeight}
+          background={"white"}
+          height={NavResponsiveHeight}
         >
           <Stack direction={"row"} alignItems={"center"} flex={1}>
-            <Button variant={"straight"}>Shop</Button>
-            <Button variant={"straight"}>Learn</Button>
-            <Button variant={"straight"}>Metabolism</Button>
+            <Button as={Link} href="/" variant={"straight"}>
+              <Logo />
+            </Button>
           </Stack>
 
           <Center>{/* <Logo /> */}</Center>
@@ -130,13 +79,13 @@ const Header = () => {
             justifyContent={"flex-end"}
             flex={1}
           >
-            <IconButton
-              bg="transparent"
-              aria-label="user"
-              icon={<FiUser size={22} />}
-            />
+            <Link passHref href={"/products"}>
+              <Button bg="transparent" aria-label="user">
+                Shop
+              </Button>
+            </Link>
+
             <Link passHref href={"/cart"}>
-              {" "}
               <IconButton
                 bg="transparent"
                 aria-label="cart"
@@ -150,14 +99,14 @@ const Header = () => {
               </Button>
             </Link>
           </Stack>
-        </MotionContainer>
+        </Container>
       </Box>
     );
   }
   return (
     <>
       <Container
-        height={responsiveHeight}
+        height={NavResponsiveHeight}
         maxWidth={""}
         bg="gray.100"
         as={Stack}
@@ -193,7 +142,7 @@ const Header = () => {
             as={Stack}
             direction={"row"}
             maxWidth={""}
-            height={responsiveHeight}
+            height={NavResponsiveHeight}
             alignItems={"center"}
             justifyContent={"space-between"}
           >
@@ -204,26 +153,48 @@ const Header = () => {
               icon={<FiX size={22} />}
             />
             <IconButton
+              as={Link}
+              href={"/cart"}
               bg="transparent"
               aria-label="user"
-              icon={<FiUser size={22} />}
+              icon={<FiShoppingBag size={22} />}
             />
           </Container>
 
           <DrawerBody>
             <Stack direction={"column"}>
-              <Button justifyContent={"start"} variant={"straight"}>
+              <Button
+                as={Link}
+                href={"/"}
+                justifyContent={"start"}
+                variant={"straight"}
+              >
+                Home
+              </Button>
+              <Button
+                as={Link}
+                href={"/products"}
+                justifyContent={"start"}
+                variant={"straight"}
+              >
                 Shop
               </Button>
-              <Button justifyContent={"start"} variant={"straight"}>
-                Learn
-              </Button>
-              <Button justifyContent={"start"} variant={"straight"}>
-                Metabolism
+              <Button
+                as={Link}
+                href={"/cart"}
+                justifyContent={"start"}
+                variant={"straight"}
+              >
+                Cart
               </Button>
             </Stack>
-            <Button variant="takequizsmall" my={5}>
-              Take the quiz{" "}
+            <Button
+              as={Link}
+              href={"/steps/quiz"}
+              variant="takequizsmall"
+              my={5}
+            >
+              Take the quiz
             </Button>
           </DrawerBody>
         </DrawerContent>

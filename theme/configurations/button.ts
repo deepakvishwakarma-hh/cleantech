@@ -22,7 +22,7 @@ const Button = {
             fontWeight: 400,
         },
         'takequizsmall': {
-            background: 'black',
+            background: 'primary',
             borderRadius: 'full',
             height: '44px',
             px: 10,
@@ -32,9 +32,8 @@ const Button = {
             transition: '.5s',
             willChange: 'color',
             '&:hover': {
-                background: 'white',
+                background: 'lightgray',
                 color: 'black',
-
             }
         },
 

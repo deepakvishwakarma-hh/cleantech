@@ -22,7 +22,7 @@ export const Cart = () => {
   return (
     <Grid
       templateColumns={["100%", "100%", "100%", "3fr 1fr"]}
-      bg="#FBF5F0"
+      bg="lightblue"
       w={"full"}
       minH={"100vh"}
     >
@@ -36,12 +36,7 @@ export const Cart = () => {
           ))}
 
           {cart.items.length == 0 && (
-            <Box
-              p={5}
-              maxW={"500px"}
-              rounded={"md"}
-              border="1px lightgray solid"
-            >
+            <Box p={5} maxW={"500px"} rounded={"md"} bg={"white"}>
               <Text fontFamily={"heading"} fontSize={"xl"}>
                 You have no items in your cart Browse all products
               </Text>

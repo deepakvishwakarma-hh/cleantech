@@ -54,7 +54,7 @@ const CategorySelection = () => {
 
   return (
     <Layout previous="usage">
-      <Box bg="#FEF4EC" width={"100%"} minH={"100vh"}>
+      <Box bg="lightblue" width={"100%"} minH={"100vh"}>
         <Center pt={"10rem"}>
           <Flex
             flexDir={"column"}

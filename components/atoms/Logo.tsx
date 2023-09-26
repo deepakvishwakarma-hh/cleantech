@@ -1,12 +1,14 @@
-import { Box, Text } from "@chakra-ui/react"
-import React from 'react'
-
+import Image from "next/image";
 const Logo = () => {
-    return (
-        <Box>
-            <Text fontWeight={500} fontSize='xl'> CTS</Text>
-        </Box>
-    )
-}
+  return (
+    <Image
+      src={"/cleantech.png"}
+      alt="cleantech-logo"
+      width={150}
+      height={50}
+      style={{ margin: "0" }}
+    />
+  );
+};
 
-export default Logo
+export default Logo;

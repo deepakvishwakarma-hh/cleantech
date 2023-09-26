@@ -8,6 +8,12 @@ export const theme = extendTheme({
         Button,
         Text
     },
+    colors: {
+        "primary": "#6984C2",
+        "secondary": "#515B68",
+        "lightgray": "#F1F3F5",
+        "lightblue": "#ECF2FF"
+    },
 
     fonts: {
         heading: 'var(--font-lora)',

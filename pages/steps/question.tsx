@@ -42,7 +42,12 @@ const QuestionPage = () => {
   return (
     <>
       <Layout previous={onBackHandler}>
-        <Box bg="#FEF4EC" width={"100%"} height={"100vh"} overflowY={"scroll"}>
+        <Box
+          bg="lightblue"
+          width={"100%"}
+          height={"100vh"}
+          overflowY={"scroll"}
+        >
           <Center flexDir={"column"}>
             {cpd == "true" && <QuizCompletion />}
 

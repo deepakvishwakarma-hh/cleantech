@@ -1,34 +1,31 @@
+import Link from "next/link";
 import { UnderlineOnHoverBAC } from "../atoms/buttons/Underline";
 import { Container, Center, Text, Box, Button } from "@chakra-ui/react";
-import Link from "next/link";
 const Hero = () => {
   return (
     <Box
       height={"100vh"}
-      bgPosition={"center"}
       bgSize={"cover"}
       bgRepeat={"no-repeat"}
-      backgroundImage={"/imgs/surface-clean.png"}
+      bgPosition={"center center"}
+      backgroundImage={"/imgs/hero.jpg"}
     >
       <Container
+        gap={10}
         pt={"20vh"}
         as={Center}
         flexDirection={"column"}
         maxW={"container.md"}
-        gap={10}
       >
         <Text
           fontWeight={500}
-          fontFamily={"heading"}
-          fontSize={["3xl", "4xl", "4xl", "5xl"]}
-          textAlign={"center"}
           color={"white"}
           dropShadow={"2xl"}
+          textAlign={"center"}
+          fontFamily={"heading"}
+          fontSize={["3xl", "4xl", "4xl", "5xl"]}
         >
-          <Text display={"inline"} color={"#9f7200"}>
-            VERISAN™
-          </Text>{" "}
-          Safe and Proven Disinfectant with Chlorine Dioxide Technology
+          VERISAN™ Safe and Proven Disinfectant with Chlorine Dioxide Technology
         </Text>
         <Link passHref href={"/steps/quiz"} prefetch={true}>
           <Button px={20} py={8} fontSize={"xl"} variant="takequizsmall" ml={2}>

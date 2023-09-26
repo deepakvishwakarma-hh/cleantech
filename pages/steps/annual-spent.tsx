@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
 import Layout from "~/components/Layout/step";
-import { Text, Flex, Box, Center, SimpleGrid, Button } from "@chakra-ui/react";
+import { Text, Flex, Box, Center, Button } from "@chakra-ui/react";
 import { localstorage, useLocalStorage } from "~/lib/localstorage";
 
 const __data = [
@@ -33,7 +33,7 @@ export default function AnnualSpent() {
 
   return (
     <Layout previous="surrounded">
-      <Box bg="#FEF4EC" width={"100%"} minH={"100vh"}>
+      <Box bg="lightblue" width={"100%"} minH={"100vh"}>
         <Center minH={"650px"} h={"100vh"}>
           <Flex
             flexDir={"column"}

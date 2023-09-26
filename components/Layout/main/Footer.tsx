@@ -29,71 +29,7 @@ import {
 } from "@chakra-ui/react";
 import SubscriptionForm from "~/components/molecules/subscriptionForm";
 
-const cart_of = [
-  { name: "Contact Us", href: "https://customcleansolutions.com/contact-us" },
-  {
-    name: "Pricing & Payment",
-    href: "https://customcleansolutions.com/pricing-payment-options/",
-  },
-  {
-    name: "News & Articles",
-    href: "https://customcleansolutions.com/our-articles/",
-  },
-  { name: "FAQ", href: "https://customcleansolutions.com/our-articles/" },
-  {
-    name: "Returns/ Refunds",
-    href: "https://customcleansolutions.com/returns-refunds/",
-  },
-  {
-    name: "Affiliate program",
-    href: "https://customcleansolutions.com/affiliate-program/",
-  },
-  {
-    name: "Affiliate Login",
-    href: "https://customcleansolutions.com/affiliate-area/",
-  },
-  {
-    name: "Affiliate Program TOS",
-    href: "https://customcleansolutions.com/affiliate-program-tos/",
-  },
-  { name: "More About Us", href: "https://customcleansolutions.com/about-us/" },
-  {
-    name: "Terms & Conditions",
-    href: "https://customcleansolutions.com/terms-conditions/",
-  },
-  {
-    name: "Service Agreement",
-    href: "https://customcleansolutions.com/service-agreement/",
-  },
-  {
-    name: "Reference And Cite",
-    href: "https://customcleansolutions.com/reference-and-cite/",
-  },
-  {
-    name: "Certifications",
-    href: "https://customcleansolutions.com/certifications/",
-  },
-  {
-    name: "Privacy Policy",
-    href: "https://customcleansolutions.com/certifications/",
-  },
-  {
-    name: "Take The Quiz",
-    href: "https://customcleansolutions.com/take-the-quiz/",
-  },
-  {
-    name: "CLO2 Calculator",
-    href: "https://customcleansolutions.com/clo2-calculator/",
-  },
-  {
-    name: "Services Calculator",
-    href: "https://customcleansolutions.com/services-calculator/",
-  },
-  {
-    name: "Mixing Instructions",
-    href: "https://customcleansolutions.com/mixing-instructions/",
-  },
-];
+import { cart_of_links } from "./footer_link";
 
 const Footer = () => {
   const clear = () => {
@@ -102,7 +38,7 @@ const Footer = () => {
 
   return (
     <Container
-      bg={"#3A3E43"}
+      bg={"secondary"}
       color={"white"}
       as={Grid}
       gap={10}
@@ -195,7 +131,7 @@ const Footer = () => {
             <Text fontWeight={200}>CUSTOM CLEANTECH SOLUTIONS</Text>
 
             <SimpleGrid mt={5} columns={2} spacing={3.5}>
-              {cart_of.map((link) => (
+              {cart_of_links.map((link) => (
                 <Link href={link.href} key={link.name}>
                   <UnderlineOnHover fontSize={"md"}>
                     {link.name}
@@ -231,7 +167,7 @@ const Footer = () => {
             </h2>
             <AccordionPanel pb={4}>
               <SimpleGrid mt={5} columns={2} spacing={3.5}>
-                {cart_of.map((link) => (
+                {cart_of_links.map((link) => (
                   <UnderlineOnHover fontSize={"md"} key={link.name}>
                     {link.name}
                   </UnderlineOnHover>

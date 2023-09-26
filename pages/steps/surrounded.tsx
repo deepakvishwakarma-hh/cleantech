@@ -35,12 +35,16 @@ export default function SurroundedProducts() {
   return (
     <Layout previous="welcome">
       <MotionBox
-        bg="#FEF4EC"
+        bg="lightblue"
         width={"100%"}
         height={"100vh"}
         overflowY={"scroll"}
       >
-        <Center alignItems={"start"} height={"100vh"} pt={["5rem", "5rem", 0]}>
+        <Center
+          alignItems={["start", "start", "start", "center"]}
+          height={"100vh"}
+          pt={["5rem", "5rem", 0]}
+        >
           <Flex maxW={"700px"} flexDir={"column"} alignItems={"center"} gap={2}>
             <Text
               fontSize={["3xl", "3xl", "4xl"]}

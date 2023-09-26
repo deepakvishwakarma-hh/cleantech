@@ -32,7 +32,7 @@ export default function Email(props: EmailProps) {
 
   return (
     <Layout previous="welcome">
-      <MotionBox bg="#FEF4EC" width={"100%"} height={"100vh"}>
+      <MotionBox bg="lightblue" width={"100%"} height={"100vh"}>
         <Center height={"90%"}>
           <Flex maxW={"400px"} flexDir={"column"} alignItems={"center"} gap={2}>
             <Text

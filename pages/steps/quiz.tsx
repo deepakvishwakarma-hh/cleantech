@@ -1,8 +1,8 @@
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Layout from "~/components/Layout/step";
 import { SimpleGrid, Text, Button, Flex, Box, Center } from "@chakra-ui/react";
-import Image from "next/image";
 
 export default function Quiz() {
   const router = useRouter();
@@ -20,12 +20,12 @@ export default function Quiz() {
         <Box position={"relative"}>
           <Image
             fill
-            style={{ objectFit: "cover" }}
-            alt="Hello"
+            alt="quiz"
             src={"/imgs/main.jpg"}
+            style={{ objectFit: "cover" }}
           />
         </Box>
-        <Center bg="#FEF4EC">
+        <Center bg="lightblue">
           <Flex maxW={"400px"} flexDir={"column"} alignItems={"center"} gap={5}>
             <Text
               fontSize={["3xl", "3xl", "4xl", "4xl"]}
@@ -39,14 +39,14 @@ export default function Quiz() {
               body, lifestyle, and goals.
             </Text>
             <Button
-              onClick={handleClickNext}
+              mt={2}
               px={20}
               py={8}
               fontSize={"xl"}
               variant="takequizsmall"
-              mt={2}
+              onClick={handleClickNext}
             >
-              Begin quiz{" "}
+              Begin Quiz
             </Button>
           </Flex>
         </Center>

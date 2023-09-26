@@ -41,13 +41,13 @@ export default function Usage() {
 
   return (
     <Layout previous="annual-spent">
-      <Box bg="#FEF4EC" width={"100%"} minH={"100vh"}>
+      <Box bg="lightblue" width={"100%"} minH={"100vh"}>
         <Center minH={"650px"} h={"100vh"}>
           <Flex
-            flexDir={"column"}
-            alignItems={"center"}
             gap={2}
             maxW={"1000px"}
+            flexDir={"column"}
+            alignItems={"center"}
           >
             <Text
               px={[2, 2, 1, 0]}

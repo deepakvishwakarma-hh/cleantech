@@ -20,7 +20,7 @@ export default function Welcome() {
 
   return (
     <Layout previous="name">
-      <MotionBox bg="#FEF4EC" width={"100%"} height={"100vh"}>
+      <MotionBox bg="lightblue" width={"100%"} height={"100vh"}>
         <Center height={"90%"}>
           <Flex flexDir={"column"} alignItems={"center"} gap={2}>
             <Text

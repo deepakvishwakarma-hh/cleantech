@@ -18,7 +18,7 @@ const UserInfoInput: React.FC<Props> = ({ type, onclick }) => {
       margin={[5, 5, 0]}
       alignItems={"center"}
       borderRadius={"10px"}
-      border={"3px black solid"}
+      border={"3px #515B68 solid"}
     >
       <Input
         autoFocus
@@ -39,7 +39,7 @@ const UserInfoInput: React.FC<Props> = ({ type, onclick }) => {
       />
       <IconButton
         size={"sm"}
-        bg="#7F848B"
+        bg="secondary"
         rounded={"full"}
         aria-label="submit"
         // prevent running without value : future[type cheaking]
