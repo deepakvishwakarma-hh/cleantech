@@ -37,7 +37,7 @@ export default function Welcome() {
               overflow={"hidden"}
             >
               <img
-                src="https://cdn.dribbble.com/users/1261045/screenshots/11391612/media/58cd07da8fb87504d054fb1d186abcb0.gif"
+                src="/welcome.gif"
                 alt=""
                 style={{ width: "100%", height: "100%" }}
               />
