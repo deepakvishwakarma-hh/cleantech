@@ -21,7 +21,7 @@ export default function Quiz() {
           <Image
             fill
             alt="quiz"
-            src={"/imgs/main.jpg"}
+            src={"/imgs/7.-Travel-and-Recreation-(On-The-Go)-(2).jpg"}
             style={{ objectFit: "cover" }}
           />
         </Box>

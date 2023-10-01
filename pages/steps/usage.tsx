@@ -10,14 +10,14 @@ export const usage__data = [
     name: "low",
     title: "Civilian Use and Residential Applications",
     discription: "Home and Garden",
-    src: "https://images.ctfassets.net/t9x0u6p47op0/2pIZBg7jStZ31KigklURO1/2a3f9153599fad715ac3b2042bd4b25d/informed__1_.svg?",
+    src: "/icons/1.civilian_use_and_residential_applications__home_and_garden.png",
   },
   {
     alt: "alt",
     name: "medium",
     title: "Commercial and Retail Applications ",
     discription: "At Work and for use in Public Spaces",
-    src: "https://images.ctfassets.net/t9x0u6p47op0/2pIZBg7jStZ31KigklURO1/2a3f9153599fad715ac3b2042bd4b25d/informed__1_.svg?",
+    src: "/icons/10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png",
   },
   {
     alt: "alt",
@@ -25,7 +25,7 @@ export const usage__data = [
     title: "Professional and Industrial Application",
     discription:
       "Large-Scale Operations or Fields That Require Special Licensing",
-    src: "https://images.ctfassets.net/t9x0u6p47op0/2pIZBg7jStZ31KigklURO1/2a3f9153599fad715ac3b2042bd4b25d/informed__1_.svg?",
+    src: "/icons/27-Other-Industrial-Processes--Miscellaneous-.png",
   },
 ];
 

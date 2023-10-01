@@ -42,7 +42,7 @@ export const products = [
     currency: "USD",
     label: "1 GAL - $249.95",
     imageUrl:
-      "https://customcleansolutions.com/wp-content/uploads/2023/07/AB-min-1-GAL.png",
+      "https://cleansolutions.tech/wp-content/uploads/2023/07/AB-min-1-GAL.png",
     description:
       "VERISAN™ is a safe disinfectant that has been tested and proven effective against a variety of bacteria, fungi, and viruses, including E. coli, Salmonella, Staphylococcus, Avian Influenza A Virus and more. VERISAN® uses chlorine dioxide chemistry to disinfect your household.",
     ml: 3785.41, // 1 gallon = 3785.41 ml

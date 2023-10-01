@@ -39,7 +39,7 @@ export default function Name() {
               vitamin packs.
             </Text>
             <UserInfoInput type="string" onclick={handleClickNext} />
-            <WhyWeAsk />
+            {/* <WhyWeAsk /> */}
           </Flex>
         </Center>
       </MotionBox>
