@@ -1,7 +1,7 @@
 // import useReport from "./useReportHook";
 
 import { useLocalStorage } from "@mantine/hooks";
-import { localstorage } from "~/lib/localstorage";
+// import { localstorage } from "~/lib/localstorage";
 import { useCart } from "./useCart";
 import { useEffect } from "react";
 import { products } from "~/components/cart/_data";
@@ -70,8 +70,11 @@ export const useSuggestedProducts = () => {
   };
 
   // Run this hook only once on component mount
-  const [storage, setStorage]: any = useLocalStorage(localstorage);
-  const spend = storage.annualSpent;
+  // const [storage, setStorage]: any = useLocalStorage(localstorage);
+  // const spend = storage.annualSpent;
+  const newSpend = localStorage.getItem("storage");
+  // @ts-ignore
+  const spend = JSON.parse(newSpend).json.annualSpent;
   useEffect(() => {
     // Check if spend is a valid key in priceRanges
     if (!priceRanges.hasOwnProperty(spend)) {
@@ -82,6 +85,7 @@ export const useSuggestedProducts = () => {
     const [minPrice, maxPrice] = priceRanges[spend];
     const matchingProducts = products.filter((product) => {
       const productPrice = product.price;
+      console.log("Product Price:", productPrice);
       return productPrice >= minPrice && productPrice <= maxPrice;
     });
     // Add the matching products to the cart
@@ -89,5 +93,6 @@ export const useSuggestedProducts = () => {
       addItem(product, 1);
       // Add each product to the cart with a quantity of 1
     });
+    console.log({ matchingProducts });
   }, []); // Empty dependency array ensures this effect runs only once
 };
