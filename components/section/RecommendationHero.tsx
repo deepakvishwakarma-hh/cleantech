@@ -7,15 +7,17 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { Image } from "@chakra-ui/next-js";
-
-import { TbReportAnalytics } from "react-icons/tb";
 import { BiCartAlt } from "react-icons/bi";
+import { useLocalStorage } from "@mantine/hooks";
+import { localstorage } from "~/lib/localstorage";
+import { TbReportAnalytics } from "react-icons/tb";
 
 function RecommendationHero() {
+  const [storage] = useLocalStorage(localstorage);
+
   return (
-    <Box bg={"#F9F1EB"}>
+    <Box bg={"lightblue"}>
       <Container maxWidth={"8xl"}>
         <SimpleGrid
           columns={[1, 1, 1, 2]}
@@ -37,7 +39,7 @@ function RecommendationHero() {
               fontSize={["3xl", "3xl", "6xl"]}
               fontFamily={"heading"}
             >
-              Made for Jason
+              Made for {(storage as any).name}
             </Text>
             <Text fontSize={"xl"} fontFamily={"heading"}>
               Your recommendation is based on your goals to focus on Eyes. We

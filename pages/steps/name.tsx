@@ -4,7 +4,6 @@ import Layout from "~/components/Layout/step";
 import { Text, Flex, Box, Center } from "@chakra-ui/react";
 import { localstorage, useLocalStorage } from "~/lib/localstorage";
 import UserInfoInput from "~/components/atoms/inputs/UserInfoInput";
-import WhyWeAsk from "~/components/atoms/ask";
 
 export default function Name() {
   const router = useRouter();

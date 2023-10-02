@@ -42,7 +42,7 @@ export default function Recommendation({ posts }: { posts: PostsInterFace[] }) {
 
       <Hero />
 
-      <Box background={"#FDF9F7"}>
+      <Box background={"lightblue"}>
         <Container maxW={"8xl"}>
           <Text
             fontSize={"2xl"}
@@ -58,6 +58,7 @@ export default function Recommendation({ posts }: { posts: PostsInterFace[] }) {
             columns={[1, 1, 2, 3, 4]}
             flexWrap={"wrap"}
             gap={5}
+            pb={10}
           >
             {shuffleAndSelectProducts(products, 4).map((pro, i) => (
               <ProductCard product={pro} key={i} />
