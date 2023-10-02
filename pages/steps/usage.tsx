@@ -110,6 +110,7 @@ const Boxes = ({
       bg="white"
       rounded={"md"}
       padding={[2, 2, 10]}
+      cursor={"pointer"}
     >
       <Center w={["100px", "100px", "auto"]} height={["100%", "100%", "50%"]}>
         <img alt={alt} src={src} style={{ margin: "auto" }} />
