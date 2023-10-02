@@ -9,6 +9,7 @@ import {
   SimpleGrid,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import useQuiz from "~/hooks/useQuiz";
 import Layout from "~/components/Layout/step";
@@ -104,25 +105,31 @@ const CategorySelection = () => {
 
 export default CategorySelection;
 
+import icons from "../../quiz/categories-with-logo.json";
+
 const Boxes = ({ title, onClick, selected }: any) => {
+  const iconUrl = `/sub/${(icons as any)[title]}`;
   return (
     <Grid
+      background={selected ? "primary" : "white"}
+      color={selected ? "white" : "black"}
       cursor={"pointer"}
       rounded={"full"}
       onClick={onClick}
       templateColumns={"30px auto"}
       gap={2}
       alignItems={"center"}
-      bg={"white"}
-      p={2}
+      px={5}
+      py={2}
     >
-      <GridItem as={Center}>
-        <Box
-          width={5}
-          height={5}
-          background={!selected ? "gray.100" : "gray.900"}
-          rounded={"full"}
-        ></Box>
+      <GridItem>
+        <Image
+          style={{ marginBottom: "0px" }}
+          src={iconUrl}
+          alt={iconUrl}
+          width={50}
+          height={50}
+        />
       </GridItem>
 
       <GridItem>
