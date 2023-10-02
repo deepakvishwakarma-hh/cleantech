@@ -8,7 +8,9 @@ const Hero = () => {
       bgSize={"cover"}
       bgRepeat={"no-repeat"}
       bgPosition={"center center"}
-      backgroundImage={"/imgs/hero.jpg"}
+      backgroundImage={
+        "/imgs/5-personal--Hygiene-Antiseptic-or-Hand-sanitizer-121.png"
+      }
     >
       <Container
         gap={10}
