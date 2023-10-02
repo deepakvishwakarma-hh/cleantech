@@ -5,9 +5,12 @@ import { useSessionStorage } from "@mantine/hooks";
 const useReport = () => {
   const [{ path }]: any = useSessionStorage(localstorage);
   return Object.keys(path).map((categoryName) => {
-    const [{ question }] = QUIZV2.filter(({ name }) => name == categoryName);
+    const [{ question, description }] = QUIZV2.filter(
+      ({ name }) => name == categoryName
+    );
     return {
       name: categoryName,
+      description,
       questions: question?.map((q: any, index) => {
         const selectedOptionName = path[categoryName].at(index);
         return {

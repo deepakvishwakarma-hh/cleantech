@@ -4,10 +4,9 @@ import { Tr, Td, Box, Text, Table, Thead, Tbody } from "@chakra-ui/react";
 
 const Report = () => {
   const report = useReport();
-  console.log(report);
   return (
     <Box>
-      {report.map(({ name, questions }) => (
+      {report.map(({ name, questions, description }) => (
         <Box key={name} bg="white" p={5} mb={5} rounded={"md"}>
           <Text
             mb={3}
@@ -19,13 +18,16 @@ const Report = () => {
           >
             {name}
           </Text>
+          <Text fontSize={"sm"} color={"gray.600"} mb={2}>
+            {description}
+          </Text>
           <Box>
             <Table variant={"striped"} size={"sm"}>
               <Thead>
                 <Tr>
                   <TableHead>Questions</TableHead>
                   <TableHead>Answers</TableHead>
-                  <TableHead>Points</TableHead>
+                  <TableHead>PPM</TableHead>
                 </Tr>
               </Thead>
               <Tbody>
@@ -33,7 +35,7 @@ const Report = () => {
                   <Tr key={questionData.name}>
                     <Td>{questionData.name}</Td>
                     <Td>{questionData.answer}</Td>
-                    <Td isNumeric>{questionData.option}</Td>
+                    <Td isNumeric>+{questionData.option}</Td>
                   </Tr>
                 ))}
               </Tbody>
