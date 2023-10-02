@@ -60,10 +60,13 @@ const Header: React.FC<HeaderProps> = ({ previous }) => {
         height={responsiveHeight}
       >
         <Button
+          px={5}
           display={"flex"}
-          pointerEvents={"all"}
           onClick={previous}
+          background={"white"}
+          pointerEvents={"all"}
           variant={"unstyled"}
+          backgroundColor={"white"}
         >
           <FiChevronLeft size={22} />
           <Text ml={0.5} fontWeight={400}>

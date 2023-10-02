@@ -62,6 +62,7 @@ const Header: React.FC<HeaderProps> = ({ previous }) => {
       >
         <Button
           display={"flex"}
+          backgroundColor={"white"}
           pointerEvents={"all"}
           onClick={() => router.push(previous)}
           variant={"unstyled"}
