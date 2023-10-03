@@ -790,5 +790,358 @@
         }
       }
     ]
+  },
+  {
+    "name": "food service, hospitality, and public places",
+    "description": "Create a clean and inviting atmosphere, ensuring guests' and customers' safety, satisfaction, and prompt return to your business.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Food Service Equipment, Appliances and Food Contact Surfaces": {
+            "score": 7,
+            "icon": "1.civilian_use_and_residential_applications__home_and_garden.png"
+          },
+          "Glassware, Flatware, Kitchen Utensils, and Tools": {
+            "score": 4,
+            "icon": "2-Extermination-of-Invasive-Insects.png"
+          },
+          "Restaurants and Cafeteria Operational Maintenance": {
+            "score": 14,
+            "icon": "3-In-The-Garden--Plant-Health.png"
+          },
+          "Refrigeration Units, Food Storage, Ice, Tanks and Lines": {
+            "score": 1,
+            "icon": "4-No-Rinse-Hard-or-Soft-Surface-Disinfection.png"
+          },
+          "Airbnb, Rental Homes, and Rental Properties": {
+            "score": 7,
+            "icon": "5-Personal-Hygiene--Antiseptic-or-Hand-Sanitizer.png"
+          },
+          "Barber Shop, Hair Salons, and Nail Salons": {
+            "score": 4,
+            "icon": "6-Produce--Groceries--Eggs--Meat--and-Fish.png"
+          },
+          "Bars and Nightclubs, Exotic Settings, Stage Hygiene": {
+            "score": 14,
+            "icon": "7-Travel-and-Recreation--On-The-Go.png"
+          },
+          "Churches, Mosques, and Pews, Before and After Services": {
+            "score": 1,
+            "icon": "8-Unwanted-Odors--Eliminate-The-Source.png"
+          },
+          "College Campuses, Universities, Recreational, and Dormitories": {
+            "score": 7,
+            "icon": "9-Water-Treatment-and-Water-Storage--.png"
+          },
+          "Commercial Laundry Facilities and Dry Cleaning": {
+            "score": 4,
+            "icon": "10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png"
+          },
+          "Convention Centers, and Conference Halls": {
+            "score": 14,
+            "icon": "11-Commodity-Production--Processing--and-Packaging.png"
+          },
+          "Daycare Facilities, Preschools, and Nurseries": {
+            "score": 1,
+            "icon": "12-Extermination-of-Invasive-Insects---Copy.png"
+          },
+          "Facility Cleaning, Maintenance, Disinfection, and Deodorization": {
+            "score": 7,
+            "icon": "13Farm-and-Ranch--Horticulture-and-Agriculture.png"
+          },
+          "Hospitality, Hotels, Motels. and Resorts": {
+            "score": 4,
+            "icon": "14-Food-Service--Hospitality--and-Public-Places.png"
+          },
+          "Movie Theaters, Hotels, Halls, and Showrooms": {
+            "score": 14,
+            "icon": "15-No-Residue-Hard-and-Soft-Surface-Disinfection.png"
+          },
+          "Retail Sales and Consignment Shops (Clothing Stores and Thrift Stores)": {
+            "score": 1,
+            "icon": "16-Transport-and-Transit--Delivery-and-Travel-.png"
+          },
+          "Learning Institutions, Schools and Classroom Environments": {
+            "score": 7,
+            "icon": "17-Unwanted-Odors--Eliminate-the-Source.png"
+          },
+          "Securities, Police, Clandestine and Military Use": {
+            "score": 4,
+            "icon": "18-Water-Treatment-and-Water-Storage.png"
+          },
+          "Stadiums, Bleachers, and Arenas, Deodorize, and Sanitize": {
+            "score": 14,
+            "icon": "19-Professional-and-Industrial-Applications.png"
+          },
+          "Turf, Cleaning Indoor or Outdoor Commercial, or Athletic Turf": {
+            "score": 1,
+            "icon": "20-No-Residue-Hard-and-Soft-Surface-Disinfection---Copy.png"
+          },
+          "Veterinarian and Animal Shelter Use of Chlorine Dioxide": {
+            "score": 7,
+            "icon": "21-Extermination-of-Invasive-Insects.png"
+          },
+          "Workout Equipment, Wrestling, or Gymnastic Mats": {
+            "score": 4,
+            "icon": "22-HAZMAT--Remediation-and-Decontamination---2-.png"
+          },
+          "Fogging and Vapor": {
+            "score": 14,
+            "icon": "23-Healthcare--Hospitals--and-Medical-Facilities.png"
+          },
+          "Soak, Rinse or Dip": {
+            "score": 1,
+            "icon": "24-HVAC--Heating--Ventilation--and-Air-Conditioning-.png"
+          },
+          "Wipe Mop or Spray": {
+            "score": 7,
+            "icon": "25-Manufacturing-and-Processing-Operations.png"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "hazmat (remediation and decontamination)",
+    "description": "Combat hazardous materials and environments with a concentrated solution that aids in effective HAZMAT remediation and decontamination.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Bio-Trauma Remediation (Fecal, Blood, Urine, Vomit)": {
+            "score": 7,
+            "icon": "219-Bio-trauma.png"
+          },
+          "Biological Decontamination (Germs, Mold, Bacteria, and Odor)": {
+            "score": 4,
+            "icon": "220-Biological-Decontamination----Germs--Mold--Bacteria--and-Odor-.png"
+          },
+          "Chemical Decontamination and Environmental Toxins": {
+            "score": 14,
+            "icon": "221-Chemical-Decontamination-and-Environmental-Toxins.png"
+          },
+          "Cleaning Bloodborne Pathogens (Crime Scenes and Morgue Use)": {
+            "score": 1,
+            "icon": "222-clean-blood.png"
+          },
+          "Fogging and Thermal Fogging": {
+            "score": 7,
+            "icon": "223-Fogging-and-Thermal-Fogging.png"
+          },
+          "Hoarding Cleanups and Cleanouts": {
+            "score": 14,
+            "icon": "224-Hoarding-Cleanups-and-Cleanouts.png"
+          },
+          "Extermination of Invasive Insects": {
+            "score": 1,
+            "icon": "225-Extermination-of-invasive-insect.png"
+          },
+          "Tools and Equipment (Medical and Biohazard)": {
+            "score": 7,
+            "icon": "226-Tools-and-Equipment.png"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "healthcare, hospitals, and medical facilities",
+    "description": "Enhance the hygiene and cleanliness of healthcare environments, medical equipment, and surfaces with a trusted solution that keeps infections at bay.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Hospitals, Medical Facilities, or Medical offices": {
+            "score": 7,
+            "icon": "227-Hospitals--Medical-Facilities--or-Medical-offices-.png"
+          },
+          "Retirement Centers, and Nursing Homes": {
+            "score": 4,
+            "icon": "228-Retirement-Centers--and-Nursing-Homes--2-.png"
+          },
+          "Scientific and Laboratory Use": {
+            "score": 14,
+            "icon": "229-Scientific-and-Laboratory-Use.png"
+          },
+          "Veterinarian Applications and Animal Care": {
+            "score": 1,
+            "icon": "230-Veterinarian-Applications-and-Animal-Care.png"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "hvac (heating, ventilation, and air conditioning)",
+    "description": "Improve indoor air quality by maintaining clean and hygienic HVAC systems that prevent the spread of airborne pathogens.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Dust and Allergens": {
+            "score": 7,
+            "icon": "231-Dust-and-Allergens.png"
+          },
+          "Environmental Toxins": {
+            "score": 4,
+            "icon": "232-Environmental-Toxins.png"
+          },
+          "Fogging and Thermal Fogging": {
+            "score": 14,
+            "icon": "233-Fogging-and-Thermal-Fogging.png"
+          },
+          "Odor Elimination": {
+            "score": 1,
+            "icon": "234-Odor-Elimination.png"
+          },
+          "Extermination of Invasive Insects": {
+            "score": 7,
+            "icon": "235-Extermination-of-Invasive-Insects---Copy.png"
+          },
+          "Tools and Equipment (HVAC)": {
+            "score": 14,
+            "icon": "236-Tools-and-Equipment.png"
+          }
+        }
+      }
+    ]
+  },
+
+  {
+    "name": "manufacturing and processing operations",
+    "description": "With a solution that effectively disinfects food equipment and food-contact surfaces, you can ensure impeccable hygiene and safety standards in manufacturing and processing operations. Create trust and confidence in the quality and integrity of food products.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Brewing and Distillation operations": {
+            "score": 7,
+            "icon": "237-Brewing-and-Distillation-operations.png"
+          },
+          "Canning and Bottling Facilities": {
+            "score": 4,
+            "icon": "238-Canning-and-Bottling-Facilities.png"
+          },
+          "Food and Commodity Processing": {
+            "score": 14,
+            "icon": "239-Food-and-Commodity-Processing.png"
+          },
+          "Mining and Fracking Operations": {
+            "score": 1,
+            "icon": "240-Mining-and-Fracking-Operations.png"
+          },
+          "Oil Well Injection Fields": {
+            "score": 7,
+            "icon": "241-Oil-Well-Injection-Fields.png"
+          },
+          "Paper and Textile Production": {
+            "score": 14,
+            "icon": "242-Paper-and-Textile-Production.png"
+          },
+          "Sewer and Wastewater Treatment": {
+            "score": 7,
+            "icon": "257-Sewer-and-Wastewater-Treatment.png"
+          },
+          "Textiles (Fiber and Fabric Manufacturing)": {
+            "score": 14,
+            "icon": "244-Textiles--Fiber-and-Fabric-Manufacturing-.png"
+          },
+          "Water Cooling Systems": {
+            "score": 7,
+            "icon": "245-Water-Cooling-Systems.png"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "municipal drinking water treatment and storage",
+    "description": "Safeguard the health of your community by utilizing a reliable disinfectant that ensures the purity and safety of drinking water.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Circulating Water Systems, Transfer Lines, and Cooling Systems": {
+            "score": 7,
+            "icon": "246-Circulating-Water-Systems-and-Transfer-Lines.png"
+          },
+          "Municipal Water Surplus, Institutions, Compounds, and Barracks": {
+            "score": 4,
+            "icon": "247-Municipal-Water-Surplus--Institutions--Compounds--and-Barracks.png"
+          },
+          "Standing, Pond Water, or Stagnant Water Disinfection, and, Maintenance": {
+            "score": 14,
+            "icon": "216-Standing-Stagnant-Pond-Water-and-Containment-Disinfection.png"
+          },
+          "Wells and Well Water, Water Reserves, and Drinking Water Storage": {
+            "score": 1,
+            "icon": "249-Wells-and-Well-Water--Water-Reserves--and-Drinking-Water-Storage.png"
+          },
+          "Wastewater Containing Biomatter Such as Urine, Vomit, Blood, or Rancid Meat": {
+            "score": 7,
+            "icon": "250-Wastewater-Containing-Biomatter-Such-as-Urine--Vomit--Blood--or-Rancid-Meat.png"
+          },
+          "Water Storage: Containers, Pools, and Water Retention System Maintenance": {
+            "score": 14,
+            "icon": "251-Water-Storage-Containers--Pools--and-Water-Retention-System-Maintenance.png"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "other industrial processes (miscellaneous)",
+    "description": "Discover versatile applications in various industrial processes, providing effective disinfection, odor control, and microbial management solutions.",
+    "question": [
+      {
+        "name": "Select an option",
+        "type": "select",
+        "options": {
+          "Crop Disease and Infestation Mitigation": {
+            "score": 7,
+            "icon": "252-Crop-Disease-and-Infestation-Mitigation.png"
+          },
+          "Data Mining and Server Towers": {
+            "score": 4,
+            "icon": "253-Data-Mining-and-Server-Towers.png"
+          },
+          "Fogging and Vapor Applications": {
+            "score": 14,
+            "icon": "254-Fogging-and-Vapor-Applications.png"
+          },
+          "Meat Production Operations - (Agriculture)": {
+            "score": 1,
+            "icon": "255-Meat-Production-Operations----Agriculture-.png"
+          },
+          "Produce Production Operations - (Horticulture)": {
+            "score": 7,
+            "icon": "256-Produce-Production-Operations----Horticulture---2-.png"
+          },
+          "Sewer and Wastewater Treatment": {
+            "score": 14,
+            "icon": "257-Sewer-and-Wastewater-Treatment.png"
+          },
+          "Scientific and Laboratory Use": {
+            "score": 1,
+            "icon": "258-Scientific-and-Laboratory-Use.png"
+          },
+          "Tattoo": {
+            "score": 7,
+            "icon": "259-Tattoo.png"
+          },
+          "Other": {
+            "score": 14,
+            "icon": "260-Other.png"
+          }
+        }
+      }
+    ]
   }
 ]
