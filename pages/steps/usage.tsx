@@ -109,6 +109,7 @@ const Boxes = ({
       flexDirection={["row", "row", "column"]}
       bg="white"
       rounded={"md"}
+      gap={[5, 2]}
       padding={[2, 2, 10]}
       cursor={"pointer"}
     >
