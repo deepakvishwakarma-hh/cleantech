@@ -73,7 +73,7 @@ const CategorySelection = () => {
               Select an Application Category
             </Text>
 
-            <SimpleGrid columns={[1, 1, 2, 4]} gap={5} px={5}>
+            <SimpleGrid columns={[1, 1, 2, 3, 4]} gap={5} px={5}>
               {category.map((title: string, index: number) => (
                 <Boxes
                   key={index}

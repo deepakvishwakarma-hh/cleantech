@@ -61,7 +61,7 @@ const Header: React.FC<HeaderProps> = ({ previous }) => {
       >
         <Button
           px={5}
-          display={"flex"}
+          display={["none", "none", "flex"]}
           onClick={previous}
           background={"white"}
           pointerEvents={"all"}
