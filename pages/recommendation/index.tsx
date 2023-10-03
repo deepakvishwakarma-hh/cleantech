@@ -66,7 +66,7 @@ export default function Recommendation({ posts }: { posts: PostsInterFace[] }) {
           </GridItem>
         </Container>
       </Box>
-      {/* <Blogs posts={posts} /> */}
+      <Blogs posts={posts} />
       <Footer />
     </>
   );
@@ -88,10 +88,10 @@ export default function Recommendation({ posts }: { posts: PostsInterFace[] }) {
       ></Container> */
 }
 
-// export const getStaticProps = async () => {
-//   const posts = await fetch(
-//     "https://customcleansolutions.com/wp-json/wp/v2/posts?&_embed=wp:featuredmedia&_fields=title,_links,_embedded,excerpt,id"
-//   );
-//   const AllPosts = await posts.json();
-//   return { props: { posts: AllPosts } };
-// };
+export const getStaticProps = async () => {
+  const posts = await fetch(
+    "https://cleansolutions.tech/wp-json/wp/v2/posts?&_embed=wp:featuredmedia&_fields=title,_links,_embedded,excerpt,id"
+  );
+  const AllPosts = await posts.json();
+  return { props: { posts: AllPosts } };
+};
