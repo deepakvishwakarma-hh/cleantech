@@ -114,7 +114,7 @@ function RecommendationHero() {
 
           <Box display={["none", "none", "none", "block"]}>
             <Image
-              src="/imgs/z2.-Extermination-of-Invasive-Insects-(7).jpg"
+              src="/imgs/a5-personal--Hygiene-(-Antiseptic-or-Hand-sanitizer)-(10)(1).png"
               width={500}
               height={500}
               sx={{
