@@ -9,11 +9,11 @@
         "options": {
           "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": {
             "score": 100,
-            "icon": "66-Cement--Ceramics--Glass--Stone--or-Tile.png"
+            "icon": "56-Ants--Beetles--Grasshoppers--Crickets--Termites--or-Wasps--2-.png"
           },
           "Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips": {
             "score": 25,
-            "icon": "56-Ants--Beetles--Grasshoppers--Crickets--Termites--or-Wasps--2-.png"
+            "icon": "57-Aphids--Mealybugs--Whiteflies--Spidermites--and-Thrips.png"
           },
           "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": {
             "score": 50,
@@ -107,7 +107,7 @@
             "score": 20,
             "icon": "97-Antiseptic-Wound-Irrigant-and-Sterilizer.png"
           },
-          "Dry Shampoo": {
+          "Dry Shampoo, Replace Your Aluminum-Based Products": {
             "score": 30,
             "icon": "98-Dry-Shampoo--Replace-Your-Aluminum-Based-Products.png"
           },
@@ -115,7 +115,7 @@
             "score": 40,
             "icon": "99-Hair-A-Topical--Sanitizer--Degreaser--and-Deodorizer.png"
           },
-          "Hand Sanitizer": {
+          "Hand Sanitizer, Make A Stronger, Safer Version": {
             "score": 50,
             "icon": "100-Hand-Sanitizer--Make-A-Stronger--Safer-Version.png"
           },
@@ -143,7 +143,7 @@
         "name": "Select the type of item to preserve and disinfect",
         "type": "select",
         "options": {
-          "Produce": {
+          "No-rinse Fruit and Vegetable Disinfectant Cleaner": {
             "score": 50,
             "icon": "6-Produce--Groceries--Eggs--Meat--and-Fish.png"
           },
@@ -205,7 +205,7 @@
             "score": 35,
             "icon": "113-Camping-Kitchen-Utensils--Cups--Plates--Cookware--and-Food-Contact-Surfaces.png"
           },
-          "Dry Shampoo": {
+          "Dry Shampoo, Replace Your Aluminum-Based Products": {
             "score": 50,
             "icon": "114-Dry-Shampoo-Replace-Your-Aluminum-Based-Products-With-Chlorine-Dioxide.png"
           },
@@ -327,10 +327,22 @@
         "name": "Select the method of application for eliminating odors",
         "type": "select",
         "options": {
-          "Spray": { "score": 30, "icon": "87-Spray.png" },
-          "Fogging": { "score": 45, "icon": "85-Fogging.png" },
-          "Wipe": { "score": 60, "icon": "86-Wipe.png" },
-          "Soak": { "score": 75, "icon": "88-Soak.png" }
+          "Dip": {
+            "score": 100,
+            "icon": "142-Dip--Soak--or-Rinse-for-All-Surfaces--Food--and-Non-Food-Items.png"
+          },
+          "Soak": {
+            "score": 75,
+            "icon": "86-Soak--Rinse-or-Dip.png"
+          },
+          "Fogging": {
+            "score": 45,
+            "icon": "85-Fogging-and-Vapor.png"
+          },
+          "Spray": {
+            "score": 30,
+            "icon": "87-Wipe-Mop-or-Spray.png"
+          }
         }
       }
     ]
@@ -402,7 +414,7 @@
     ]
   },
   {
-    "name": "food commodity production, processing, and packaging",
+    "name": "commodity production, processing, and packaging",
     "description": "Embrace our essential solution that ensures the safety and quality of food products by eliminating harmful pathogens throughout the production and processing chain, building trust and confidence in the products offered.",
     "question": [
       {
@@ -411,27 +423,27 @@
         "options": {
           "Food Additive and Preservative - (For Freshness and Extended Shelf-Life)": {
             "score": 7,
-            "icon": "170. Food Additive and Preservative.png"
+            "icon": "173-Food-Additive-and-Preservative-----For-Freshness-and-Extended-Shelf-Life.png"
           },
           "Food Canning and Beverage Bottling, Brewing, or Distillation": {
             "score": 4,
-            "icon": "171. Food Canning and Beverage Bottling.png"
+            "icon": "174-Food-Canning-and-Beverage-Bottling--Brewing--or-Distillatio.png"
           },
           "Fruit and vegetables - (No-rinse Disinfecting Cleaner)": {
             "score": 14,
-            "icon": "172. No-rinse Disinfecting Cleaner.png"
+            "icon": "175-Fruit-and-vegetables-----No-rinse-Disinfecting-Cleaner-.png"
           },
           "Meat, and Fish Butchering - (Preparation, Preservation, and Cold-Storage)": {
             "score": 1,
-            "icon": "173. Meat, and Fish Butchering.png"
+            "icon": "176-Meat--and-Fish-Butchering----Preparation--Preservation--and--Cold-Storage-.png"
           },
           "Processing and Packaging Foods - (Commodity Items Before Shipment)": {
             "score": 7,
-            "icon": "174. Processing and Packaging Foods.png"
+            "icon": "177-Processing-and-Packaging-Foods----Commodity-Items-Before-Shipment-.png"
           },
           "Tools and Equipment - (Picking, Packing, and Processing)": {
-            "score": 4,
-            "icon": "175. Tools and Equipment.png"
+            "score": 14,
+            "icon": "178-Tools-and-Equipment----Picking--Packing--and-Processing-.png"
           }
         }
       }
@@ -442,40 +454,40 @@
     "description": "Safeguard your crops and agricultural operations by harnessing the strength of a reliable and more eco-friendly solution that exterminates invasive insects.",
     "question": [
       {
-        "name": "Select the type of invasive insect to exterminate",
+        "name": "Select an insect group to target for extermination",
         "type": "select",
         "options": {
           "Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps": {
             "score": 100,
-            "icon": "56. Ants, Beetles, Grasshoppers, Crickets, Termites, or Wasps (2).png"
+            "icon": "56-Ants--Beetles--Grasshoppers--Crickets--Termites--or-Wasps--2-.png"
           },
           "Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips": {
             "score": 25,
-            "icon": "57. Aphids, Mealybugs, Whiteflies, Spidermites, and Thrips.png"
+            "icon": "57-Aphids--Mealybugs--Whiteflies--Spidermites--and-Thrips.png"
           },
           "Bed Bugs, Cockroaches, Fleas, Lice, and Ticks": {
             "score": 50,
-            "icon": "58. Bed Bugs, Cockroaches, Fleas, Lice, and Ticks.png"
+            "icon": "58-Bed-Bugs--Cockroaches--Fleas--Lice--and-Ticks.png"
           },
           "Cabbage-Maggots, Caterpillars, and Cutworms": {
             "score": 75,
-            "icon": "59. Cabbage-Maggots, Caterpillars, and Cutworms.png"
+            "icon": "59-Cabbage-Maggots--Caterpillars--and-Cutworms.png"
           },
           "Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums": {
             "score": 100,
-            "icon": "60. Fruit Flies, Fungus Gnats, Shore Flies, and Noseeums.png"
+            "icon": "60-Fruit-Flies--Fungus-Gnats--Shore-Flies--and-Noseeums.png"
           },
           "House flies, Horse flies, Maggots, Moths, and Spiders": {
             "score": 50,
-            "icon": "61. House flies, Horse flies, Maggots, Moths, and Spiders.png"
+            "icon": "61-House-flies--Horse-flies--Maggots--Moths--and-Spiders.png"
           },
           "Mosquitos, Drain Flies, and Water-borne Insects": {
             "score": 75,
-            "icon": "62. Mosquitos, Drain Flies, and Water-borne Insects.png"
+            "icon": "62-Mosquitos--Drain-Flies--and-Water-borne-Insects.png"
           },
           "Slugs, Snails, and Slimy Garden Gastropod Invaders": {
             "score": 25,
-            "icon": "63. Slugs, Snails, and Slimy Garden Gastropod Invaders.png"
+            "icon": "63-Slugs--Snails--and-Slimy-Garden-Gastropod-Invaders.png"
           }
         }
       }
@@ -492,35 +504,35 @@
         "options": {
           "Aquaponics and Aquaculture (Fish and Other Aquatics)": {
             "value": 7,
-            "icon": "191. Aquaponics and Aquaculture (Fish and Other Aquatics).png"
+            "icon": "191-Aquaponics-and-Aquaculture--Fish-and-Other-Aquatics-.png"
           },
           "Beekeeping and Bees (A Treatment for Mold and Mites)": {
             "value": 4,
-            "icon": "192. Beekeeping and Bees (A Treatment for Mold and Mites).png"
+            "icon": "192-Beekeeping-and-Bees--A-Treatment-for-Mold-and-Mites-.png"
           },
           "Chemical Decontamination (Fertilizers and Insecticides)": {
             "value": 14,
-            "icon": "179. Chemical Decontamination(Fertilizers and Insecticides).png"
+            "icon": "221-Chemical-Decontamination-and-Environmental-Toxins.png"
           },
           "Crop Management - Commercial (Mold, Disease, and Insect Control)": {
             "value": 1,
-            "icon": "180. Crop Management - Commercial(Mold, Disease, and Insect Control).png"
+            "icon": "180-Crop-Management---Commercial-Mold--Disease--and-Insect-Control-.png"
           },
           "Eggs, Dairy, Meat, and Fish at Harvest (Before Processing or Shipping)": {
             "value": 7,
-            "icon": "181. Eggs, Dairy, Meat, and Fish at Harvest (Before Processing or Shipping).png"
+            "icon": "182-Eggs.png"
           },
           "Plants, Produce, and Mycology (Fruits, Fungi, and Vegetables)": {
             "value": 4,
-            "icon": "185. Plants, Produce, and Mycology (Fruits, Fungi, and Vegetables).png"
+            "icon": "185-Plants--Produce--and-Mycology--Fruits--Fungi--and-Vegetables-.png"
           },
           "Livestock and Animal Rearing (Cattle, Chickens Swine, Sheep)": {
             "value": 14,
-            "icon": "186. Livestock and Animal Rearing(Cattle, Chickens Swine, Sheep).png"
+            "icon": "188-Livestock-or-Pet-Sanitizer----Odor--and-General-Hygiene-.png"
           },
           "Tools, Implements and Equipment (Horticulture and Agriculture)": {
             "value": 1,
-            "icon": "190. Tools, Implements and Equipment (Horticulture and Agriculture).png"
+            "icon": "226-Tools-and-Equipment.png"
           }
         }
       }
@@ -572,47 +584,47 @@
         "options": {
           "Hard Surfaces - Metals and Alloys": {
             "value": 7,
-            "icon": "217-Hard-Surfaces-Metals-and-Alloys.png"
+            "icon": "64Hard-Surfaces.png"
           },
           "Hard Surfaces - Cement, Ceramics, Glass, Stone, or Tile": {
             "value": 4,
-            "icon": "218-Hard-Surfaces-Cement-Ceramics-Glass-Stone-or-Tile.png"
+            "icon": "66-Cement--Ceramics--Glass--Stone--or-Tile.png"
           },
           "Hard Surfaces - Synthetics, Linoleum, Plastics, Polymers, or Vinyl": {
             "value": 14,
-            "icon": "219-Hard-Surfaces-Synthetics-Linoleum-Plastics-Polymers-or-Vinyl.png"
+            "icon": "67-Synthetics--linoleum--Plastics--Polymers--or-Vinyl.png"
           },
           "Hard Surfaces - Wood and Porous Organic Materials": {
             "value": 1,
-            "icon": "220-Hard-Surfaces-Wood-and-Porous-Organic-Materials.png"
+            "icon": "68-Wood-and-Porous-Organic-Material.png"
           },
           "Non-Food Items, Toys, Packages, and Mail Items": {
             "value": 7,
-            "icon": "221-Non-Food-Items-Toys-Packages-and-Mail-Items.png"
+            "icon": "69-Non-Food-Items--Toys--Packages--and-Mail-Items.png"
           },
           "Soft Surfaces - Bedding, Laundry, and Delicates": {
             "value": 4,
-            "icon": "222-Soft-Surfaces-Bedding-Laundry-and-Delicates.png"
+            "icon": "20-No-Residue-Hard-and-Soft-Surface-Disinfection---Copy.png"
           },
           "Soft Surfaces - Carpets and Rugs or Turf": {
             "value": 14,
-            "icon": "223-Soft-Surfaces-Carpets-and-Rugs-or-Turf.png"
+            "icon": "73-Carpets-and-Rugs-or-Turf.png"
           },
           "Soft Surfaces - Designer Shoes and Bags": {
             "value": 1,
-            "icon": "224-Soft-Surfaces-Designer-Shoes-and-Bags.png"
+            "icon": "74-Designer-Shoes-and-Handbags.png"
           },
           "Soft Surfaces - Leather, Shoes, or Boots": {
             "value": 7,
-            "icon": "225-Soft-Surfaces-Leather-Shoes-or-Boots.png"
+            "icon": "75-Leather--Boots--Shoes--or-Luggage.png"
           },
           "Soft Surfaces - Organic Fiber and Natural Fabrics": {
             "value": 4,
-            "icon": "226-Soft-Surfaces-Organic-Fiber-and-Natural-Fabrics.png"
+            "icon": "76-Organic-Fiber-and-Natural-Fabrics.png"
           },
           "Soft Surfaces - Synthetic Fiber and Upholstery": {
             "value": 14,
-            "icon": "227-Soft-Surfaces-Synthetic-Fiber-and-Upholstery.png"
+            "icon": "77-Synthetic-Fiber-and-Upholstery.png"
           }
         }
       },
@@ -622,15 +634,15 @@
         "options": {
           "Fogging and Vapor": {
             "value": 7,
-            "icon": "228-Fogging-and-Vapor.png"
+            "icon": "85-Fogging-and-Vapor.png"
           },
           "Soak, Rinse or Dip": {
             "value": 4,
-            "icon": "229-Soak-Rinse-or-Dip.png"
+            "icon": "86-Soak--Rinse-or-Dip.png"
           },
           "Wipe Mop or Spray": {
             "value": 14,
-            "icon": "230-Wipe-Mop-or-Spray.png"
+            "icon": "87-Wipe-Mop-or-Spray.png"
           }
         }
       }
@@ -644,12 +656,15 @@
         "name": "Select an option",
         "type": "select",
         "options": {
-          "Delivery Jobs": { "score": 70, "icon": "239-Delivery-Jobs.png" },
-          "Police Cars": { "score": 40, "icon": "240-Police-Cars.png" },
-          "Rental Cars": { "score": 140, "icon": "241-Rental-Cars.png" },
-          "School Buses": { "score": 10, "icon": "242-School-Buses.png" },
-          "Taxi or Uber": { "score": 70, "icon": "243-Taxi-or-Uber.png" },
-          "OTR Trucking": { "score": 40, "icon": "244-OTR-Trucking.png" }
+          "Delivery Jobs": {
+            "score": 70,
+            "icon": "16-Transport-and-Transit--Delivery-and-Travel-.png"
+          },
+          "Police Cars": { "score": 40, "icon": "194-Police-Cars.png" },
+          "Rental Cars": { "score": 140, "icon": "195-Rental-Cars.png" },
+          "School Buses": { "score": 10, "icon": "196-School-Buses.png" },
+          "Taxi or Uber": { "score": 70, "icon": "197-Taxi-or-Uber.png" },
+          "OTR Trucking": { "score": 40, "icon": "198-OTR-Trucking.png" }
         }
       }
     ]
@@ -865,7 +880,7 @@
           },
           "Learning Institutions, Schools and Classroom Environments": {
             "score": 7,
-            "icon": "17-Unwanted-Odors--Eliminate-the-Source.png"
+            "icon": "167-Learning-Institutions--Schools-and-Classroom-Environment.png"
           },
           "Securities, Police, Clandestine and Military Use": {
             "score": 4,
