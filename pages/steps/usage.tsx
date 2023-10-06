@@ -17,7 +17,7 @@ export const usage__data = [
     name: "medium",
     title: "Commercial and Retail Applications ",
     discription: "At Work and for use in Public Spaces",
-    src: "/icons/10-Commercial-and-Retail-Applications--At-Work-and-for-use-in-Public-Spaces-.png",
+    src: "/commercial.png",
   },
   {
     alt: "alt",
@@ -25,7 +25,7 @@ export const usage__data = [
     title: "Professional and Industrial Application",
     discription:
       "Large-Scale Operations or Fields That Require Special Licensing",
-    src: "/icons/27-Other-Industrial-Processes--Miscellaneous-.png",
+    src: "/professional.png",
   },
 ];
 
