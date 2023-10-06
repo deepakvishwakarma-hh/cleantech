@@ -29,7 +29,7 @@ export default function SurroundedProducts() {
       setStorage((prev: any) => {
         return { ...prev, surrounded: selectedItems };
       });
-      router.push("annual-spent");
+      router.push("information");
     }
   };
   return (
