@@ -10,7 +10,7 @@ export const usage__data = [
     name: "low",
     title: "Civilian Use and Residential Applications",
     discription: "Home and Garden",
-    src: "/icons/1.civilian_use_and_residential_applications__home_and_garden.png",
+    src: "/civi.png",
   },
   {
     alt: "alt",
