@@ -9,7 +9,6 @@ interface HeaderProps {
 
 import Link from "next/link";
 import Aspect from "~/theme/aspects";
-import { useRouter } from "next/router";
 import Logo from "~/components/atoms/Logo";
 import { FiChevronLeft } from "react-icons/fi";
 import { Text, Flex, Center, Container, Button } from "@chakra-ui/react";
@@ -26,7 +25,6 @@ const Layout: React.FC<Props> = ({ previous, children }) => {
 export default Layout;
 
 const Header: React.FC<HeaderProps> = ({ previous }) => {
-  const router = useRouter();
   const responsiveHeight = [
     Aspect.mobile.layout.header.height,
     Aspect.mobile.layout.header.height,
